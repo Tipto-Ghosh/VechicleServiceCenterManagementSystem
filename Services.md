@@ -10,7 +10,7 @@ Handles login, logout, profile, and common actions.
 
 ### Methods:
 
-* `User Login(string email, string password)`
+* `User Login(string email/userID, string password)`
 * `void Logout()`
 * `User GetUserById(int userId)`
 * `void ChangePassword(int userId, string oldPassword, string newPassword)`
