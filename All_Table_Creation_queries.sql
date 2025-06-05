@@ -92,3 +92,29 @@ CREATE TABLE Appointments (
     CONSTRAINT FK_Appointments_MechanicID FOREIGN KEY (MechanicID) REFERENCES Mechanics(UserID),
     CONSTRAINT FK_Appointments_CreatedBy FOREIGN KEY (CreatedBy) REFERENCES Users(UserID)
 );
+
+
+------------------ Here added new feature--------------------------------------------
+---- run all the query from here.
+
+USE VehicleServiceCenterDB;
+
+drop table InventoryItems;
+
+
+-- New Update: InventoryItems table now includes Price
+CREATE TABLE InventoryItems (
+    InventoryItemID INT PRIMARY KEY IDENTITY(1,1),
+    ItemName VARCHAR(100) NOT NULL,
+    RemainingNumber INT DEFAULT 0,
+    Price DECIMAL(10, 2) NOT NULL
+);
+
+--New: OfferedServices table to store default services
+CREATE TABLE OfferedServices (
+    ServiceID INT PRIMARY KEY IDENTITY(1,1),
+    ServiceName VARCHAR(100) NOT NULL,
+    Description VARCHAR(255),
+    Price DECIMAL(10, 2) NOT NULL,
+    EstimatedDurationMinutes INT
+);

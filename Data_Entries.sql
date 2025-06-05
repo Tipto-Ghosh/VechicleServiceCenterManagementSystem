@@ -57,12 +57,6 @@ INSERT INTO Vehicles (CustomerID, LicensePlate, Model) VALUES
 (1007, 'BAR6789', 'Ford Focus');
 
 
-INSERT INTO InventoryItems (ItemName, RemainingNumber) VALUES
-('Oil Filter', 50),
-('Air Filter', 40),
-('Brake Pads', 30),
-('Spark Plugs', 20),
-('Coolant', 60);
 
 
 INSERT INTO Appointments (CustomerID, MechanicID, ScheduledDate, Status, CreatedBy, TokenNumber) VALUES
@@ -71,3 +65,22 @@ INSERT INTO Appointments (CustomerID, MechanicID, ScheduledDate, Status, Created
 (1005, 1009, '2025-06-12', 'Completed', 1012, 102),
 (1006, 1010, '2025-06-13', 'Pending', 1012, 103),
 (1007, 1009, '2025-06-14', 'Cancelled', 1001, 104);   -- create by Manager
+
+
+--- New update [05-06-2025]
+
+-- Insert inventory items
+INSERT INTO InventoryItems (ItemName, RemainingNumber, Price) VALUES
+('Engine Oil', 50, 1200.00),
+('Brake Pads', 30, 1800.00),
+('Air Filter', 20, 800.00),
+('Spark Plug', 60, 400.00),
+('Coolant', 25, 900.00);
+
+-- Insert services
+INSERT INTO OfferedServices (ServiceName, Description, Price, EstimatedDurationMinutes) VALUES
+('Oil Change', 'Replace engine oil and oil filter', 2500.00, 30),
+('Brake Inspection', 'Check and adjust brake pads and discs', 2000.00, 45),
+('General Checkup', 'Full vehicle diagnostic and performance check', 1500.00, 40),
+('Engine Tuning', 'Optimize engine performance', 3000.00, 60),
+('Coolant Replacement', 'Flush and replace coolant', 1700.00, 35);
