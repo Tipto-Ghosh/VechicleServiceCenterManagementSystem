@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.SqlClient;
+
+
+namespace VehicleServiceCenter.Config {
+
+    // This is a class where we do the database connection part
+    public static class DbConfig {
+        // Update the connection string 
+        public static string connectionString =
+           @"Data Source=DESKTOP-4459NVF\SQLEXPRESS;Initial Catalog=VehicleServiceCenterDB;Integrated Security=True;TrustServerCertificate=True";
+
+        // This a method which will create a SqlConnection and return a SqlConnection Object
+        
+    }
+}
