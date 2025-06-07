@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace VehicleServiceCenter.Models {
-    public class InventoryManager {
+    public class InventoryManager : User{
         public InventoryManager() { 
         
         }

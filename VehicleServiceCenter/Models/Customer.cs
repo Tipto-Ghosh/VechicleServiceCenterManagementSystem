@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace VehicleServiceCenter.Models {
-    public class Customer {
+    public class Customer: User {
 
         public string PhoneNumber { get; set; }
 

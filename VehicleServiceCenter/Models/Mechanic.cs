@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace VehicleServiceCenter.Models {
-    public class Mechanic {
+    public class Mechanic: User {
         public float Rating { get; set; }
         public string Status { get; set; }  // Available, Busy
 

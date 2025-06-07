@@ -12,7 +12,6 @@
     <Folder Include="Froms\" />
     <Folder Include="Queries\" />
     <Folder Include="Services\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>

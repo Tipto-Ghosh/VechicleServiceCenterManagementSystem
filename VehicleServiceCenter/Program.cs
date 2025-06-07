@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
-
+using VehicleServiceCenter.Repositories;
 
 namespace VehicleServiceCenter {
     internal static class Program {
@@ -45,8 +45,25 @@ namespace VehicleServiceCenter {
             //    Console.WriteLine("Error: " + ex.Message);
             //}
 
+            UserRepository userRepository = new UserRepository();
 
-            Console.WriteLine("June-6 2025    -> Done For Today");
+            //User user = userRepository.GetUserById(1000);
+            //User user = userRepository.GetUserByEmail("bob.manager@example.com");
+
+            //if (user == null) {
+            //    Console.WriteLine("Failed");
+            //}else {
+            //    Console.WriteLine(user.Name);
+            //}
+
+
+            //int check = userRepository.DeleteUser(1014); 
+
+            
+
+            AdminRepository adminRepository = new AdminRepository();
+
+            
         }
     }
 }

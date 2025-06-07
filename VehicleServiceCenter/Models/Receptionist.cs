@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace VehicleServiceCenter.Models {
-    public class Receptionist {
+    public class Receptionist : User {
         public string ShiftTime { get; set; }
 
         public Receptionist() { 
