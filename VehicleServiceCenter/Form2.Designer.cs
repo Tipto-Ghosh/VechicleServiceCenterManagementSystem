@@ -42,16 +42,19 @@
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             panel4 = new Panel();
-            panel5 = new Panel();
-            pictureBox6 = new PictureBox();
-            panel6 = new Panel();
-            pictureBox7 = new PictureBox();
-            panel7 = new Panel();
-            pictureBox8 = new PictureBox();
-            panel8 = new Panel();
-            pictureBox9 = new PictureBox();
+            label1 = new Label();
             panel9 = new Panel();
             pictureBox10 = new PictureBox();
+            panel8 = new Panel();
+            pictureBox9 = new PictureBox();
+            panel7 = new Panel();
+            pictureBox8 = new PictureBox();
+            panel6 = new Panel();
+            pictureBox7 = new PictureBox();
+            panel5 = new Panel();
+            pictureBox6 = new PictureBox();
+            panel10 = new Panel();
+            pictureBox11 = new PictureBox();
             tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -64,16 +67,18 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel4.SuspendLayout();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -101,6 +106,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 51);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // panel2
             // 
@@ -118,15 +124,16 @@
             tableLayoutPanel2.AutoScroll = true;
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
+            tableLayoutPanel2.Controls.Add(panel10, 0, 1);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(0, 0);
             tableLayoutPanel2.Margin = new Padding(0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 2;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.RowCount = 3;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 40.2451477F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 59.7548523F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel2.Size = new Size(777, 1000);
             tableLayoutPanel2.TabIndex = 0;
             tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
@@ -234,6 +241,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(label1);
             panel4.Controls.Add(panel9);
             panel4.Controls.Add(panel8);
             panel4.Controls.Add(panel7);
@@ -246,62 +254,35 @@
             panel4.Size = new Size(771, 197);
             panel4.TabIndex = 1;
             // 
-            // panel5
+            // label1
             // 
-            panel5.Controls.Add(pictureBox6);
-            panel5.Location = new Point(6, 12);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(135, 135);
-            panel5.TabIndex = 0;
+            label1.AutoSize = true;
+            label1.Font = new Font("Poppins ExtraLight", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(242, 242, 242);
+            label1.Location = new Point(244, 152);
+            label1.Name = "label1";
+            label1.Size = new Size(323, 48);
+            label1.TabIndex = 5;
+            label1.Text = "ADD REQUIRED SERVICES";
             // 
-            // pictureBox6
+            // panel9
             // 
-            pictureBox6.Dock = DockStyle.Fill;
-            pictureBox6.Image = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Carwadadwdawdwa_p_1600;
-            pictureBox6.Location = new Point(0, 0);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(135, 135);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 0;
-            pictureBox6.TabStop = false;
+            panel9.Controls.Add(pictureBox10);
+            panel9.Location = new Point(573, 12);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(192, 135);
+            panel9.TabIndex = 3;
             // 
-            // panel6
+            // pictureBox10
             // 
-            panel6.Controls.Add(pictureBox7);
-            panel6.Location = new Point(150, 12);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(135, 135);
-            panel6.TabIndex = 1;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Dock = DockStyle.Fill;
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(0, 0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(135, 135);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 0;
-            pictureBox7.TabStop = false;
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(pictureBox8);
-            panel7.Location = new Point(291, 12);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(135, 135);
-            panel7.TabIndex = 2;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Dock = DockStyle.Fill;
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(0, 0);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(135, 135);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 0;
-            pictureBox8.TabStop = false;
+            pictureBox10.Dock = DockStyle.Fill;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(0, 0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(192, 135);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 0;
+            pictureBox10.TabStop = false;
             // 
             // panel8
             // 
@@ -322,24 +303,81 @@
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
-            // panel9
+            // panel7
             // 
-            panel9.Controls.Add(pictureBox10);
-            panel9.Location = new Point(573, 12);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(192, 135);
-            panel9.TabIndex = 3;
+            panel7.Controls.Add(pictureBox8);
+            panel7.Location = new Point(291, 12);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(135, 135);
+            panel7.TabIndex = 2;
             // 
-            // pictureBox10
+            // pictureBox8
             // 
-            pictureBox10.Dock = DockStyle.Fill;
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(0, 0);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(192, 135);
-            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox10.TabIndex = 0;
-            pictureBox10.TabStop = false;
+            pictureBox8.Dock = DockStyle.Fill;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(0, 0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(135, 135);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 0;
+            pictureBox8.TabStop = false;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(pictureBox7);
+            panel6.Location = new Point(150, 12);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(135, 135);
+            panel6.TabIndex = 1;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Dock = DockStyle.Fill;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(0, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(135, 135);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 0;
+            pictureBox7.TabStop = false;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(pictureBox6);
+            panel5.Location = new Point(6, 12);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(135, 135);
+            panel5.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Dock = DockStyle.Fill;
+            pictureBox6.Image = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Carwadadwdawdwa_p_1600;
+            pictureBox6.Location = new Point(0, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(135, 135);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(pictureBox11);
+            panel10.Location = new Point(3, 397);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(771, 394);
+            panel10.TabIndex = 1;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Dock = DockStyle.Fill;
+            pictureBox11.Image = Properties.Resources.wafwaf;
+            pictureBox11.Location = new Point(0, 0);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(771, 394);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 0;
+            pictureBox11.TabStop = false;
             // 
             // Form2
             // 
@@ -363,16 +401,19 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel4.ResumeLayout(false);
-            panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            panel4.PerformLayout();
             panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
         }
 
@@ -401,5 +442,8 @@
         private PictureBox pictureBox6;
         private Panel panel9;
         private PictureBox pictureBox10;
+        private Label label1;
+        private Panel panel10;
+        private PictureBox pictureBox11;
     }
 }
