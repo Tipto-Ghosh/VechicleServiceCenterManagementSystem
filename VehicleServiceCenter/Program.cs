@@ -59,7 +59,7 @@ namespace VehicleServiceCenter {
 
             //int check = userRepository.DeleteUser(1014); 
 
-            
+
 
             AdminRepository adminRepository = new AdminRepository();
             Application.EnableVisualStyles();
@@ -69,7 +69,10 @@ namespace VehicleServiceCenter {
             //practice
             //arino's comment
 
+            //Console.WriteLine("jhaisd");
 
+
+            // Tipto
         }
     }
 }
