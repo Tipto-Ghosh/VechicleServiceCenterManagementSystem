@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\tipto\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tipto\\.nuget\\packages",
+      "C:\\Users\\Brinto\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Brinto\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
