@@ -113,9 +113,59 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dwadwadaw {
+            get {
+                object obj = ResourceManager.GetObject("dwadwadaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dwadwdadadaw {
+            get {
+                object obj = ResourceManager.GetObject("dwadwdadadaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dwadwfafwadwadaw {
             get {
                 object obj = ResourceManager.GetObject("dwadwfafwadwadaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_scroll_down_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-scroll-down-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wadawdwad {
+            get {
+                object obj = ResourceManager.GetObject("wadawdwad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wadwdwadad {
+            get {
+                object obj = ResourceManager.GetObject("wadwdwadad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
