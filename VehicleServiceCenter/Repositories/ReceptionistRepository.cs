@@ -62,7 +62,7 @@ namespace VehicleServiceCenter.Repositories {
         public int DeleteReceptionist(int id) {
             try {
                 UserRepository userRepo = new UserRepository();
-                return userRepo.DeleteUser(id); 
+                return userRepo.DeleteUser(id);
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
                 return 0;
