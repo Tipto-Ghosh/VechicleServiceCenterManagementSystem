@@ -37,6 +37,7 @@
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             AboutLbl = new Label();
+            label6 = new Label();
             StartBtn = new Button();
             GenderLbl = new Label();
             YearTxtBox = new TextBox();
@@ -63,6 +64,7 @@
             // 
             SignBtn.BackColor = Color.FromArgb(208, 206, 206);
             SignBtn.Font = new Font("Poppins Light", 12F, FontStyle.Bold);
+            SignBtn.ForeColor = Color.FromArgb(18, 18, 18);
             SignBtn.Location = new Point(71, 125);
             SignBtn.Name = "SignBtn";
             SignBtn.Size = new Size(114, 42);
@@ -89,6 +91,7 @@
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(AboutLbl);
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(StartBtn);
             panel1.Controls.Add(GenderLbl);
             panel1.Controls.Add(YearTxtBox);
@@ -105,6 +108,7 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(SignBtn);
             panel1.Dock = DockStyle.Right;
+            panel1.ForeColor = Color.FromArgb(18, 18, 18);
             panel1.Location = new Point(681, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(442, 702);
@@ -180,13 +184,22 @@
             AboutLbl.Text = "ABOUT US";
             AboutLbl.TextAlign = ContentAlignment.TopCenter;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(0, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(50, 20);
+            label6.TabIndex = 16;
+            label6.Text = "label6";
+            // 
             // StartBtn
             // 
             StartBtn.BackColor = Color.FromArgb(208, 206, 206);
             StartBtn.Font = new Font("Poppins Medium", 13.8F);
             StartBtn.Location = new Point(86, 594);
             StartBtn.Name = "StartBtn";
-            StartBtn.Size = new Size(254, 54);
+            StartBtn.Size = new Size(254, 43);
             StartBtn.TabIndex = 15;
             StartBtn.Text = "Let’s Start!";
             StartBtn.UseVisualStyleBackColor = false;
@@ -306,7 +319,7 @@
             // 
             LogBtn.BackColor = Color.FromArgb(18, 18, 18);
             LogBtn.Font = new Font("Poppins Light", 12F);
-            LogBtn.ForeColor = Color.White;
+            LogBtn.ForeColor = Color.FromArgb(208, 206, 206);
             LogBtn.Location = new Point(252, 125);
             LogBtn.Name = "LogBtn";
             LogBtn.Size = new Size(114, 42);
@@ -380,5 +393,6 @@
         private CheckBox OtherChk;
         private CheckBox FemaleChk;
         private CheckBox MaleChk;
+        private Label label6;
     }
 }
