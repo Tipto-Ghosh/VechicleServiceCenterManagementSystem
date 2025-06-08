@@ -1,6 +1,10 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Ignore Visual Studio temporary files and build outputs
 
-/.vs
-/obj
+# For the 'obj' folder within VehicleServiceCenter
+/VehicleServiceCenter/obj/
+
+# For the '.vs' folder within VehicleServiceCenter
+/VehicleServiceCenter/.vs/
+
+# For the 'bin' folder within VehicleServiceCenter
+/VehicleServiceCenter/bin/
