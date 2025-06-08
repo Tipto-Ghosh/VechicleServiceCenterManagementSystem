@@ -42,8 +42,7 @@ namespace VehicleServiceCenter.Repositories {
                         return null; // not found
                     }
                 }
-            }
-            catch(Exception ex) {
+            } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
                 return null;
             }

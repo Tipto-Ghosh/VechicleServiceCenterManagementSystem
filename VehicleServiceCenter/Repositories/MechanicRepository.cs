@@ -15,9 +15,9 @@ namespace VehicleServiceCenter.Repositories {
                 // Insert the User First
                 int newUserId = userRepository.InsertUser(mech);
 
-                if (newUserId == 0 || newUserId == -1) { 
+                if (newUserId == 0 || newUserId == -1) {
                     // User exists or Some other issue failed
-                    return newUserId; 
+                    return newUserId;
                 }
 
                 using (SqlConnection conn = DbConfig.GetConnection()) {
