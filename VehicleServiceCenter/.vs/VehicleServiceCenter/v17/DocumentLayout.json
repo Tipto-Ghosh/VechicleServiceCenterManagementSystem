@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\C-Sharp-Project\\VechicleServiceCenterManagementSystem\\VehicleServiceCenter\\",
+  "WorkspaceRootPath": "C:\\Users\\azizu\\OneDrive\\Desktop\\clone\\car-rental-service\\VehicleServiceCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|e:\\c-sharp-project\\vechicleservicecentermanagementsystem\\vehicleservicecenter\\repositories\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|c:\\users\\azizu\\onedrive\\desktop\\clone\\car-rental-service\\vehicleservicecenter\\repositories\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|solutionrelative:repositories\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|e:\\c-sharp-project\\vechicleservicecentermanagementsystem\\vehicleservicecenter\\models\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|solutionrelative:models\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|c:\\users\\azizu\\onedrive\\desktop\\clone\\car-rental-service\\vehicleservicecenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|e:\\c-sharp-project\\vechicleservicecentermanagementsystem\\vehicleservicecenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|c:\\users\\azizu\\onedrive\\desktop\\clone\\car-rental-service\\vehicleservicecenter\\models\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBEAD3B7-EE90-42AA-A495-73CEC5200E67}|VehicleServiceCenter.csproj|solutionrelative:models\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +26,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Receptionist.cs",
-              "DocumentMoniker": "E:\\C-Sharp-Project\\VechicleServiceCenterManagementSystem\\VehicleServiceCenter\\Models\\Receptionist.cs",
+              "DocumentMoniker": "C:\\Users\\azizu\\OneDrive\\Desktop\\clone\\car-rental-service\\VehicleServiceCenter\\Models\\Receptionist.cs",
               "RelativeDocumentMoniker": "Models\\Receptionist.cs",
-              "ToolTip": "E:\\C-Sharp-Project\\VechicleServiceCenterManagementSystem\\VehicleServiceCenter\\Models\\Receptionist.cs",
+              "ToolTip": "C:\\Users\\azizu\\OneDrive\\Desktop\\clone\\car-rental-service\\VehicleServiceCenter\\Models\\Receptionist.cs",
               "RelativeToolTip": "Models\\Receptionist.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -45,22 +45,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ReceptionistRepository.cs",
-              "DocumentMoniker": "E:\\C-Sharp-Project\\VechicleServiceCenterManagementSystem\\VehicleServiceCenter\\Repositories\\ReceptionistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\azizu\\OneDrive\\Desktop\\clone\\car-rental-service\\VehicleServiceCenter\\Repositories\\ReceptionistRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ReceptionistRepository.cs",
-              "ToolTip": "E:\\C-Sharp-Project\\VechicleServiceCenterManagementSystem\\VehicleServiceCenter\\Repositories\\ReceptionistRepository.cs",
+              "ToolTip": "C:\\Users\\azizu\\OneDrive\\Desktop\\clone\\car-rental-service\\VehicleServiceCenter\\Repositories\\ReceptionistRepository.cs",
               "RelativeToolTip": "Repositories\\ReceptionistRepository.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwD0AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T11:09:14.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\C-Sharp-Project\\VechicleServiceCenterManagementSystem\\VehicleServiceCenter\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\azizu\\OneDrive\\Desktop\\clone\\car-rental-service\\VehicleServiceCenter\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\C-Sharp-Project\\VechicleServiceCenterManagementSystem\\VehicleServiceCenter\\Program.cs",
+              "ToolTip": "C:\\Users\\azizu\\OneDrive\\Desktop\\clone\\car-rental-service\\VehicleServiceCenter\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAUwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
