@@ -183,6 +183,16 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_sign_out_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sign-out-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wadawdwad {
             get {
                 object obj = ResourceManager.GetObject("wadawdwad", resourceCulture);

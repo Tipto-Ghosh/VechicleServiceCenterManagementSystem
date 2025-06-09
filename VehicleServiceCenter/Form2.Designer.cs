@@ -61,12 +61,12 @@
             pictureBox14 = new PictureBox();
             pictureBox13 = new PictureBox();
             PanelProfile = new Panel();
-            pictureBox19 = new PictureBox();
-            pictureBox20 = new PictureBox();
-            label6 = new Label();
+            pictureBox22 = new PictureBox();
             pictureBox21 = new PictureBox();
             label7 = new Label();
-            pictureBox22 = new PictureBox();
+            label6 = new Label();
+            pictureBox20 = new PictureBox();
+            pictureBox19 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
@@ -94,10 +94,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             PanelProfile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -143,7 +143,7 @@
             // pictureBox17
             // 
             pictureBox17.BackColor = Color.Transparent;
-            pictureBox17.Image = Properties.Resources.icons8_email_100;
+            pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
             pictureBox17.Location = new Point(12, 43);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(27, 27);
@@ -264,7 +264,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Carwadadwdawdwa_p_1600;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(6, 6);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(171, 189);
@@ -339,7 +339,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Car_p_1600;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(188, 245);
@@ -349,7 +349,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Car_awdawdaw1600;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(206, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(188, 245);
@@ -359,7 +359,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Cdwadwar_p_1600;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(400, 12);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(188, 245);
@@ -369,7 +369,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources._64f1c1f57a06d26il_in_Your_Car_p_1600;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(594, 12);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(188, 245);
@@ -379,7 +379,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.dwadwfafwadwadaw;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(788, 12);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(191, 245);
@@ -390,7 +390,7 @@
             // pictureBox12
             // 
             pictureBox12.Dock = DockStyle.Top;
-            pictureBox12.Image = Properties.Resources.icons8_scroll_down_100;
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
             pictureBox12.Location = new Point(0, 931);
             pictureBox12.Margin = new Padding(0);
             pictureBox12.Name = "pictureBox12";
@@ -402,7 +402,7 @@
             // pictureBox11
             // 
             pictureBox11.Dock = DockStyle.Top;
-            pictureBox11.Image = Properties.Resources.wafwaf;
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
             pictureBox11.Location = new Point(3, 482);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(985, 440);
@@ -459,7 +459,7 @@
             // pictureBox15
             // 
             pictureBox15.Dock = DockStyle.Fill;
-            pictureBox15.Image = Properties.Resources.wadawdwad;
+            pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
             pictureBox15.Location = new Point(0, 0);
             pictureBox15.Margin = new Padding(0);
             pictureBox15.Name = "pictureBox15";
@@ -471,7 +471,7 @@
             // pictureBox16
             // 
             pictureBox16.Dock = DockStyle.Fill;
-            pictureBox16.Image = Properties.Resources.wadwdwadad;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(266, 0);
             pictureBox16.Margin = new Padding(0);
             pictureBox16.Name = "pictureBox16";
@@ -483,7 +483,7 @@
             // pictureBox14
             // 
             pictureBox14.Dock = DockStyle.Fill;
-            pictureBox14.Image = Properties.Resources.dwadwadaw;
+            pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
             pictureBox14.Location = new Point(0, 0);
             pictureBox14.Margin = new Padding(0);
             pictureBox14.Name = "pictureBox14";
@@ -494,7 +494,7 @@
             // 
             // pictureBox13
             // 
-            pictureBox13.Image = Properties.Resources.dwadwdadadaw;
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
             pictureBox13.Location = new Point(0, 0);
             pictureBox13.Margin = new Padding(0);
             pictureBox13.Name = "pictureBox13";
@@ -519,39 +519,15 @@
             PanelProfile.Size = new Size(1008, 55);
             PanelProfile.TabIndex = 1;
             // 
-            // pictureBox19
+            // pictureBox22
             // 
-            pictureBox19.Dock = DockStyle.Left;
-            pictureBox19.Image = Properties.Resources.icons8_back_100;
-            pictureBox19.Location = new Point(0, 0);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(39, 55);
-            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox19.TabIndex = 0;
-            pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.Dock = DockStyle.Right;
-            pictureBox20.Image = Properties.Resources.icons8_sign_out_50;
-            pictureBox20.Location = new Point(977, 0);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(31, 55);
-            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox20.TabIndex = 1;
-            pictureBox20.TabStop = false;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(812, 9);
-            label6.Name = "label6";
-            label6.Size = new Size(102, 28);
-            label6.TabIndex = 2;
-            label6.Text = "FULL NAME";
+            pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
+            pictureBox22.Location = new Point(474, 0);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(57, 55);
+            pictureBox22.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox22.TabIndex = 3;
+            pictureBox22.TabStop = false;
             // 
             // pictureBox21
             // 
@@ -575,15 +551,39 @@
             label7.TabIndex = 2;
             label7.Text = "CUSTOMER";
             // 
-            // pictureBox22
+            // label6
             // 
-            pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
-            pictureBox22.Location = new Point(474, 0);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(57, 55);
-            pictureBox22.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox22.TabIndex = 3;
-            pictureBox22.TabStop = false;
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.WhiteSmoke;
+            label6.Location = new Point(812, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(102, 28);
+            label6.TabIndex = 2;
+            label6.Text = "FULL NAME";
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.Dock = DockStyle.Right;
+            pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
+            pictureBox20.Location = new Point(977, 0);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(31, 55);
+            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox20.TabIndex = 1;
+            pictureBox20.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.Dock = DockStyle.Left;
+            pictureBox19.Image = Properties.Resources.icons8_back_100;
+            pictureBox19.Location = new Point(0, 0);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(39, 55);
+            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox19.TabIndex = 0;
+            pictureBox19.TabStop = false;
             // 
             // Form2
             // 
@@ -624,10 +624,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             ResumeLayout(false);
         }
 
