@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\VehicleServiceCenter"
+    "\\VehicleServiceCenter",
+    "\\VehicleServiceCenter\\Documents",
+    "\\VehicleServiceCenter\\Models",
+    "\\VehicleServiceCenter\\Repositories",
+    "\\VehicleServiceCenter\\Services"
   ],
   "SelectedNode": "\\VehicleServiceCenter\\VehicleServiceCenter.sln",
   "PreviewInSolutionExplorer": false

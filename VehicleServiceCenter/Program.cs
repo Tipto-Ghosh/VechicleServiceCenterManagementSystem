@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 using VehicleServiceCenter.Repositories;
+using VehicleServiceCenter.Services;
 
 namespace VehicleServiceCenter {
     internal static class Program {
@@ -61,10 +62,10 @@ namespace VehicleServiceCenter {
 
 
 
-            AdminRepository adminRepository = new AdminRepository();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //AdminRepository adminRepository = new AdminRepository();
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form1());
 
             //practice
             //arino's comment
@@ -72,7 +73,22 @@ namespace VehicleServiceCenter {
             //Console.WriteLine("jhaisd");
 
 
-            // Tipto
+            //UserService userService = new UserService();
+
+            //User user = userService.Login(1000, "pass123");
+
+            //if (user == null) {
+            //    Console.WriteLine("Log in failed");
+            //}else {
+            //    Console.WriteLine(user.Name);
+            //}
+
+
+            //Console.ReadLine();
+
+
+            // Tipto's Note
+            // Done For Today. Date: 9-th June-2025
         }
     }
 }
