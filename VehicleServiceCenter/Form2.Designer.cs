@@ -208,7 +208,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Poppins Light", 14F);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(44, 0);
+            label1.Location = new Point(43, 1);
             label1.Name = "label1";
             label1.Size = new Size(93, 34);
             label1.TabIndex = 0;
@@ -569,7 +569,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(812, 27);
+            label7.Location = new Point(812, 30);
             label7.Name = "label7";
             label7.Size = new Size(72, 22);
             label7.TabIndex = 2;
