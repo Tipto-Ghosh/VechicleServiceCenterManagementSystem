@@ -475,15 +475,16 @@
             // 
             // pictureBox19
             // 
-            pictureBox19.Dock = DockStyle.Left;
-            pictureBox19.Image = Properties.Resources.icons8_back_100;
-            pictureBox19.Location = new Point(0, 0);
+            pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
+            pictureBox19.Location = new Point(0, 9);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(39, 55);
+            pictureBox19.Size = new Size(39, 37);
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 4;
             pictureBox19.TabStop = false;
             pictureBox19.Click += pictureBox19_Click;
+            pictureBox19.MouseLeave += pictureBox19_MouseLeave;
+            pictureBox19.MouseHover += pictureBox19_MouseEnter;
             // 
             // MainTable
             // 

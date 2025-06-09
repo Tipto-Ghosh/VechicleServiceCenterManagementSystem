@@ -163,6 +163,16 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_customer_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-customer-64", resourceCulture);

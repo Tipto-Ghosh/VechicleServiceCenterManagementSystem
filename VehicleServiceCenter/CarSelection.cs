@@ -22,6 +22,11 @@ namespace VehicleServiceCenter
 
         }
 
-        
+        private void brandOnePictureBox_Click(object sender, EventArgs e)
+        {
+            ToyotaForm newForm = new ToyotaForm();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

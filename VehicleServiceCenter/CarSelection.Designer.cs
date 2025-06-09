@@ -405,6 +405,7 @@
             brandOnePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             brandOnePictureBox.TabIndex = 0;
             brandOnePictureBox.TabStop = false;
+            brandOnePictureBox.Click += brandOnePictureBox_Click;
             // 
             // selectionInstructionPanel
             // 
