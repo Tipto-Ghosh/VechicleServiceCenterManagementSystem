@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace VehicleServiceCenter
 {
-    public partial class CarSelection : Form
+    public partial class ToyotaForm : Form
     {
-        public CarSelection()
+        public ToyotaForm()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox19_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            CarSelection newForm = new CarSelection();
+            newForm.Show();
         }
-
-        
     }
 }

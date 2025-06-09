@@ -124,6 +124,9 @@
   <data name="wadawdwad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wadawdwad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pngwing1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngwing.com (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="64f1c1f57a06d26739d38ef7_How to Change Oil in Your Car-p-1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\64f1c1f57a06d26739d38ef7_How to Change Oil in Your Car-p-1600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,20 +151,20 @@
   <data name="64f1c1f57a06d26739d38ef7_How to Change Oil in Your Cdwadwar-p-1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\64f1c1f57a06d26739d38ef7_How to Change Oil in Your Cdwadwar-p-1600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dwadwadaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dwadwadaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="64f1c1f57a06d26il in Your Car-p-1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\64f1c1f57a06d26il in Your Car-p-1600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-sign-out-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-sign-out-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wafwaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wafwaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="64f1c1f57a06d26739d38ef7_How to Change Oil in Your Carwadadwdawdwa-p-1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\64f1c1f57a06d26739d38ef7_How to Change Oil in Your Carwadadwdawdwa-p-1600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wafwaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wafwaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dwadwadaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dwadwadaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-back-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-back-1001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +172,10 @@
   <data name="icons8-email-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-email-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngwing1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngwing.com (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngwing.com (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngwing.com (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPN_HLX_010040LG25B228870GR_comp_004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SPN_HLX_010040LG25B228870GR_comp_004.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
