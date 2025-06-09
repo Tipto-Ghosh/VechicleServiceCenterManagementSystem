@@ -143,9 +143,39 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_email_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-email-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_scroll_down_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-scroll-down-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sign_out_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sign-out-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

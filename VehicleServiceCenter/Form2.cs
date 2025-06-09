@@ -15,6 +15,7 @@ namespace VehicleServiceCenter
         public Form2()
         {
             InitializeComponent();
+            SetLabelText();
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
@@ -47,5 +48,17 @@ namespace VehicleServiceCenter
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void SetLabelText()
+        {
+            label5.Text = "408/1 (Old KA 66/1), Kuratoli,\t Khilkhet, Dhaka 1229, Bangladesh";
+            label5.AutoSize = false;
+            label5.Size = new Size(200, 60);
+        }
+
+        }
     }
-}

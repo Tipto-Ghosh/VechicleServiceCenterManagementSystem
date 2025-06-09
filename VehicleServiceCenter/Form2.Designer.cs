@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             panel1 = new Panel();
+            panel2 = new Panel();
+            pictureBox18 = new PictureBox();
+            pictureBox17 = new PictureBox();
+            label4 = new Label();
+            label2 = new Label();
+            label5 = new Label();
+            label3 = new Label();
+            label1 = new Label();
             tblShop = new TableLayoutPanel();
             tblSmallRepair = new TableLayoutPanel();
             pictureBox6 = new PictureBox();
@@ -53,7 +61,16 @@
             pictureBox14 = new PictureBox();
             pictureBox13 = new PictureBox();
             PanelProfile = new Panel();
+            pictureBox19 = new PictureBox();
+            pictureBox20 = new PictureBox();
+            label6 = new Label();
+            pictureBox21 = new PictureBox();
+            label7 = new Label();
+            pictureBox22 = new PictureBox();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             tblShop.SuspendLayout();
             tblSmallRepair.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -76,20 +93,127 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            PanelProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.AutoScrollMinSize = new Size(0, 2000);
+            panel1.AutoScrollMinSize = new Size(0, 1680);
             panel1.BackColor = Color.FromArgb(18, 18, 18);
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(tblShop);
             panel1.Location = new Point(0, 55);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1008, 489);
+            panel1.Size = new Size(1008, 484);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(pictureBox18);
+            panel2.Controls.Add(pictureBox17);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(label1);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 1489);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(991, 191);
+            panel2.TabIndex = 1;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.BackColor = Color.Transparent;
+            pictureBox18.Image = (Image)resources.GetObject("pictureBox18.Image");
+            pictureBox18.Location = new Point(12, 125);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(27, 27);
+            pictureBox18.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox18.TabIndex = 1;
+            pictureBox18.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.BackColor = Color.Transparent;
+            pictureBox17.Image = Properties.Resources.icons8_email_100;
+            pictureBox17.Location = new Point(12, 43);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(27, 27);
+            pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox17.TabIndex = 1;
+            pictureBox17.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Poppins Light", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Silver;
+            label4.Location = new Point(46, 88);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 22);
+            label4.TabIndex = 0;
+            label4.Text = "visit us";
+            label4.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Poppins Light", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Silver;
+            label2.Location = new Point(45, 32);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 22);
+            label2.TabIndex = 0;
+            label2.Text = "e-mail us";
+            label2.Click += label1_Click;
+            // 
+            // label5
+            // 
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Poppins Light", 11F);
+            label5.ForeColor = Color.WhiteSmoke;
+            label5.Location = new Point(46, 110);
+            label5.Name = "label5";
+            label5.Size = new Size(859, 81);
+            label5.TabIndex = 0;
+            label5.Text = "AddressTExt";
+            label5.Click += label1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Poppins Light", 11F);
+            label3.ForeColor = Color.WhiteSmoke;
+            label3.Location = new Point(45, 54);
+            label3.Name = "label3";
+            label3.Size = new Size(161, 26);
+            label3.TabIndex = 0;
+            label3.Text = "abc12@outlook,com";
+            label3.Click += label1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Poppins Light", 14F);
+            label1.ForeColor = Color.WhiteSmoke;
+            label1.Location = new Point(44, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 34);
+            label1.TabIndex = 0;
+            label1.Text = "Contact";
+            label1.Click += label1_Click;
             // 
             // tblShop
             // 
@@ -107,9 +231,9 @@
             tblShop.Name = "tblShop";
             tblShop.RowCount = 5;
             tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 269F));
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 201F));
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 439F));
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 63F));
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 210F));
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 452F));
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 41F));
             tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 209F));
             tblShop.Size = new Size(991, 1489);
             tblShop.TabIndex = 0;
@@ -135,7 +259,7 @@
             tblSmallRepair.Padding = new Padding(3);
             tblSmallRepair.RowCount = 1;
             tblSmallRepair.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tblSmallRepair.Size = new Size(991, 201);
+            tblSmallRepair.Size = new Size(991, 204);
             tblSmallRepair.TabIndex = 1;
             // 
             // pictureBox6
@@ -267,10 +391,10 @@
             // 
             pictureBox12.Dock = DockStyle.Top;
             pictureBox12.Image = Properties.Resources.icons8_scroll_down_100;
-            pictureBox12.Location = new Point(0, 909);
+            pictureBox12.Location = new Point(0, 931);
             pictureBox12.Margin = new Padding(0);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(991, 48);
+            pictureBox12.Size = new Size(991, 41);
             pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox12.TabIndex = 3;
             pictureBox12.TabStop = false;
@@ -279,9 +403,9 @@
             // 
             pictureBox11.Dock = DockStyle.Top;
             pictureBox11.Image = Properties.Resources.wafwaf;
-            pictureBox11.Location = new Point(3, 473);
+            pictureBox11.Location = new Point(3, 482);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(985, 433);
+            pictureBox11.Size = new Size(985, 440);
             pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox11.TabIndex = 2;
             pictureBox11.TabStop = false;
@@ -383,11 +507,83 @@
             // 
             PanelProfile.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
+            PanelProfile.Controls.Add(pictureBox22);
+            PanelProfile.Controls.Add(pictureBox21);
+            PanelProfile.Controls.Add(label7);
+            PanelProfile.Controls.Add(label6);
+            PanelProfile.Controls.Add(pictureBox20);
+            PanelProfile.Controls.Add(pictureBox19);
             PanelProfile.Location = new Point(0, 0);
             PanelProfile.Margin = new Padding(0);
             PanelProfile.Name = "PanelProfile";
             PanelProfile.Size = new Size(1008, 55);
             PanelProfile.TabIndex = 1;
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.Dock = DockStyle.Left;
+            pictureBox19.Image = Properties.Resources.icons8_back_100;
+            pictureBox19.Location = new Point(0, 0);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(39, 55);
+            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox19.TabIndex = 0;
+            pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.Dock = DockStyle.Right;
+            pictureBox20.Image = Properties.Resources.icons8_sign_out_50;
+            pictureBox20.Location = new Point(977, 0);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(31, 55);
+            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox20.TabIndex = 1;
+            pictureBox20.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.WhiteSmoke;
+            label6.Location = new Point(812, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(102, 28);
+            label6.TabIndex = 2;
+            label6.Text = "FULL NAME";
+            // 
+            // pictureBox21
+            // 
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
+            pictureBox21.Location = new Point(775, 0);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(31, 55);
+            pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox21.TabIndex = 3;
+            pictureBox21.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.Gainsboro;
+            label7.Location = new Point(812, 27);
+            label7.Name = "label7";
+            label7.Size = new Size(72, 22);
+            label7.TabIndex = 2;
+            label7.Text = "CUSTOMER";
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
+            pictureBox22.Location = new Point(474, 0);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(57, 55);
+            pictureBox22.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox22.TabIndex = 3;
+            pictureBox22.TabStop = false;
             // 
             // Form2
             // 
@@ -400,6 +596,10 @@
             Name = "Form2";
             Text = "Form2";
             panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             tblShop.ResumeLayout(false);
             tblSmallRepair.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -422,6 +622,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            PanelProfile.ResumeLayout(false);
+            PanelProfile.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ResumeLayout(false);
         }
 
@@ -451,5 +657,19 @@
         private PictureBox pictureBox16;
         private PictureBox pictureBox14;
         private PictureBox pictureBox13;
+        private Panel panel2;
+        private Label label1;
+        private PictureBox pictureBox18;
+        private PictureBox pictureBox17;
+        private Label label4;
+        private Label label2;
+        private Label label3;
+        private Label label5;
+        private PictureBox pictureBox19;
+        private PictureBox pictureBox22;
+        private PictureBox pictureBox21;
+        private Label label7;
+        private Label label6;
+        private PictureBox pictureBox20;
     }
 }
