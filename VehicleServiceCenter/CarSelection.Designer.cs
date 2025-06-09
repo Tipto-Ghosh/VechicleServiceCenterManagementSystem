@@ -28,339 +28,185 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarSelection));
-            MainTable = new TableLayoutPanel();
-            PanelProfile = new Panel();
-            pictureBox22 = new PictureBox();
-            pictureBox21 = new PictureBox();
-            label7 = new Label();
-            label6 = new Label();
-            pictureBox20 = new PictureBox();
-            Table2Brands = new TableLayoutPanel();
-            panel11 = new Panel();
-            panel12 = new Panel();
-            label1 = new Label();
-            panel9 = new Panel();
-            panel10 = new Panel();
-            pictureBox4 = new PictureBox();
-            panel7 = new Panel();
-            panel8 = new Panel();
-            pictureBox5 = new PictureBox();
-            panel5 = new Panel();
-            panel6 = new Panel();
-            pictureBox3 = new PictureBox();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            pictureBox2 = new PictureBox();
+            mainTableLayout = new TableLayoutPanel();
+            profilePanel = new Panel();
+            settingsPictureBox = new PictureBox();
+            notificationPictureBox = new PictureBox();
+            customerTypeLabel = new Label();
+            fullNameLabel = new Label();
+            signOutPictureBox = new PictureBox();
+            brandsTableLayout = new TableLayoutPanel();
             panel1 = new Panel();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
-            panel13 = new Panel();
-            label2 = new Label();
-            MainTable.SuspendLayout();
-            PanelProfile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            Table2Brands.SuspendLayout();
-            panel11.SuspendLayout();
-            panel12.SuspendLayout();
-            panel9.SuspendLayout();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel7.SuspendLayout();
-            panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel5.SuspendLayout();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            otherBrandPanelContainer = new Panel();
+            otherBrandPanel = new Panel();
+            otherBrandLabel = new Label();
+            brandFourPanelContainer = new Panel();
+            brandFourPanel = new Panel();
+            pictureBox2 = new PictureBox();
+            brandFourPictureBox = new PictureBox();
+            brandThreePanelContainer = new Panel();
+            brandThreePanel = new Panel();
+            pictureBox3 = new PictureBox();
+            brandThreePictureBox = new PictureBox();
+            brandTwoPanelContainer = new Panel();
+            brandTwoPanel = new Panel();
+            brandTwoPictureBox = new PictureBox();
+            brandOnePanelContainer = new Panel();
+            brandOnePanel = new Panel();
+            brandOnePictureBox = new PictureBox();
+            selectionInstructionPanel = new Panel();
+            selectionInstructionLabel = new Label();
+            mainTableLayout.SuspendLayout();
+            profilePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)settingsPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)signOutPictureBox).BeginInit();
+            brandsTableLayout.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel13.SuspendLayout();
+            otherBrandPanelContainer.SuspendLayout();
+            otherBrandPanel.SuspendLayout();
+            brandFourPanelContainer.SuspendLayout();
+            brandFourPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)brandFourPictureBox).BeginInit();
+            brandThreePanelContainer.SuspendLayout();
+            brandThreePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)brandThreePictureBox).BeginInit();
+            brandTwoPanelContainer.SuspendLayout();
+            brandTwoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)brandTwoPictureBox).BeginInit();
+            brandOnePanelContainer.SuspendLayout();
+            brandOnePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)brandOnePictureBox).BeginInit();
+            selectionInstructionPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // MainTable
+            // mainTableLayout
             // 
-            MainTable.ColumnCount = 1;
-            MainTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            MainTable.Controls.Add(PanelProfile, 0, 0);
-            MainTable.Controls.Add(Table2Brands, 0, 1);
-            MainTable.Dock = DockStyle.Fill;
-            MainTable.Location = new Point(0, 0);
-            MainTable.Margin = new Padding(0);
-            MainTable.Name = "MainTable";
-            MainTable.RowCount = 2;
-            MainTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 55F));
-            MainTable.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            MainTable.Size = new Size(1008, 537);
-            MainTable.TabIndex = 0;
+            mainTableLayout.ColumnCount = 1;
+            mainTableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            mainTableLayout.Controls.Add(profilePanel, 0, 0);
+            mainTableLayout.Controls.Add(brandsTableLayout, 0, 1);
+            mainTableLayout.Dock = DockStyle.Fill;
+            mainTableLayout.Location = new Point(0, 0);
+            mainTableLayout.Margin = new Padding(0);
+            mainTableLayout.Name = "mainTableLayout";
+            mainTableLayout.RowCount = 2;
+            mainTableLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 55F));
+            mainTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            mainTableLayout.Size = new Size(1008, 537);
+            mainTableLayout.TabIndex = 0;
             // 
-            // PanelProfile
+            // profilePanel
             // 
-            PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
-            PanelProfile.Controls.Add(pictureBox22);
-            PanelProfile.Controls.Add(pictureBox21);
-            PanelProfile.Controls.Add(label7);
-            PanelProfile.Controls.Add(label6);
-            PanelProfile.Controls.Add(pictureBox20);
-            PanelProfile.Dock = DockStyle.Top;
-            PanelProfile.Location = new Point(0, 0);
-            PanelProfile.Margin = new Padding(0);
-            PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(1008, 55);
-            PanelProfile.TabIndex = 3;
+            profilePanel.BackColor = Color.FromArgb(38, 38, 38);
+            profilePanel.Controls.Add(settingsPictureBox);
+            profilePanel.Controls.Add(notificationPictureBox);
+            profilePanel.Controls.Add(customerTypeLabel);
+            profilePanel.Controls.Add(fullNameLabel);
+            profilePanel.Controls.Add(signOutPictureBox);
+            profilePanel.Dock = DockStyle.Top;
+            profilePanel.Location = new Point(0, 0);
+            profilePanel.Margin = new Padding(0);
+            profilePanel.Name = "profilePanel";
+            profilePanel.Size = new Size(1008, 55);
+            profilePanel.TabIndex = 3;
             // 
-            // pictureBox22
+            // settingsPictureBox
             // 
-            pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
-            pictureBox22.Location = new Point(474, 0);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(57, 55);
-            pictureBox22.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox22.TabIndex = 3;
-            pictureBox22.TabStop = false;
+            settingsPictureBox.Image = Properties.Resources.car_maintenance_17073141;
+            settingsPictureBox.Location = new Point(474, 0);
+            settingsPictureBox.Name = "settingsPictureBox";
+            settingsPictureBox.Size = new Size(57, 55);
+            settingsPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            settingsPictureBox.TabIndex = 3;
+            settingsPictureBox.TabStop = false;
             // 
-            // pictureBox21
+            // notificationPictureBox
             // 
-            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(775, 0);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(31, 55);
-            pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox21.TabIndex = 3;
-            pictureBox21.TabStop = false;
+            notificationPictureBox.Image = Properties.Resources.icons8_customer_64;
+            notificationPictureBox.Location = new Point(775, 0);
+            notificationPictureBox.Name = "notificationPictureBox";
+            notificationPictureBox.Size = new Size(31, 55);
+            notificationPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            notificationPictureBox.TabIndex = 3;
+            notificationPictureBox.TabStop = false;
             // 
-            // label7
+            // customerTypeLabel
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(812, 30);
-            label7.Name = "label7";
-            label7.Size = new Size(72, 22);
-            label7.TabIndex = 2;
-            label7.Text = "CUSTOMER";
+            customerTypeLabel.AutoSize = true;
+            customerTypeLabel.BackColor = Color.Transparent;
+            customerTypeLabel.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            customerTypeLabel.ForeColor = Color.Gainsboro;
+            customerTypeLabel.Location = new Point(812, 30);
+            customerTypeLabel.Name = "customerTypeLabel";
+            customerTypeLabel.Size = new Size(72, 22);
+            customerTypeLabel.TabIndex = 2;
+            customerTypeLabel.Text = "CUSTOMER";
             // 
-            // label6
+            // fullNameLabel
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(812, 9);
-            label6.Name = "label6";
-            label6.Size = new Size(102, 28);
-            label6.TabIndex = 2;
-            label6.Text = "FULL NAME";
+            fullNameLabel.AutoSize = true;
+            fullNameLabel.BackColor = Color.Transparent;
+            fullNameLabel.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fullNameLabel.ForeColor = Color.WhiteSmoke;
+            fullNameLabel.Location = new Point(812, 9);
+            fullNameLabel.Name = "fullNameLabel";
+            fullNameLabel.Size = new Size(102, 28);
+            fullNameLabel.TabIndex = 2;
+            fullNameLabel.Text = "FULL NAME";
             // 
-            // pictureBox20
+            // signOutPictureBox
             // 
-            pictureBox20.Dock = DockStyle.Right;
-            pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
-            pictureBox20.Location = new Point(977, 0);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(31, 55);
-            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox20.TabIndex = 1;
-            pictureBox20.TabStop = false;
+            signOutPictureBox.Dock = DockStyle.Right;
+            signOutPictureBox.Image = Properties.Resources.icons8_sign_out_501;
+            signOutPictureBox.Location = new Point(977, 0);
+            signOutPictureBox.Name = "signOutPictureBox";
+            signOutPictureBox.Size = new Size(31, 55);
+            signOutPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            signOutPictureBox.TabIndex = 1;
+            signOutPictureBox.TabStop = false;
             // 
-            // Table2Brands
+            // brandsTableLayout
             // 
-            Table2Brands.BackColor = Color.FromArgb(18, 18, 18);
-            Table2Brands.ColumnCount = 3;
-            Table2Brands.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            Table2Brands.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            Table2Brands.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            Table2Brands.Controls.Add(panel11, 2, 1);
-            Table2Brands.Controls.Add(panel9, 1, 1);
-            Table2Brands.Controls.Add(panel7, 0, 1);
-            Table2Brands.Controls.Add(panel5, 2, 0);
-            Table2Brands.Controls.Add(panel3, 1, 0);
-            Table2Brands.Controls.Add(panel1, 0, 0);
-            Table2Brands.Controls.Add(panel13, 1, 2);
-            Table2Brands.Dock = DockStyle.Fill;
-            Table2Brands.Location = new Point(0, 55);
-            Table2Brands.Margin = new Padding(0);
-            Table2Brands.Name = "Table2Brands";
-            Table2Brands.RowCount = 3;
-            Table2Brands.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            Table2Brands.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            Table2Brands.RowStyles.Add(new RowStyle(SizeType.Absolute, 42F));
-            Table2Brands.Size = new Size(1008, 482);
-            Table2Brands.TabIndex = 4;
-            // 
-            // panel11
-            // 
-            panel11.Controls.Add(panel12);
-            panel11.Dock = DockStyle.Fill;
-            panel11.Location = new Point(672, 220);
-            panel11.Margin = new Padding(0);
-            panel11.Name = "panel11";
-            panel11.Padding = new Padding(25);
-            panel11.Size = new Size(336, 220);
-            panel11.TabIndex = 5;
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(68, 68, 68);
-            panel12.Controls.Add(label1);
-            panel12.Dock = DockStyle.Fill;
-            panel12.Location = new Point(25, 25);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(286, 170);
-            panel12.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(68, 66);
-            label1.Name = "label1";
-            label1.Size = new Size(149, 65);
-            label1.TabIndex = 0;
-            label1.Text = "OTHER";
-            label1.Click += label1_Click;
-            // 
-            // panel9
-            // 
-            panel9.Controls.Add(panel10);
-            panel9.Dock = DockStyle.Fill;
-            panel9.Location = new Point(336, 220);
-            panel9.Margin = new Padding(0);
-            panel9.Name = "panel9";
-            panel9.Padding = new Padding(25);
-            panel9.Size = new Size(336, 220);
-            panel9.TabIndex = 4;
-            // 
-            // panel10
-            // 
-            panel10.BackColor = Color.FromArgb(68, 68, 68);
-            panel10.Controls.Add(pictureBox4);
-            panel10.Dock = DockStyle.Fill;
-            panel10.Location = new Point(25, 25);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(286, 170);
-            panel10.TabIndex = 0;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(0, -7);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(285, 178);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 1;
-            pictureBox4.TabStop = false;
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(panel8);
-            panel7.Dock = DockStyle.Fill;
-            panel7.Location = new Point(0, 220);
-            panel7.Margin = new Padding(0);
-            panel7.Name = "panel7";
-            panel7.Padding = new Padding(25);
-            panel7.Size = new Size(336, 220);
-            panel7.TabIndex = 3;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.FromArgb(68, 68, 68);
-            panel8.Controls.Add(pictureBox5);
-            panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(25, 25);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(286, 170);
-            panel8.TabIndex = 0;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(22, 12);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(236, 142);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 1;
-            pictureBox5.TabStop = false;
-            // 
-            // panel5
-            // 
-            panel5.Controls.Add(panel6);
-            panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(672, 0);
-            panel5.Margin = new Padding(0);
-            panel5.Name = "panel5";
-            panel5.Padding = new Padding(25);
-            panel5.Size = new Size(336, 220);
-            panel5.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(68, 68, 68);
-            panel6.Controls.Add(pictureBox3);
-            panel6.Dock = DockStyle.Fill;
-            panel6.Location = new Point(25, 25);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(286, 170);
-            panel6.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.pngwing_com__1_;
-            pictureBox3.Location = new Point(47, 15);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(195, 144);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 1;
-            pictureBox3.TabStop = false;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(panel4);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(336, 0);
-            panel3.Margin = new Padding(0);
-            panel3.Name = "panel3";
-            panel3.Padding = new Padding(25);
-            panel3.Size = new Size(336, 220);
-            panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(68, 68, 68);
-            panel4.Controls.Add(pictureBox2);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(25, 25);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(286, 170);
-            panel4.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(26, 8);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(236, 155);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            brandsTableLayout.BackColor = Color.FromArgb(18, 18, 18);
+            brandsTableLayout.ColumnCount = 3;
+            brandsTableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            brandsTableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            brandsTableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            brandsTableLayout.Controls.Add(panel1, 2, 0);
+            brandsTableLayout.Controls.Add(otherBrandPanelContainer, 2, 1);
+            brandsTableLayout.Controls.Add(brandFourPanelContainer, 1, 1);
+            brandsTableLayout.Controls.Add(brandThreePanelContainer, 0, 1);
+            brandsTableLayout.Controls.Add(brandTwoPanelContainer, 1, 0);
+            brandsTableLayout.Controls.Add(brandOnePanelContainer, 0, 0);
+            brandsTableLayout.Controls.Add(selectionInstructionPanel, 1, 2);
+            brandsTableLayout.Dock = DockStyle.Fill;
+            brandsTableLayout.Location = new Point(0, 55);
+            brandsTableLayout.Margin = new Padding(0);
+            brandsTableLayout.Name = "brandsTableLayout";
+            brandsTableLayout.RowCount = 3;
+            brandsTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            brandsTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            brandsTableLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 42F));
+            brandsTableLayout.Size = new Size(1008, 482);
+            brandsTableLayout.TabIndex = 4;
             // 
             // panel1
             // 
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(672, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(25);
             panel1.Size = new Size(336, 220);
-            panel1.TabIndex = 0;
+            panel1.TabIndex = 7;
             // 
             // panel2
             // 
@@ -374,102 +220,283 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.pngwing1;
-            pictureBox1.Location = new Point(-5, 17);
+            pictureBox1.Image = Properties.Resources.pngwing_com__4_;
+            pictureBox1.Location = new Point(47, 15);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(301, 183);
+            pictureBox1.Size = new Size(195, 144);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
+            pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // panel13
+            // otherBrandPanelContainer
             // 
-            panel13.Controls.Add(label2);
-            panel13.Dock = DockStyle.Fill;
-            panel13.Location = new Point(339, 443);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(330, 36);
-            panel13.TabIndex = 6;
+            otherBrandPanelContainer.Controls.Add(otherBrandPanel);
+            otherBrandPanelContainer.Dock = DockStyle.Fill;
+            otherBrandPanelContainer.Location = new Point(672, 220);
+            otherBrandPanelContainer.Margin = new Padding(0);
+            otherBrandPanelContainer.Name = "otherBrandPanelContainer";
+            otherBrandPanelContainer.Padding = new Padding(25);
+            otherBrandPanelContainer.Size = new Size(336, 220);
+            otherBrandPanelContainer.TabIndex = 5;
             // 
-            // label2
+            // otherBrandPanel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Poppins Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(85, 4);
-            label2.Name = "label2";
-            label2.Size = new Size(190, 26);
-            label2.TabIndex = 1;
-            label2.Text = "SELECT YOUR CAR BRAND";
+            otherBrandPanel.BackColor = Color.FromArgb(68, 68, 68);
+            otherBrandPanel.Controls.Add(otherBrandLabel);
+            otherBrandPanel.Dock = DockStyle.Fill;
+            otherBrandPanel.Location = new Point(25, 25);
+            otherBrandPanel.Name = "otherBrandPanel";
+            otherBrandPanel.Size = new Size(286, 170);
+            otherBrandPanel.TabIndex = 0;
+            // 
+            // otherBrandLabel
+            // 
+            otherBrandLabel.AutoSize = true;
+            otherBrandLabel.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            otherBrandLabel.ForeColor = SystemColors.Control;
+            otherBrandLabel.Location = new Point(68, 66);
+            otherBrandLabel.Name = "otherBrandLabel";
+            otherBrandLabel.Size = new Size(149, 65);
+            otherBrandLabel.TabIndex = 0;
+            otherBrandLabel.Text = "OTHER";
+            otherBrandLabel.Click += label1_Click;
+            // 
+            // brandFourPanelContainer
+            // 
+            brandFourPanelContainer.Controls.Add(brandFourPanel);
+            brandFourPanelContainer.Dock = DockStyle.Fill;
+            brandFourPanelContainer.Location = new Point(336, 220);
+            brandFourPanelContainer.Margin = new Padding(0);
+            brandFourPanelContainer.Name = "brandFourPanelContainer";
+            brandFourPanelContainer.Padding = new Padding(25);
+            brandFourPanelContainer.Size = new Size(336, 220);
+            brandFourPanelContainer.TabIndex = 4;
+            // 
+            // brandFourPanel
+            // 
+            brandFourPanel.BackColor = Color.FromArgb(68, 68, 68);
+            brandFourPanel.Controls.Add(pictureBox2);
+            brandFourPanel.Controls.Add(brandFourPictureBox);
+            brandFourPanel.Dock = DockStyle.Fill;
+            brandFourPanel.Location = new Point(25, 25);
+            brandFourPanel.Name = "brandFourPanel";
+            brandFourPanel.Size = new Size(286, 170);
+            brandFourPanel.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.pngwing_com__2_;
+            pictureBox2.Location = new Point(46, 13);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(195, 144);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // brandFourPictureBox
+            // 
+            brandFourPictureBox.Location = new Point(0, -7);
+            brandFourPictureBox.Name = "brandFourPictureBox";
+            brandFourPictureBox.Size = new Size(285, 178);
+            brandFourPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            brandFourPictureBox.TabIndex = 1;
+            brandFourPictureBox.TabStop = false;
+            // 
+            // brandThreePanelContainer
+            // 
+            brandThreePanelContainer.Controls.Add(brandThreePanel);
+            brandThreePanelContainer.Dock = DockStyle.Fill;
+            brandThreePanelContainer.Location = new Point(0, 220);
+            brandThreePanelContainer.Margin = new Padding(0);
+            brandThreePanelContainer.Name = "brandThreePanelContainer";
+            brandThreePanelContainer.Padding = new Padding(25);
+            brandThreePanelContainer.Size = new Size(336, 220);
+            brandThreePanelContainer.TabIndex = 3;
+            // 
+            // brandThreePanel
+            // 
+            brandThreePanel.BackColor = Color.FromArgb(68, 68, 68);
+            brandThreePanel.Controls.Add(pictureBox3);
+            brandThreePanel.Controls.Add(brandThreePictureBox);
+            brandThreePanel.Dock = DockStyle.Fill;
+            brandThreePanel.Location = new Point(25, 25);
+            brandThreePanel.Name = "brandThreePanel";
+            brandThreePanel.Size = new Size(286, 170);
+            brandThreePanel.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.pngwing_com__5_;
+            pictureBox3.Location = new Point(46, 13);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(195, 144);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            // 
+            // brandThreePictureBox
+            // 
+            brandThreePictureBox.Location = new Point(22, 12);
+            brandThreePictureBox.Name = "brandThreePictureBox";
+            brandThreePictureBox.Size = new Size(236, 142);
+            brandThreePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            brandThreePictureBox.TabIndex = 1;
+            brandThreePictureBox.TabStop = false;
+            // 
+            // brandTwoPanelContainer
+            // 
+            brandTwoPanelContainer.Controls.Add(brandTwoPanel);
+            brandTwoPanelContainer.Dock = DockStyle.Fill;
+            brandTwoPanelContainer.Location = new Point(336, 0);
+            brandTwoPanelContainer.Margin = new Padding(0);
+            brandTwoPanelContainer.Name = "brandTwoPanelContainer";
+            brandTwoPanelContainer.Padding = new Padding(25);
+            brandTwoPanelContainer.Size = new Size(336, 220);
+            brandTwoPanelContainer.TabIndex = 2;
+            // 
+            // brandTwoPanel
+            // 
+            brandTwoPanel.BackColor = Color.FromArgb(68, 68, 68);
+            brandTwoPanel.Controls.Add(brandTwoPictureBox);
+            brandTwoPanel.Dock = DockStyle.Fill;
+            brandTwoPanel.Location = new Point(25, 25);
+            brandTwoPanel.Name = "brandTwoPanel";
+            brandTwoPanel.Size = new Size(286, 170);
+            brandTwoPanel.TabIndex = 0;
+            // 
+            // brandTwoPictureBox
+            // 
+            brandTwoPictureBox.Image = Properties.Resources.pngwing_com__1_;
+            brandTwoPictureBox.Location = new Point(47, 15);
+            brandTwoPictureBox.Name = "brandTwoPictureBox";
+            brandTwoPictureBox.Size = new Size(195, 144);
+            brandTwoPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            brandTwoPictureBox.TabIndex = 1;
+            brandTwoPictureBox.TabStop = false;
+            // 
+            // brandOnePanelContainer
+            // 
+            brandOnePanelContainer.Controls.Add(brandOnePanel);
+            brandOnePanelContainer.Dock = DockStyle.Fill;
+            brandOnePanelContainer.Location = new Point(0, 0);
+            brandOnePanelContainer.Margin = new Padding(0);
+            brandOnePanelContainer.Name = "brandOnePanelContainer";
+            brandOnePanelContainer.Padding = new Padding(25);
+            brandOnePanelContainer.Size = new Size(336, 220);
+            brandOnePanelContainer.TabIndex = 0;
+            // 
+            // brandOnePanel
+            // 
+            brandOnePanel.BackColor = Color.FromArgb(68, 68, 68);
+            brandOnePanel.Controls.Add(brandOnePictureBox);
+            brandOnePanel.Dock = DockStyle.Fill;
+            brandOnePanel.Location = new Point(25, 25);
+            brandOnePanel.Name = "brandOnePanel";
+            brandOnePanel.Size = new Size(286, 170);
+            brandOnePanel.TabIndex = 0;
+            // 
+            // brandOnePictureBox
+            // 
+            brandOnePictureBox.BackColor = Color.Transparent;
+            brandOnePictureBox.Image = Properties.Resources.pngwing1;
+            brandOnePictureBox.Location = new Point(-5, 17);
+            brandOnePictureBox.Name = "brandOnePictureBox";
+            brandOnePictureBox.Size = new Size(301, 183);
+            brandOnePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            brandOnePictureBox.TabIndex = 0;
+            brandOnePictureBox.TabStop = false;
+            // 
+            // selectionInstructionPanel
+            // 
+            selectionInstructionPanel.Controls.Add(selectionInstructionLabel);
+            selectionInstructionPanel.Dock = DockStyle.Fill;
+            selectionInstructionPanel.Location = new Point(339, 443);
+            selectionInstructionPanel.Name = "selectionInstructionPanel";
+            selectionInstructionPanel.Size = new Size(330, 36);
+            selectionInstructionPanel.TabIndex = 6;
+            // 
+            // selectionInstructionLabel
+            // 
+            selectionInstructionLabel.AutoSize = true;
+            selectionInstructionLabel.Font = new Font("Poppins Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            selectionInstructionLabel.ForeColor = SystemColors.Control;
+            selectionInstructionLabel.Location = new Point(85, 4);
+            selectionInstructionLabel.Name = "selectionInstructionLabel";
+            selectionInstructionLabel.Size = new Size(190, 26);
+            selectionInstructionLabel.TabIndex = 1;
+            selectionInstructionLabel.Text = "SELECT YOUR CAR BRAND";
             // 
             // CarSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 537);
-            Controls.Add(MainTable);
+            Controls.Add(mainTableLayout);
             Name = "CarSelection";
             Text = "CarSelection";
-            MainTable.ResumeLayout(false);
-            PanelProfile.ResumeLayout(false);
-            PanelProfile.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            Table2Brands.ResumeLayout(false);
-            panel11.ResumeLayout(false);
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            panel9.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            panel7.ResumeLayout(false);
-            panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel5.ResumeLayout(false);
-            panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel3.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            mainTableLayout.ResumeLayout(false);
+            profilePanel.ResumeLayout(false);
+            profilePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)settingsPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)notificationPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)signOutPictureBox).EndInit();
+            brandsTableLayout.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
+            otherBrandPanelContainer.ResumeLayout(false);
+            otherBrandPanel.ResumeLayout(false);
+            otherBrandPanel.PerformLayout();
+            brandFourPanelContainer.ResumeLayout(false);
+            brandFourPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)brandFourPictureBox).EndInit();
+            brandThreePanelContainer.ResumeLayout(false);
+            brandThreePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)brandThreePictureBox).EndInit();
+            brandTwoPanelContainer.ResumeLayout(false);
+            brandTwoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)brandTwoPictureBox).EndInit();
+            brandOnePanelContainer.ResumeLayout(false);
+            brandOnePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)brandOnePictureBox).EndInit();
+            selectionInstructionPanel.ResumeLayout(false);
+            selectionInstructionPanel.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private TableLayoutPanel MainTable;
-        private Panel PanelProfile;
-        private PictureBox pictureBox22;
-        private PictureBox pictureBox21;
-        private Label label7;
-        private Label label6;
-        private PictureBox pictureBox20;
-        private TableLayoutPanel Table2Brands;
-        private Panel panel11;
-        private Panel panel12;
-        private Panel panel9;
-        private Panel panel10;
-        private Panel panel7;
-        private Panel panel8;
-        private Panel panel5;
-        private Panel panel6;
-        private Panel panel3;
-        private Panel panel4;
+        private TableLayoutPanel mainTableLayout;
+        private Panel profilePanel;
+        private PictureBox settingsPictureBox;
+        private PictureBox notificationPictureBox;
+        private Label customerTypeLabel;
+        private Label fullNameLabel;
+        private PictureBox signOutPictureBox;
+        private TableLayoutPanel brandsTableLayout;
+        private Panel otherBrandPanelContainer;
+        private Panel otherBrandPanel;
+        private Panel brandFourPanelContainer;
+        private Panel brandFourPanel;
+        private Panel brandThreePanelContainer;
+        private Panel brandThreePanel;
+        private Panel brandTwoPanelContainer; // Corrected usage for brand two
+        private Panel brandTwoPanel; // Corrected usage for brand two
+        private Panel brandOnePanelContainer;
+        private Panel brandOnePanel;
+        private PictureBox brandOnePictureBox;
+        private Label otherBrandLabel;
+        private PictureBox brandFourPictureBox;
+        private PictureBox brandThreePictureBox;
+        private PictureBox brandTwoPictureBox; // Corrected usage for brand two
+        private Panel selectionInstructionPanel;
+        private Label selectionInstructionLabel;
         private Panel panel1;
         private Panel panel2;
         private PictureBox pictureBox1;
-        private Label label1;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private Panel panel13;
-        private Label label2;
+        private PictureBox pictureBox3;
     }
 }

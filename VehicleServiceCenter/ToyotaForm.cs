@@ -19,9 +19,7 @@ namespace VehicleServiceCenter
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            this.Close();
-            CarSelection newForm = new CarSelection();
-            newForm.Show();
+            
         }
     }
 }
