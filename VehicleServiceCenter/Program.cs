@@ -64,7 +64,7 @@ namespace VehicleServiceCenter {
             AdminRepository adminRepository = new AdminRepository();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new ShopForm());
 
             //practice
             //arino's comment

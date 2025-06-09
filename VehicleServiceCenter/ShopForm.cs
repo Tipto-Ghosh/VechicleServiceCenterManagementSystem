@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VehicleServiceCenter
 {
-    public partial class Form2 : Form
+    public partial class ShopForm : Form
     {
-        public Form2()
+        public ShopForm()
         {
             InitializeComponent();
             SetLabelText();
