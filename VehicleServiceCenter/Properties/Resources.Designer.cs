@@ -281,6 +281,16 @@ namespace VehicleServiceCenter.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing2 {
+            get {
+                object obj = ResourceManager.GetObject("pngwing2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] SPN_HLX_010040LG25B228870GR_comp_004 {

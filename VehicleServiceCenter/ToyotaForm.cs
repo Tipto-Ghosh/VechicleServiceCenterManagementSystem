@@ -15,7 +15,7 @@ namespace VehicleServiceCenter
         public ToyotaForm()
         {
             InitializeComponent();
-            
+
         }
         private void pictureBox19_MouseEnter(object sender, EventArgs e)
         {
@@ -24,18 +24,18 @@ namespace VehicleServiceCenter
 
         private void pictureBox19_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox19.BackColor = Color.Transparent; 
+            pictureBox19.BackColor = Color.Transparent;
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            
+
 
 
             CarSelection newForm = new CarSelection();
             newForm.Show();
 
-            
+
             this.Hide();
         }
 
@@ -44,7 +44,23 @@ namespace VehicleServiceCenter
         {
 
         }
-        
+        private void pictureBox_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void pictureBox_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+
 
     }
 }

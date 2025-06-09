@@ -113,6 +113,8 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.MouseEnter += pictureBox_MouseEnter;
+            pictureBox1.MouseLeave += pictureBox_MouseLeave;
             // 
             // panel2
             // 
@@ -151,12 +153,14 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(9, 2);
+            pictureBox2.Location = new Point(0, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(272, 171);
+            pictureBox2.Size = new Size(286, 171);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.MouseEnter += pictureBox_MouseEnter;
+            pictureBox2.MouseLeave += pictureBox_MouseLeave;
             // 
             // panel4
             // 
@@ -195,12 +199,14 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(15, 0);
+            pictureBox3.Location = new Point(-7, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(256, 160);
+            pictureBox3.Size = new Size(296, 170);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
+            pictureBox3.MouseEnter += pictureBox_MouseEnter;
+            pictureBox3.MouseLeave += pictureBox_MouseLeave;
             // 
             // panel6
             // 
@@ -245,6 +251,8 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
+            pictureBox5.MouseEnter += pictureBox_MouseEnter;
+            pictureBox5.MouseLeave += pictureBox_MouseLeave;
             // 
             // panel8
             // 
@@ -283,12 +291,14 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(7, -5);
+            pictureBox4.Location = new Point(0, 0);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(270, 163);
+            pictureBox4.Size = new Size(286, 170);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
+            pictureBox4.MouseEnter += pictureBox_MouseEnter;
+            pictureBox4.MouseLeave += pictureBox_MouseLeave;
             // 
             // panel10
             // 
@@ -350,12 +360,14 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(2, -21);
+            pictureBox6.Location = new Point(2, -25);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(287, 178);
+            pictureBox6.Size = new Size(287, 195);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 2;
             pictureBox6.TabStop = false;
+            pictureBox6.MouseEnter += pictureBox_MouseEnter;
+            pictureBox6.MouseLeave += pictureBox_MouseLeave;
             // 
             // panel11
             // 

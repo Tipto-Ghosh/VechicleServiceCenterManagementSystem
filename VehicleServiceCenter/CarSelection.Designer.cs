@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarSelection));
             mainTableLayout = new TableLayoutPanel();
             profilePanel = new Panel();
             settingsPictureBox = new PictureBox();
@@ -49,7 +50,6 @@
             brandThreePanelContainer = new Panel();
             brandThreePanel = new Panel();
             pictureBox3 = new PictureBox();
-            brandThreePictureBox = new PictureBox();
             brandTwoPanelContainer = new Panel();
             brandTwoPanel = new Panel();
             brandTwoPictureBox = new PictureBox();
@@ -76,7 +76,6 @@
             brandThreePanelContainer.SuspendLayout();
             brandThreePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)brandThreePictureBox).BeginInit();
             brandTwoPanelContainer.SuspendLayout();
             brandTwoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)brandTwoPictureBox).BeginInit();
@@ -227,6 +226,8 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.MouseEnter += pictureBox_MouseEnter;
+            pictureBox1.MouseLeave += pictureBox_MouseLeave;
             // 
             // otherBrandPanelContainer
             // 
@@ -251,15 +252,18 @@
             // 
             // otherBrandLabel
             // 
-            otherBrandLabel.AutoSize = true;
+            otherBrandLabel.Dock = DockStyle.Fill;
             otherBrandLabel.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             otherBrandLabel.ForeColor = SystemColors.Control;
-            otherBrandLabel.Location = new Point(68, 66);
+            otherBrandLabel.Location = new Point(0, 0);
             otherBrandLabel.Name = "otherBrandLabel";
-            otherBrandLabel.Size = new Size(149, 65);
+            otherBrandLabel.Size = new Size(286, 170);
             otherBrandLabel.TabIndex = 0;
             otherBrandLabel.Text = "OTHER";
+            otherBrandLabel.TextAlign = ContentAlignment.MiddleCenter;
             otherBrandLabel.Click += label1_Click;
+            otherBrandLabel.MouseEnter += Control_MouseEnter;
+            otherBrandLabel.MouseLeave += Control_MouseLeave;
             // 
             // brandFourPanelContainer
             // 
@@ -292,6 +296,8 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            pictureBox2.MouseEnter += pictureBox_MouseEnter;
+            pictureBox2.MouseLeave += pictureBox_MouseLeave;
             // 
             // brandFourPictureBox
             // 
@@ -317,7 +323,6 @@
             // 
             brandThreePanel.BackColor = Color.FromArgb(68, 68, 68);
             brandThreePanel.Controls.Add(pictureBox3);
-            brandThreePanel.Controls.Add(brandThreePictureBox);
             brandThreePanel.Dock = DockStyle.Fill;
             brandThreePanel.Location = new Point(25, 25);
             brandThreePanel.Name = "brandThreePanel";
@@ -326,22 +331,15 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.pngwing_com__5_;
-            pictureBox3.Location = new Point(46, 13);
+            pictureBox3.Image = Properties.Resources.pngwing2;
+            pictureBox3.Location = new Point(60, 13);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(195, 144);
+            pictureBox3.Size = new Size(169, 143);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
-            // 
-            // brandThreePictureBox
-            // 
-            brandThreePictureBox.Location = new Point(22, 12);
-            brandThreePictureBox.Name = "brandThreePictureBox";
-            brandThreePictureBox.Size = new Size(236, 142);
-            brandThreePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            brandThreePictureBox.TabIndex = 1;
-            brandThreePictureBox.TabStop = false;
+            pictureBox3.MouseEnter += pictureBox_MouseEnter;
+            pictureBox3.MouseLeave += pictureBox_MouseLeave;
             // 
             // brandTwoPanelContainer
             // 
@@ -373,6 +371,8 @@
             brandTwoPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             brandTwoPictureBox.TabIndex = 1;
             brandTwoPictureBox.TabStop = false;
+            brandTwoPictureBox.MouseEnter += pictureBox_MouseEnter;
+            brandTwoPictureBox.MouseLeave += pictureBox_MouseLeave;
             // 
             // brandOnePanelContainer
             // 
@@ -398,14 +398,16 @@
             // brandOnePictureBox
             // 
             brandOnePictureBox.BackColor = Color.Transparent;
-            brandOnePictureBox.Image = Properties.Resources.pngwing1;
-            brandOnePictureBox.Location = new Point(-5, 17);
+            brandOnePictureBox.Image = (Image)resources.GetObject("brandOnePictureBox.Image");
+            brandOnePictureBox.Location = new Point(50, 20);
             brandOnePictureBox.Name = "brandOnePictureBox";
-            brandOnePictureBox.Size = new Size(301, 183);
+            brandOnePictureBox.Size = new Size(189, 128);
             brandOnePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             brandOnePictureBox.TabIndex = 0;
             brandOnePictureBox.TabStop = false;
             brandOnePictureBox.Click += brandOnePictureBox_Click;
+            brandOnePictureBox.MouseEnter += pictureBox_MouseEnter;
+            brandOnePictureBox.MouseLeave += pictureBox_MouseLeave;
             // 
             // selectionInstructionPanel
             // 
@@ -447,7 +449,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             otherBrandPanelContainer.ResumeLayout(false);
             otherBrandPanel.ResumeLayout(false);
-            otherBrandPanel.PerformLayout();
             brandFourPanelContainer.ResumeLayout(false);
             brandFourPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -455,7 +456,6 @@
             brandThreePanelContainer.ResumeLayout(false);
             brandThreePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)brandThreePictureBox).EndInit();
             brandTwoPanelContainer.ResumeLayout(false);
             brandTwoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)brandTwoPictureBox).EndInit();
@@ -490,7 +490,6 @@
         private PictureBox brandOnePictureBox;
         private Label otherBrandLabel;
         private PictureBox brandFourPictureBox;
-        private PictureBox brandThreePictureBox;
         private PictureBox brandTwoPictureBox; // Corrected usage for brand two
         private Panel selectionInstructionPanel;
         private Label selectionInstructionLabel;
