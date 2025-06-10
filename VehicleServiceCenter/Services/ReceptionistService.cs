@@ -45,6 +45,8 @@ namespace VehicleServiceCenter.Services {
             return customerRepository.DeleteCustomer(id);
         }
 
-
+        public int AssignMechanic(int appointmentId, int mechanicId) {
+            return appointmentRepository.AssignMechanic(appointmentId, mechanicId);
+        }
     }
 }

@@ -79,7 +79,7 @@ namespace VehicleServiceCenter {
 
             //if (user == null) {
             //    Console.WriteLine("Log in failed");
-            //}else {
+            //} else {
             //    Console.WriteLine(user.Name);
             //}
 

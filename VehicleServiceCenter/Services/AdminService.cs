@@ -129,5 +129,9 @@ namespace VehicleServiceCenter.Services {
         public int CancelAppointment(int appointmentId) {
            return  appointmentRepo.CancelAppointment(appointmentId);
         }
+
+        public int AssignMechanic(int appointmentId, int mechanicId) {
+            return appointmentRepo.AssignMechanic(appointmentId, mechanicId);
+        }
     }     
 }

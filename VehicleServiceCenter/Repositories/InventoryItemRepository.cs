@@ -129,5 +129,34 @@ namespace VehicleServiceCenter.Repositories {
             }
             return items;
         }
+
+        public InventoryItem GetInventoryItemById(int id) {
+            InventoryItem item = null;
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT InventoryItemID, ItemName, RemainingNumber, Price FROM InventoryItems WHERE InventoryItemID = @InventoryItemID";
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@InventoryItemID", id);
+
+                        conn.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader()) {
+                            if (reader.Read()) {
+                                item = new InventoryItem {
+                                    InventoryItemID = Convert.ToInt32(reader["InventoryItemID"]),
+                                    ItemName = reader["ItemName"].ToString(),
+                                    RemainingNumber = Convert.ToInt32(reader["RemainingNumber"]),
+                                    Price = Convert.ToDecimal(reader["Price"])
+                                };
+                            }
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+                return item;
+            }
+            return item;
+        }
+
     }
 }
