@@ -62,6 +62,12 @@ namespace VehicleServiceCenter {
 
 
 
+            AdminRepository adminRepository = new AdminRepository();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new ShopForm());
+            //Application.Run(new CarSelection());
+            Application.Run(new ToyotaForm());
             //AdminRepository adminRepository = new AdminRepository();
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
