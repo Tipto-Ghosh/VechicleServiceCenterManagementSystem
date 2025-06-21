@@ -405,3 +405,4 @@ FodyWeavers.xsd
 /.vs/slnx.sqlite
 /.vs/VechicleServiceCenterManagementSystem/CopilotIndices/17.13.441.19478/CodeChunks.db
 /.vs/VechicleServiceCenterManagementSystem/CopilotIndices/17.13.441.19478/SemanticSymbols.db
+/VehicleServiceCenter/Config/Config/DbConfig.cs
