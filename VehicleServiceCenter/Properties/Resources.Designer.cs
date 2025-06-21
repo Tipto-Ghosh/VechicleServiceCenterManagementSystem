@@ -63,7 +63,6 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _655c5f41d5695129e975a70c {
         internal static System.Drawing.Bitmap _64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Car_awdawdaw1600 {
             get {
                 object obj = ResourceManager.GetObject("64f1c1f57a06d26739d38ef7_How to Change Oil in Your Car-awdawdaw1600", resourceCulture);
@@ -114,9 +113,89 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _655c5f41d5695129e975a70c {
+            get {
+                object obj = ResourceManager.GetObject("655c5f41d5695129e975a70c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _655c61c2d5695129e975a7b9 {
+            get {
+                object obj = ResourceManager.GetObject("655c61c2d5695129e975a7b9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _655c61c2d5695129e975a7b91 {
+            get {
+                object obj = ResourceManager.GetObject("655c61c2d5695129e975a7b91", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _655c61c2d5695129e975a7bb {
+            get {
+                object obj = ResourceManager.GetObject("655c61c2d5695129e975a7bb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _655c659ad5695129e975a8d2__1_ {
+            get {
+                object obj = ResourceManager.GetObject("655c659ad5695129e975a8d2 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _655c6731d5695129e975a91b {
+            get {
+                object obj = ResourceManager.GetObject("655c6731d5695129e975a91b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car_maintenance_17073141 {
             get {
                 object obj = ResourceManager.GetObject("car-maintenance_17073141", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap car_maintenance_17073141_2 {
+            get {
+                object obj = ResourceManager.GetObject("car-maintenance_17073141_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download_2 {
+            get {
+                object obj = ResourceManager.GetObject("download_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -174,6 +253,16 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_customer_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-customer-64", resourceCulture);
@@ -187,6 +276,16 @@ namespace VehicleServiceCenter.Properties {
         internal static System.Drawing.Bitmap icons8_email_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-email-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_info_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-info-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,7 +325,6 @@ namespace VehicleServiceCenter.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pngwing_com__1_ {
             get {
-                object obj = ResourceManager.GetObject("655c5f41d5695129e975a70c", resourceCulture);
                 object obj = ResourceManager.GetObject("pngwing.com (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -235,10 +333,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _655c61c2d5695129e975a7b9 {
         internal static System.Drawing.Bitmap pngwing_com__2_ {
             get {
-                object obj = ResourceManager.GetObject("655c61c2d5695129e975a7b9", resourceCulture);
                 object obj = ResourceManager.GetObject("pngwing.com (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -247,10 +343,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _655c61c2d5695129e975a7b91 {
         internal static System.Drawing.Bitmap pngwing_com__3_ {
             get {
-                object obj = ResourceManager.GetObject("655c61c2d5695129e975a7b91", resourceCulture);
                 object obj = ResourceManager.GetObject("pngwing.com (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -259,10 +353,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _655c61c2d5695129e975a7bb {
         internal static System.Drawing.Bitmap pngwing_com__4_ {
             get {
-                object obj = ResourceManager.GetObject("655c61c2d5695129e975a7bb", resourceCulture);
                 object obj = ResourceManager.GetObject("pngwing.com (4)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -271,10 +363,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _655c659ad5695129e975a8d2__1_ {
         internal static System.Drawing.Bitmap pngwing_com__5_ {
             get {
-                object obj = ResourceManager.GetObject("655c659ad5695129e975a8d2 (1)", resourceCulture);
                 object obj = ResourceManager.GetObject("pngwing.com (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -283,10 +373,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _655c6731d5695129e975a91b {
         internal static System.Drawing.Bitmap pngwing1 {
             get {
-                object obj = ResourceManager.GetObject("655c6731d5695129e975a91b", resourceCulture);
                 object obj = ResourceManager.GetObject("pngwing1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -295,10 +383,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap car_maintenance_17073141 {
         internal static System.Drawing.Bitmap pngwing2 {
             get {
-                object obj = ResourceManager.GetObject("car-maintenance_17073141", resourceCulture);
                 object obj = ResourceManager.GetObject("pngwing2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -317,10 +403,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap download_2 {
         internal static System.Drawing.Bitmap wadawdwad {
             get {
-                object obj = ResourceManager.GetObject("download_2", resourceCulture);
                 object obj = ResourceManager.GetObject("wadawdwad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -329,10 +413,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_close_50 {
         internal static System.Drawing.Bitmap wadwdwadad {
             get {
-                object obj = ResourceManager.GetObject("icons8-close-50", resourceCulture);
                 object obj = ResourceManager.GetObject("wadwdwadad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
@@ -341,10 +423,8 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_info_100 {
         internal static System.Drawing.Bitmap wafwaf {
             get {
-                object obj = ResourceManager.GetObject("icons8-info-100", resourceCulture);
                 object obj = ResourceManager.GetObject("wafwaf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
