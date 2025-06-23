@@ -43,13 +43,28 @@
             label6 = new Label();
             pictureBox20 = new PictureBox();
             PanelHome = new Panel();
-            label10 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            dataGridView1 = new DataGridView();
+            panel2 = new Panel();
+            lblUserID = new Label();
+            label1 = new Label();
+            UserNameTxtBox = new TextBox();
+            textBox1 = new TextBox();
+            label2 = new Label();
+            textBox2 = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            label5 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             PanelHome.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -259,25 +274,173 @@
             // PanelHome
             // 
             PanelHome.BackColor = Color.FromArgb(18, 18, 18);
-            PanelHome.Controls.Add(label10);
+            PanelHome.Controls.Add(tableLayoutPanel1);
             PanelHome.Dock = DockStyle.Fill;
             PanelHome.Location = new Point(169, 55);
             PanelHome.Name = "PanelHome";
             PanelHome.Size = new Size(839, 482);
             PanelHome.TabIndex = 6;
             // 
-            // label10
+            // tableLayoutPanel1
             // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.FlatStyle = FlatStyle.Flat;
-            label10.Font = new Font("Poppins Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.WhiteSmoke;
-            label10.Location = new Point(74, 259);
-            label10.Name = "label10";
-            label10.Size = new Size(295, 37);
-            label10.TabIndex = 11;
-            label10.Text = "CUSTOMER INFORMATION";
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.67342F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 285F));
+            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 0);
+            tableLayoutPanel1.Controls.Add(panel2, 1, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.1659756F));
+            tableLayoutPanel1.Size = new Size(839, 482);
+            tableLayoutPanel1.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(548, 476);
+            dataGridView1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(dateTimePicker1);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(UserNameTxtBox);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(lblUserID);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(557, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(279, 476);
+            panel2.TabIndex = 1;
+            // 
+            // lblUserID
+            // 
+            lblUserID.AutoSize = true;
+            lblUserID.BackColor = Color.Transparent;
+            lblUserID.FlatStyle = FlatStyle.Flat;
+            lblUserID.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblUserID.ForeColor = SystemColors.ControlLightLight;
+            lblUserID.Location = new Point(-1, 55);
+            lblUserID.Name = "lblUserID";
+            lblUserID.Size = new Size(69, 28);
+            lblUserID.TabIndex = 0;
+            lblUserID.Text = "User ID:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(6, 96);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 28);
+            label1.TabIndex = 1;
+            label1.Text = "User Name:";
+            // 
+            // UserNameTxtBox
+            // 
+            UserNameTxtBox.BackColor = Color.FromArgb(124, 124, 124);
+            UserNameTxtBox.BorderStyle = BorderStyle.None;
+            UserNameTxtBox.Location = new Point(15, 122);
+            UserNameTxtBox.Margin = new Padding(3, 2, 3, 2);
+            UserNameTxtBox.Multiline = true;
+            UserNameTxtBox.Name = "UserNameTxtBox";
+            UserNameTxtBox.Size = new Size(258, 22);
+            UserNameTxtBox.TabIndex = 5;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(124, 124, 124);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(15, 186);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(258, 22);
+            textBox1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.FlatStyle = FlatStyle.Flat;
+            label2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.Location = new Point(6, 160);
+            label2.Name = "label2";
+            label2.Size = new Size(91, 28);
+            label2.TabIndex = 6;
+            label2.Text = "Password:";
+            label2.Click += label2_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.FromArgb(124, 124, 124);
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Location = new Point(15, 250);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(258, 22);
+            textBox2.TabIndex = 9;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ControlLightLight;
+            label3.Location = new Point(6, 224);
+            label3.Name = "label3";
+            label3.Size = new Size(97, 28);
+            label3.TabIndex = 8;
+            label3.Text = "User Email:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.ControlLightLight;
+            label4.Location = new Point(6, 287);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 28);
+            label4.TabIndex = 10;
+            label4.Text = "DOB:";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(68, 292);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 11;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.FlatStyle = FlatStyle.Flat;
+            label5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.ControlLightLight;
+            label5.Location = new Point(6, 326);
+            label5.Name = "label5";
+            label5.Size = new Size(74, 28);
+            label5.TabIndex = 12;
+            label5.Text = "GENDER:";
             // 
             // AdminCustomerForm
             // 
@@ -296,7 +459,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
             PanelHome.ResumeLayout(false);
-            PanelHome.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -316,6 +482,18 @@
         private Label label6;
         private PictureBox pictureBox20;
         private Panel PanelHome;
-        private Label label10;
+        private TableLayoutPanel tableLayoutPanel1;
+        private DataGridView dataGridView1;
+        private Panel panel2;
+        private Label lblUserID;
+        private Label label1;
+        private TextBox textBox2;
+        private Label label3;
+        private TextBox textBox1;
+        private Label label2;
+        private TextBox UserNameTxtBox;
+        private Label label5;
+        private DateTimePicker dateTimePicker1;
+        private Label label4;
     }
 }
