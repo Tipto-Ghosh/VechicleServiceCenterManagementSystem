@@ -1,18 +1,17 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FontAwesome.Sharp; // Necessary for IconButton
 
 namespace VehicleServiceCenter
 {
-    public partial class Admin : Form
+    public partial class AdminCustomerForm : Form
     {
         // Stores the currently active (clicked) button to manage its state
         private IconButton currentBtn;
@@ -21,19 +20,14 @@ namespace VehicleServiceCenter
         private Color normalBgColor = Color.FromArgb(59, 56, 56); // Background color for normal state
         private Color activeBgColor = Color.FromArgb(136, 136, 136); // Background color for active state
         private Color normalTextColor = Color.White;             // Text and icon color for normal state
-        private Color activeTextColor = Color.White;             // Text and icon color for active state
-
-
-        public Admin()
+        private Color activeTextColor = Color.White;
+        public AdminCustomerForm()
         {
-            InitializeComponent(); // Initializes the components defined in Admin.Designer.cs
-
-            // Call this method to initially set all buttons to their normal state
-            // and attach the universal click event handler.
+            InitializeComponent();
             SetAllButtonsDefaultStateAndAttachEvents();
             ActivateButton(btnHome, EventArgs.Empty);
-        }
 
+        }
 
         private void ActivateButton(object senderBtn, EventArgs e)
         {
@@ -109,40 +103,6 @@ namespace VehicleServiceCenter
                     btn.UseVisualStyleBackColor = true; // Ensure custom BackColor is applied for flat styles
                 }
             }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnHome, EventArgs.Empty);
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            PanelHome.Visible = false;
-            panelCustomer.Visible = true;
-
-
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            PanelHome.Visible = true;
-            panelCustomer.Visible = false;
         }
     }
 }

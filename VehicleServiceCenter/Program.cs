@@ -79,7 +79,8 @@ namespace VehicleServiceCenter {
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-            Application.Run(new Admin());
+            //Application.Run(new Admin());
+            Application.Run(new AdminCustomerForm());
 
             //practice
             //arino's comment
