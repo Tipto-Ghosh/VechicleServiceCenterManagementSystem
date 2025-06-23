@@ -71,10 +71,10 @@ namespace VehicleServiceCenter {
 
             //arko form 
             //Application.Run(new LogIN());
-            Application.Run(new LogIn2());
+            //Application.Run(new LogIn2());
             //Application.Run(new ShopForm());
             //Application.Run(new CarSelection());
-            //Application.Run(new ToyotaForm());
+            Application.Run(new MitsubishiForm());
             //AdminRepository adminRepository = new AdminRepository();
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
