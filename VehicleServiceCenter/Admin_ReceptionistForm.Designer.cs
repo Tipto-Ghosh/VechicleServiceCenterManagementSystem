@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_ReceptionistForm));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
-            iconButton7 = new FontAwesome.Sharp.IconButton();
             btnHome = new FontAwesome.Sharp.IconButton();
             BtnReceptionist = new FontAwesome.Sharp.IconButton();
             btnMechanic = new FontAwesome.Sharp.IconButton();
@@ -73,7 +72,6 @@
             // 
             panel1.BackColor = Color.FromArgb(59, 56, 56);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(iconButton7);
             panel1.Controls.Add(btnHome);
             panel1.Controls.Add(BtnReceptionist);
             panel1.Controls.Add(btnMechanic);
@@ -95,27 +93,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
-            // 
-            // iconButton7
-            // 
-            iconButton7.FlatAppearance.BorderSize = 0;
-            iconButton7.FlatStyle = FlatStyle.Flat;
-            iconButton7.Font = new Font("Poppins", 9.75F);
-            iconButton7.ForeColor = Color.White;
-            iconButton7.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
-            iconButton7.IconColor = Color.White;
-            iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton7.IconSize = 32;
-            iconButton7.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton7.Location = new Point(0, 312);
-            iconButton7.Margin = new Padding(0);
-            iconButton7.Name = "iconButton7";
-            iconButton7.Size = new Size(169, 45);
-            iconButton7.TabIndex = 6;
-            iconButton7.Text = "INVENTORY";
-            iconButton7.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton7.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton7.UseVisualStyleBackColor = true;
             // 
             // btnHome
             // 
@@ -178,6 +155,7 @@
             btnMechanic.TextAlign = ContentAlignment.MiddleLeft;
             btnMechanic.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnMechanic.UseVisualStyleBackColor = true;
+            btnMechanic.Click += btnMechanic_Click;
             // 
             // btnCustomer
             // 
@@ -207,7 +185,7 @@
             btnAdmin.FlatStyle = FlatStyle.Flat;
             btnAdmin.Font = new Font("Poppins", 9.75F);
             btnAdmin.ForeColor = Color.White;
-            btnAdmin.IconChar = FontAwesome.Sharp.IconChar.UserTie;
+            btnAdmin.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
             btnAdmin.IconColor = Color.White;
             btnAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnAdmin.IconSize = 32;
@@ -217,7 +195,7 @@
             btnAdmin.Name = "btnAdmin";
             btnAdmin.Size = new Size(169, 45);
             btnAdmin.TabIndex = 4;
-            btnAdmin.Text = "ADMIN";
+            btnAdmin.Text = "INVENTORY";
             btnAdmin.TextAlign = ContentAlignment.MiddleLeft;
             btnAdmin.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAdmin.UseVisualStyleBackColor = true;
@@ -523,7 +501,6 @@
 
         private Panel panel1;
         private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton btnHome;
         private FontAwesome.Sharp.IconButton BtnReceptionist;
         private FontAwesome.Sharp.IconButton btnMechanic;
