@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace VehicleServiceCenter
+﻿namespace VehicleServiceCenter
 {
     public partial class ShopForm : Form
     {
@@ -60,5 +50,5 @@ namespace VehicleServiceCenter
             label5.Size = new Size(200, 60);
         }
 
-        }
     }
+}

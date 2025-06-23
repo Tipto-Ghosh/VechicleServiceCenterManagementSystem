@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VehicleServiceCenter.Config;
-using VehicleServiceCenter.Models;
-using VehicleServiceCenter.Repositories;
-using VehicleServiceCenter.Services;
+﻿using VehicleServiceCenter.Repositories;
 
-namespace VehicleServiceCenter {
-    internal static class Program {
-        static void Main(string[] args) {
+namespace VehicleServiceCenter
+{
+    internal static class Program
+    {
+        static void Main(string[] args)
+        {
 
             //string connString = DbConfig.connectionString;
 
@@ -81,6 +74,7 @@ namespace VehicleServiceCenter {
             //Application.Run(new Form1());
             //Application.Run(new Admin());
             Application.Run(new AdminCustomerForm());
+            Application.Run(new Admin_ReceptionistForm());
 
             //practice
             //arino's comment

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
-using VehicleServiceCenter.Models;
 
-namespace VehicleServiceCenter.Repositories {
-    public class AdminRepository {
+namespace VehicleServiceCenter.Repositories
+{
+    public class AdminRepository
+    {
 
 
         /* 
@@ -18,18 +14,22 @@ namespace VehicleServiceCenter.Repositories {
         Take the userId and and adminExtra info and pass to the InsertAdmin
 
         */
-        public int InsertAdmin(Models.Admin admin) {
-            try {
+        public int InsertAdmin(Models.Admin admin)
+        {
+            try
+            {
                 UserRepository userRepository = new UserRepository();
 
                 // 1. Insert into Users table
                 int newId = userRepository.InsertUser(admin);
-                if (newId == -1 || newId == 0) {
+                if (newId == -1 || newId == 0)
+                {
                     return 0; // Duplicate or failed
                 }
 
                 // 2. Insert into Admins table
-                using (SqlConnection conn = DbConfig.GetConnection()) {
+                using (SqlConnection conn = DbConfig.GetConnection())
+                {
                     string query = @"INSERT INTO Admins (UserID, Type, CreatedDate) 
                                      VALUES (@UserID, @Type, @CreatedDate)";
 
@@ -43,7 +43,9 @@ namespace VehicleServiceCenter.Repositories {
 
                     return rows > 0 ? newId : 0;
                 }
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 Console.WriteLine("InsertAdmin Error: " + ex.Message);
                 return 0;
             }
@@ -54,18 +56,22 @@ namespace VehicleServiceCenter.Repositories {
         Update the User. If Done then update Admin Extra info if Failed go back to previous state
         */
 
-        public int UpdateAdmin(Models.Admin admin) {
-            try {
+        public int UpdateAdmin(Models.Admin admin)
+        {
+            try
+            {
                 UserRepository userRepository = new UserRepository();
 
                 // 1. Update User Info
                 int status = userRepository.UpdateUser(admin);
-                if (status == -1 || status == 0) {
+                if (status == -1 || status == 0)
+                {
                     return status;
                 }
 
                 // 2. Update Admin table
-                using (SqlConnection conn = DbConfig.GetConnection()) {
+                using (SqlConnection conn = DbConfig.GetConnection())
+                {
                     string query = @"UPDATE Admins SET Type = @Type, CreatedDate = @CreatedDate 
                                      WHERE UserID = @UserID";
 
@@ -79,26 +85,35 @@ namespace VehicleServiceCenter.Repositories {
 
                     return rows > 0 ? 1 : 0;
                 }
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 Console.WriteLine("UpdateAdmin Error: " + ex.Message);
                 return 0;
             }
         }
 
-        public int DeleteAdmin(int adminId) {
-            try {
+        public int DeleteAdmin(int adminId)
+        {
+            try
+            {
                 UserRepository userRepository = new UserRepository();
                 return userRepository.DeleteUser(adminId);
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 Console.WriteLine("DeleteAdmin Error: " + ex.Message);
                 return 0;
             }
         }
 
-        public List<Models.Admin> GetAllAdmins() {
+        public List<Models.Admin> GetAllAdmins()
+        {
             List<Models.Admin> admins = new List<Models.Admin>();
-            try {
-                using (SqlConnection conn = DbConfig.GetConnection()) {
+            try
+            {
+                using (SqlConnection conn = DbConfig.GetConnection())
+                {
                     string query = @"SELECT U.*, A.Type, A.CreatedDate 
                                      FROM Users U 
                                      INNER JOIN Admins A ON U.UserID = A.UserID";
@@ -107,8 +122,10 @@ namespace VehicleServiceCenter.Repositories {
                     conn.Open();
 
                     SqlDataReader reader = cmd.ExecuteReader();
-                    while (reader.Read()) {
-                        Models.Admin admin = new Models.Admin {
+                    while (reader.Read())
+                    {
+                        Models.Admin admin = new Models.Admin
+                        {
                             UserID = Convert.ToInt32(reader["UserID"]),
                             Name = reader["Name"].ToString(),
                             Gender = reader["Gender"].ToString(),
@@ -124,7 +141,9 @@ namespace VehicleServiceCenter.Repositories {
                         admins.Add(admin);
                     }
                 }
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 Console.WriteLine("GetAllAdmins Error: " + ex.Message);
             }
 

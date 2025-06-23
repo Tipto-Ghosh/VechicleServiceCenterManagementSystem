@@ -1,6 +1,6 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class AdminCustomerForm
+    partial class Admin_ReceptionistForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCustomerForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_ReceptionistForm));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             iconButton7 = new FontAwesome.Sharp.IconButton();
             btnHome = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
+            BtnReceptionist = new FontAwesome.Sharp.IconButton();
+            btnMechanic = new FontAwesome.Sharp.IconButton();
             btnCustomer = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
+            btnAdmin = new FontAwesome.Sharp.IconButton();
             PanelProfile = new Panel();
             pictureBox21 = new PictureBox();
             label7 = new Label();
             label6 = new Label();
             pictureBox20 = new PictureBox();
-            PanelHome = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
-            dataGridView1 = new DataGridView();
             panel2 = new Panel();
-            panel4 = new Panel();
             panel3 = new Panel();
             button4 = new Button();
             button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
             checkedListBox1 = new CheckedListBox();
             label5 = new Label();
             dateTimePicker1 = new DateTimePicker();
@@ -59,20 +54,19 @@
             textBox2 = new TextBox();
             label3 = new Label();
             textBox1 = new TextBox();
-            label8 = new Label();
             label2 = new Label();
             UserNameTxtBox = new TextBox();
             label1 = new Label();
             lblUserID = new Label();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            PanelHome.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -81,16 +75,16 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(iconButton7);
             panel1.Controls.Add(btnHome);
-            panel1.Controls.Add(iconButton3);
-            panel1.Controls.Add(iconButton4);
+            panel1.Controls.Add(BtnReceptionist);
+            panel1.Controls.Add(btnMechanic);
             panel1.Controls.Add(btnCustomer);
-            panel1.Controls.Add(iconButton5);
+            panel1.Controls.Add(btnAdmin);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(169, 537);
-            panel1.TabIndex = 1;
+            panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -144,47 +138,46 @@
             btnHome.UseVisualStyleBackColor = true;
             btnHome.Click += btnHome_Click;
             // 
-            // iconButton3
+            // BtnReceptionist
             // 
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Headset;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 32;
-            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(0, 172);
-            iconButton3.Margin = new Padding(0);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(169, 45);
-            iconButton3.TabIndex = 2;
-            iconButton3.Text = "RECEPTIONIST";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = true;
-            iconButton3.Click += iconButton3_Click;
+            BtnReceptionist.FlatAppearance.BorderSize = 0;
+            BtnReceptionist.FlatStyle = FlatStyle.Flat;
+            BtnReceptionist.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BtnReceptionist.ForeColor = Color.White;
+            BtnReceptionist.IconChar = FontAwesome.Sharp.IconChar.Headset;
+            BtnReceptionist.IconColor = Color.White;
+            BtnReceptionist.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            BtnReceptionist.IconSize = 32;
+            BtnReceptionist.ImageAlign = ContentAlignment.MiddleLeft;
+            BtnReceptionist.Location = new Point(0, 172);
+            BtnReceptionist.Margin = new Padding(0);
+            BtnReceptionist.Name = "BtnReceptionist";
+            BtnReceptionist.Size = new Size(169, 45);
+            BtnReceptionist.TabIndex = 2;
+            BtnReceptionist.Text = "RECEPTIONIST";
+            BtnReceptionist.TextAlign = ContentAlignment.MiddleLeft;
+            BtnReceptionist.TextImageRelation = TextImageRelation.ImageBeforeText;
+            BtnReceptionist.UseVisualStyleBackColor = true;
             // 
-            // iconButton4
+            // btnMechanic
             // 
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.Font = new Font("Poppins", 9.75F);
-            iconButton4.ForeColor = Color.White;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.Hammer;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 32;
-            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(0, 219);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(169, 45);
-            iconButton4.TabIndex = 3;
-            iconButton4.Text = "MECHANIC";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = true;
+            btnMechanic.FlatAppearance.BorderSize = 0;
+            btnMechanic.FlatStyle = FlatStyle.Flat;
+            btnMechanic.Font = new Font("Poppins", 9.75F);
+            btnMechanic.ForeColor = Color.White;
+            btnMechanic.IconChar = FontAwesome.Sharp.IconChar.Hammer;
+            btnMechanic.IconColor = Color.White;
+            btnMechanic.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnMechanic.IconSize = 32;
+            btnMechanic.ImageAlign = ContentAlignment.MiddleLeft;
+            btnMechanic.Location = new Point(0, 219);
+            btnMechanic.Name = "btnMechanic";
+            btnMechanic.Size = new Size(169, 45);
+            btnMechanic.TabIndex = 3;
+            btnMechanic.Text = "MECHANIC";
+            btnMechanic.TextAlign = ContentAlignment.MiddleLeft;
+            btnMechanic.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnMechanic.UseVisualStyleBackColor = true;
             // 
             // btnCustomer
             // 
@@ -206,27 +199,28 @@
             btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
             btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCustomer.UseVisualStyleBackColor = true;
+            btnCustomer.Click += btnCustomer_Click;
             // 
-            // iconButton5
+            // btnAdmin
             // 
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.Font = new Font("Poppins", 9.75F);
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.UserTie;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 32;
-            iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(0, 266);
-            iconButton5.Margin = new Padding(0);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(169, 45);
-            iconButton5.TabIndex = 4;
-            iconButton5.Text = "ADMIN";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = true;
+            btnAdmin.FlatAppearance.BorderSize = 0;
+            btnAdmin.FlatStyle = FlatStyle.Flat;
+            btnAdmin.Font = new Font("Poppins", 9.75F);
+            btnAdmin.ForeColor = Color.White;
+            btnAdmin.IconChar = FontAwesome.Sharp.IconChar.UserTie;
+            btnAdmin.IconColor = Color.White;
+            btnAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnAdmin.IconSize = 32;
+            btnAdmin.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAdmin.Location = new Point(0, 266);
+            btnAdmin.Margin = new Padding(0);
+            btnAdmin.Name = "btnAdmin";
+            btnAdmin.Size = new Size(169, 45);
+            btnAdmin.TabIndex = 4;
+            btnAdmin.Text = "ADMIN";
+            btnAdmin.TextAlign = ContentAlignment.MiddleLeft;
+            btnAdmin.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnAdmin.UseVisualStyleBackColor = true;
             // 
             // PanelProfile
             // 
@@ -240,7 +234,7 @@
             PanelProfile.Margin = new Padding(0);
             PanelProfile.Name = "PanelProfile";
             PanelProfile.Size = new Size(839, 55);
-            PanelProfile.TabIndex = 5;
+            PanelProfile.TabIndex = 6;
             // 
             // pictureBox21
             // 
@@ -286,52 +280,27 @@
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
             // 
-            // PanelHome
-            // 
-            PanelHome.BackColor = Color.FromArgb(18, 18, 18);
-            PanelHome.Controls.Add(tableLayoutPanel1);
-            PanelHome.Dock = DockStyle.Fill;
-            PanelHome.Location = new Point(169, 55);
-            PanelHome.Margin = new Padding(0);
-            PanelHome.Name = "PanelHome";
-            PanelHome.Size = new Size(839, 482);
-            PanelHome.TabIndex = 6;
-            // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.67342F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 285F));
-            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 0);
             tableLayoutPanel1.Controls.Add(panel2, 1, 0);
+            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(0);
+            tableLayoutPanel1.Location = new Point(169, 55);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.1659756F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Size = new Size(839, 482);
-            tableLayoutPanel1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = Color.FromArgb(136, 136, 136);
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Margin = new Padding(0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(554, 482);
-            dataGridView1.TabIndex = 0;
+            tableLayoutPanel1.TabIndex = 7;
             // 
             // panel2
             // 
-            panel2.Controls.Add(panel4);
+            panel2.BackColor = Color.FromArgb(18, 18, 18);
             panel2.Controls.Add(panel3);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(button1);
             panel2.Controls.Add(checkedListBox1);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(dateTimePicker1);
@@ -339,7 +308,6 @@
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(label8);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(UserNameTxtBox);
             panel2.Controls.Add(label1);
@@ -349,15 +317,7 @@
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
             panel2.Size = new Size(285, 482);
-            panel2.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = SystemColors.ControlDarkDark;
-            panel4.Location = new Point(-15, 400);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(300, 2);
-            panel4.TabIndex = 17;
+            panel2.TabIndex = 2;
             // 
             // panel3
             // 
@@ -374,7 +334,7 @@
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.Red;
-            button4.Location = new Point(162, 421);
+            button4.Location = new Point(162, 386);
             button4.Name = "button4";
             button4.Size = new Size(106, 36);
             button4.TabIndex = 16;
@@ -388,35 +348,12 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button3.ForeColor = Color.Green;
-            button3.Location = new Point(28, 421);
+            button3.Location = new Point(28, 386);
             button3.Name = "button3";
             button3.Size = new Size(106, 36);
             button3.TabIndex = 16;
             button3.Text = "UPDATE";
             button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.ControlLightLight;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(177, 362);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 15;
-            button2.Text = "REMOVE";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.ControlLightLight;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(83, 362);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 14;
-            button1.Text = "ADD";
-            button1.UseVisualStyleBackColor = false;
             // 
             // checkedListBox1
             // 
@@ -498,20 +435,6 @@
             textBox1.Size = new Size(258, 22);
             textBox1.TabIndex = 7;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.FlatStyle = FlatStyle.Flat;
-            label8.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = SystemColors.ControlLightLight;
-            label8.Location = new Point(6, 360);
-            label8.Name = "label8";
-            label8.Size = new Size(73, 28);
-            label8.TabIndex = 6;
-            label8.Text = "Service:";
-            label8.Click += label2_Click;
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -524,7 +447,6 @@
             label2.Size = new Size(91, 28);
             label2.TabIndex = 6;
             label2.Text = "Password:";
-            label2.Click += label2_Click;
             // 
             // UserNameTxtBox
             // 
@@ -563,27 +485,37 @@
             lblUserID.TabIndex = 0;
             lblUserID.Text = "User ID:";
             // 
-            // AdminCustomerForm
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.FromArgb(136, 136, 136);
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Margin = new Padding(0);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(554, 482);
+            dataGridView1.TabIndex = 1;
+            // 
+            // Admin_ReceptionistForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 537);
-            Controls.Add(PanelHome);
+            Controls.Add(tableLayoutPanel1);
             Controls.Add(PanelProfile);
             Controls.Add(panel1);
-            Name = "AdminCustomerForm";
-            Text = "Customer";
+            Name = "Admin_ReceptionistForm";
+            Text = "Admin_ReceptionistForm";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            PanelHome.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -593,36 +525,31 @@
         private PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton btnHome;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton BtnReceptionist;
+        private FontAwesome.Sharp.IconButton btnMechanic;
         private FontAwesome.Sharp.IconButton btnCustomer;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btnAdmin;
         private Panel PanelProfile;
         private PictureBox pictureBox21;
         private Label label7;
         private Label label6;
         private PictureBox pictureBox20;
-        private Panel PanelHome;
         private TableLayoutPanel tableLayoutPanel1;
         private DataGridView dataGridView1;
         private Panel panel2;
-        private Label lblUserID;
-        private Label label1;
+        private Panel panel3;
+        private Button button4;
+        private Button button3;
+        private CheckedListBox checkedListBox1;
+        private Label label5;
+        private DateTimePicker dateTimePicker1;
+        private Label label4;
         private TextBox textBox2;
         private Label label3;
         private TextBox textBox1;
         private Label label2;
         private TextBox UserNameTxtBox;
-        private Label label5;
-        private DateTimePicker dateTimePicker1;
-        private Label label4;
-        private CheckedListBox checkedListBox1;
-        private Label label8;
-        private Button button2;
-        private Button button1;
-        private Button button4;
-        private Button button3;
-        private Panel panel3;
-        private Panel panel4;
+        private Label label1;
+        private Label lblUserID;
     }
 }

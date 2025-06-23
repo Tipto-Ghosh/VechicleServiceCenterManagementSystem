@@ -35,7 +35,7 @@
             btnHome = new FontAwesome.Sharp.IconButton();
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton4 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
+            btnCustomer = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
             panel2 = new Panel();
             PanelHome = new Panel();
@@ -81,10 +81,11 @@
             panel1.Controls.Add(btnHome);
             panel1.Controls.Add(iconButton3);
             panel1.Controls.Add(iconButton4);
-            panel1.Controls.Add(iconButton2);
+            panel1.Controls.Add(btnCustomer);
             panel1.Controls.Add(iconButton5);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(169, 537);
             panel1.TabIndex = 0;
@@ -111,7 +112,7 @@
             iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton7.IconSize = 32;
             iconButton7.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton7.Location = new Point(-3, 312);
+            iconButton7.Location = new Point(0, 312);
             iconButton7.Name = "iconButton7";
             iconButton7.Size = new Size(169, 45);
             iconButton7.TabIndex = 6;
@@ -132,6 +133,7 @@
             btnHome.IconSize = 32;
             btnHome.ImageAlign = ContentAlignment.MiddleLeft;
             btnHome.Location = new Point(0, 78);
+            btnHome.Margin = new Padding(0);
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(169, 45);
             btnHome.TabIndex = 0;
@@ -160,6 +162,7 @@
             iconButton3.TextAlign = ContentAlignment.MiddleLeft;
             iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton3.UseVisualStyleBackColor = true;
+            iconButton3.Click += iconButton3_Click;
             // 
             // iconButton4
             // 
@@ -181,26 +184,26 @@
             iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton4.UseVisualStyleBackColor = true;
             // 
-            // iconButton2
+            // btnCustomer
             // 
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.User;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 30;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 125);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(169, 45);
-            iconButton2.TabIndex = 1;
-            iconButton2.Text = "CUSTOMER";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = true;
-            iconButton2.Click += iconButton2_Click;
+            btnCustomer.FlatAppearance.BorderSize = 0;
+            btnCustomer.FlatStyle = FlatStyle.Flat;
+            btnCustomer.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCustomer.ForeColor = Color.White;
+            btnCustomer.IconChar = FontAwesome.Sharp.IconChar.User;
+            btnCustomer.IconColor = Color.White;
+            btnCustomer.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnCustomer.IconSize = 30;
+            btnCustomer.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.Location = new Point(0, 125);
+            btnCustomer.Name = "btnCustomer";
+            btnCustomer.Size = new Size(169, 45);
+            btnCustomer.TabIndex = 1;
+            btnCustomer.Text = "CUSTOMER";
+            btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCustomer.UseVisualStyleBackColor = true;
+            btnCustomer.Click += iconButton2_Click;
             // 
             // iconButton5
             // 
@@ -526,9 +529,9 @@
             label7.ForeColor = Color.Gainsboro;
             label7.Location = new Point(643, 30);
             label7.Name = "label7";
-            label7.Size = new Size(72, 22);
+            label7.Size = new Size(48, 22);
             label7.TabIndex = 2;
-            label7.Text = "CUSTOMER";
+            label7.Text = "ADMIN";
             // 
             // label6
             // 
@@ -552,14 +555,14 @@
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
             // 
-            // Admin
+            // AdminForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 537);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "Admin";
+            Name = "AdminForm";
             Text = "Form2";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -577,7 +580,7 @@
 
         private Panel panel1;
         private FontAwesome.Sharp.IconButton btnHome;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnCustomer;
         private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;

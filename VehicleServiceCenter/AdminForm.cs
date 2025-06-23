@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using FontAwesome.Sharp; // Necessary for IconButton
+﻿using FontAwesome.Sharp; // Necessary for IconButton
 
 namespace VehicleServiceCenter
 {
@@ -133,16 +123,21 @@ namespace VehicleServiceCenter
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            PanelHome.Visible = false;
-            panelCustomer.Visible = true;
-
-
+            AdminCustomerForm a1 = new AdminCustomerForm();
+            a1.Show();
+            this.Hide();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            PanelHome.Visible = true;
-            panelCustomer.Visible = false;
+
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            Admin_ReceptionistForm r1 = new Admin_ReceptionistForm();
+            r1.Show();
+            this.Hide();
         }
     }
 }
