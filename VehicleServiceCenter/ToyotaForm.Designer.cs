@@ -460,11 +460,10 @@
             // 
             // pictureBox20
             // 
-            pictureBox20.Dock = DockStyle.Right;
             pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
-            pictureBox20.Location = new Point(977, 0);
+            pictureBox20.Location = new Point(973, 0);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(31, 55);
+            pictureBox20.Size = new Size(28, 55);
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
