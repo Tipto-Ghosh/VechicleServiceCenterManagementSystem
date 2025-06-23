@@ -38,12 +38,12 @@ namespace VehicleServiceCenter.Services {
 
         // Make Admin Operations
 
-        public int AddAdmin(Admin admin) {
+        public int AddAdmin(Models.Admin admin) {
             int status = adminRepo.InsertAdmin(admin);
             return status;
         }
 
-        public int UpdateAdmin(Admin admin) { 
+        public int UpdateAdmin(Models.Admin admin) { 
            int status = adminRepo.UpdateAdmin(admin);
             return status;
         }

@@ -18,7 +18,7 @@ namespace VehicleServiceCenter.Repositories {
         Take the userId and and adminExtra info and pass to the InsertAdmin
 
         */
-        public int InsertAdmin(Admin admin) {
+        public int InsertAdmin(Models.Admin admin) {
             try {
                 UserRepository userRepository = new UserRepository();
 
@@ -54,7 +54,7 @@ namespace VehicleServiceCenter.Repositories {
         Update the User. If Done then update Admin Extra info if Failed go back to previous state
         */
 
-        public int UpdateAdmin(Admin admin) {
+        public int UpdateAdmin(Models.Admin admin) {
             try {
                 UserRepository userRepository = new UserRepository();
 
@@ -95,8 +95,8 @@ namespace VehicleServiceCenter.Repositories {
             }
         }
 
-        public List<Admin> GetAllAdmins() {
-            List<Admin> admins = new List<Admin>();
+        public List<Models.Admin> GetAllAdmins() {
+            List<Models.Admin> admins = new List<Models.Admin>();
             try {
                 using (SqlConnection conn = DbConfig.GetConnection()) {
                     string query = @"SELECT U.*, A.Type, A.CreatedDate 
@@ -108,7 +108,7 @@ namespace VehicleServiceCenter.Repositories {
 
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read()) {
-                        Admin admin = new Admin {
+                        Models.Admin admin = new Models.Admin {
                             UserID = Convert.ToInt32(reader["UserID"]),
                             Name = reader["Name"].ToString(),
                             Gender = reader["Gender"].ToString(),
