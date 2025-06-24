@@ -1,14 +1,14 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class MitsubishiForm
+    partial class SuzukiForm
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,12 +23,12 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MitsubishiForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuzukiForm));
             PanelProfile = new Panel();
             pictureBox19 = new PictureBox();
             pictureBox22 = new PictureBox();
@@ -116,7 +116,6 @@
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 4;
             pictureBox19.TabStop = false;
-            pictureBox19.Click += pictureBox19_Click;
             // 
             // pictureBox22
             // 
@@ -230,11 +229,11 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.WhiteSmoke;
-            label9.Location = new Point(131, 172);
+            label9.Location = new Point(141, 172);
             label9.Name = "label9";
-            label9.Size = new Size(76, 36);
+            label9.Size = new Size(59, 36);
             label9.TabIndex = 6;
-            label9.Text = "ECLIPS";
+            label9.Text = "CIAZ";
             // 
             // pictureBox6
             // 
@@ -280,17 +279,18 @@
             label8.ForeColor = Color.WhiteSmoke;
             label8.Location = new Point(127, 172);
             label8.Name = "label8";
-            label8.Size = new Size(88, 36);
+            label8.Size = new Size(70, 36);
             label8.TabIndex = 6;
-            label8.Text = "LANCER";
+            label8.Text = "SWIFT";
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(-9, -15);
+            pictureBox4.Location = new Point(0, 0);
             pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(352, 242);
+            pictureBox4.Padding = new Padding(25);
+            pictureBox4.Size = new Size(327, 227);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
@@ -326,19 +326,19 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(112, 172);
+            label5.Location = new Point(111, 172);
             label5.Name = "label5";
-            label5.Size = new Size(111, 36);
+            label5.Size = new Size(115, 36);
             label5.TabIndex = 6;
-            label5.Text = "X-PANDER";
+            label5.Text = "WAGON-R";
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(-34, -28);
+            pictureBox5.Location = new Point(-42, -46);
             pictureBox5.Margin = new Padding(3, 4, 3, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(386, 251);
+            pictureBox5.Size = new Size(420, 285);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
@@ -374,23 +374,23 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(113, 173);
+            label4.Location = new Point(131, 173);
             label4.Name = "label4";
-            label4.Size = new Size(126, 36);
+            label4.Size = new Size(69, 36);
             label4.TabIndex = 5;
-            label4.Text = "OUTLANDER";
-            label4.Click += label4_Click;
+            label4.Text = "LIANA";
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-8, -29);
+            pictureBox3.Location = new Point(3, 4);
             pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(363, 252);
+            pictureBox3.Size = new Size(320, 219);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             pictureBox3.MouseEnter += pictureBox3_MouseEnter;
             pictureBox3.MouseLeave += pictureBox3_MouseLeave;
             // 
@@ -416,8 +416,6 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(326, 227);
             panel4.TabIndex = 0;
-            panel4.MouseEnter += panel4_MouseEnter;
-            panel4.MouseLeave += panel4_MouseLeave;
             // 
             // label3
             // 
@@ -427,18 +425,17 @@
             label3.ForeColor = Color.WhiteSmoke;
             label3.Location = new Point(127, 173);
             label3.Name = "label3";
-            label3.Size = new Size(87, 36);
+            label3.Size = new Size(81, 36);
             label3.TabIndex = 4;
-            label3.Text = "PAJERO";
+            label3.Text = "ERTIGA";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 0);
+            pictureBox2.Location = new Point(-1, -19);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Padding = new Padding(25);
-            pictureBox2.Size = new Size(323, 223);
+            pictureBox2.Size = new Size(328, 246);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -468,8 +465,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(326, 227);
             panel2.TabIndex = 0;
-            panel2.MouseEnter += panel2_MouseEnter;
-            panel2.MouseLeave += panel2_MouseLeave;
             // 
             // label1
             // 
@@ -477,25 +472,24 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(129, 173);
+            label1.Location = new Point(88, 173);
             label1.Name = "label1";
-            label1.Size = new Size(59, 36);
+            label1.Size = new Size(155, 36);
             label1.TabIndex = 3;
-            label1.Text = "L200";
+            label1.Text = "GRAND VITARA";
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 0);
+            pictureBox1.Location = new Point(-6, -17);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Padding = new Padding(25);
-            pictureBox1.Size = new Size(323, 223);
+            pictureBox1.Size = new Size(344, 244);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
+            pictureBox1.Click += pictureBox1_Click;
             pictureBox1.MouseEnter += pictureBox1_MouseEnter;
             pictureBox1.MouseLeave += pictureBox1_MouseLeave;
             // 
@@ -520,16 +514,15 @@
             label2.TabIndex = 1;
             label2.Text = "SELECT YOUR CAR MODEL";
             // 
-            // MitsubishiForm
+            // SuzukiForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1152, 716);
             Controls.Add(Table2Brands);
             Controls.Add(PanelProfile);
-            Name = "MitsubishiForm";
-            Text = "MitsubishiForm";
-            Load += MitsubishiForm_Load;
+            Name = "SuzukiForm";
+            Text = "Form1";
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();

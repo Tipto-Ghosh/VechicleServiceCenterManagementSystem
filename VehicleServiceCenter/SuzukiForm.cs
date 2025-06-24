@@ -1,23 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace VehicleServiceCenter
 {
-    public partial class MitsubishiForm : Form
+    public partial class SuzukiForm : Form
     {
-        public MitsubishiForm()
+        public SuzukiForm()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void MitsubishiForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
@@ -27,14 +27,8 @@ namespace VehicleServiceCenter
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
 
         }
 
@@ -46,7 +40,13 @@ namespace VehicleServiceCenter
             }
         }
 
-
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
         {
@@ -64,15 +64,7 @@ namespace VehicleServiceCenter
             }
         }
 
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            if (sender is PictureBox pb)
-            {
-                pb.BackColor = Color.FromArgb(68, 68, 68);
-            }
-        }
-
-        private void panel2_MouseEnter(object sender, EventArgs e)
+        private void pictureBox3_MouseEnter(object sender, EventArgs e)
         {
             if (sender is PictureBox pb)
             {
@@ -80,23 +72,7 @@ namespace VehicleServiceCenter
             }
         }
 
-        private void panel2_MouseLeave(object sender, EventArgs e)
-        {
-            if (sender is PictureBox pb)
-            {
-                pb.BackColor = Color.FromArgb(68, 68, 68);
-            }
-        }
-
-        private void panel4_MouseEnter(object sender, EventArgs e)
-        {
-            if (sender is PictureBox pb)
-            {
-                pb.BackColor = Color.FromArgb(178, 178, 178);
-            }
-        }
-
-        private void panel4_MouseLeave(object sender, EventArgs e)
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
         {
             if (sender is PictureBox pb)
             {
@@ -113,22 +89,6 @@ namespace VehicleServiceCenter
         }
 
         private void pictureBox5_MouseLeave(object sender, EventArgs e)
-        {
-            if (sender is PictureBox pb)
-            {
-                pb.BackColor = Color.FromArgb(68, 68, 68);
-            }
-        }
-
-        private void pictureBox3_MouseEnter(object sender, EventArgs e)
-        {
-            if (sender is PictureBox pb)
-            {
-                pb.BackColor = Color.FromArgb(178, 178, 178);
-            }
-        }
-
-        private void pictureBox3_MouseLeave(object sender, EventArgs e)
         {
             if (sender is PictureBox pb)
             {
@@ -166,21 +126,7 @@ namespace VehicleServiceCenter
             {
                 pb.BackColor = Color.FromArgb(68, 68, 68);
             }
-        }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox19_Click(object sender, EventArgs e)
-        {
-            CarSelection newForm = new CarSelection();
-            newForm.Show();
-
-
-            this.Hide();
         }
     }
 }
-
