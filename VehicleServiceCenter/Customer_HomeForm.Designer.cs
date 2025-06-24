@@ -36,11 +36,17 @@
             fullNameLabel = new Label();
             signOutPictureBox = new PictureBox();
             panel1 = new Panel();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            pictureBox1 = new PictureBox();
+            label4 = new Label();
+            panel5 = new Panel();
+            label6 = new Label();
+            panel2 = new Panel();
+            label3 = new Label();
             label5 = new Label();
+            panel3 = new Panel();
             panel4 = new Panel();
+            label1 = new Label();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
             profilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
@@ -121,46 +127,82 @@
             // 
             // panel1
             // 
+            panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(18, 18, 18);
+            panel1.BackgroundImageLayout = ImageLayout.None;
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(label3);
             panel1.Controls.Add(label5);
+            panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel4);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(iconButton1);
             panel1.Controls.Add(pictureBox1);
-            panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 55);
+            panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1008, 482);
+            panel1.Size = new Size(1025, 482);
             panel1.TabIndex = 5;
+            panel1.Paint += panel1_Paint;
             // 
-            // iconButton1
+            // label4
             // 
-            iconButton1.FlatAppearance.BorderColor = Color.Cornsilk;
-            iconButton1.FlatAppearance.BorderSize = 20;
-            iconButton1.FlatStyle = FlatStyle.Popup;
-            iconButton1.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton1.ForeColor = SystemColors.ControlLight;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.NotEqual;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 25;
-            iconButton1.Location = new Point(397, 436);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(105, 34);
-            iconButton1.TabIndex = 1;
-            iconButton1.Text = "about us";
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = true;
+            label4.BackColor = Color.Transparent;
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.WhiteSmoke;
+            label4.Location = new Point(558, 260);
+            label4.Name = "label4";
+            label4.Size = new Size(107, 23);
+            label4.TabIndex = 15;
+            label4.Text = "EXTEMITED TIME";
             // 
-            // pictureBox1
+            // panel5
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(22, 109);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(470, 259);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            panel5.BackColor = Color.White;
+            panel5.Location = new Point(549, 259);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(3, 52);
+            panel5.TabIndex = 13;
+            // 
+            // label6
+            // 
+            label6.BackColor = Color.Transparent;
+            label6.FlatStyle = FlatStyle.Flat;
+            label6.Font = new Font("Poppins", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.WhiteSmoke;
+            label6.Location = new Point(562, 278);
+            label6.Name = "label6";
+            label6.Size = new Size(154, 37);
+            label6.TabIndex = 14;
+            label6.Text = "4 days";
+            // 
+            // panel2
+            // 
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 348);
+            panel2.Margin = new Padding(0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1008, 494);
+            panel2.TabIndex = 12;
+            panel2.Paint += panel2_Paint;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.WhiteSmoke;
+            label3.Location = new Point(558, 160);
+            label3.Name = "label3";
+            label3.Size = new Size(89, 23);
+            label3.TabIndex = 11;
+            label3.Text = "REPAIR COST";
+            label3.Click += label5_Click;
             // 
             // label5
             // 
@@ -169,32 +211,66 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(558, 145);
+            label5.Location = new Point(558, 60);
             label5.Name = "label5";
-            label5.Size = new Size(79, 23);
+            label5.Size = new Size(37, 23);
             label5.TabIndex = 11;
-            label5.Text = "CUSTOMER";
+            label5.Text = "CAR";
+            label5.Click += label5_Click;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.White;
+            panel3.Location = new Point(3, 331);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1000, 3);
+            panel3.TabIndex = 9;
             // 
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(549, 149);
+            panel4.Location = new Point(549, 59);
             panel4.Name = "panel4";
             panel4.Size = new Size(3, 80);
             panel4.TabIndex = 9;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.WhiteSmoke;
+            label1.Location = new Point(562, 178);
+            label1.Name = "label1";
+            label1.Size = new Size(172, 65);
+            label1.TabIndex = 10;
+            label1.Text = "Tk 9000";
+            label1.Click += label2_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.FlatStyle = FlatStyle.Flat;
-            label2.Font = new Font("Poppins", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(545, 149);
+            label2.Location = new Point(562, 78);
             label2.Name = "label2";
-            label2.Size = new Size(130, 113);
+            label2.Size = new Size(263, 65);
             label2.TabIndex = 10;
-            label2.Text = "00";
+            label2.Text = "Toyota Hilux";
+            label2.Click += label2_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(22, 89);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(470, 259);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // Customer_HomeForm
             // 
@@ -226,9 +302,15 @@
         private PictureBox signOutPictureBox;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private Label label5;
         private Panel panel4;
         private Label label2;
+        private Panel panel2;
+        private Label label4;
+        private Panel panel5;
+        private Label label6;
+        private Label label3;
+        private Panel panel3;
+        private Label label1;
     }
 }
