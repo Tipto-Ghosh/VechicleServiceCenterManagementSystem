@@ -36,10 +36,15 @@
             fullNameLabel = new Label();
             signOutPictureBox = new PictureBox();
             panel1 = new Panel();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            panel6 = new Panel();
             label4 = new Label();
             panel5 = new Panel();
             label6 = new Label();
             panel2 = new Panel();
+            label7 = new Label();
             label3 = new Label();
             label5 = new Label();
             panel3 = new Panel();
@@ -52,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)signOutPictureBox).BeginInit();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -130,6 +136,10 @@
             panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(18, 18, 18);
             panel1.BackgroundImageLayout = ImageLayout.None;
+            panel1.Controls.Add(iconButton3);
+            panel1.Controls.Add(iconButton2);
+            panel1.Controls.Add(iconButton1);
+            panel1.Controls.Add(panel6);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(label6);
@@ -148,13 +158,69 @@
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
             // 
+            // iconButton3
+            // 
+            iconButton3.BackColor = Color.FromArgb(38, 38, 38);
+            iconButton3.FlatAppearance.BorderSize = 0;
+            iconButton3.FlatStyle = FlatStyle.Flat;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.ContactBook;
+            iconButton3.IconColor = Color.Gainsboro;
+            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton3.IconSize = 37;
+            iconButton3.Location = new Point(467, 17);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Size = new Size(75, 39);
+            iconButton3.TabIndex = 16;
+            iconButton3.UseVisualStyleBackColor = false;
+            iconButton3.Click += iconButton3_Click;
+            // 
+            // iconButton2
+            // 
+            iconButton2.BackColor = Color.FromArgb(38, 38, 38);
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            iconButton2.IconColor = Color.Gainsboro;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.IconSize = 37;
+            iconButton2.Location = new Point(577, 17);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(75, 39);
+            iconButton2.TabIndex = 16;
+            iconButton2.UseVisualStyleBackColor = false;
+            iconButton2.Click += iconButton2_Click;
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.FromArgb(38, 38, 38);
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton1.IconColor = Color.Gainsboro;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 37;
+            iconButton1.Location = new Point(357, 17);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(75, 39);
+            iconButton1.TabIndex = 16;
+            iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Location = new Point(738, 160);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(3, 80);
+            panel6.TabIndex = 10;
+            // 
             // label4
             // 
             label4.BackColor = Color.Transparent;
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(558, 260);
+            label4.Location = new Point(747, 260);
             label4.Name = "label4";
             label4.Size = new Size(107, 23);
             label4.TabIndex = 15;
@@ -163,7 +229,7 @@
             // panel5
             // 
             panel5.BackColor = Color.White;
-            panel5.Location = new Point(549, 259);
+            panel5.Location = new Point(738, 259);
             panel5.Name = "panel5";
             panel5.Size = new Size(3, 52);
             panel5.TabIndex = 13;
@@ -173,8 +239,8 @@
             label6.BackColor = Color.Transparent;
             label6.FlatStyle = FlatStyle.Flat;
             label6.Font = new Font("Poppins", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(562, 278);
+            label6.ForeColor = Color.LightGreen;
+            label6.Location = new Point(756, 278);
             label6.Name = "label6";
             label6.Size = new Size(154, 37);
             label6.TabIndex = 14;
@@ -182,6 +248,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(label7);
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 348);
             panel2.Margin = new Padding(0);
@@ -190,6 +257,19 @@
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.FlatStyle = FlatStyle.Flat;
+            label7.Font = new Font("Poppins Medium", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.WhiteSmoke;
+            label7.Location = new Point(375, 16);
+            label7.Name = "label7";
+            label7.Size = new Size(258, 48);
+            label7.TabIndex = 11;
+            label7.Text = "ACTIVE SERVICES";
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -197,7 +277,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(558, 160);
+            label3.Location = new Point(747, 160);
             label3.Name = "label3";
             label3.Size = new Size(89, 23);
             label3.TabIndex = 11;
@@ -211,7 +291,7 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(558, 60);
+            label5.Location = new Point(747, 60);
             label5.Name = "label5";
             label5.Size = new Size(37, 23);
             label5.TabIndex = 11;
@@ -220,7 +300,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.White;
+            panel3.BackColor = Color.FromArgb(38, 38, 38);
             panel3.Location = new Point(3, 331);
             panel3.Name = "panel3";
             panel3.Size = new Size(1000, 3);
@@ -229,7 +309,7 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(549, 59);
+            panel4.Location = new Point(738, 59);
             panel4.Name = "panel4";
             panel4.Size = new Size(3, 80);
             panel4.TabIndex = 9;
@@ -240,8 +320,8 @@
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(562, 178);
+            label1.ForeColor = Color.FromArgb(255, 128, 0);
+            label1.Location = new Point(751, 178);
             label1.Name = "label1";
             label1.Size = new Size(172, 65);
             label1.TabIndex = 10;
@@ -255,17 +335,17 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(562, 78);
+            label2.Location = new Point(751, 78);
             label2.Name = "label2";
-            label2.Size = new Size(263, 65);
+            label2.Size = new Size(124, 65);
             label2.TabIndex = 10;
-            label2.Text = "Toyota Hilux";
+            label2.Text = "Hilux";
             label2.Click += label2_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(22, 89);
+            pictureBox1.Location = new Point(269, 89);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(470, 259);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -288,6 +368,8 @@
             ((System.ComponentModel.ISupportInitialize)signOutPictureBox).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -312,5 +394,10 @@
         private Label label3;
         private Panel panel3;
         private Label label1;
+        private Panel panel6;
+        private Label label7;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
     }
 }

@@ -2,6 +2,7 @@
 {
     public partial class ShopForm : Form
     {
+        public Form _previousForm;
         public ShopForm()
         {
             InitializeComponent();
@@ -50,5 +51,10 @@
             label5.Size = new Size(200, 60);
         }
 
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            _previousForm.Show();
+            this.Close();
+        }
     }
 }

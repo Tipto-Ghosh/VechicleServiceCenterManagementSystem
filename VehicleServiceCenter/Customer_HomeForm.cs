@@ -18,7 +18,7 @@ namespace VehicleServiceCenter
 
             showPurchasedServices();
         }
-        private int x = 40, y = 0;
+        private int x = 40, y = 80;
 
         private void showPurchasedServices()
         {
@@ -108,6 +108,26 @@ namespace VehicleServiceCenter
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Customer_HomeForm c1 = new Customer_HomeForm();
+            c1.Show();
+            this.Hide();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ShopForm s1 = new ShopForm();
+            s1._previousForm = this;
+            s1.Show();
+            this.Hide();
         }
     }
 }
