@@ -73,7 +73,7 @@ namespace VehicleServiceCenter
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             //Application.Run(new Admin());
-            Application.Run(new AdminCustomerForm());
+            //Application.Run(new AdminCustomerForm());
             Application.Run(new Admin_ReceptionistForm());
 
             //practice
