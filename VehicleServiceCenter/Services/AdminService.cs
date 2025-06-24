@@ -1,16 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 using VehicleServiceCenter.Repositories;
 
 
-namespace VehicleServiceCenter.Services {
-    public class AdminService {
+namespace VehicleServiceCenter.Services
+{
+    public class AdminService
+    {
 
         private AdminRepository adminRepo;
         private UserRepository userRepo;
@@ -24,7 +19,8 @@ namespace VehicleServiceCenter.Services {
 
 
         // initalize all objects when cons. call
-        public AdminService() {
+        public AdminService()
+        {
             this.adminRepo = new AdminRepository();
             this.userRepo = new UserRepository();
             this.mechanicRepo = new MechanicRepository();
@@ -38,100 +34,125 @@ namespace VehicleServiceCenter.Services {
 
         // Make Admin Operations
 
-        public int AddAdmin(Models.Admin admin) {
+        public int AddAdmin(Models.Admin admin)
+        {
             int status = adminRepo.InsertAdmin(admin);
             return status;
         }
 
-        public int UpdateAdmin(Models.Admin admin) { 
-           int status = adminRepo.UpdateAdmin(admin);
+        public int UpdateAdmin(Models.Admin admin)
+        {
+            int status = adminRepo.UpdateAdmin(admin);
             return status;
         }
 
-        public int DeleteAdmin(int adminId) {
+        public int DeleteAdmin(int adminId)
+        {
             return adminRepo.DeleteAdmin(adminId);
         }
 
-        public int AddReceptionist(Receptionist recep) {
+        public int AddReceptionist(Receptionist recep)
+        {
             return receptionistRepo.InsertReceptionist(recep);
         }
-        public int UpdateReceptionist(Receptionist recep) {
+        public int UpdateReceptionist(Receptionist recep)
+        {
             return receptionistRepo.UpdateReceptionist(recep);
         }
-        public int DeleteReceptionist(int id) {
+        public int DeleteReceptionist(int id)
+        {
             return receptionistRepo.DeleteReceptionist(id);
         }
 
 
-        public int AddMechanic(Mechanic mechanic) { 
-           return mechanicRepo.InsertMechanic(mechanic);
+        public int AddMechanic(Mechanic mechanic)
+        {
+            return mechanicRepo.InsertMechanic(mechanic);
         }
-        public int DeleteMechanic(int id) {
+        public int DeleteMechanic(int id)
+        {
             return mechanicRepo.DeleteMechanic(id);
         }
-        public int UpdateMechanic(Mechanic mech) {
+        public int UpdateMechanic(Mechanic mech)
+        {
             return mechanicRepo.UpdateMechanic(mech);
         }
 
 
-        public int AddCustomer(Customer customer) {
-           return customerRepo.InsertCustomer(customer);
+        public int AddCustomer(Customer customer)
+        {
+            return customerRepo.InsertCustomer(customer);
         }
-        public int UpdateCustomer(Customer customer) { 
-           return customerRepo.UpdateCustomer(customer);
+        public int UpdateCustomer(Customer customer)
+        {
+            return customerRepo.UpdateCustomer(customer);
         }
 
-        public int DeleteCustomer(int id) {
+        public int DeleteCustomer(int id)
+        {
             return customerRepo.DeleteCustomer(id);
         }
 
 
-        public int AddInventoryManager(InventoryManager manager) {
+        public int AddInventoryManager(InventoryManager manager)
+        {
             return inventoryManagerRepo.InsertInventoryManager(manager);
         }
-        public int UpdateInventoryManager(InventoryManager manager) { 
+        public int UpdateInventoryManager(InventoryManager manager)
+        {
             return inventoryManagerRepo.UpdateInventoryManager(manager);
         }
-        public int DeleteInventoryManager(int id) {
+        public int DeleteInventoryManager(int id)
+        {
             return inventoryManagerRepo.DeleteInventoryManager(id);
         }
 
 
-        public int AddInventoryItem(InventoryItem item) { 
-           return inventoryItemRepo.InsertItem(item);
+        public int AddInventoryItem(InventoryItem item)
+        {
+            return inventoryItemRepo.InsertItem(item);
         }
-        public int UpdateInventoryItem(InventoryItem item) { 
-           return inventoryItemRepo.UpdateItem(item);
+        public int UpdateInventoryItem(InventoryItem item)
+        {
+            return inventoryItemRepo.UpdateItem(item);
         }
-        public int DeleteInventoryItem(int id) { 
-           return inventoryItemRepo.DeleteItem(id);
+        public int DeleteInventoryItem(int id)
+        {
+            return inventoryItemRepo.DeleteItem(id);
         }
 
 
-        public int AddOfferedService(OfferedService offeredService) { 
-           return offeredServiceRepo.InsertService(offeredService);
+        public int AddOfferedService(OfferedService offeredService)
+        {
+            return offeredServiceRepo.InsertService(offeredService);
         }
-        public int UpdateOfferedService(OfferedService offeredService) {
+        public int UpdateOfferedService(OfferedService offeredService)
+        {
             return offeredServiceRepo.UpdateService(offeredService);
         }
-        
-        public int DeleteOfferedService(int serviceId) {
+
+        public int DeleteOfferedService(int serviceId)
+        {
             return offeredServiceRepo.DeleteService(serviceId);
         }
 
 
-        public int AddAppointment(Appointment appointment) {
+        public int AddAppointment(Appointment appointment)
+        {
             return appointmentRepo.CreateAppointment(appointment);
         }
-        public int UpdateAppointment(Appointment appointment) {
+        public int UpdateAppointment(Appointment appointment)
+        {
             return appointmentRepo.UpdateAppointment(appointment);
         }
-        public int CancelAppointment(int appointmentId) {
-           return  appointmentRepo.CancelAppointment(appointmentId);
+        public int CancelAppointment(int appointmentId)
+        {
+            return appointmentRepo.CancelAppointment(appointmentId);
         }
 
-        public int AssignMechanic(int appointmentId, int mechanicId) {
+        public int AssignMechanic(int appointmentId, int mechanicId)
+        {
             return appointmentRepo.AssignMechanic(appointmentId, mechanicId);
         }
-    }     
+    }
 }

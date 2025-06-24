@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VehicleServiceCenter
 {
-    public partial class Admin : Form
+    public partial class Customer_HomeForm : Form
     {
-        public Admin()
+        public Customer_HomeForm()
         {
             InitializeComponent();
         }
