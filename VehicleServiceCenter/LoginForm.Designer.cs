@@ -1,6 +1,6 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class LogIn2
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -26,18 +26,18 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             panel1 = new Panel();
-            comboBox1 = new ComboBox();
+            button_HideShow = new Button();
+            UserIdTxtBox = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
             pictureBox3 = new PictureBox();
             AboutLbl = new Label();
             StartBtn = new Button();
-            EmailLbl = new Label();
             PassTxtBox = new TextBox();
             PassLbl = new Label();
-            UserNameTxtBox = new TextBox();
-            UserNameLbl = new Label();
+            UserIdLbl = new Label();
             LogBtn = new Button();
             SignBtn = new Button();
             pictureBox4 = new PictureBox();
@@ -54,15 +54,16 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(18, 18, 18);
-            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(button_HideShow);
+            panel1.Controls.Add(UserIdTxtBox);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(AboutLbl);
             panel1.Controls.Add(StartBtn);
-            panel1.Controls.Add(EmailLbl);
             panel1.Controls.Add(PassTxtBox);
             panel1.Controls.Add(PassLbl);
-            panel1.Controls.Add(UserNameTxtBox);
-            panel1.Controls.Add(UserNameLbl);
+            panel1.Controls.Add(UserIdLbl);
             panel1.Controls.Add(LogBtn);
             panel1.Controls.Add(SignBtn);
             panel1.Controls.Add(pictureBox4);
@@ -74,15 +75,48 @@
             panel1.Size = new Size(449, 702);
             panel1.TabIndex = 1;
             // 
-            // comboBox1
+            // button_HideShow
             // 
-            comboBox1.BackColor = Color.FromArgb(124, 124, 124);
-            comboBox1.ForeColor = Color.Black;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(74, 407);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(295, 28);
-            comboBox1.TabIndex = 32;
+            button_HideShow.BackColor = Color.FromArgb(208, 206, 206);
+            button_HideShow.Font = new Font("Microsoft Sans Serif", 12F);
+            button_HideShow.ForeColor = Color.FromArgb(18, 18, 18);
+            button_HideShow.Location = new Point(347, 334);
+            button_HideShow.Name = "button_HideShow";
+            button_HideShow.Size = new Size(83, 34);
+            button_HideShow.TabIndex = 35;
+            button_HideShow.Text = "Show";
+            button_HideShow.UseVisualStyleBackColor = false;
+            button_HideShow.Click += button_HideShow_Click;
+            // 
+            // UserIdTxtBox
+            // 
+            UserIdTxtBox.BackColor = SystemColors.WindowFrame;
+            UserIdTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UserIdTxtBox.ForeColor = SystemColors.InactiveBorder;
+            UserIdTxtBox.Location = new Point(135, 213);
+            UserIdTxtBox.Name = "UserIdTxtBox";
+            UserIdTxtBox.Size = new Size(271, 34);
+            UserIdTxtBox.TabIndex = 34;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Cascadia Code", 10F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(27, 385);
+            label2.Name = "label2";
+            label2.Size = new Size(403, 37);
+            label2.TabIndex = 33;
+            label2.Text = "Don't Have Any Account? Hit SignUp";
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Cascadia Code", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(95, 134);
+            label1.Name = "label1";
+            label1.Size = new Size(239, 34);
+            label1.TabIndex = 32;
+            label1.Text = "WELCOME USER !!!";
             // 
             // pictureBox3
             // 
@@ -97,11 +131,11 @@
             // AboutLbl
             // 
             AboutLbl.AutoSize = true;
-            AboutLbl.Font = new Font("Poppins ExtraLight", 10F);
+            AboutLbl.Font = new Font("Microsoft Sans Serif", 10F);
             AboutLbl.ForeColor = Color.White;
             AboutLbl.Location = new Point(171, 663);
             AboutLbl.Name = "AboutLbl";
-            AboutLbl.Size = new Size(91, 30);
+            AboutLbl.Size = new Size(95, 20);
             AboutLbl.TabIndex = 30;
             AboutLbl.Text = "ABOUT US";
             AboutLbl.TextAlign = ContentAlignment.TopCenter;
@@ -109,90 +143,76 @@
             // StartBtn
             // 
             StartBtn.BackColor = Color.FromArgb(208, 206, 206);
-            StartBtn.Font = new Font("Poppins Medium", 13.8F);
-            StartBtn.Location = new Point(95, 594);
+            StartBtn.Font = new Font("Microsoft Sans Serif", 13.8F);
+            StartBtn.Location = new Point(95, 540);
             StartBtn.Name = "StartBtn";
             StartBtn.Size = new Size(254, 44);
             StartBtn.TabIndex = 29;
             StartBtn.Text = "Let’s Start!";
             StartBtn.UseVisualStyleBackColor = false;
             // 
-            // EmailLbl
-            // 
-            EmailLbl.AutoSize = true;
-            EmailLbl.Font = new Font("Cascadia Code", 10F);
-            EmailLbl.ForeColor = Color.White;
-            EmailLbl.Location = new Point(74, 382);
-            EmailLbl.Name = "EmailLbl";
-            EmailLbl.Size = new Size(50, 22);
-            EmailLbl.TabIndex = 27;
-            EmailLbl.Text = "ROLE";
-            // 
             // PassTxtBox
             // 
             PassTxtBox.BackColor = Color.FromArgb(124, 124, 124);
             PassTxtBox.BorderStyle = BorderStyle.None;
-            PassTxtBox.Location = new Point(74, 338);
+            PassTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PassTxtBox.ForeColor = SystemColors.InactiveBorder;
+            PassTxtBox.Location = new Point(135, 285);
             PassTxtBox.Multiline = true;
             PassTxtBox.Name = "PassTxtBox";
-            PassTxtBox.Size = new Size(295, 27);
+            PassTxtBox.PasswordChar = '#';
+            PassTxtBox.Size = new Size(271, 33);
             PassTxtBox.TabIndex = 26;
+            PassTxtBox.UseSystemPasswordChar = true;
             // 
             // PassLbl
             // 
             PassLbl.AutoSize = true;
             PassLbl.Font = new Font("Cascadia Code", 10F);
             PassLbl.ForeColor = Color.White;
-            PassLbl.Location = new Point(74, 304);
+            PassLbl.Location = new Point(27, 296);
             PassLbl.Name = "PassLbl";
             PassLbl.Size = new Size(90, 22);
             PassLbl.TabIndex = 25;
             PassLbl.Text = "PASSWORD";
+            PassLbl.Click += PassLbl_Click;
             // 
-            // UserNameTxtBox
+            // UserIdLbl
             // 
-            UserNameTxtBox.BackColor = Color.FromArgb(124, 124, 124);
-            UserNameTxtBox.BorderStyle = BorderStyle.None;
-            UserNameTxtBox.Location = new Point(74, 253);
-            UserNameTxtBox.Multiline = true;
-            UserNameTxtBox.Name = "UserNameTxtBox";
-            UserNameTxtBox.Size = new Size(295, 30);
-            UserNameTxtBox.TabIndex = 24;
-            // 
-            // UserNameLbl
-            // 
-            UserNameLbl.AutoSize = true;
-            UserNameLbl.Font = new Font("Cascadia Code", 10F);
-            UserNameLbl.ForeColor = Color.White;
-            UserNameLbl.Location = new Point(74, 218);
-            UserNameLbl.Name = "UserNameLbl";
-            UserNameLbl.Size = new Size(100, 22);
-            UserNameLbl.TabIndex = 23;
-            UserNameLbl.Text = "USER NAME";
+            UserIdLbl.AutoSize = true;
+            UserIdLbl.Font = new Font("Cascadia Code", 10F);
+            UserIdLbl.ForeColor = Color.White;
+            UserIdLbl.Location = new Point(27, 218);
+            UserIdLbl.Name = "UserIdLbl";
+            UserIdLbl.Size = new Size(80, 22);
+            UserIdLbl.TabIndex = 23;
+            UserIdLbl.Text = "USER ID";
             // 
             // LogBtn
             // 
             LogBtn.BackColor = Color.FromArgb(208, 206, 206);
-            LogBtn.Font = new Font("Poppins Light", 12F);
+            LogBtn.Font = new Font("Microsoft Sans Serif", 12F);
             LogBtn.ForeColor = Color.FromArgb(18, 18, 18);
-            LogBtn.Location = new Point(250, 133);
+            LogBtn.Location = new Point(268, 443);
             LogBtn.Name = "LogBtn";
             LogBtn.Size = new Size(114, 42);
             LogBtn.TabIndex = 22;
             LogBtn.Text = "LOG IN";
             LogBtn.UseVisualStyleBackColor = false;
+            LogBtn.Click += LogBtn_Click;
             // 
             // SignBtn
             // 
             SignBtn.BackColor = Color.FromArgb(18, 18, 18);
-            SignBtn.Font = new Font("Poppins Light", 12F);
+            SignBtn.Font = new Font("Microsoft Sans Serif", 12F);
             SignBtn.ForeColor = Color.FromArgb(208, 206, 206);
-            SignBtn.Location = new Point(74, 133);
+            SignBtn.Location = new Point(50, 443);
             SignBtn.Name = "SignBtn";
             SignBtn.Size = new Size(114, 42);
             SignBtn.TabIndex = 21;
             SignBtn.Text = "SIGN UP";
             SignBtn.UseVisualStyleBackColor = false;
+            SignBtn.Click += SignBtn_Click;
             // 
             // pictureBox4
             // 
@@ -262,14 +282,15 @@
         private PictureBox pictureBox4;
         private Button SignBtn;
         private Button LogBtn;
-        private TextBox UserNameTxtBox;
-        private Label UserNameLbl;
-        private Label EmailLbl;
+        private Label UserIdLbl;
         private TextBox PassTxtBox;
         private Label PassLbl;
         private Button StartBtn;
         private PictureBox pictureBox3;
         private Label AboutLbl;
-        private ComboBox comboBox1;
+        private Label label2;
+        private Label label1;
+        private TextBox UserIdTxtBox;
+        private Button button_HideShow;
     }
 }

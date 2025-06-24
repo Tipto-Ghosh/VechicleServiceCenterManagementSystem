@@ -23,6 +23,12 @@
     <Compile Update="HondaForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LogIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LogIn2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SuzukiForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -32,10 +38,10 @@
     <Compile Update="MitsubishiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LogIN.cs">
+    <Compile Update="SignUpCustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LogIn2.cs">
+    <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ShopForm.cs">

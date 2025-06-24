@@ -1,6 +1,6 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class LogIN
+    partial class SignUpCustomerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -26,11 +26,17 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             SignBtn = new Button();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            textBox_UserID = new TextBox();
+            label_userID = new Label();
+            DOBPicker = new DateTimePicker();
+            BloodGroupComboBox = new ComboBox();
+            label2 = new Label();
+            PhoneTxtBox = new TextBox();
+            label1 = new Label();
             OtherChk = new CheckBox();
             FemaleChk = new CheckBox();
             MaleChk = new CheckBox();
@@ -40,9 +46,6 @@
             label6 = new Label();
             StartBtn = new Button();
             GenderLbl = new Label();
-            YearTxtBox = new TextBox();
-            MonTxtBox = new TextBox();
-            DayTxtBox = new TextBox();
             DobLbl = new Label();
             EmailTxtBox = new TextBox();
             EmailLbl = new Label();
@@ -63,15 +66,15 @@
             // SignBtn
             // 
             SignBtn.BackColor = Color.FromArgb(208, 206, 206);
-            SignBtn.Font = new Font("Poppins Light", 12F, FontStyle.Bold);
+            SignBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             SignBtn.ForeColor = Color.FromArgb(18, 18, 18);
-            SignBtn.Location = new Point(62, 94);
-            SignBtn.Margin = new Padding(3, 2, 3, 2);
+            SignBtn.Location = new Point(64, 546);
             SignBtn.Name = "SignBtn";
             SignBtn.Size = new Size(100, 32);
             SignBtn.TabIndex = 0;
             SignBtn.Text = "SIGN UP";
             SignBtn.UseVisualStyleBackColor = false;
+            SignBtn.Click += SignBtn_Click;
             // 
             // pictureBox1
             // 
@@ -87,6 +90,13 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(18, 18, 18);
+            panel1.Controls.Add(textBox_UserID);
+            panel1.Controls.Add(label_userID);
+            panel1.Controls.Add(DOBPicker);
+            panel1.Controls.Add(BloodGroupComboBox);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(PhoneTxtBox);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(OtherChk);
             panel1.Controls.Add(FemaleChk);
             panel1.Controls.Add(MaleChk);
@@ -96,9 +106,6 @@
             panel1.Controls.Add(label6);
             panel1.Controls.Add(StartBtn);
             panel1.Controls.Add(GenderLbl);
-            panel1.Controls.Add(YearTxtBox);
-            panel1.Controls.Add(MonTxtBox);
-            panel1.Controls.Add(DayTxtBox);
             panel1.Controls.Add(DobLbl);
             panel1.Controls.Add(EmailTxtBox);
             panel1.Controls.Add(EmailLbl);
@@ -118,13 +125,92 @@
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
+            // textBox_UserID
+            // 
+            textBox_UserID.BackColor = Color.FromArgb(124, 124, 124);
+            textBox_UserID.BorderStyle = BorderStyle.None;
+            textBox_UserID.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox_UserID.ForeColor = SystemColors.InactiveBorder;
+            textBox_UserID.Location = new Point(127, 127);
+            textBox_UserID.Multiline = true;
+            textBox_UserID.Name = "textBox_UserID";
+            textBox_UserID.ReadOnly = true;
+            textBox_UserID.Size = new Size(295, 30);
+            textBox_UserID.TabIndex = 30;
+            textBox_UserID.Text = "System Auto Generated";
+            // 
+            // label_userID
+            // 
+            label_userID.AutoSize = true;
+            label_userID.Font = new Font("Cascadia Code", 10F);
+            label_userID.ForeColor = Color.White;
+            label_userID.Location = new Point(11, 125);
+            label_userID.Name = "label_userID";
+            label_userID.Size = new Size(80, 22);
+            label_userID.TabIndex = 29;
+            label_userID.Text = "USER ID";
+            label_userID.Click += label3_Click;
+            // 
+            // DOBPicker
+            // 
+            DOBPicker.Location = new Point(127, 499);
+            DOBPicker.Name = "DOBPicker";
+            DOBPicker.Size = new Size(250, 27);
+            DOBPicker.TabIndex = 28;
+            // 
+            // BloodGroupComboBox
+            // 
+            BloodGroupComboBox.AutoCompleteCustomSource.AddRange(new string[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O- " });
+            BloodGroupComboBox.BackColor = SystemColors.WindowFrame;
+            BloodGroupComboBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BloodGroupComboBox.ForeColor = SystemColors.ButtonHighlight;
+            BloodGroupComboBox.FormattingEnabled = true;
+            BloodGroupComboBox.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
+            BloodGroupComboBox.Location = new Point(149, 441);
+            BloodGroupComboBox.Name = "BloodGroupComboBox";
+            BloodGroupComboBox.Size = new Size(191, 36);
+            BloodGroupComboBox.TabIndex = 26;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Cascadia Code", 10F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(11, 442);
+            label2.Name = "label2";
+            label2.Size = new Size(120, 22);
+            label2.TabIndex = 25;
+            label2.Text = "BLOOD GROUP";
+            // 
+            // PhoneTxtBox
+            // 
+            PhoneTxtBox.BackColor = Color.FromArgb(124, 124, 124);
+            PhoneTxtBox.BorderStyle = BorderStyle.None;
+            PhoneTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PhoneTxtBox.ForeColor = SystemColors.InactiveBorder;
+            PhoneTxtBox.Location = new Point(127, 338);
+            PhoneTxtBox.Multiline = true;
+            PhoneTxtBox.Name = "PhoneTxtBox";
+            PhoneTxtBox.Size = new Size(295, 27);
+            PhoneTxtBox.TabIndex = 24;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Cascadia Code", 10F);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(11, 343);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 22);
+            label1.TabIndex = 23;
+            label1.Text = "PHONE NO";
+            // 
             // OtherChk
             // 
             OtherChk.AutoSize = true;
             OtherChk.Font = new Font("Cascadia Code", 9F);
             OtherChk.ForeColor = Color.White;
-            OtherChk.Location = new Point(129, 413);
-            OtherChk.Margin = new Padding(3, 2, 3, 2);
+            OtherChk.Location = new Point(322, 392);
             OtherChk.Name = "OtherChk";
             OtherChk.Size = new Size(61, 20);
             OtherChk.TabIndex = 22;
@@ -136,8 +222,7 @@
             FemaleChk.AutoSize = true;
             FemaleChk.Font = new Font("Cascadia Code", 9F);
             FemaleChk.ForeColor = Color.White;
-            FemaleChk.Location = new Point(129, 391);
-            FemaleChk.Margin = new Padding(3, 2, 3, 2);
+            FemaleChk.Location = new Point(215, 392);
             FemaleChk.Name = "FemaleChk";
             FemaleChk.Size = new Size(68, 20);
             FemaleChk.TabIndex = 21;
@@ -149,8 +234,7 @@
             MaleChk.AutoSize = true;
             MaleChk.Font = new Font("Cascadia Code", 9F);
             MaleChk.ForeColor = Color.White;
-            MaleChk.Location = new Point(129, 368);
-            MaleChk.Margin = new Padding(3, 2, 3, 2);
+            MaleChk.Location = new Point(127, 392);
             MaleChk.Name = "MaleChk";
             MaleChk.Size = new Size(54, 20);
             MaleChk.TabIndex = 20;
@@ -183,11 +267,11 @@
             // AboutLbl
             // 
             AboutLbl.AutoSize = true;
-            AboutLbl.Font = new Font("Poppins ExtraLight", 10F);
+            AboutLbl.Font = new Font("Microsoft Sans Serif", 10F);
             AboutLbl.ForeColor = Color.White;
             AboutLbl.Location = new Point(136, 490);
             AboutLbl.Name = "AboutLbl";
-            AboutLbl.Size = new Size(77, 25);
+            AboutLbl.Size = new Size(95, 20);
             AboutLbl.TabIndex = 17;
             AboutLbl.Text = "ABOUT US";
             AboutLbl.TextAlign = ContentAlignment.TopCenter;
@@ -203,10 +287,9 @@
             // 
             // StartBtn
             // 
-            StartBtn.BackColor = SystemColors.ActiveBorder;
-            StartBtn.Font = new Font("Poppins Medium", 13.8F);
-            StartBtn.Location = new Point(75, 446);
-            StartBtn.Margin = new Padding(3, 2, 3, 2);
+            StartBtn.BackColor = Color.FromArgb(208, 206, 206);
+            StartBtn.Font = new Font("Microsoft Sans Serif", 13.8F);
+            StartBtn.Location = new Point(86, 594);
             StartBtn.Name = "StartBtn";
             StartBtn.Size = new Size(222, 32);
             StartBtn.TabIndex = 15;
@@ -219,45 +302,18 @@
             GenderLbl.AutoSize = true;
             GenderLbl.Font = new Font("Cascadia Code", 10F);
             GenderLbl.ForeColor = Color.White;
-            GenderLbl.Location = new Point(62, 368);
+            GenderLbl.Location = new Point(11, 391);
             GenderLbl.Name = "GenderLbl";
             GenderLbl.Size = new Size(56, 18);
             GenderLbl.TabIndex = 13;
             GenderLbl.Text = "GENDER";
-            // 
-            // YearTxtBox
-            // 
-            YearTxtBox.BackColor = Color.FromArgb(124, 124, 124);
-            YearTxtBox.Location = new Point(248, 329);
-            YearTxtBox.Margin = new Padding(3, 2, 3, 2);
-            YearTxtBox.Name = "YearTxtBox";
-            YearTxtBox.Size = new Size(50, 23);
-            YearTxtBox.TabIndex = 12;
-            // 
-            // MonTxtBox
-            // 
-            MonTxtBox.BackColor = Color.FromArgb(124, 124, 124);
-            MonTxtBox.Location = new Point(179, 329);
-            MonTxtBox.Margin = new Padding(3, 2, 3, 2);
-            MonTxtBox.Name = "MonTxtBox";
-            MonTxtBox.Size = new Size(50, 23);
-            MonTxtBox.TabIndex = 11;
-            // 
-            // DayTxtBox
-            // 
-            DayTxtBox.BackColor = Color.FromArgb(124, 124, 124);
-            DayTxtBox.Location = new Point(111, 329);
-            DayTxtBox.Margin = new Padding(3, 2, 3, 2);
-            DayTxtBox.Name = "DayTxtBox";
-            DayTxtBox.Size = new Size(50, 23);
-            DayTxtBox.TabIndex = 10;
             // 
             // DobLbl
             // 
             DobLbl.AutoSize = true;
             DobLbl.Font = new Font("Cascadia Code", 10F);
             DobLbl.ForeColor = Color.White;
-            DobLbl.Location = new Point(62, 330);
+            DobLbl.Location = new Point(23, 499);
             DobLbl.Name = "DobLbl";
             DobLbl.Size = new Size(32, 18);
             DobLbl.TabIndex = 9;
@@ -267,8 +323,9 @@
             // 
             EmailTxtBox.BackColor = Color.FromArgb(124, 124, 124);
             EmailTxtBox.BorderStyle = BorderStyle.None;
-            EmailTxtBox.Location = new Point(62, 290);
-            EmailTxtBox.Margin = new Padding(3, 2, 3, 2);
+            EmailTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            EmailTxtBox.ForeColor = SystemColors.InactiveBorder;
+            EmailTxtBox.Location = new Point(127, 295);
             EmailTxtBox.Multiline = true;
             EmailTxtBox.Name = "EmailTxtBox";
             EmailTxtBox.Size = new Size(258, 20);
@@ -279,7 +336,7 @@
             EmailLbl.AutoSize = true;
             EmailLbl.Font = new Font("Cascadia Code", 10F);
             EmailLbl.ForeColor = Color.White;
-            EmailLbl.Location = new Point(62, 259);
+            EmailLbl.Location = new Point(11, 293);
             EmailLbl.Name = "EmailLbl";
             EmailLbl.Size = new Size(56, 18);
             EmailLbl.TabIndex = 7;
@@ -289,8 +346,9 @@
             // 
             PassTxtBox.BackColor = Color.FromArgb(124, 124, 124);
             PassTxtBox.BorderStyle = BorderStyle.None;
-            PassTxtBox.Location = new Point(62, 226);
-            PassTxtBox.Margin = new Padding(3, 2, 3, 2);
+            PassTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PassTxtBox.ForeColor = SystemColors.InactiveBorder;
+            PassTxtBox.Location = new Point(127, 242);
             PassTxtBox.Multiline = true;
             PassTxtBox.Name = "PassTxtBox";
             PassTxtBox.Size = new Size(258, 20);
@@ -301,7 +359,7 @@
             PassLbl.AutoSize = true;
             PassLbl.Font = new Font("Cascadia Code", 10F);
             PassLbl.ForeColor = Color.White;
-            PassLbl.Location = new Point(62, 200);
+            PassLbl.Location = new Point(11, 240);
             PassLbl.Name = "PassLbl";
             PassLbl.Size = new Size(72, 18);
             PassLbl.TabIndex = 5;
@@ -311,8 +369,9 @@
             // 
             UserNameTxtBox.BackColor = Color.FromArgb(124, 124, 124);
             UserNameTxtBox.BorderStyle = BorderStyle.None;
-            UserNameTxtBox.Location = new Point(62, 166);
-            UserNameTxtBox.Margin = new Padding(3, 2, 3, 2);
+            UserNameTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UserNameTxtBox.ForeColor = SystemColors.InactiveBorder;
+            UserNameTxtBox.Location = new Point(127, 186);
             UserNameTxtBox.Multiline = true;
             UserNameTxtBox.Name = "UserNameTxtBox";
             UserNameTxtBox.Size = new Size(258, 22);
@@ -323,7 +382,7 @@
             UserNameLbl.AutoSize = true;
             UserNameLbl.Font = new Font("Cascadia Code", 10F);
             UserNameLbl.ForeColor = Color.White;
-            UserNameLbl.Location = new Point(62, 140);
+            UserNameLbl.Location = new Point(11, 186);
             UserNameLbl.Name = "UserNameLbl";
             UserNameLbl.Size = new Size(80, 18);
             UserNameLbl.TabIndex = 3;
@@ -333,15 +392,15 @@
             // LogBtn
             // 
             LogBtn.BackColor = Color.FromArgb(18, 18, 18);
-            LogBtn.Font = new Font("Poppins Light", 12F);
+            LogBtn.Font = new Font("Microsoft Sans Serif", 12F);
             LogBtn.ForeColor = Color.FromArgb(208, 206, 206);
-            LogBtn.Location = new Point(220, 94);
-            LogBtn.Margin = new Padding(3, 2, 3, 2);
+            LogBtn.Location = new Point(226, 546);
             LogBtn.Name = "LogBtn";
             LogBtn.Size = new Size(100, 32);
             LogBtn.TabIndex = 2;
             LogBtn.Text = "LOG IN";
             LogBtn.UseVisualStyleBackColor = false;
+            LogBtn.Click += LogBtn_Click;
             // 
             // pictureBox2
             // 
@@ -400,9 +459,6 @@
         private Label EmailLbl;
         private TextBox PassTxtBox;
         private Label GenderLbl;
-        private TextBox YearTxtBox;
-        private TextBox MonTxtBox;
-        private TextBox DayTxtBox;
         private Label AboutLbl;
         private Button StartBtn;
         private PictureBox pictureBox2;
@@ -413,5 +469,12 @@
         private CheckBox FemaleChk;
         private CheckBox MaleChk;
         private Label label6;
+        private TextBox PhoneTxtBox;
+        private Label label1;
+        private ComboBox BloodGroupComboBox;
+        private Label label2;
+        private DateTimePicker DOBPicker;
+        private Label label_userID;
+        private TextBox textBox_UserID;
     }
 }
