@@ -71,7 +71,7 @@ namespace VehicleServiceCenter {
 
             //arko form 
             //Application.Run(new LogIN());
-            Application.Run(new LogIn2());
+            Application.Run(new LoginForm());
             //Application.Run(new ShopForm());
             //Application.Run(new CarSelection());
             //Application.Run(new ToyotaForm());

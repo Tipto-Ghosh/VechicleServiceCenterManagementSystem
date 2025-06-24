@@ -12,8 +12,8 @@ using VehicleServiceCenter.Services;
 
 namespace VehicleServiceCenter
 {
-    public partial class LogIN : Form {
-        public LogIN() {
+    public partial class SignUpCustomerForm : Form {
+        public SignUpCustomerForm() {
             InitializeComponent();
         }
 
@@ -112,7 +112,7 @@ namespace VehicleServiceCenter
 
         private void LogBtn_Click(object sender, EventArgs e) {
             this.Hide();
-            LogIn2 l2 = new LogIn2();
+            LoginForm l2 = new LoginForm();
             l2.Show();
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class LogIN
+    partial class SignUpCustomerForm
     {
         /// <summary>
         /// Required designer variable.

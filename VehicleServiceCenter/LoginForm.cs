@@ -13,8 +13,8 @@ using VehicleServiceCenter.Repositories;
 
 namespace VehicleServiceCenter
 {
-    public partial class LogIn2 : Form {
-        public LogIn2() {
+    public partial class LoginForm : Form {
+        public LoginForm() {
             InitializeComponent();
         }
 
@@ -75,7 +75,7 @@ namespace VehicleServiceCenter
 
         private void SignBtn_Click(object sender, EventArgs e) {
             this.Hide();
-            LogIN signUpPage = new LogIN();
+            SignUpCustomerForm signUpPage = new SignUpCustomerForm();
             signUpPage.Show();
         }
 
