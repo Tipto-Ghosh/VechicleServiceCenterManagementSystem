@@ -1,6 +1,6 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class ToyotaForm
+    partial class HondaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToyotaForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HondaForm));
+            PanelProfile = new Panel();
+            pictureBox19 = new PictureBox();
             pictureBox22 = new PictureBox();
             pictureBox21 = new PictureBox();
             label7 = new Label();
             label6 = new Label();
             pictureBox20 = new PictureBox();
-            PanelProfile = new Panel();
-            pictureBox19 = new PictureBox();
-            MainTable = new TableLayoutPanel();
             Table2Brands = new TableLayoutPanel();
             panel11 = new Panel();
             panel12 = new Panel();
@@ -64,12 +63,11 @@
             pictureBox1 = new PictureBox();
             panel13 = new Panel();
             label2 = new Label();
+            PanelProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            PanelProfile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
-            MainTable.SuspendLayout();
             Table2Brands.SuspendLayout();
             panel11.SuspendLayout();
             panel12.SuspendLayout();
@@ -91,6 +89,34 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel13.SuspendLayout();
             SuspendLayout();
+            // 
+            // PanelProfile
+            // 
+            PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
+            PanelProfile.Controls.Add(pictureBox19);
+            PanelProfile.Controls.Add(pictureBox22);
+            PanelProfile.Controls.Add(pictureBox21);
+            PanelProfile.Controls.Add(label7);
+            PanelProfile.Controls.Add(label6);
+            PanelProfile.Controls.Add(pictureBox20);
+            PanelProfile.Dock = DockStyle.Top;
+            PanelProfile.Location = new Point(0, 0);
+            PanelProfile.Margin = new Padding(0);
+            PanelProfile.Name = "PanelProfile";
+            PanelProfile.Size = new Size(1152, 73);
+            PanelProfile.TabIndex = 4;
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
+            pictureBox19.Location = new Point(0, 12);
+            pictureBox19.Margin = new Padding(3, 4, 3, 4);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(45, 49);
+            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox19.TabIndex = 4;
+            pictureBox19.TabStop = false;
+            pictureBox19.Click += pictureBox19_Click;
             // 
             // pictureBox22
             // 
@@ -149,53 +175,6 @@
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
-            pictureBox20.Click += pictureBox20_Click;
-            // 
-            // PanelProfile
-            // 
-            PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
-            PanelProfile.Controls.Add(pictureBox19);
-            PanelProfile.Controls.Add(pictureBox22);
-            PanelProfile.Controls.Add(pictureBox21);
-            PanelProfile.Controls.Add(label7);
-            PanelProfile.Controls.Add(label6);
-            PanelProfile.Controls.Add(pictureBox20);
-            PanelProfile.Dock = DockStyle.Top;
-            PanelProfile.Location = new Point(0, 0);
-            PanelProfile.Margin = new Padding(0);
-            PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(1152, 73);
-            PanelProfile.TabIndex = 3;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(0, 12);
-            pictureBox19.Margin = new Padding(3, 4, 3, 4);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(45, 49);
-            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox19.TabIndex = 4;
-            pictureBox19.TabStop = false;
-            pictureBox19.Click += pictureBox19_Click;
-            pictureBox19.MouseLeave += pictureBox19_MouseLeave;
-            pictureBox19.MouseHover += pictureBox19_MouseEnter;
-            // 
-            // MainTable
-            // 
-            MainTable.ColumnCount = 1;
-            MainTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            MainTable.Controls.Add(PanelProfile, 0, 0);
-            MainTable.Controls.Add(Table2Brands, 0, 1);
-            MainTable.Dock = DockStyle.Fill;
-            MainTable.Location = new Point(0, 0);
-            MainTable.Margin = new Padding(0);
-            MainTable.Name = "MainTable";
-            MainTable.RowCount = 2;
-            MainTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 73F));
-            MainTable.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            MainTable.Size = new Size(1152, 716);
-            MainTable.TabIndex = 1;
             // 
             // Table2Brands
             // 
@@ -220,7 +199,7 @@
             Table2Brands.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             Table2Brands.RowStyles.Add(new RowStyle(SizeType.Absolute, 56F));
             Table2Brands.Size = new Size(1152, 643);
-            Table2Brands.TabIndex = 4;
+            Table2Brands.TabIndex = 6;
             // 
             // panel11
             // 
@@ -251,11 +230,11 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.WhiteSmoke;
-            label9.Location = new Point(113, 172);
+            label9.Location = new Point(141, 172);
             label9.Name = "label9";
-            label9.Size = new Size(148, 36);
+            label9.Size = new Size(68, 36);
             label9.TabIndex = 6;
-            label9.Text = "LAND CRUISER";
+            label9.Text = "CIVIC";
             // 
             // pictureBox6
             // 
@@ -267,9 +246,8 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 2;
             pictureBox6.TabStop = false;
-            pictureBox6.Click += pictureBox6_Click;
-            pictureBox6.MouseEnter += pictureBox_MouseEnter;
-            pictureBox6.MouseLeave += pictureBox_MouseLeave;
+            pictureBox6.MouseEnter += pictureBox6_MouseEnter;
+            pictureBox6.MouseLeave += pictureBox6_MouseLeave;
             // 
             // panel9
             // 
@@ -300,11 +278,11 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.WhiteSmoke;
-            label8.Location = new Point(127, 172);
+            label8.Location = new Point(129, 172);
             label8.Name = "label8";
-            label8.Size = new Size(94, 36);
+            label8.Size = new Size(68, 36);
             label8.TabIndex = 6;
-            label8.Text = "PROBOX";
+            label8.Text = "VEZEL";
             // 
             // pictureBox4
             // 
@@ -312,12 +290,13 @@
             pictureBox4.Location = new Point(0, 0);
             pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
+            pictureBox4.Padding = new Padding(25);
             pictureBox4.Size = new Size(327, 227);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
-            pictureBox4.MouseEnter += pictureBox_MouseEnter;
-            pictureBox4.MouseLeave += pictureBox_MouseLeave;
+            pictureBox4.MouseEnter += pictureBox4_MouseEnter;
+            pictureBox4.MouseLeave += pictureBox4_MouseLeave;
             // 
             // panel7
             // 
@@ -348,24 +327,24 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(130, 173);
+            label5.Location = new Point(120, 172);
             label5.Name = "label5";
-            label5.Size = new Size(72, 36);
+            label5.Size = new Size(100, 36);
             label5.TabIndex = 6;
-            label5.Text = "NOAH";
+            label5.Text = "ACCORD";
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(-121, -72);
+            pictureBox5.Location = new Point(0, 0);
             pictureBox5.Margin = new Padding(3, 4, 3, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(555, 344);
+            pictureBox5.Size = new Size(323, 227);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
-            pictureBox5.MouseEnter += pictureBox_MouseEnter;
-            pictureBox5.MouseLeave += pictureBox_MouseLeave;
+            pictureBox5.MouseEnter += pictureBox5_MouseEnter;
+            pictureBox5.MouseLeave += pictureBox5_MouseLeave;
             // 
             // panel5
             // 
@@ -400,20 +379,20 @@
             label4.Name = "label4";
             label4.Size = new Size(81, 36);
             label4.TabIndex = 5;
-            label4.Text = "ALLION";
+            label4.Text = "GRACE";
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-8, 0);
+            pictureBox3.Location = new Point(3, 4);
             pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(338, 227);
+            pictureBox3.Size = new Size(320, 219);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
-            pictureBox3.MouseEnter += pictureBox_MouseEnter;
-            pictureBox3.MouseLeave += pictureBox_MouseLeave;
+            pictureBox3.MouseEnter += pictureBox3_MouseEnter;
+            pictureBox3.MouseLeave += pictureBox3_MouseLeave;
             // 
             // panel3
             // 
@@ -446,23 +425,22 @@
             label3.ForeColor = Color.WhiteSmoke;
             label3.Location = new Point(127, 173);
             label3.Name = "label3";
-            label3.Size = new Size(105, 36);
+            label3.Size = new Size(90, 36);
             label3.TabIndex = 4;
-            label3.Text = "COROLLA";
+            label3.Text = "INSIGHT";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 3);
+            pictureBox2.Location = new Point(-1, -19);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(327, 228);
+            pictureBox2.Size = new Size(328, 246);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
-            pictureBox2.MouseEnter += pictureBox_MouseEnter;
-            pictureBox2.MouseLeave += pictureBox_MouseLeave;
+            pictureBox2.MouseEnter += pictureBox2_MouseEnter;
+            pictureBox2.MouseLeave += pictureBox2_MouseLeave;
             // 
             // panel1
             // 
@@ -474,7 +452,6 @@
             panel1.Padding = new Padding(29, 33, 29, 33);
             panel1.Size = new Size(384, 293);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // panel2
             // 
@@ -494,11 +471,11 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(130, 176);
+            label1.Location = new Point(134, 173);
             label1.Name = "label1";
-            label1.Size = new Size(68, 36);
+            label1.Size = new Size(65, 36);
             label1.TabIndex = 3;
-            label1.Text = "HILUX";
+            label1.Text = "CR-V";
             // 
             // pictureBox1
             // 
@@ -512,8 +489,8 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
-            pictureBox1.MouseEnter += pictureBox_MouseEnter;
-            pictureBox1.MouseLeave += pictureBox_MouseLeave;
+            pictureBox1.MouseEnter += pictureBox1_MouseEnter;
+            pictureBox1.MouseLeave += pictureBox1_MouseLeave;
             // 
             // panel13
             // 
@@ -536,22 +513,21 @@
             label2.TabIndex = 1;
             label2.Text = "SELECT YOUR CAR MODEL";
             // 
-            // ToyotaForm
+            // HondaForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1152, 716);
-            Controls.Add(MainTable);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "ToyotaForm";
-            Text = "ToyotaForm";
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            Controls.Add(Table2Brands);
+            Controls.Add(PanelProfile);
+            Name = "HondaForm";
+            Text = "HondaForm";
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
-            MainTable.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
             Table2Brands.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel12.ResumeLayout(false);
@@ -583,14 +559,14 @@
         }
 
         #endregion
+
+        private Panel PanelProfile;
+        private PictureBox pictureBox19;
         private PictureBox pictureBox22;
         private PictureBox pictureBox21;
         private Label label7;
         private Label label6;
         private PictureBox pictureBox20;
-        private Panel PanelProfile;
-        private TableLayoutPanel MainTable;
-        private PictureBox pictureBox19;
         private TableLayoutPanel Table2Brands;
         private Panel panel11;
         private Panel panel12;

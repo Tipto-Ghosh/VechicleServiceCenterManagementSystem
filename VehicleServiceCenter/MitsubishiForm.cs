@@ -1,0 +1,186 @@
+namespace VehicleServiceCenter
+{
+    public partial class MitsubishiForm : Form
+    {
+        public MitsubishiForm()
+        {
+            InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MitsubishiForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+
+
+        private void pictureBox2_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void panel2_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void panel2_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void panel4_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void panel4_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void pictureBox5_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void pictureBox5_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void pictureBox3_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void pictureBox4_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void pictureBox4_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void pictureBox6_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(178, 178, 178);
+            }
+        }
+
+        private void pictureBox6_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pb)
+            {
+                pb.BackColor = Color.FromArgb(68, 68, 68);
+            }
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            CarSelection newForm = new CarSelection();
+            newForm.Show();
+
+
+            this.Hide();
+        }
+    }
+}
+

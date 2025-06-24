@@ -67,6 +67,32 @@ namespace VehicleServiceCenter
             }
         }
 
+        private void brandTwoPictureBox_Click(object sender, EventArgs e)
+        {
+            NissanForm newForm = new NissanForm();
+            newForm.Show();
+            this.Hide();
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MitsubishiForm newForm = new MitsubishiForm();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            SuzukiForm newForm = new SuzukiForm();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            HondaForm newForm = new HondaForm();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

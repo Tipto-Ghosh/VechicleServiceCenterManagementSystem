@@ -5,7 +5,16 @@
     <Compile Update="CarSelection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="HondaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SuzukiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NissanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MitsubishiForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Admin.cs">
