@@ -118,3 +118,12 @@ CREATE TABLE OfferedServices (
     Price DECIMAL(10, 2) NOT NULL,
     EstimatedDurationMinutes INT
 );
+
+-- New table To Book a Service(Connect Appointment with Service)
+CREATE TABLE AppointmentServices (
+    AppointmentID INT NOT NULL,
+    ServiceID INT NOT NULL,
+    FOREIGN KEY (AppointmentID) REFERENCES Appointments(AppointmentID) ON DELETE CASCADE,
+    FOREIGN KEY (ServiceID) REFERENCES OfferedServices(ServiceID) ON DELETE CASCADE,
+    PRIMARY KEY (AppointmentID, ServiceID)
+);
