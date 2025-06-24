@@ -75,7 +75,8 @@ namespace VehicleServiceCenter
 
         private void SignBtn_Click(object sender, EventArgs e) {
             this.Hide();
-            SignUpCustomerForm signUpPage = new SignUpCustomerForm();
+            //SignUpCustomerForm signUpPage = new SignUpCustomerForm();
+            LogIN signUpPage = new LogIN();
             signUpPage.Show();
         }
 
