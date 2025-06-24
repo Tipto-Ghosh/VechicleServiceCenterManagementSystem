@@ -27,6 +27,8 @@ namespace VehicleServiceCenter.Services {
             
         //}
 
-
+        public int SignUp(Customer customer) {
+            return customerRepo.InsertCustomer(customer);
+        }
     }
 }

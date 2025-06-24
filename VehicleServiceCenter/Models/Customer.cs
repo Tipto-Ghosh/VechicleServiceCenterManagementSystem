@@ -10,7 +10,7 @@ namespace VehicleServiceCenter.Models {
         public string PhoneNumber { get; set; }
 
         public Customer() { 
-        
+            this.UserType = "customer";
         }
 
         public Customer(string phoneNumber) {
