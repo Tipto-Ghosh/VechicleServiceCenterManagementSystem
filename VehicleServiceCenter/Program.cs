@@ -74,7 +74,7 @@ namespace VehicleServiceCenter {
             //Application.Run(new LogIn2());
             //Application.Run(new ShopForm());
             //Application.Run(new CarSelection());
-            Application.Run(new SuzukiForm());
+            Application.Run(new HondaForm());
             //AdminRepository adminRepository = new AdminRepository();
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);

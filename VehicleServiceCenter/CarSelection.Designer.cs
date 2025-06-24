@@ -231,6 +231,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             pictureBox1.MouseEnter += pictureBox_MouseEnter;
             pictureBox1.MouseLeave += pictureBox_MouseLeave;
             // 
@@ -304,6 +305,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             pictureBox2.MouseEnter += pictureBox_MouseEnter;
             pictureBox2.MouseLeave += pictureBox_MouseLeave;
             // 

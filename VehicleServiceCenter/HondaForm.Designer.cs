@@ -1,6 +1,6 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class SuzukiForm
+    partial class HondaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuzukiForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HondaForm));
             PanelProfile = new Panel();
             pictureBox19 = new PictureBox();
             pictureBox22 = new PictureBox();
@@ -199,7 +199,7 @@
             Table2Brands.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             Table2Brands.RowStyles.Add(new RowStyle(SizeType.Absolute, 56F));
             Table2Brands.Size = new Size(1152, 643);
-            Table2Brands.TabIndex = 5;
+            Table2Brands.TabIndex = 6;
             // 
             // panel11
             // 
@@ -232,9 +232,9 @@
             label9.ForeColor = Color.WhiteSmoke;
             label9.Location = new Point(141, 172);
             label9.Name = "label9";
-            label9.Size = new Size(59, 36);
+            label9.Size = new Size(68, 36);
             label9.TabIndex = 6;
-            label9.Text = "CIAZ";
+            label9.Text = "CIVIC";
             // 
             // pictureBox6
             // 
@@ -278,11 +278,11 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.WhiteSmoke;
-            label8.Location = new Point(127, 172);
+            label8.Location = new Point(129, 172);
             label8.Name = "label8";
-            label8.Size = new Size(70, 36);
+            label8.Size = new Size(68, 36);
             label8.TabIndex = 6;
-            label8.Text = "SWIFT";
+            label8.Text = "VEZEL";
             // 
             // pictureBox4
             // 
@@ -327,19 +327,19 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(111, 172);
+            label5.Location = new Point(120, 172);
             label5.Name = "label5";
-            label5.Size = new Size(115, 36);
+            label5.Size = new Size(100, 36);
             label5.TabIndex = 6;
-            label5.Text = "WAGON-R";
+            label5.Text = "ACCORD";
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(-42, -46);
+            pictureBox5.Location = new Point(0, 0);
             pictureBox5.Margin = new Padding(3, 4, 3, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(420, 285);
+            pictureBox5.Size = new Size(323, 227);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
@@ -377,9 +377,9 @@
             label4.ForeColor = Color.WhiteSmoke;
             label4.Location = new Point(131, 173);
             label4.Name = "label4";
-            label4.Size = new Size(69, 36);
+            label4.Size = new Size(81, 36);
             label4.TabIndex = 5;
-            label4.Text = "LIANA";
+            label4.Text = "GRACE";
             // 
             // pictureBox3
             // 
@@ -391,7 +391,6 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             pictureBox3.MouseEnter += pictureBox3_MouseEnter;
             pictureBox3.MouseLeave += pictureBox3_MouseLeave;
             // 
@@ -426,9 +425,9 @@
             label3.ForeColor = Color.WhiteSmoke;
             label3.Location = new Point(127, 173);
             label3.Name = "label3";
-            label3.Size = new Size(81, 36);
+            label3.Size = new Size(90, 36);
             label3.TabIndex = 4;
-            label3.Text = "ERTIGA";
+            label3.Text = "INSIGHT";
             // 
             // pictureBox2
             // 
@@ -440,7 +439,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             pictureBox2.MouseEnter += pictureBox2_MouseEnter;
             pictureBox2.MouseLeave += pictureBox2_MouseLeave;
             // 
@@ -473,11 +471,11 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(88, 173);
+            label1.Location = new Point(134, 173);
             label1.Name = "label1";
-            label1.Size = new Size(155, 36);
+            label1.Size = new Size(65, 36);
             label1.TabIndex = 3;
-            label1.Text = "GRAND VITARA";
+            label1.Text = "CR-V";
             // 
             // pictureBox1
             // 
@@ -515,15 +513,15 @@
             label2.TabIndex = 1;
             label2.Text = "SELECT YOUR CAR MODEL";
             // 
-            // SuzukiForm
+            // HondaForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1152, 716);
             Controls.Add(Table2Brands);
             Controls.Add(PanelProfile);
-            Name = "SuzukiForm";
-            Text = "Form1";
+            Name = "HondaForm";
+            Text = "HondaForm";
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();

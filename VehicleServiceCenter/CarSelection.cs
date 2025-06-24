@@ -80,5 +80,19 @@ namespace VehicleServiceCenter
             newForm.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            SuzukiForm newForm = new SuzukiForm();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            HondaForm newForm = new HondaForm();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

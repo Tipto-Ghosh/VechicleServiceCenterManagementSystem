@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace VehicleServiceCenter
 {
-    public partial class SuzukiForm : Form
+    public partial class HondaForm : Form
     {
-        public SuzukiForm()
+        public HondaForm()
         {
             InitializeComponent();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }
@@ -126,7 +116,6 @@ namespace VehicleServiceCenter
             {
                 pb.BackColor = Color.FromArgb(68, 68, 68);
             }
-
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
