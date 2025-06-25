@@ -11,7 +11,6 @@
   <ItemGroup>
     <Folder Include="Froms\" />
     <Folder Include="Queries\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>

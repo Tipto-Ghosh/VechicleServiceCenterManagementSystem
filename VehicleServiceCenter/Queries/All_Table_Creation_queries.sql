@@ -127,3 +127,12 @@ CREATE TABLE AppointmentServices (
     FOREIGN KEY (ServiceID) REFERENCES OfferedServices(ServiceID) ON DELETE CASCADE,
     PRIMARY KEY (AppointmentID, ServiceID)
 );
+
+-- New Table[24-06-25]
+CREATE TABLE AppointmentServices (
+    AppointmentID INT NOT NULL,
+    ServiceID INT NOT NULL,
+    FOREIGN KEY (AppointmentID) REFERENCES Appointments(AppointmentID) ON DELETE CASCADE,
+    FOREIGN KEY (ServiceID) REFERENCES OfferedServices(ServiceID) ON DELETE CASCADE,
+    PRIMARY KEY (AppointmentID, ServiceID)
+);
