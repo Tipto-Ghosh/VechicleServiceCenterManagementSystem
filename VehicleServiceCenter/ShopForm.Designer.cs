@@ -584,8 +584,9 @@
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 0;
             pictureBox19.TabStop = false;
+            pictureBox19.Click += pictureBox19_Click;
             // 
-            // Form2
+            // ShopForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -593,7 +594,7 @@
             ClientSize = new Size(1008, 537);
             Controls.Add(PanelProfile);
             Controls.Add(panel1);
-            Name = "Form2";
+            Name = "ShopForm";
             Text = "Form2";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);

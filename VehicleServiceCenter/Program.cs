@@ -74,7 +74,7 @@ namespace VehicleServiceCenter
             //Application.Run(new Form1());
             //Application.Run(new Admin());
             //Application.Run(new AdminCustomerForm());
-            Application.Run(new Admin_ReceptionistForm());
+            Application.Run(new Customer_HomeForm());
 
             //practice
             //arino's comment
