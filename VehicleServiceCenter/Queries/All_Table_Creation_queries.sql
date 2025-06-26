@@ -136,3 +136,14 @@ CREATE TABLE AppointmentServices (
     FOREIGN KEY (ServiceID) REFERENCES OfferedServices(ServiceID) ON DELETE CASCADE,
     PRIMARY KEY (AppointmentID, ServiceID)
 );
+
+-- New Table[25-06-25]
+CREATE TABLE Payments (
+    PaymentID INT PRIMARY KEY IDENTITY(1,1),
+    CustomerID INT NOT NULL,
+    Amount DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATETIME NOT NULL DEFAULT GETDATE(),
+    PaymentMethod VARCHAR(50) NOT NULL,
+    Description VARCHAR(255),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(UserID)
+);
