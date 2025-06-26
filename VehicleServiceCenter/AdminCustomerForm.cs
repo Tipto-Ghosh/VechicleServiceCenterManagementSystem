@@ -1,13 +1,11 @@
-﻿using FontAwesome.Sharp;
-
-namespace VehicleServiceCenter
+﻿namespace VehicleServiceCenter
 {
     public partial class AdminCustomerForm : Form
     {
-        
+
         public AdminCustomerForm()
         {
-            InitializeComponent();           
+            InitializeComponent();
             btnCustomer.BackColor = Color.FromArgb(136, 136, 136);
         }
 

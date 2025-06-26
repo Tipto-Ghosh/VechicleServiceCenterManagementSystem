@@ -1,25 +1,14 @@
-﻿using FontAwesome.Sharp;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace VehicleServiceCenter
+﻿namespace VehicleServiceCenter
 {
     public partial class Admin_ReceptionistForm : Form
     {
-        
+
         public Admin_ReceptionistForm()
         {
             InitializeComponent();
             BtnReceptionist.BackColor = Color.FromArgb(136, 136, 136);
         }
-        
+
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -37,7 +26,7 @@ namespace VehicleServiceCenter
 
         private void btnMechanic_Click(object sender, EventArgs e)
         {
-            Admin_Mechanic m1 = new Admin_Mechanic();   
+            Admin_Mechanic m1 = new Admin_Mechanic();
             m1.Show();
             this.Hide();
         }
