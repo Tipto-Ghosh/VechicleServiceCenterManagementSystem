@@ -40,17 +40,18 @@
             label1 = new Label();
             tblShop = new TableLayoutPanel();
             tblSmallRepair = new TableLayoutPanel();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
+            iconButton9 = new FontAwesome.Sharp.IconButton();
+            iconButton8 = new FontAwesome.Sharp.IconButton();
+            iconButton7 = new FontAwesome.Sharp.IconButton();
+            iconButton6 = new FontAwesome.Sharp.IconButton();
+            panel3 = new Panel();
+            iconButton10 = new FontAwesome.Sharp.IconButton();
             tblOilChange = new TableLayoutPanel();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            iconButton5 = new FontAwesome.Sharp.IconButton();
+            iconButton4 = new FontAwesome.Sharp.IconButton();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             pictureBox12 = new PictureBox();
             pictureBox11 = new PictureBox();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -73,17 +74,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             tblShop.SuspendLayout();
             tblSmallRepair.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            panel3.SuspendLayout();
             tblOilChange.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             tableLayoutPanel1.SuspendLayout();
@@ -247,11 +239,11 @@
             tblSmallRepair.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
             tblSmallRepair.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
             tblSmallRepair.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 28F));
-            tblSmallRepair.Controls.Add(pictureBox6, 0, 0);
-            tblSmallRepair.Controls.Add(pictureBox7, 1, 0);
-            tblSmallRepair.Controls.Add(pictureBox8, 2, 0);
-            tblSmallRepair.Controls.Add(pictureBox9, 3, 0);
-            tblSmallRepair.Controls.Add(pictureBox10, 4, 0);
+            tblSmallRepair.Controls.Add(iconButton9, 3, 0);
+            tblSmallRepair.Controls.Add(iconButton8, 2, 0);
+            tblSmallRepair.Controls.Add(iconButton7, 1, 0);
+            tblSmallRepair.Controls.Add(iconButton6, 0, 0);
+            tblSmallRepair.Controls.Add(panel3, 4, 0);
             tblSmallRepair.Dock = DockStyle.Top;
             tblSmallRepair.Location = new Point(0, 269);
             tblSmallRepair.Margin = new Padding(0);
@@ -262,55 +254,94 @@
             tblSmallRepair.Size = new Size(991, 204);
             tblSmallRepair.TabIndex = 1;
             // 
-            // pictureBox6
+            // iconButton9
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(6, 6);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(171, 189);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 0;
-            pictureBox6.TabStop = false;
+            iconButton9.BackgroundImage = (Image)resources.GetObject("iconButton9.BackgroundImage");
+            iconButton9.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton9.Cursor = Cursors.Hand;
+            iconButton9.FlatAppearance.BorderSize = 0;
+            iconButton9.FlatStyle = FlatStyle.Popup;
+            iconButton9.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton9.IconColor = Color.Black;
+            iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton9.Location = new Point(537, 6);
+            iconButton9.Name = "iconButton9";
+            iconButton9.Size = new Size(171, 192);
+            iconButton9.TabIndex = 9;
+            iconButton9.UseVisualStyleBackColor = true;
             // 
-            // pictureBox7
+            // iconButton8
             // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(183, 6);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(171, 189);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 1;
-            pictureBox7.TabStop = false;
+            iconButton8.BackgroundImage = (Image)resources.GetObject("iconButton8.BackgroundImage");
+            iconButton8.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton8.Cursor = Cursors.Hand;
+            iconButton8.FlatAppearance.BorderSize = 0;
+            iconButton8.FlatStyle = FlatStyle.Popup;
+            iconButton8.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton8.IconColor = Color.Black;
+            iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton8.Location = new Point(360, 6);
+            iconButton8.Name = "iconButton8";
+            iconButton8.Size = new Size(171, 192);
+            iconButton8.TabIndex = 8;
+            iconButton8.UseVisualStyleBackColor = true;
             // 
-            // pictureBox8
+            // iconButton7
             // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(360, 6);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(171, 189);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 2;
-            pictureBox8.TabStop = false;
+            iconButton7.BackgroundImage = (Image)resources.GetObject("iconButton7.BackgroundImage");
+            iconButton7.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton7.Cursor = Cursors.Hand;
+            iconButton7.FlatAppearance.BorderSize = 0;
+            iconButton7.FlatStyle = FlatStyle.Popup;
+            iconButton7.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton7.IconColor = Color.Black;
+            iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton7.Location = new Point(183, 6);
+            iconButton7.Name = "iconButton7";
+            iconButton7.Size = new Size(171, 192);
+            iconButton7.TabIndex = 7;
+            iconButton7.UseVisualStyleBackColor = true;
             // 
-            // pictureBox9
+            // iconButton6
             // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(537, 6);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(171, 189);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 3;
-            pictureBox9.TabStop = false;
+            iconButton6.BackgroundImage = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Carwadadwdawdwa_p_1600;
+            iconButton6.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton6.Cursor = Cursors.Hand;
+            iconButton6.FlatAppearance.BorderSize = 0;
+            iconButton6.FlatStyle = FlatStyle.Popup;
+            iconButton6.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton6.IconColor = Color.Black;
+            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton6.Location = new Point(6, 6);
+            iconButton6.Name = "iconButton6";
+            iconButton6.Size = new Size(171, 192);
+            iconButton6.TabIndex = 6;
+            iconButton6.UseVisualStyleBackColor = true;
             // 
-            // pictureBox10
+            // panel3
             // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(714, 6);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(271, 189);
-            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox10.TabIndex = 4;
-            pictureBox10.TabStop = false;
+            panel3.Controls.Add(iconButton10);
+            panel3.Location = new Point(714, 6);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(271, 192);
+            panel3.TabIndex = 10;
+            // 
+            // iconButton10
+            // 
+            iconButton10.BackgroundImage = (Image)resources.GetObject("iconButton10.BackgroundImage");
+            iconButton10.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton10.Cursor = Cursors.Hand;
+            iconButton10.Dock = DockStyle.Fill;
+            iconButton10.FlatAppearance.BorderSize = 0;
+            iconButton10.FlatStyle = FlatStyle.Popup;
+            iconButton10.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton10.IconColor = Color.Black;
+            iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton10.Location = new Point(0, 0);
+            iconButton10.Name = "iconButton10";
+            iconButton10.Size = new Size(271, 192);
+            iconButton10.TabIndex = 6;
+            iconButton10.UseVisualStyleBackColor = true;
             // 
             // tblOilChange
             // 
@@ -321,11 +352,11 @@
             tblOilChange.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tblOilChange.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tblOilChange.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tblOilChange.Controls.Add(pictureBox1, 0, 0);
-            tblOilChange.Controls.Add(pictureBox2, 1, 0);
-            tblOilChange.Controls.Add(pictureBox3, 2, 0);
-            tblOilChange.Controls.Add(pictureBox4, 3, 0);
-            tblOilChange.Controls.Add(pictureBox5, 4, 0);
+            tblOilChange.Controls.Add(iconButton5, 4, 0);
+            tblOilChange.Controls.Add(iconButton4, 3, 0);
+            tblOilChange.Controls.Add(iconButton3, 2, 0);
+            tblOilChange.Controls.Add(iconButton2, 1, 0);
+            tblOilChange.Controls.Add(iconButton1, 0, 0);
             tblOilChange.ForeColor = Color.FromArgb(176, 176, 176);
             tblOilChange.Location = new Point(0, 0);
             tblOilChange.Margin = new Padding(0);
@@ -337,55 +368,85 @@
             tblOilChange.Size = new Size(991, 269);
             tblOilChange.TabIndex = 0;
             // 
-            // pictureBox1
+            // iconButton5
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(188, 245);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            iconButton5.BackgroundImage = Properties.Resources.dwadwfafwadwadaw;
+            iconButton5.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton5.Cursor = Cursors.Hand;
+            iconButton5.FlatAppearance.BorderSize = 0;
+            iconButton5.FlatStyle = FlatStyle.Popup;
+            iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton5.IconColor = Color.Black;
+            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton5.Location = new Point(788, 12);
+            iconButton5.Name = "iconButton5";
+            iconButton5.Size = new Size(188, 245);
+            iconButton5.TabIndex = 9;
+            iconButton5.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // iconButton4
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(206, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(188, 245);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            iconButton4.BackgroundImage = Properties.Resources._64f1c1f57a06d26il_in_Your_Car_p_1600;
+            iconButton4.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton4.Cursor = Cursors.Hand;
+            iconButton4.FlatAppearance.BorderSize = 0;
+            iconButton4.FlatStyle = FlatStyle.Popup;
+            iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton4.IconColor = Color.Black;
+            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton4.Location = new Point(594, 12);
+            iconButton4.Name = "iconButton4";
+            iconButton4.Size = new Size(188, 245);
+            iconButton4.TabIndex = 8;
+            iconButton4.UseVisualStyleBackColor = true;
             // 
-            // pictureBox3
+            // iconButton3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(400, 12);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(188, 245);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            iconButton3.BackgroundImage = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Cdwadwar_p_1600;
+            iconButton3.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton3.Cursor = Cursors.Hand;
+            iconButton3.FlatAppearance.BorderSize = 0;
+            iconButton3.FlatStyle = FlatStyle.Popup;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton3.IconColor = Color.Black;
+            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton3.Location = new Point(400, 12);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Size = new Size(188, 245);
+            iconButton3.TabIndex = 7;
+            iconButton3.UseVisualStyleBackColor = true;
             // 
-            // pictureBox4
+            // iconButton2
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(594, 12);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(188, 245);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            iconButton2.BackgroundImage = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Car_awdawdaw1600;
+            iconButton2.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton2.Cursor = Cursors.Hand;
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.FlatStyle = FlatStyle.Popup;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton2.IconColor = Color.Black;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.Location = new Point(206, 12);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(188, 245);
+            iconButton2.TabIndex = 6;
+            iconButton2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox5
+            // iconButton1
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(788, 12);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(191, 245);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 4;
-            pictureBox5.TabStop = false;
+            iconButton1.BackgroundImage = Properties.Resources._64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Car_p_1600;
+            iconButton1.BackgroundImageLayout = ImageLayout.Zoom;
+            iconButton1.Cursor = Cursors.Hand;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Popup;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(12, 12);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(188, 245);
+            iconButton1.TabIndex = 5;
+            iconButton1.UseVisualStyleBackColor = true;
             // 
             // pictureBox12
             // 
@@ -458,6 +519,7 @@
             // 
             // pictureBox15
             // 
+            pictureBox15.Cursor = Cursors.Hand;
             pictureBox15.Dock = DockStyle.Fill;
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
             pictureBox15.Location = new Point(0, 0);
@@ -470,6 +532,7 @@
             // 
             // pictureBox16
             // 
+            pictureBox16.Cursor = Cursors.Hand;
             pictureBox16.Dock = DockStyle.Fill;
             pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(266, 0);
@@ -482,6 +545,7 @@
             // 
             // pictureBox14
             // 
+            pictureBox14.Cursor = Cursors.Hand;
             pictureBox14.Dock = DockStyle.Fill;
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
             pictureBox14.Location = new Point(0, 0);
@@ -494,6 +558,7 @@
             // 
             // pictureBox13
             // 
+            pictureBox13.Cursor = Cursors.Hand;
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
             pictureBox13.Location = new Point(0, 0);
             pictureBox13.Margin = new Padding(0);
@@ -603,17 +668,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             tblShop.ResumeLayout(false);
             tblSmallRepair.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            panel3.ResumeLayout(false);
             tblOilChange.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
@@ -638,17 +694,7 @@
         private Panel PanelProfile;
         private TableLayoutPanel tblShop;
         private TableLayoutPanel tblOilChange;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
         private TableLayoutPanel tblSmallRepair;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox10;
         private PictureBox pictureBox11;
         private PictureBox pictureBox12;
         private TableLayoutPanel tableLayoutPanel1;
@@ -672,5 +718,16 @@
         private Label label7;
         private Label label6;
         private PictureBox pictureBox20;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private FontAwesome.Sharp.IconButton iconButton8;
+        private FontAwesome.Sharp.IconButton iconButton7;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private Panel panel3;
+        private FontAwesome.Sharp.IconButton iconButton10;
     }
 }
