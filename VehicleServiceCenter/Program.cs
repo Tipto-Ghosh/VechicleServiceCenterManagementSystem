@@ -13,7 +13,8 @@ namespace VehicleServiceCenter
 
             AdminRepository adminRepository = new AdminRepository();
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(false); 
+            Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
 
 
 
