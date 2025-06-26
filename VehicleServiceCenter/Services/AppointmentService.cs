@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using VehicleServiceCenter.Models;
 using VehicleServiceCenter.Repositories;
 
@@ -36,19 +34,23 @@ namespace VehicleServiceCenter.Services
             return appointmentRepo.GetAllAppointments();
         }
 
-        public int AddServicesToAppointment(int appointmentId, List<int> serviceIds) {
+        public int AddServicesToAppointment(int appointmentId, List<int> serviceIds)
+        {
             return appointmentServiceRepo.AddMultipleServicesToAppointment(appointmentId, serviceIds);
         }
 
-        public int AddServiceToAppointment(int appointmentId, int serviceId) {
+        public int AddServiceToAppointment(int appointmentId, int serviceId)
+        {
             return appointmentServiceRepo.AddServiceToAppointment(appointmentId, serviceId);
         }
 
-        public int RemoveServiceFromAppointment(int appointmentId, int serviceId) {
+        public int RemoveServiceFromAppointment(int appointmentId, int serviceId)
+        {
             return appointmentServiceRepo.RemoveServiceFromAppointment(appointmentId, serviceId);
         }
 
-        public List<OfferedService> GetServicesByAppointment(int appointmentId) {
+        public List<OfferedService> GetServicesByAppointment(int appointmentId)
+        {
             return appointmentServiceRepo.GetServicesByAppointment(appointmentId);
         }
     }

@@ -5,7 +5,8 @@
 
         public string PhoneNumber { get; set; }
 
-        public Customer() { 
+        public Customer()
+        {
             this.UserType = "customer";
         }
 

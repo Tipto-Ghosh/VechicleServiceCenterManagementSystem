@@ -1,6 +1,4 @@
-﻿using FontAwesome.Sharp; // Necessary for IconButton
-
-namespace VehicleServiceCenter
+﻿namespace VehicleServiceCenter
 {
     public partial class AdminForm : Form
     {
@@ -10,12 +8,12 @@ namespace VehicleServiceCenter
 
             // Call this method to initially set all buttons to their normal state
             // and attach the universal click event handler.
-            
+
             btnHome.BackColor = Color.FromArgb(136, 136, 136);
         }
 
 
-        
+
 
         private void label2_Click(object sender, EventArgs e)
         {

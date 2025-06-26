@@ -1,47 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using VehicleServiceCenter.Models;
+﻿using VehicleServiceCenter.Models;
 using VehicleServiceCenter.Services;
 
 namespace VehicleServiceCenter
 {
-    public partial class SignUpCustomerForm : Form {
-        public SignUpCustomerForm() {
+    public partial class SignUpCustomerForm : Form
+    {
+        public SignUpCustomerForm()
+        {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e) {
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e) {
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e) {
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e) {
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void button3_Click(object sender, EventArgs e) {
+        private void button3_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e) {
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
-        private void SignBtn_Click(object sender, EventArgs e) {
+        private void SignBtn_Click(object sender, EventArgs e)
+        {
             // Take Val
             string userType = "customer";
 
@@ -58,21 +58,24 @@ namespace VehicleServiceCenter
             if (string.IsNullOrWhiteSpace(username) ||
                 string.IsNullOrWhiteSpace(password) ||
                 string.IsNullOrWhiteSpace(email) ||
-                string.IsNullOrWhiteSpace(phone)) {
+                string.IsNullOrWhiteSpace(phone))
+            {
                 MessageBox.Show("All fields must be filled.", "Validation Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
 
-            if (!phone.All(char.IsDigit)) {
+            if (!phone.All(char.IsDigit))
+            {
                 MessageBox.Show("Phone number must contain digits only.", "Validation Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
 
-            if (!email.Contains("@") || !email.Contains(".")) {
+            if (!email.Contains("@") || !email.Contains("."))
+            {
                 MessageBox.Show("Invalid email format.", "Validation Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -93,7 +96,8 @@ namespace VehicleServiceCenter
             CustomerService customerService = new CustomerService();
             int id = customerService.SignUp(customer);
 
-            if (id == 0 || id == -1) {
+            if (id == 0 || id == -1)
+            {
                 MessageBox.Show("SignUp Failed.", "Insert Failed Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -106,11 +110,13 @@ namespace VehicleServiceCenter
             customer.UserID = id;
         }
 
-        private void label3_Click(object sender, EventArgs e) {
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void LogBtn_Click(object sender, EventArgs e) {
+        private void LogBtn_Click(object sender, EventArgs e)
+        {
             this.Hide();
             LoginForm l2 = new LoginForm();
             l2.Show();
