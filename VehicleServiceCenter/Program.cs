@@ -7,7 +7,7 @@ namespace VehicleServiceCenter
         static void Main(string[] args)
         {
 
-            UserRepository userRepository = new UserRepository();
+            //UserRepository userRepository = new UserRepository();
 
 
 
@@ -29,7 +29,12 @@ namespace VehicleServiceCenter
             //Application.Run(new Form1());
             //Application.Run(new Admin());
             //Application.Run(new AdminCustomerForm());
-            Application.Run(new ShopForm());
+            //Application.Run(new AdminForm());
+
+            Application.Run(new LoginForm());
+
+
+
 
         }
     }

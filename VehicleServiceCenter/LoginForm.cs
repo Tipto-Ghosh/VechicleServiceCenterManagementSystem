@@ -60,13 +60,17 @@ namespace VehicleServiceCenter
 
                 this.Hide(); // Hide current login form
 
-                if (userType == "ceo" || userType == "manager")
+                if (userType == "admin")
                 {
                     // Show the Admin Home Page
+                    AdminForm adminForm = new AdminForm(isUser.UserID);
+                    adminForm.Show();
+                    this.Hide();
                 }
                 else if (userType == "customer")
                 {
                     // Show the customer Home Page
+                    
                 }
                 else if (userType == "receptionist")
                 {
