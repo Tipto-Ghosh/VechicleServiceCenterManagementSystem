@@ -29,7 +29,8 @@ namespace VehicleServiceCenter
             //Application.Run(new Form1());
             //Application.Run(new Admin());
             //Application.Run(new AdminCustomerForm());
-            Application.Run(new ShopForm());
+            //Application.Run(new ShopForm());
+            Application.Run(new Customer_Edit_Form());
 
         }
     }
