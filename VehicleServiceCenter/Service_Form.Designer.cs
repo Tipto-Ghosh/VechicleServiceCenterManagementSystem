@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             profilePanel = new Panel();
+            label5 = new Label();
             settingsPictureBox = new PictureBox();
             notificationPictureBox = new PictureBox();
             fullNameLabel = new Label();
@@ -41,12 +42,11 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button3 = new Button();
-            button4 = new Button();
-            label5 = new Label();
             textBox_UserID = new TextBox();
             label_userID = new Label();
             textBox3 = new TextBox();
             label4 = new Label();
+            button2 = new Button();
             profilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
@@ -68,6 +68,19 @@
             profilePanel.Name = "profilePanel";
             profilePanel.Size = new Size(1152, 73);
             profilePanel.TabIndex = 5;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.WhiteSmoke;
+            label5.Location = new Point(927, 18);
+            label5.Name = "label5";
+            label5.Size = new Size(125, 36);
+            label5.TabIndex = 4;
+            label5.Text = "FULL NAME";
+            label5.Click += label5_Click;
             // 
             // settingsPictureBox
             // 
@@ -211,34 +224,6 @@
             button3.Text = "ADD";
             button3.UseVisualStyleBackColor = false;
             // 
-            // button4
-            // 
-            button4.BackColor = SystemColors.ControlLightLight;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.Red;
-            button4.Location = new Point(945, 514);
-            button4.Margin = new Padding(3, 4, 3, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(121, 48);
-            button4.TabIndex = 41;
-            button4.Text = "CANCEL";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(927, 18);
-            label5.Name = "label5";
-            label5.Size = new Size(125, 36);
-            label5.TabIndex = 4;
-            label5.Text = "FULL NAME";
-            label5.Click += label5_Click;
-            // 
             // textBox_UserID
             // 
             textBox_UserID.BackColor = Color.FromArgb(124, 124, 124);
@@ -288,13 +273,28 @@
             label4.Text = "DESCRIPTION";
             label4.Click += label4_Click;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.Maroon;
+            button2.FlatAppearance.BorderSize = 4;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(927, 514);
+            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(176, 57);
+            button2.TabIndex = 42;
+            button2.Text = "CANCEL";
+            button2.UseVisualStyleBackColor = false;
+            // 
             // Service_Form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
             ClientSize = new Size(1152, 716);
-            Controls.Add(button4);
+            Controls.Add(button2);
             Controls.Add(button3);
             Controls.Add(textBox3);
             Controls.Add(label4);
@@ -335,11 +335,11 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Button button3;
-        private Button button4;
         private Label label5;
         private TextBox textBox_UserID;
         private Label label_userID;
         private TextBox textBox3;
         private Label label4;
+        private Button button2;
     }
 }
