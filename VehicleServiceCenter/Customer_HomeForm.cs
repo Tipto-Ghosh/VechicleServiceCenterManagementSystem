@@ -7,6 +7,8 @@
             InitializeComponent();
 
             showPurchasedServices();
+            
+            iconButton1.BackColor = Color.FromArgb(136, 136, 136);
         }
         private int x = 40, y = 80;
 
@@ -102,14 +104,14 @@
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            Customer_HomeForm c1 = new Customer_HomeForm();
-            c1.Show();
-            this.Hide();
+            
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-
+            Customer_Edit_Form customer_Edit_Form = new Customer_Edit_Form();
+            customer_Edit_Form.Show();
+            this.Hide();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

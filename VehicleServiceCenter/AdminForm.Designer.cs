@@ -34,7 +34,6 @@
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton4 = new FontAwesome.Sharp.IconButton();
             btnCustomer = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
             panel2 = new Panel();
             PanelHome = new Panel();
             label15 = new Label();
@@ -79,7 +78,6 @@
             panel1.Controls.Add(iconButton3);
             panel1.Controls.Add(iconButton4);
             panel1.Controls.Add(btnCustomer);
-            panel1.Controls.Add(iconButton5);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
@@ -185,27 +183,6 @@
             btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCustomer.UseVisualStyleBackColor = true;
             btnCustomer.Click += iconButton2_Click;
-            // 
-            // iconButton5
-            // 
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.Font = new Font("Microsoft Sans Serif", 9.75F);
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 32;
-            iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(0, 355);
-            iconButton5.Margin = new Padding(3, 4, 3, 4);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(193, 60);
-            iconButton5.TabIndex = 4;
-            iconButton5.Text = "INVENTORY";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -578,7 +555,6 @@
         private FontAwesome.Sharp.IconButton btnCustomer;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
         private PictureBox pictureBox1;
         private Panel panel2;
         private Panel PanelProfile;
