@@ -41,12 +41,12 @@
             UserNameTxtBox = new TextBox();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            button3 = new Button();
             textBox_UserID = new TextBox();
             label_userID = new Label();
             textBox3 = new TextBox();
             label4 = new Label();
             button2 = new Button();
+            button1 = new Button();
             profilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
@@ -209,21 +209,6 @@
             textBox2.Size = new Size(295, 30);
             textBox2.TabIndex = 37;
             // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.ControlLightLight;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button3.ForeColor = Color.Green;
-            button3.Location = new Point(746, 514);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(121, 48);
-            button3.TabIndex = 40;
-            button3.Text = "ADD";
-            button3.UseVisualStyleBackColor = false;
-            // 
             // textBox_UserID
             // 
             textBox_UserID.BackColor = Color.FromArgb(124, 124, 124);
@@ -288,14 +273,29 @@
             button2.Text = "CANCEL";
             button2.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.BorderSize = 4;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(718, 514);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(176, 57);
+            button1.TabIndex = 43;
+            button1.Text = "ADD";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Service_Form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
             ClientSize = new Size(1152, 716);
+            Controls.Add(button1);
             Controls.Add(button2);
-            Controls.Add(button3);
             Controls.Add(textBox3);
             Controls.Add(label4);
             Controls.Add(textBox2);
@@ -334,12 +334,12 @@
         private TextBox UserNameTxtBox;
         private TextBox textBox1;
         private TextBox textBox2;
-        private Button button3;
         private Label label5;
         private TextBox textBox_UserID;
         private Label label_userID;
         private TextBox textBox3;
         private Label label4;
         private Button button2;
+        private Button button1;
     }
 }
