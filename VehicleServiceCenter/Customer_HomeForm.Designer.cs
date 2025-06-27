@@ -72,7 +72,7 @@
             profilePanel.Location = new Point(0, 0);
             profilePanel.Margin = new Padding(0);
             profilePanel.Name = "profilePanel";
-            profilePanel.Size = new Size(1152, 73);
+            profilePanel.Size = new Size(1011, 73);
             profilePanel.TabIndex = 4;
             // 
             // settingsPictureBox
@@ -125,7 +125,7 @@
             // 
             signOutPictureBox.Dock = DockStyle.Right;
             signOutPictureBox.Image = Properties.Resources.icons8_sign_out_501;
-            signOutPictureBox.Location = new Point(1117, 0);
+            signOutPictureBox.Location = new Point(976, 0);
             signOutPictureBox.Margin = new Padding(3, 4, 3, 4);
             signOutPictureBox.Name = "signOutPictureBox";
             signOutPictureBox.Size = new Size(35, 73);
@@ -156,7 +156,7 @@
             panel1.Location = new Point(0, 73);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1029, 486);
+            panel1.Size = new Size(1023, 486);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
             // 
@@ -260,7 +260,7 @@
             panel2.Location = new Point(0, 464);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1012, 494);
+            panel2.Size = new Size(1146, 494);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -367,7 +367,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(1008, 537);
+            ClientSize = new Size(1011, 626);
             Controls.Add(panel1);
             Controls.Add(profilePanel);
             Margin = new Padding(3, 4, 3, 4);
