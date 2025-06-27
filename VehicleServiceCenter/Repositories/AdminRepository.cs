@@ -1,5 +1,11 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
+using System.Xml.Linq;
+using Microsoft.VisualBasic.ApplicationServices;
 using VehicleServiceCenter.Config;
+using VehicleServiceCenter.Models;
+using VehicleServiceCenter.Repositories;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace VehicleServiceCenter.Repositories
 {
@@ -14,7 +20,7 @@ namespace VehicleServiceCenter.Repositories
         Take the userId and and adminExtra info and pass to the InsertAdmin
 
         */
-        public int InsertAdmin(Models.Admin admin)
+        public int InsertAdmin(Admin admin)
         {
             try
             {
@@ -30,8 +36,7 @@ namespace VehicleServiceCenter.Repositories
                 // 2. Insert into Admins table
                 using (SqlConnection conn = DbConfig.GetConnection())
                 {
-                    string query = @"INSERT INTO Admins (UserID, Type, CreatedDate) 
-                                     VALUES (@UserID, @Type, @CreatedDate)";
+                    string query = @"INSERT INTO Admins (UserID, Type, CreatedDate) VALUES (@UserID, @Type, @CreatedDate)";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@UserID", newId);
@@ -56,7 +61,7 @@ namespace VehicleServiceCenter.Repositories
         Update the User. If Done then update Admin Extra info if Failed go back to previous state
         */
 
-        public int UpdateAdmin(Models.Admin admin)
+        public int UpdateAdmin(Admin admin)
         {
             try
             {
@@ -72,8 +77,7 @@ namespace VehicleServiceCenter.Repositories
                 // 2. Update Admin table
                 using (SqlConnection conn = DbConfig.GetConnection())
                 {
-                    string query = @"UPDATE Admins SET Type = @Type, CreatedDate = @CreatedDate 
-                                     WHERE UserID = @UserID";
+                    string query = @"UPDATE Admins SET Type = @Type, CreatedDate = @CreatedDate WHERE UserID = @UserID";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Type", admin.Type);
@@ -107,9 +111,9 @@ namespace VehicleServiceCenter.Repositories
             }
         }
 
-        public List<Models.Admin> GetAllAdmins()
+        public List<Admin> GetAllAdmins()
         {
-            List<Models.Admin> admins = new List<Models.Admin>();
+            List<Admin> admins = new List<Admin>();
             try
             {
                 using (SqlConnection conn = DbConfig.GetConnection())
@@ -124,19 +128,18 @@ namespace VehicleServiceCenter.Repositories
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        Models.Admin admin = new Models.Admin
-                        {
-                            UserID = Convert.ToInt32(reader["UserID"]),
-                            Name = reader["Name"].ToString(),
-                            Gender = reader["Gender"].ToString(),
-                            Password = reader["Password"].ToString(),
-                            DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]),
-                            BloodGroup = reader["BloodGroup"].ToString(),
-                            Email = reader["Email"].ToString(),
-                            UserType = reader["UserType"].ToString(),
-                            Type = reader["Type"].ToString(),
-                            CreatedDate = Convert.ToDateTime(reader["CreatedDate"])
-                        };
+                        Admin admin = new Admin();
+                        admin.UserID = Convert.ToInt32(reader["UserID"]);
+                        admin.Name = reader["Name"].ToString();
+                        admin.Gender = reader["Gender"].ToString();
+                        admin.Password = reader["Password"].ToString();
+                        admin.DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
+                        admin.BloodGroup = reader["BloodGroup"].ToString();
+                        admin.Email = reader["Email"].ToString();
+                        admin.UserType = reader["UserType"].ToString();
+                        admin.Type = reader["Type"].ToString();
+                        admin.CreatedDate = Convert.ToDateTime(reader["CreatedDate"]);
+
 
                         admins.Add(admin);
                     }
@@ -149,5 +152,27 @@ namespace VehicleServiceCenter.Repositories
 
             return admins;
         }
+
+
+        public DataTable GetAllAdminsDataTable() {
+            DataTable adminTable = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = @"SELECT U.*, A.Type, A.CreatedDate FROM Users U INNER JOIN Admins A ON U.UserID = A.UserID";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(adminTable);
+                        }
+                    }
+                }
+            }catch(Exception ex) {
+                Console.WriteLine("Admin DataTable Get Error(GetAllAdminsDataTable()) " + ex.Message);
+            }
+
+            return adminTable;
+        }
+        
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -13,8 +14,7 @@ namespace VehicleServiceCenter.Repositories
             {
                 using (SqlConnection conn = DbConfig.GetConnection())
                 {
-                    string query = @"INSERT INTO Appointments 
-                                     (CustomerID, MechanicID, ScheduledDate, Status, CreatedBy, TokenNumber)
+                    string query = @"INSERT INTO Appointments (CustomerID, MechanicID, ScheduledDate, Status, CreatedBy, TokenNumber)
                                      VALUES (@CustomerID, @MechanicID, @ScheduledDate, @Status, @CreatedBy, @TokenNumber)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -129,6 +129,25 @@ namespace VehicleServiceCenter.Repositories
             return appointments;
         }
 
+        public DataTable GetAppointmentsByCustomerIdAsDataTable(int customerId) {
+            DataTable dt = new DataTable();
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT * FROM Appointments WHERE CustomerID = @CustomerID";
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@CustomerID", customerId);
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAppointmentsByCustomerId Error: " + ex.Message);
+            }
+
+            return dt;
+        }
+
         public List<Appointment> GetAppointmentsByMechanicId(int mechanicId)
         {
             List<Appointment> appointments = new List<Appointment>();
@@ -165,6 +184,26 @@ namespace VehicleServiceCenter.Repositories
                 Console.WriteLine("GetAppointmentsByMechanic Error: " + ex.Message);
             }
             return appointments;
+        }
+
+        // Return DataTable
+        public DataTable GetAppointmentsByMechanicIdDataTable(int mechanicId) {
+            DataTable dt = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT * FROM Appointments WHERE CustomerID = @CustomerID";
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@CustomerID", mechanicId);
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAppointmentsByMechanicIdDataTable Error: " + ex.Message);
+            }
+            return dt;
         }
 
         public Appointment GetAppointmentById(int id)
@@ -250,6 +289,23 @@ namespace VehicleServiceCenter.Repositories
             return appointments;
         }
 
+        public DataTable GetAllAppointmentsAsDataTable() {
+            DataTable dt = new DataTable();
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT * FROM Appointments";
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAllAppointments Error: " + ex.Message);
+            }
+
+            return dt;
+        }
 
         public int AssignMechanic(int appointmentId, int mechanicId)
         {
@@ -322,5 +378,27 @@ namespace VehicleServiceCenter.Repositories
 
             return appointments;
         }
+
+        public DataTable GetAssignedJobsAsDataTable(int mechanicId, string status) {
+            DataTable dt = new DataTable();
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT * FROM Appointments WHERE MechanicID = @MechanicID AND Status = @Status";
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@MechanicID", mechanicId);
+                        cmd.Parameters.AddWithValue("@Status", status.ToLower());
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAssignedJobs Error: " + ex.Message);
+            }
+
+            return dt;
+        }
+
     }
 }

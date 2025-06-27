@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -130,6 +131,27 @@ namespace VehicleServiceCenter.Repositories
             return vehicles;
         }
 
+        public DataTable GetCustomerVehiclesAsDataTable(int customerId) {
+            DataTable table = new DataTable();
+
+            try {
+                using(SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT VehicleID, CustomerID, LicensePlate, Model FROM Vehicles WHERE CustomerID = @CustomerID";
+                    
+                    using(SqlCommand cmd = new SqlCommand(query , conn)) {
+                        cmd.Parameters.AddWithValue("@CustomerID", customerId);
+
+                        using(SqlDataAdapter ad = new SqlDataAdapter(cmd)) {
+                            ad.Fill(table);
+                        }
+                    }
+                }
+            }catch(Exception ex) {
+                Console.WriteLine("GetCustomerVehiclesAsDataTable Error " + ex.Message);
+            }
+            return table;
+        }
+
         public int UpdatePhoneNumber(int customerId, string newPhoneNumber)
         {
             try
@@ -153,6 +175,28 @@ namespace VehicleServiceCenter.Repositories
                 Console.WriteLine(ex.Message);
                 return 0;
             }
+        }
+
+
+        public DataTable GetAllCustomerAsDataTable() {
+            DataTable table = new DataTable();
+
+            try {
+                using (SqlConnection con = DbConfig.GetConnection()) {
+                    string q = @"SELECT U.UserID,U.Name,U.Gender,U.DateOfBirth,U.BloodGroup,U.Email,U.UserType,c.PhoneNumber
+                             FROM Users U INNER JOIN Customers C ON U.UserID = C.UserID
+                             WHERE U.UserType = 'customer'";
+
+                    using (SqlCommand cmd = new SqlCommand(q, con)) {
+                         using(SqlDataAdapter ad = new SqlDataAdapter(cmd)) {
+                            ad.Fill(table);
+                        }
+                    }
+                } 
+            } catch (Exception ex) { 
+                Console.WriteLine("GetAllCustomerAsDataTable Error " + ex.Message);
+            }
+            return table;
         }
     }
 }

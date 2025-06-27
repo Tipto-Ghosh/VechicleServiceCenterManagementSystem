@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -83,5 +84,26 @@ namespace VehicleServiceCenter.Repositories
                 return 0;
             }
         }
+
+        public DataTable GetAllReceptionistDetailsAsDataTable() {
+            DataTable dt = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT U.UserID, U.Name, U.Gender, U.DateOfBirth, U.BloodGroup, U.Email, U.UserType, R.Shift FROM Users U INNER JOIN Receptionists R ON U.UserID = R.UserID WHERE U.UserType = 'receptionist'";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAllReceptionistDetailsAsDataTable Error: " + ex.Message);
+            }
+
+            return dt;
+        }
+
     }
 }

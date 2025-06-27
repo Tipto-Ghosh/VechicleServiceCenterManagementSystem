@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -105,14 +106,15 @@ namespace VehicleServiceCenter.Repositories
                         {
                             while (reader.Read())
                             {
-                                services.Add(new OfferedService
-                                {
-                                    ServiceID = Convert.ToInt32(reader["ServiceID"]),
-                                    ServiceName = reader["ServiceName"].ToString(),
-                                    Description = reader["Description"].ToString(),
-                                    Price = Convert.ToDecimal(reader["Price"]),
-                                    EstimatedDurationMinutes = Convert.ToInt32(reader["EstimatedDurationMinutes"])
-                                });
+                                OfferedService os = new OfferedService();
+
+                                os.ServiceID = Convert.ToInt32(reader["ServiceID"]);
+                                os.ServiceName = reader["ServiceName"].ToString();
+                                os.Description = reader["Description"].ToString();
+                                os.Price = Convert.ToDecimal(reader["Price"]);
+                                os.EstimatedDurationMinutes = Convert.ToInt32(reader["EstimatedDurationMinutes"]);
+
+                                services.Add(os);
                             }
                         }
                     }
@@ -123,6 +125,26 @@ namespace VehicleServiceCenter.Repositories
                 Console.WriteLine(ex.Message);
             }
             return services;
+        }
+
+        public DataTable GetAllServicesAsDataTable() {
+            DataTable dt = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT * FROM OfferedServices";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAllServicesAsDataTable Error: " + ex.Message);
+            }
+
+            return dt;
         }
 
 
@@ -143,14 +165,14 @@ namespace VehicleServiceCenter.Repositories
                         {
                             if (reader.Read())
                             {
-                                service = new OfferedService
-                                {
-                                    ServiceID = Convert.ToInt32(reader["ServiceID"]),
-                                    ServiceName = reader["ServiceName"].ToString(),
-                                    Description = reader["Description"].ToString(),
-                                    Price = Convert.ToDecimal(reader["Price"]),
-                                    EstimatedDurationMinutes = Convert.ToInt32(reader["EstimatedDurationMinutes"])
-                                };
+                                service = new OfferedService();
+
+                                service.ServiceID = Convert.ToInt32(reader["ServiceID"]);
+                                service.ServiceName = reader["ServiceName"].ToString();
+                                service.Description = reader["Description"].ToString();
+                                service.Price = Convert.ToDecimal(reader["Price"]);
+                                service.EstimatedDurationMinutes = Convert.ToInt32(reader["EstimatedDurationMinutes"]);
+                                
                             }
                         }
                     }
@@ -180,14 +202,15 @@ namespace VehicleServiceCenter.Repositories
                         {
                             while (reader.Read())
                             {
-                                services.Add(new OfferedService
-                                {
-                                    ServiceID = Convert.ToInt32(reader["ServiceID"]),
-                                    ServiceName = reader["ServiceName"].ToString(),
-                                    Description = reader["Description"].ToString(),
-                                    Price = Convert.ToDecimal(reader["Price"]),
-                                    EstimatedDurationMinutes = Convert.ToInt32(reader["EstimatedDurationMinutes"])
-                                });
+                                OfferedService service = new OfferedService();
+
+                                service.ServiceID = Convert.ToInt32(reader["ServiceID"]);
+                                service.ServiceName = reader["ServiceName"].ToString();
+                                service.Description = reader["Description"].ToString();
+                                service.Price = Convert.ToDecimal(reader["Price"]);
+                                service.EstimatedDurationMinutes = Convert.ToInt32(reader["EstimatedDurationMinutes"]);
+                                
+                                services.Add(service);
                             }
                         }
                     }
@@ -199,5 +222,28 @@ namespace VehicleServiceCenter.Repositories
             }
             return services;
         }
+
+        public DataTable GetServicesByPriceAsDataTable(int price) {
+            DataTable dt = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT * FROM OfferedServices WHERE Price <= @Price ORDER BY Price ASC";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@Price", price);
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetServicesByPriceAsDataTable Error: " + ex.Message);
+            }
+
+            return dt;
+        }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -101,43 +102,55 @@ namespace VehicleServiceCenter.Repositories
             return services;
         }
 
-        public int AddMultipleServicesToAppointment(int appointmentId, List<int> serviceIds)
-        {
-            try
-            {
-                using (SqlConnection conn = DbConfig.GetConnection())
-                {
-                    conn.Open();
-                    using (SqlTransaction transaction = conn.BeginTransaction())
-                    {
-                        foreach (int serviceId in serviceIds)
-                        {
-                            string query = @"INSERT INTO AppointmentServices (AppointmentID, ServiceID)
-                                     VALUES (@AppointmentID, @ServiceID)";
-                            using (SqlCommand cmd = new SqlCommand(query, conn, transaction))
-                            {
-                                cmd.Parameters.AddWithValue("@AppointmentID", appointmentId);
-                                cmd.Parameters.AddWithValue("@ServiceID", serviceId);
+        public DataTable GetServicesByAppointmentAsDataTable(int appointmentId) {
+            DataTable dt = new DataTable();
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = @"SELECT os.ServiceID, os.ServiceName, os.Description, os.Price, os.EstimatedDurationMinutes
+                    FROM AppointmentServices aps JOIN OfferedServices os ON aps.ServiceID = os.ServiceID
+                    WHERE aps.AppointmentID = @AppointmentID";
 
-                                int result = cmd.ExecuteNonQuery();
-                                if (result == 0)
-                                {
-                                    transaction.Rollback();
-                                    return 0;
-                                }
-                            }
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@AppointmentID", appointmentId);
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
                         }
-                        transaction.Commit();
-                        return 1;
                     }
                 }
+            } catch (Exception ex) {
+                Console.WriteLine("GetServicesByAppointmentAsDataTable Error: " + ex.Message);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine("AddMultipleServicesToAppointment Error: " + ex.Message);
-                return 0;
-            }
+
+            return dt;
         }
+
+        public int AddMultipleServicesToAppointment(int appointmentId, List<int> serviceIds) {
+            int insertedCount = 0; // return the insertCount
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    conn.Open();
+
+                    foreach (int serviceId in serviceIds) {
+                        string query = @"INSERT INTO AppointmentServices (AppointmentID, ServiceID) VALUES (@AppointmentID, @ServiceID)";
+                        using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                            cmd.Parameters.AddWithValue("@AppointmentID", appointmentId);
+                            cmd.Parameters.AddWithValue("@ServiceID", serviceId);
+
+                            int result = cmd.ExecuteNonQuery();
+                            if (result > 0) {
+                                insertedCount++;
+                            }
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("AddMultipleServicesToAppointment Error: " + ex.Message);
+            }
+
+            return insertedCount; // return how many done
+        }
+
 
     }
 }

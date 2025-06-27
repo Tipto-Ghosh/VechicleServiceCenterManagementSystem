@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -74,6 +75,30 @@ namespace VehicleServiceCenter.Repositories
 
             return payments;
         }
+
+        public DataTable GetPaymentsByCustomerAsDataTable(int customerId) {
+            DataTable dt = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = @"SELECT * FROM Payments WHERE CustomerID = @CustomerID ORDER BY PaymentDate DESC";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@CustomerID", customerId);
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetPaymentsByCustomerAsDataTable Error: " + ex.Message);
+            }
+
+            return dt;
+        }
+
+
 
         public decimal GetTotalPaidByCustomer(int customerId)
         {
