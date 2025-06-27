@@ -154,7 +154,7 @@
             panel1.Location = new Point(0, 55);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1008, 482);
+            panel1.Size = new Size(1029, 486);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
             // 
@@ -253,7 +253,7 @@
             panel2.Location = new Point(0, 348);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1003, 494);
+            panel2.Size = new Size(1012, 494);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -356,6 +356,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             ClientSize = new Size(1008, 537);
             Controls.Add(panel1);
             Controls.Add(profilePanel);
