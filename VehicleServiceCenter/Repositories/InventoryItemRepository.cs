@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -13,8 +14,7 @@ namespace VehicleServiceCenter.Repositories
             {
                 using (SqlConnection conn = DbConfig.GetConnection())
                 {
-                    string query = @"INSERT INTO InventoryItems (ItemName, RemainingNumber, Price)
-                                     VALUES (@ItemName, @RemainingNumber, @Price)";
+                    string query = @"INSERT INTO InventoryItems (ItemName, RemainingNumber, Price) VALUES (@ItemName, @RemainingNumber, @Price)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@ItemName", item.ItemName);
@@ -129,6 +129,29 @@ namespace VehicleServiceCenter.Repositories
             return items;
         }
 
+        public DataTable GetLowStockItemsTable(int count) {
+            DataTable dt = new DataTable();
+
+            try {
+               
+                using(SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = @"SELECT TOP (@Count) InventoryItemID, ItemName, RemainingNumber, Price
+                                     FROM InventoryItems
+                                     ORDER BY RemainingNumber ASC";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@Count", count);
+
+                        using(SqlDataAdapter ad = new SqlDataAdapter(cmd)) {
+                            ad.Fill(dt);
+                        }
+                    }
+                }
+            } catch(Exception ex) {
+                Console.WriteLine("GetLowStockItemsTable Error " + ex.Message);  
+            }
+            return dt;
+        }
         public List<InventoryItem> GetAllItems()
         {
             List<InventoryItem> items = new List<InventoryItem>();
@@ -161,6 +184,26 @@ namespace VehicleServiceCenter.Repositories
                 Console.WriteLine(ex.Message);
             }
             return items;
+        }
+
+        public DataTable GetAllItemsAsDataTable() {
+            DataTable dt = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = "SELECT InventoryItemID, ItemName, RemainingNumber, Price FROM InventoryItems";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAllItemsAsDataTable Error: " + ex.Message);
+            }
+
+            return dt;
         }
 
         public InventoryItem GetInventoryItemById(int id)

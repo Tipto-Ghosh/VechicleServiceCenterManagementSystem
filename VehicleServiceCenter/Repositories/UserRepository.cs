@@ -26,17 +26,17 @@ namespace VehicleServiceCenter.Repositories
 
                     if (reader.Read() == true)
                     {
-                        User user = new User
-                        {
-                            UserID = Convert.ToInt32(reader["UserID"]),
-                            Name = reader["Name"].ToString(),
-                            Gender = reader["Gender"].ToString(),
-                            Password = reader["Password"].ToString(),
-                            DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]),
-                            BloodGroup = reader["BloodGroup"].ToString(),
-                            Email = reader["Email"].ToString(),
-                            UserType = reader["UserType"].ToString()
-                        };
+                        User user = new User();
+
+                        user.UserID = Convert.ToInt32(reader["UserID"]);
+                        user.Name = reader["Name"].ToString();
+                        user.Gender = reader["Gender"].ToString();
+                        user.Password = reader["Password"].ToString();
+                        user.DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
+                        user.BloodGroup = reader["BloodGroup"].ToString();
+                        user.Email = reader["Email"].ToString();
+                        user.UserType = reader["UserType"].ToString();
+                        
 
                         return user;
                     }
@@ -72,17 +72,16 @@ namespace VehicleServiceCenter.Repositories
 
                     if (reader.Read() == true)
                     {
-                        User user = new User
-                        {
-                            UserID = Convert.ToInt32(reader["UserID"]),
-                            Name = reader["Name"].ToString(),
-                            Gender = reader["Gender"].ToString(),
-                            Password = reader["Password"].ToString(),
-                            DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]),
-                            BloodGroup = reader["BloodGroup"].ToString(),
-                            Email = reader["Email"].ToString(),
-                            UserType = reader["UserType"].ToString()
-                        };
+                        User user = new User();
+
+                        user.UserID = Convert.ToInt32(reader["UserID"]);
+                        user.Name = reader["Name"].ToString();
+                        user.Gender = reader["Gender"].ToString();
+                        user.Password = reader["Password"].ToString();
+                        user.DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
+                        user.BloodGroup = reader["BloodGroup"].ToString();
+                        user.Email = reader["Email"].ToString();
+                        user.UserType = reader["UserType"].ToString();
 
                         return user;
                     }

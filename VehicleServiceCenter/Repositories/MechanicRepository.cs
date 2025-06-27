@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using VehicleServiceCenter.Config;
 using VehicleServiceCenter.Models;
 
@@ -123,6 +124,29 @@ namespace VehicleServiceCenter.Repositories
             }
             return jobs;
         }
+
+        public DataTable GetMechanicJobsAsDataTable(int mechId) {
+            DataTable dt = new DataTable();
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = @"SELECT AppointmentID, ScheduledDate FROM Appointments WHERE MechanicID = @MechID";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@MechID", mechId);
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetMechanicJobsAsDataTable Error: " + ex.Message);
+            }
+
+            return dt;
+        }
+
 
         public bool UpdateAvailabilityStatus(int mechId, string status)
         {
