@@ -105,5 +105,29 @@ namespace VehicleServiceCenter.Repositories
             return dt;
         }
 
+
+
+        public int GetReceptionistCount() {
+            int count = 0;
+
+
+            try {
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+
+                    string q = @"SELECT COUNT(*) FROM Users WHERE LOWER(UserType) = 'receptionist'";
+
+                    using (SqlCommand cmd = new SqlCommand(q, conn)) {
+                        conn.Open();
+                        count = (int)cmd.ExecuteScalar();
+                    }
+
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetCustomerCount Error " + ex.Message);
+            }
+
+            return count;
+        }
+
     }
 }

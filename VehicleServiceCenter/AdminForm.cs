@@ -42,6 +42,7 @@ namespace VehicleServiceCenter
             AdminCustomerForm a1 = new AdminCustomerForm(loggedAdminId);
             a1.Show();
             this.Hide();
+
         }
 
         private void btnHome_Click(object sender, EventArgs e) {
@@ -78,6 +79,22 @@ namespace VehicleServiceCenter
 
             int customerCount = cr.GetCustomerCount();
             this.label_customer_count.Text = customerCount.ToString();
+
+
+            // Show Receptionist Count
+            MechanicRepository mr = new MechanicRepository();
+            int mechCount = mr.GetMechanicCount();
+            this.label_mech_count.Text = mechCount.ToString();
+
+            // Show Admin Count
+            AdminRepository ar = new AdminRepository();
+            int adminCount = ar.GetAdminCount();
+            this.label_admin_count.Text = adminCount.ToString();
+
+            // Show Receptionist count
+            ReceptionistRepository re = new ReceptionistRepository();
+            int receptionistCount = re.GetReceptionistCount();
+            this.label_receptionist_count.Text = receptionistCount.ToString();
         }
     }
 }

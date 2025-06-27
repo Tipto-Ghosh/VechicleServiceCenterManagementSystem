@@ -31,6 +31,9 @@ namespace VehicleServiceCenter
             //Application.Run(new AdminCustomerForm());
             //Application.Run(new AdminForm());
 
+            //Application.Run(new LoginForm());
+            //Application.Run(new Customer_HomeForm());
+
             Application.Run(new LoginForm());
 
 

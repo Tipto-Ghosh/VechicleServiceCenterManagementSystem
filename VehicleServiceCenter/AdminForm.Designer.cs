@@ -39,13 +39,13 @@
             PanelHome = new Panel();
             label15 = new Label();
             panel9 = new Panel();
-            label16 = new Label();
+            label_admin_count = new Label();
             label13 = new Label();
             panel8 = new Panel();
-            label14 = new Label();
+            label_receptionist_count = new Label();
             label11 = new Label();
             panel5 = new Panel();
-            label12 = new Label();
+            label_mech_count = new Label();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
@@ -223,13 +223,13 @@
             // 
             PanelHome.Controls.Add(label15);
             PanelHome.Controls.Add(panel9);
-            PanelHome.Controls.Add(label16);
+            PanelHome.Controls.Add(label_admin_count);
             PanelHome.Controls.Add(label13);
             PanelHome.Controls.Add(panel8);
-            PanelHome.Controls.Add(label14);
+            PanelHome.Controls.Add(label_receptionist_count);
             PanelHome.Controls.Add(label11);
             PanelHome.Controls.Add(panel5);
-            PanelHome.Controls.Add(label12);
+            PanelHome.Controls.Add(label_mech_count);
             PanelHome.Controls.Add(label10);
             PanelHome.Controls.Add(label9);
             PanelHome.Controls.Add(label8);
@@ -271,18 +271,18 @@
             panel9.Size = new Size(3, 107);
             panel9.TabIndex = 18;
             // 
-            // label16
+            // label_admin_count
             // 
-            label16.AutoSize = true;
-            label16.BackColor = Color.Transparent;
-            label16.FlatStyle = FlatStyle.Flat;
-            label16.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.WhiteSmoke;
-            label16.Location = new Point(666, 415);
-            label16.Name = "label16";
-            label16.Size = new Size(129, 91);
-            label16.TabIndex = 19;
-            label16.Text = "00";
+            label_admin_count.AutoSize = true;
+            label_admin_count.BackColor = Color.Transparent;
+            label_admin_count.FlatStyle = FlatStyle.Flat;
+            label_admin_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_admin_count.ForeColor = Color.WhiteSmoke;
+            label_admin_count.Location = new Point(666, 415);
+            label_admin_count.Name = "label_admin_count";
+            label_admin_count.Size = new Size(129, 91);
+            label_admin_count.TabIndex = 19;
+            label_admin_count.Text = "00";
             // 
             // label13
             // 
@@ -306,18 +306,18 @@
             panel8.Size = new Size(3, 107);
             panel8.TabIndex = 15;
             // 
-            // label14
+            // label_receptionist_count
             // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.Transparent;
-            label14.FlatStyle = FlatStyle.Flat;
-            label14.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.WhiteSmoke;
-            label14.Location = new Point(358, 415);
-            label14.Name = "label14";
-            label14.Size = new Size(129, 91);
-            label14.TabIndex = 16;
-            label14.Text = "00";
+            label_receptionist_count.AutoSize = true;
+            label_receptionist_count.BackColor = Color.Transparent;
+            label_receptionist_count.FlatStyle = FlatStyle.Flat;
+            label_receptionist_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_receptionist_count.ForeColor = Color.WhiteSmoke;
+            label_receptionist_count.Location = new Point(358, 415);
+            label_receptionist_count.Name = "label_receptionist_count";
+            label_receptionist_count.Size = new Size(129, 91);
+            label_receptionist_count.TabIndex = 16;
+            label_receptionist_count.Text = "00";
             // 
             // label11
             // 
@@ -341,18 +341,18 @@
             panel5.Size = new Size(3, 107);
             panel5.TabIndex = 12;
             // 
-            // label12
+            // label_mech_count
             // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
-            label12.FlatStyle = FlatStyle.Flat;
-            label12.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.WhiteSmoke;
-            label12.Location = new Point(97, 415);
-            label12.Name = "label12";
-            label12.Size = new Size(129, 91);
-            label12.TabIndex = 13;
-            label12.Text = "00";
+            label_mech_count.AutoSize = true;
+            label_mech_count.BackColor = Color.Transparent;
+            label_mech_count.FlatStyle = FlatStyle.Flat;
+            label_mech_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_mech_count.ForeColor = Color.WhiteSmoke;
+            label_mech_count.Location = new Point(97, 415);
+            label_mech_count.Name = "label_mech_count";
+            label_mech_count.Size = new Size(129, 91);
+            label_mech_count.TabIndex = 13;
+            label_mech_count.Text = "00";
             // 
             // label10
             // 
@@ -461,9 +461,9 @@
             label1.ForeColor = Color.WhiteSmoke;
             label1.Location = new Point(83, 101);
             label1.Name = "label1";
-            label1.Size = new Size(389, 31);
+            label1.Size = new Size(342, 31);
             label1.TabIndex = 2;
-            label1.Text = "CUSTOMER INFORMATION";
+            label1.Text = "SYSTEM INFORMATION";
             // 
             // panel4
             // 
@@ -600,13 +600,13 @@
         private Label label8;
         private Label label11;
         private Panel panel5;
-        private Label label12;
+        private Label label_mech_count;
         private Label label15;
         private Panel panel9;
-        private Label label16;
+        private Label label_admin_count;
         private Label label13;
         private Panel panel8;
-        private Label label14;
+        private Label label_receptionist_count;
         private Panel panelCustomer;
         private PictureBox pictureBox2;
     }
