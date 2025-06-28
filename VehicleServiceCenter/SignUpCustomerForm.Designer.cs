@@ -57,6 +57,10 @@
             LogBtn = new Button();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
+            label8 = new Label();
+            radioButton_morning = new RadioButton();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -69,7 +73,7 @@
             SignBtn.BackColor = Color.FromArgb(208, 206, 206);
             SignBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             SignBtn.ForeColor = Color.FromArgb(18, 18, 18);
-            SignBtn.Location = new Point(93, 546);
+            SignBtn.Location = new Point(59, 558);
             SignBtn.Margin = new Padding(3, 4, 3, 4);
             SignBtn.Name = "SignBtn";
             SignBtn.Size = new Size(114, 43);
@@ -91,6 +95,10 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(18, 18, 18);
+            panel1.Controls.Add(radioButton2);
+            panel1.Controls.Add(radioButton1);
+            panel1.Controls.Add(radioButton_morning);
+            panel1.Controls.Add(label8);
             panel1.Controls.Add(textBox_UserID);
             panel1.Controls.Add(label_userID);
             panel1.Controls.Add(DOBPicker);
@@ -154,7 +162,7 @@
             // 
             // DOBPicker
             // 
-            DOBPicker.Location = new Point(140, 476);
+            DOBPicker.Location = new Point(140, 451);
             DOBPicker.Margin = new Padding(3, 4, 3, 4);
             DOBPicker.Name = "DOBPicker";
             DOBPicker.Size = new Size(285, 27);
@@ -168,7 +176,7 @@
             BloodGroupComboBox.ForeColor = SystemColors.ButtonHighlight;
             BloodGroupComboBox.FormattingEnabled = true;
             BloodGroupComboBox.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
-            BloodGroupComboBox.Location = new Point(165, 415);
+            BloodGroupComboBox.Location = new Point(165, 397);
             BloodGroupComboBox.Margin = new Padding(3, 4, 3, 4);
             BloodGroupComboBox.Name = "BloodGroupComboBox";
             BloodGroupComboBox.Size = new Size(218, 36);
@@ -179,7 +187,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Cascadia Code", 10F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(8, 416);
+            label2.Location = new Point(8, 398);
             label2.Name = "label2";
             label2.Size = new Size(120, 22);
             label2.TabIndex = 25;
@@ -191,7 +199,7 @@
             PhoneTxtBox.BorderStyle = BorderStyle.None;
             PhoneTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PhoneTxtBox.ForeColor = SystemColors.InactiveBorder;
-            PhoneTxtBox.Location = new Point(140, 309);
+            PhoneTxtBox.Location = new Point(140, 301);
             PhoneTxtBox.Margin = new Padding(3, 4, 3, 4);
             PhoneTxtBox.Multiline = true;
             PhoneTxtBox.Name = "PhoneTxtBox";
@@ -203,7 +211,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cascadia Code", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(8, 315);
+            label1.Location = new Point(7, 301);
             label1.Name = "label1";
             label1.Size = new Size(90, 22);
             label1.TabIndex = 23;
@@ -214,7 +222,7 @@
             OtherChk.AutoSize = true;
             OtherChk.Font = new Font("Cascadia Code", 9F);
             OtherChk.ForeColor = Color.White;
-            OtherChk.Location = new Point(363, 368);
+            OtherChk.Location = new Point(363, 355);
             OtherChk.Margin = new Padding(3, 4, 3, 4);
             OtherChk.Name = "OtherChk";
             OtherChk.Size = new Size(76, 24);
@@ -227,7 +235,7 @@
             FemaleChk.AutoSize = true;
             FemaleChk.Font = new Font("Cascadia Code", 9F);
             FemaleChk.ForeColor = Color.White;
-            FemaleChk.Location = new Point(241, 368);
+            FemaleChk.Location = new Point(241, 355);
             FemaleChk.Margin = new Padding(3, 4, 3, 4);
             FemaleChk.Name = "FemaleChk";
             FemaleChk.Size = new Size(85, 24);
@@ -240,7 +248,7 @@
             MaleChk.AutoSize = true;
             MaleChk.Font = new Font("Cascadia Code", 9F);
             MaleChk.ForeColor = Color.White;
-            MaleChk.Location = new Point(140, 368);
+            MaleChk.Location = new Point(140, 355);
             MaleChk.Margin = new Padding(3, 4, 3, 4);
             MaleChk.Name = "MaleChk";
             MaleChk.Size = new Size(67, 24);
@@ -262,7 +270,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.icons8_info_100;
-            pictureBox3.Location = new Point(252, 672);
+            pictureBox3.Location = new Point(260, 672);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(19, 21);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -294,7 +302,7 @@
             // 
             StartBtn.BackColor = Color.FromArgb(208, 206, 206);
             StartBtn.Font = new Font("Microsoft Sans Serif", 13.8F);
-            StartBtn.Location = new Point(95, 608);
+            StartBtn.Location = new Point(95, 609);
             StartBtn.Margin = new Padding(3, 4, 3, 4);
             StartBtn.Name = "StartBtn";
             StartBtn.Size = new Size(254, 43);
@@ -308,7 +316,7 @@
             GenderLbl.AutoSize = true;
             GenderLbl.Font = new Font("Cascadia Code", 10F);
             GenderLbl.ForeColor = Color.White;
-            GenderLbl.Location = new Point(8, 366);
+            GenderLbl.Location = new Point(8, 353);
             GenderLbl.Name = "GenderLbl";
             GenderLbl.Size = new Size(70, 22);
             GenderLbl.TabIndex = 13;
@@ -319,7 +327,7 @@
             DobLbl.AutoSize = true;
             DobLbl.Font = new Font("Cascadia Code", 10F);
             DobLbl.ForeColor = Color.White;
-            DobLbl.Location = new Point(22, 481);
+            DobLbl.Location = new Point(10, 456);
             DobLbl.Name = "DobLbl";
             DobLbl.Size = new Size(40, 22);
             DobLbl.TabIndex = 9;
@@ -331,7 +339,7 @@
             EmailTxtBox.BorderStyle = BorderStyle.None;
             EmailTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             EmailTxtBox.ForeColor = SystemColors.InactiveBorder;
-            EmailTxtBox.Location = new Point(140, 264);
+            EmailTxtBox.Location = new Point(140, 257);
             EmailTxtBox.Margin = new Padding(3, 4, 3, 4);
             EmailTxtBox.Multiline = true;
             EmailTxtBox.Name = "EmailTxtBox";
@@ -343,7 +351,7 @@
             EmailLbl.AutoSize = true;
             EmailLbl.Font = new Font("Cascadia Code", 10F);
             EmailLbl.ForeColor = Color.White;
-            EmailLbl.Location = new Point(8, 262);
+            EmailLbl.Location = new Point(8, 257);
             EmailLbl.Name = "EmailLbl";
             EmailLbl.Size = new Size(70, 22);
             EmailLbl.TabIndex = 7;
@@ -355,7 +363,7 @@
             PassTxtBox.BorderStyle = BorderStyle.None;
             PassTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PassTxtBox.ForeColor = SystemColors.InactiveBorder;
-            PassTxtBox.Location = new Point(140, 219);
+            PassTxtBox.Location = new Point(140, 211);
             PassTxtBox.Margin = new Padding(3, 4, 3, 4);
             PassTxtBox.Multiline = true;
             PassTxtBox.Name = "PassTxtBox";
@@ -367,7 +375,7 @@
             PassLbl.AutoSize = true;
             PassLbl.Font = new Font("Cascadia Code", 10F);
             PassLbl.ForeColor = Color.White;
-            PassLbl.Location = new Point(8, 216);
+            PassLbl.Location = new Point(7, 211);
             PassLbl.Name = "PassLbl";
             PassLbl.Size = new Size(90, 22);
             PassLbl.TabIndex = 5;
@@ -403,7 +411,7 @@
             LogBtn.BackColor = Color.FromArgb(18, 18, 18);
             LogBtn.Font = new Font("Microsoft Sans Serif", 12F);
             LogBtn.ForeColor = Color.FromArgb(208, 206, 206);
-            LogBtn.Location = new Point(252, 546);
+            LogBtn.Location = new Point(269, 558);
             LogBtn.Margin = new Padding(3, 4, 3, 4);
             LogBtn.Name = "LogBtn";
             LogBtn.Size = new Size(114, 43);
@@ -431,6 +439,58 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(441, 3);
             panel2.TabIndex = 19;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.FlatStyle = FlatStyle.Flat;
+            label8.Font = new Font("Cascadia Code", 10F);
+            label8.ForeColor = SystemColors.ControlLightLight;
+            label8.Location = new Point(8, 505);
+            label8.Name = "label8";
+            label8.Size = new Size(70, 22);
+            label8.TabIndex = 31;
+            label8.Text = "SHIFT:";
+            // 
+            // radioButton_morning
+            // 
+            radioButton_morning.AutoSize = true;
+            radioButton_morning.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_morning.ForeColor = Color.White;
+            radioButton_morning.Location = new Point(140, 503);
+            radioButton_morning.Name = "radioButton_morning";
+            radioButton_morning.Size = new Size(90, 24);
+            radioButton_morning.TabIndex = 32;
+            radioButton_morning.TabStop = true;
+            radioButton_morning.Text = "Morning";
+            radioButton_morning.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton1.ForeColor = Color.White;
+            radioButton1.Location = new Point(241, 505);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(69, 24);
+            radioButton1.TabIndex = 33;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Noon";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton2.ForeColor = Color.White;
+            radioButton2.Location = new Point(332, 505);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(69, 24);
+            radioButton2.TabIndex = 34;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Night";
+            radioButton2.UseVisualStyleBackColor = true;
             // 
             // SignUpCustomerForm
             // 
@@ -483,5 +543,9 @@
         private DateTimePicker DOBPicker;
         private Label label_userID;
         private TextBox textBox_UserID;
+        private Label label8;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
+        private RadioButton radioButton_morning;
     }
 }
