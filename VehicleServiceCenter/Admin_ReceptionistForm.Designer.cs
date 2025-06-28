@@ -37,8 +37,8 @@
             btnAdmin = new FontAwesome.Sharp.IconButton();
             PanelProfile = new Panel();
             pictureBox21 = new PictureBox();
-            label7 = new Label();
-            label6 = new Label();
+            label_role = new Label();
+            label_admin_name = new Label();
             pictureBox20 = new PictureBox();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel2 = new Panel();
@@ -213,8 +213,8 @@
             // 
             PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
             PanelProfile.Controls.Add(pictureBox21);
-            PanelProfile.Controls.Add(label7);
-            PanelProfile.Controls.Add(label6);
+            PanelProfile.Controls.Add(label_role);
+            PanelProfile.Controls.Add(label_admin_name);
             PanelProfile.Controls.Add(pictureBox20);
             PanelProfile.Dock = DockStyle.Top;
             PanelProfile.Location = new Point(193, 0);
@@ -234,29 +234,29 @@
             pictureBox21.TabIndex = 3;
             pictureBox21.TabStop = false;
             // 
-            // label7
+            // label_role
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(735, 40);
-            label7.Name = "label7";
-            label7.Size = new Size(55, 18);
-            label7.TabIndex = 2;
-            label7.Text = "ADMIN";
+            label_role.AutoSize = true;
+            label_role.BackColor = Color.Transparent;
+            label_role.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_role.ForeColor = Color.Gainsboro;
+            label_role.Location = new Point(735, 40);
+            label_role.Name = "label_role";
+            label_role.Size = new Size(55, 18);
+            label_role.TabIndex = 2;
+            label_role.Text = "ADMIN";
             // 
-            // label6
+            // label_admin_name
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(735, 12);
-            label6.Name = "label6";
-            label6.Size = new Size(132, 25);
-            label6.TabIndex = 2;
-            label6.Text = "FULL NAME";
+            label_admin_name.AutoSize = true;
+            label_admin_name.BackColor = Color.Transparent;
+            label_admin_name.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_admin_name.ForeColor = Color.WhiteSmoke;
+            label_admin_name.Location = new Point(735, 12);
+            label_admin_name.Name = "label_admin_name";
+            label_admin_name.Size = new Size(132, 25);
+            label_admin_name.TabIndex = 2;
+            label_admin_name.Text = "FULL NAME";
             // 
             // pictureBox20
             // 
@@ -633,8 +633,8 @@
         private FontAwesome.Sharp.IconButton btnAdmin;
         private Panel PanelProfile;
         private PictureBox pictureBox21;
-        private Label label7;
-        private Label label6;
+        private Label label_role;
+        private Label label_admin_name;
         private PictureBox pictureBox20;
         private TableLayoutPanel tableLayoutPanel1;
         private DataGridView dataGridView_Reps;

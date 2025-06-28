@@ -27,6 +27,10 @@ namespace VehicleServiceCenter
 
         private void Admin_ReceptionistForm_Load(object sender, EventArgs e) {
 
+            UserRepository ur = new UserRepository();
+            User loggedUser = ur.GetUserById(this.loggedId); 
+
+
             LoadReceptionistData();
 
 

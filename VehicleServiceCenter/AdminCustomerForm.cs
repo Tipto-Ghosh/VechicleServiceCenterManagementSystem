@@ -40,7 +40,7 @@ namespace VehicleServiceCenter {
         }
 
         private void iconButton3_Click(object sender, EventArgs e) {
-            Admin_ReceptionistForm r1 = new Admin_ReceptionistForm();
+            Admin_ReceptionistForm r1 = new Admin_ReceptionistForm(this.loggedId);
             r1.Show();
             this.Hide();
         }
