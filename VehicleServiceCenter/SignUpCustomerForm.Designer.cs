@@ -374,7 +374,7 @@
             PassLbl.Size = new Size(90, 22);
             PassLbl.TabIndex = 5;
             PassLbl.Text = "PASSWORD";
-            PassLbl.Click += this.PassLbl_Click;
+            //PassLbl.Click += this.PassLbl_Click;
             // 
             // UserNameTxtBox
             // 

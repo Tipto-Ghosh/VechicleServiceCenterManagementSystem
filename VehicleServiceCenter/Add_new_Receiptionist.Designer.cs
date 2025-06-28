@@ -26,8 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_new_Receiptionist));
             panel1 = new Panel();
             radioButton2 = new RadioButton();
@@ -458,7 +457,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
             Name = "Add_new_Receiptionist";
-            Text = "Form1";
+            Text = "Add_New_Rep";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
