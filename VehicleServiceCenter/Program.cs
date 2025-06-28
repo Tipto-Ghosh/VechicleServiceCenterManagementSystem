@@ -39,7 +39,7 @@ namespace VehicleServiceCenter
 
             //Application.Run(new Customer_HomeForm());
 
-            Application.Run(new LoginForm());
+            Application.Run(new SignUpCustomerForm());
 
             // Tipto
             //arko

@@ -121,5 +121,15 @@ namespace VehicleServiceCenter
             LoginForm l2 = new LoginForm();
             l2.Show();
         }
+
+        private void EmailTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PassTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

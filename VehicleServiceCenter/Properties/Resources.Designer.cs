@@ -323,6 +323,16 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1554627149_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1554627149-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mitsubishi_pajero_2025 {
             get {
                 object obj = ResourceManager.GetObject("mitsubishi_pajero_2025", resourceCulture);
