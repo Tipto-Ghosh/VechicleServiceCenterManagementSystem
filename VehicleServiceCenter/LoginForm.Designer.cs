@@ -158,10 +158,8 @@
             PassTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PassTxtBox.ForeColor = SystemColors.InactiveBorder;
             PassTxtBox.Location = new Point(135, 285);
-            PassTxtBox.Multiline = true;
             PassTxtBox.Name = "PassTxtBox";
-            PassTxtBox.PasswordChar = '#';
-            PassTxtBox.Size = new Size(271, 33);
+            PassTxtBox.Size = new Size(271, 27);
             PassTxtBox.TabIndex = 26;
             PassTxtBox.UseSystemPasswordChar = true;
             // 
@@ -254,7 +252,7 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // LogIn2
+            // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -262,7 +260,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "LogIn2";
+            Name = "LoginForm";
             Text = "LogIn2";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
