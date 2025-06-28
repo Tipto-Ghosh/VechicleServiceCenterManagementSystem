@@ -26,7 +26,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer_HomeForm));
             profilePanel = new Panel();
             settingsPictureBox = new PictureBox();
@@ -73,16 +74,15 @@
             profilePanel.Location = new Point(0, 0);
             profilePanel.Margin = new Padding(0);
             profilePanel.Name = "profilePanel";
-            profilePanel.Size = new Size(1152, 73);
+            profilePanel.Size = new Size(1008, 55);
             profilePanel.TabIndex = 4;
             // 
             // settingsPictureBox
             // 
             settingsPictureBox.Image = Properties.Resources.car_maintenance_17073141;
-            settingsPictureBox.Location = new Point(542, 0);
-            settingsPictureBox.Margin = new Padding(3, 4, 3, 4);
+            settingsPictureBox.Location = new Point(474, 0);
             settingsPictureBox.Name = "settingsPictureBox";
-            settingsPictureBox.Size = new Size(65, 73);
+            settingsPictureBox.Size = new Size(57, 55);
             settingsPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             settingsPictureBox.TabIndex = 3;
             settingsPictureBox.TabStop = false;
@@ -90,10 +90,9 @@
             // notificationPictureBox
             // 
             notificationPictureBox.Image = Properties.Resources.icons8_customer_64;
-            notificationPictureBox.Location = new Point(886, 0);
-            notificationPictureBox.Margin = new Padding(3, 4, 3, 4);
+            notificationPictureBox.Location = new Point(775, 0);
             notificationPictureBox.Name = "notificationPictureBox";
-            notificationPictureBox.Size = new Size(35, 73);
+            notificationPictureBox.Size = new Size(31, 55);
             notificationPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             notificationPictureBox.TabIndex = 3;
             notificationPictureBox.TabStop = false;
@@ -104,9 +103,9 @@
             customerTypeLabel.BackColor = Color.Transparent;
             customerTypeLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             customerTypeLabel.ForeColor = Color.Gainsboro;
-            customerTypeLabel.Location = new Point(928, 40);
+            customerTypeLabel.Location = new Point(812, 30);
             customerTypeLabel.Name = "customerTypeLabel";
-            customerTypeLabel.Size = new Size(95, 18);
+            customerTypeLabel.Size = new Size(76, 15);
             customerTypeLabel.TabIndex = 2;
             customerTypeLabel.Text = "CUSTOMER";
             // 
@@ -116,9 +115,9 @@
             fullNameLabel.BackColor = Color.Transparent;
             fullNameLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             fullNameLabel.ForeColor = Color.WhiteSmoke;
-            fullNameLabel.Location = new Point(928, 12);
+            fullNameLabel.Location = new Point(812, 9);
             fullNameLabel.Name = "fullNameLabel";
-            fullNameLabel.Size = new Size(132, 25);
+            fullNameLabel.Size = new Size(108, 20);
             fullNameLabel.TabIndex = 2;
             fullNameLabel.Text = "FULL NAME";
             // 
@@ -126,10 +125,9 @@
             // 
             signOutPictureBox.Dock = DockStyle.Right;
             signOutPictureBox.Image = Properties.Resources.icons8_sign_out_501;
-            signOutPictureBox.Location = new Point(1117, 0);
-            signOutPictureBox.Margin = new Padding(3, 4, 3, 4);
+            signOutPictureBox.Location = new Point(977, 0);
             signOutPictureBox.Name = "signOutPictureBox";
-            signOutPictureBox.Size = new Size(35, 73);
+            signOutPictureBox.Size = new Size(31, 55);
             signOutPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             signOutPictureBox.TabIndex = 1;
             signOutPictureBox.TabStop = false;
@@ -155,10 +153,10 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(0, 73);
+            panel1.Location = new Point(0, 55);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1176, 668);
+            panel1.Size = new Size(1026, 487);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
             // 
@@ -174,10 +172,9 @@
             iconButton_payment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_payment.IconSize = 37;
             iconButton_payment.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_payment.Location = new Point(773, 13);
-            iconButton_payment.Margin = new Padding(3, 4, 3, 4);
+            iconButton_payment.Location = new Point(676, 10);
             iconButton_payment.Name = "iconButton_payment";
-            iconButton_payment.Size = new Size(125, 52);
+            iconButton_payment.Size = new Size(109, 39);
             iconButton_payment.TabIndex = 19;
             iconButton_payment.Text = "PAYMENT";
             iconButton_payment.TextAlign = ContentAlignment.MiddleRight;
@@ -195,10 +192,9 @@
             iconButton_book_appointment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_book_appointment.IconSize = 37;
             iconButton_book_appointment.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_book_appointment.Location = new Point(501, 13);
-            iconButton_book_appointment.Margin = new Padding(3, 4, 3, 4);
+            iconButton_book_appointment.Location = new Point(438, 10);
             iconButton_book_appointment.Name = "iconButton_book_appointment";
-            iconButton_book_appointment.Size = new Size(203, 52);
+            iconButton_book_appointment.Size = new Size(178, 39);
             iconButton_book_appointment.TabIndex = 18;
             iconButton_book_appointment.Text = "BOOK APPOINTMENT";
             iconButton_book_appointment.TextAlign = ContentAlignment.MiddleRight;
@@ -217,10 +213,9 @@
             iconButton_update_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_update_profile.IconSize = 37;
             iconButton_update_profile.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_update_profile.Location = new Point(274, 13);
-            iconButton_update_profile.Margin = new Padding(3, 4, 3, 4);
+            iconButton_update_profile.Location = new Point(240, 10);
             iconButton_update_profile.Name = "iconButton_update_profile";
-            iconButton_update_profile.Size = new Size(168, 52);
+            iconButton_update_profile.Size = new Size(147, 39);
             iconButton_update_profile.TabIndex = 17;
             iconButton_update_profile.Text = "UPDATE PROFILE";
             iconButton_update_profile.TextAlign = ContentAlignment.MiddleRight;
@@ -239,10 +234,9 @@
             iconButton_LogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_LogOut.IconSize = 37;
             iconButton_LogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_LogOut.Location = new Point(28, 13);
-            iconButton_LogOut.Margin = new Padding(3, 4, 3, 4);
+            iconButton_LogOut.Location = new Point(24, 10);
             iconButton_LogOut.Name = "iconButton_LogOut";
-            iconButton_LogOut.Size = new Size(168, 52);
+            iconButton_LogOut.Size = new Size(147, 39);
             iconButton_LogOut.TabIndex = 16;
             iconButton_LogOut.Text = "LOG OUT";
             iconButton_LogOut.UseVisualStyleBackColor = false;
@@ -251,10 +245,9 @@
             // panel6
             // 
             panel6.BackColor = Color.White;
-            panel6.Location = new Point(843, 213);
-            panel6.Margin = new Padding(3, 4, 3, 4);
+            panel6.Location = new Point(738, 160);
             panel6.Name = "panel6";
-            panel6.Size = new Size(3, 107);
+            panel6.Size = new Size(3, 80);
             panel6.TabIndex = 10;
             // 
             // label4
@@ -263,19 +256,18 @@
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(854, 347);
+            label4.Location = new Point(747, 260);
             label4.Name = "label4";
-            label4.Size = new Size(122, 31);
+            label4.Size = new Size(107, 23);
             label4.TabIndex = 15;
             label4.Text = "EXTEMITED TIME";
             // 
             // panel5
             // 
             panel5.BackColor = Color.White;
-            panel5.Location = new Point(843, 345);
-            panel5.Margin = new Padding(3, 4, 3, 4);
+            panel5.Location = new Point(738, 259);
             panel5.Name = "panel5";
-            panel5.Size = new Size(3, 69);
+            panel5.Size = new Size(3, 52);
             panel5.TabIndex = 13;
             // 
             // label6
@@ -284,9 +276,9 @@
             label6.FlatStyle = FlatStyle.Flat;
             label6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.LightGreen;
-            label6.Location = new Point(864, 371);
+            label6.Location = new Point(756, 278);
             label6.Name = "label6";
-            label6.Size = new Size(176, 49);
+            label6.Size = new Size(154, 37);
             label6.TabIndex = 14;
             label6.Text = "4 days";
             // 
@@ -294,10 +286,10 @@
             // 
             panel2.Controls.Add(label7);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 464);
+            panel2.Location = new Point(0, 348);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1155, 493);
+            panel2.Size = new Size(1009, 370);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -308,9 +300,9 @@
             label7.FlatStyle = FlatStyle.Flat;
             label7.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.WhiteSmoke;
-            label7.Location = new Point(429, 21);
+            label7.Location = new Point(375, 16);
             label7.Name = "label7";
-            label7.Size = new Size(341, 39);
+            label7.Size = new Size(273, 31);
             label7.TabIndex = 11;
             label7.Text = "ACTIVE SERVICES";
             // 
@@ -321,9 +313,9 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(854, 213);
+            label3.Location = new Point(747, 160);
             label3.Name = "label3";
-            label3.Size = new Size(121, 20);
+            label3.Size = new Size(97, 16);
             label3.TabIndex = 11;
             label3.Text = "REPAIR COST";
             label3.Click += label5_Click;
@@ -335,9 +327,9 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(854, 80);
+            label5.Location = new Point(747, 60);
             label5.Name = "label5";
-            label5.Size = new Size(44, 20);
+            label5.Size = new Size(35, 16);
             label5.TabIndex = 11;
             label5.Text = "CAR";
             label5.Click += label5_Click;
@@ -345,19 +337,17 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(38, 38, 38);
-            panel3.Location = new Point(3, 441);
-            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Location = new Point(3, 331);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1143, 4);
+            panel3.Size = new Size(1000, 3);
             panel3.TabIndex = 9;
             // 
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(845, 98);
-            panel4.Margin = new Padding(3, 4, 3, 4);
+            panel4.Location = new Point(739, 74);
             panel4.Name = "panel4";
-            panel4.Size = new Size(3, 107);
+            panel4.Size = new Size(3, 80);
             panel4.TabIndex = 9;
             // 
             // label1
@@ -367,9 +357,9 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(255, 128, 0);
-            label1.Location = new Point(858, 237);
+            label1.Location = new Point(751, 178);
             label1.Name = "label1";
-            label1.Size = new Size(199, 54);
+            label1.Size = new Size(161, 42);
             label1.TabIndex = 10;
             label1.Text = "Tk 9000";
             label1.Click += label2_Click;
@@ -381,9 +371,9 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(864, 119);
+            label2.Location = new Point(756, 89);
             label2.Name = "label2";
-            label2.Size = new Size(132, 54);
+            label2.Size = new Size(106, 42);
             label2.TabIndex = 10;
             label2.Text = "Hilux";
             label2.Click += label2_Click;
@@ -391,22 +381,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(307, 119);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(269, 89);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(537, 345);
+            pictureBox1.Size = new Size(470, 259);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // Customer_HomeForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1152, 716);
+            ClientSize = new Size(1008, 537);
             Controls.Add(panel1);
             Controls.Add(profilePanel);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Customer_HomeForm";
             Text = "Customer_HomeForm";
             Load += Customer_HomeForm_Load;

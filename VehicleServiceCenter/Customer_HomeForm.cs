@@ -4,6 +4,8 @@ namespace VehicleServiceCenter
 {
     public partial class Customer_HomeForm : Form {
 
+
+        
         private int loggedCustomerId;
 
         public Customer_HomeForm(int cusId) {
@@ -128,7 +130,7 @@ namespace VehicleServiceCenter
             UserRepository ur = new UserRepository();
             User user = ur.GetUserById(loggedCustomerId);
 
-            this.fullNameLabel.Text = user.Name;
+            this.fullNameLabel.Text = user.Name.ToString();
         }
 
         private void iconButton_update_profile_Click(object sender, EventArgs e) {
