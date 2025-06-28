@@ -28,8 +28,10 @@ namespace VehicleServiceCenter
         private void Admin_ReceptionistForm_Load(object sender, EventArgs e) {
 
             UserRepository ur = new UserRepository();
-            User loggedUser = ur.GetUserById(this.loggedId); 
+            User loggedUser = ur.GetUserById(this.loggedId);
 
+            this.label_admin_name.Text = loggedUser.Name;
+            this.label_role.Text = loggedUser.UserType;
 
             LoadReceptionistData();
 
@@ -45,13 +47,13 @@ namespace VehicleServiceCenter
         }
 
         private void btnHome_Click(object sender, EventArgs e) {
-            AdminForm a1 = new AdminForm();
+            AdminForm a1 = new AdminForm(loggedId);
             a1.Show();
             this.Hide();
         }
 
         private void btnCustomer_Click(object sender, EventArgs e) {
-            AdminCustomerForm a1 = new AdminCustomerForm();
+            AdminCustomerForm a1 = new AdminCustomerForm(loggedId);
             a1.Show();
             this.Hide();
         }
@@ -70,7 +72,7 @@ namespace VehicleServiceCenter
             DataTable data = receptionistRepository.GetAllReceptionistDetailsAsDataTable();
             this.dataGridView_Reps.DataSource = data;
 
-            if(dataGridView_Reps.Rows.Count > 0) {
+            if (dataGridView_Reps.Rows.Count > 0) {
                 dataGridView_Reps.ClearSelection();
             }
 
@@ -244,23 +246,33 @@ namespace VehicleServiceCenter
                 return;
             }
 
-            
+
             int userId = int.Parse(textBox_UserID.Text);
             ReceptionistRepository rr = new ReceptionistRepository();
             int status = rr.DeleteReceptionist(userId);
 
-            if(status == -1) {
+            if (status == -1) {
                 MessageBox.Show("Receptionist does not exist.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (status == 0) {
+            } else if (status == 0) {
                 MessageBox.Show("Failed to delete receptionist. Please try again.", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else {
+            } else {
                 MessageBox.Show("Receptionist deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadReceptionistData();
                 dataGridView_Reps.ClearSelection();
                 ResetReceptionistFields();
             }
+        }
+
+        private void label_admin_name_Click(object sender, EventArgs e) {
+
+        }
+
+        private void BtnReceptionist_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button_add_new_Click(object sender, EventArgs e) {
+
         }
     }
 }

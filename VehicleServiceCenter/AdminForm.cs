@@ -46,11 +46,13 @@ namespace VehicleServiceCenter
         }
 
         private void btnHome_Click(object sender, EventArgs e) {
-
+            this.Hide();
+            LoginForm lf = new LoginForm();
+            lf.Show();
         }
 
         private void iconButton3_Click(object sender, EventArgs e) {
-            Admin_ReceptionistForm r1 = new Admin_ReceptionistForm();
+            Admin_ReceptionistForm r1 = new Admin_ReceptionistForm(loggedAdminId);
             r1.Show();
             this.Hide();
         }
@@ -95,6 +97,13 @@ namespace VehicleServiceCenter
             ReceptionistRepository re = new ReceptionistRepository();
             int receptionistCount = re.GetReceptionistCount();
             this.label_receptionist_count.Text = receptionistCount.ToString();
+        }
+
+        private void iconButton_updateSelf_Click(object sender, EventArgs e) {
+            //
+            this.Hide();
+            Admin_Profile_Edit ape = new Admin_Profile_Edit(this.loggedAdminId);
+            ape.Show();
         }
     }
 }

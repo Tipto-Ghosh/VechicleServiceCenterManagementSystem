@@ -61,6 +61,7 @@
             label7 = new Label();
             label_name = new Label();
             pictureBox20 = new PictureBox();
+            iconButton_updateSelf = new FontAwesome.Sharp.IconButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -73,6 +74,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(59, 56, 56);
+            panel1.Controls.Add(iconButton_updateSelf);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(btnHome);
             panel1.Controls.Add(iconButton3);
@@ -112,7 +114,7 @@
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(200, 60);
             btnHome.TabIndex = 0;
-            btnHome.Text = "HOME";
+            btnHome.Text = "LOG OUT";
             btnHome.TextAlign = ContentAlignment.MiddleLeft;
             btnHome.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnHome.UseVisualStyleBackColor = true;
@@ -525,6 +527,28 @@
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
             // 
+            // iconButton_updateSelf
+            // 
+            iconButton_updateSelf.FlatAppearance.BorderSize = 0;
+            iconButton_updateSelf.FlatStyle = FlatStyle.Flat;
+            iconButton_updateSelf.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iconButton_updateSelf.ForeColor = Color.White;
+            iconButton_updateSelf.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            iconButton_updateSelf.IconColor = Color.White;
+            iconButton_updateSelf.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton_updateSelf.IconSize = 32;
+            iconButton_updateSelf.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton_updateSelf.Location = new Point(-7, 348);
+            iconButton_updateSelf.Margin = new Padding(3, 4, 3, 4);
+            iconButton_updateSelf.Name = "iconButton_updateSelf";
+            iconButton_updateSelf.Size = new Size(200, 60);
+            iconButton_updateSelf.TabIndex = 9;
+            iconButton_updateSelf.Text = "Update Info";
+            iconButton_updateSelf.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton_updateSelf.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton_updateSelf.UseVisualStyleBackColor = true;
+            iconButton_updateSelf.Click += iconButton_updateSelf_Click;
+            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -585,5 +609,6 @@
         private Label label_receptionist_count;
         private Panel panelCustomer;
         private PictureBox pictureBox2;
+        private FontAwesome.Sharp.IconButton iconButton_updateSelf;
     }
 }
