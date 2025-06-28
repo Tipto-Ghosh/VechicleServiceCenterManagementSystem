@@ -30,7 +30,7 @@ namespace VehicleServiceCenter {
         }
 
         private void btnHome_Click(object sender, EventArgs e) {
-            AdminForm a1 = new AdminForm();
+            AdminForm a1 = new AdminForm(this.loggedId);
             a1.Show();
             this.Hide();
         }
