@@ -58,6 +58,9 @@ namespace VehicleServiceCenter {
                     adminForm.Show();
                 } else if (userType == "customer") {
                     // Show customer form
+                    Customer_HomeForm customerForm = new Customer_HomeForm(isUser.UserID);
+                    this.Hide();
+                    customerForm.Show();
                 } else if (userType == "receptionist") {
                     // Show receptionist form
                 } else {

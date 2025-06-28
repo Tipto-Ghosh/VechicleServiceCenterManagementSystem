@@ -1,28 +1,36 @@
-﻿namespace VehicleServiceCenter
+﻿using VehicleServiceCenter.Repositories;
+using VehicleServiceCenter.Models;
+namespace VehicleServiceCenter
 {
-    public partial class Customer_HomeForm : Form
-    {
-        public Customer_HomeForm()
-        {
+    public partial class Customer_HomeForm : Form {
+
+        private int loggedCustomerId;
+
+        public Customer_HomeForm(int cusId) {
+            this.loggedCustomerId = cusId;
             InitializeComponent();
 
             showPurchasedServices();
-            
-            iconButton1.BackColor = Color.FromArgb(136, 136, 136);
+
+            iconButton_LogOut.BackColor = Color.FromArgb(136, 136, 136);
+        }
+        public Customer_HomeForm() {
+            InitializeComponent();
+
+            showPurchasedServices();
+
+            iconButton_LogOut.BackColor = Color.FromArgb(136, 136, 136);
         }
         private int x = 40, y = 80;
 
-        private void showPurchasedServices()
-        {
-            for (int i = 0; i < 6; i++)
-            {
+        private void showPurchasedServices() {
+            for (int i = 0; i < 6; i++) {
 
                 Panel newPanel = new Panel();
 
                 newPanel.Size = new Size(154, 154);
 
-                if (x + newPanel.Width > panel2.ClientSize.Width)
-                {
+                if (x + newPanel.Width > panel2.ClientSize.Width) {
                     x = 40;
                     y = y + 194;
                 }
@@ -30,8 +38,7 @@
                 newPanel.Location = new Point(x, y);
                 x = x + 194;
 
-                if (y > 991)
-                {
+                if (y > 991) {
                     break;
                 }
 
@@ -77,49 +84,63 @@
 
             panel2.Select();
         }
-        private void btnCreatePanel_Click(object sender, EventArgs e)
-        {
+        private void btnCreatePanel_Click(object sender, EventArgs e) {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        private void panel1_Paint(object sender, PaintEventArgs e) {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+        private void label2_Click(object sender, EventArgs e) {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
+        private void label5_Click(object sender, EventArgs e) {
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
+        private void panel2_Paint(object sender, PaintEventArgs e) {
 
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            
+        private void iconButton1_Click(object sender, EventArgs e) {
+            // logout button
+            LoginForm lf = new LoginForm();
+            this.Hide();
+            lf.ShowDialog();
         }
 
-        private void iconButton3_Click(object sender, EventArgs e)
-        {
+        private void iconButton3_Click(object sender, EventArgs e) {
             Customer_Edit_Form customer_Edit_Form = new Customer_Edit_Form();
             customer_Edit_Form.Show();
             this.Hide();
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
+        private void iconButton2_Click(object sender, EventArgs e) {
             ShopForm s1 = new ShopForm();
             s1._previousForm = this;
             s1.Show();
             this.Hide();
+        }
+
+        private void Customer_HomeForm_Load(object sender, EventArgs e) {
+            UserRepository ur = new UserRepository();
+            User user = ur.GetUserById(loggedCustomerId);
+
+            this.fullNameLabel.Text = user.Name;
+        }
+
+        private void iconButton_update_profile_Click(object sender, EventArgs e) {
+            Customer_Edit_Form cef = new Customer_Edit_Form(loggedCustomerId);
+            this.Hide();
+            cef.Show();
+        }
+
+        private void iconButton_book_appointment_Click(object sender, EventArgs e) {
+            ShopForm sf = new ShopForm();
+            this.Hide();
+            sf.Show();
         }
     }
 }
