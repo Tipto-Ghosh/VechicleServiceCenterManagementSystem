@@ -309,6 +309,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(profilePanel);
             Name = "Service_Form";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Service_Form";
             profilePanel.ResumeLayout(false);
             profilePanel.PerformLayout();

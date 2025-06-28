@@ -225,6 +225,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(PanelProfile);
             Name = "About_Us_Form";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "About_us";
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();

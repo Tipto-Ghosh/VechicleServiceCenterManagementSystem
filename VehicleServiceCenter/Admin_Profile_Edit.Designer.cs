@@ -26,7 +26,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             panel1 = new Panel();
             panel2 = new Panel();
             button_update = new Button();
@@ -403,6 +404,7 @@
             Controls.Add(profilePanel);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Admin_Profile_Edit";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin_Profile_Edit";
             Load += Admin_Profile_Edit_Load;
             panel1.ResumeLayout(false);

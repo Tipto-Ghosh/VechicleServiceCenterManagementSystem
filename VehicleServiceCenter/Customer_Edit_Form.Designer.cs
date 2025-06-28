@@ -93,27 +93,29 @@
             panel1.Controls.Add(iconButton1);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 55);
+            panel1.Location = new Point(0, 73);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1008, 482);
+            panel1.Size = new Size(1152, 643);
             panel1.TabIndex = 7;
             panel1.Paint += panel1_Paint;
             // 
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(64, 64, 64);
-            panel4.Location = new Point(623, 94);
+            panel4.Location = new Point(712, 125);
+            panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(200, 5);
+            panel4.Size = new Size(229, 7);
             panel4.TabIndex = 31;
             // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(64, 64, 64);
-            panel3.Location = new Point(623, 355);
+            panel3.Location = new Point(712, 473);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(200, 5);
+            panel3.Size = new Size(229, 7);
             panel3.TabIndex = 31;
             // 
             // label4
@@ -121,9 +123,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 10F);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(671, 70);
+            label4.Location = new Point(767, 93);
             label4.Name = "label4";
-            label4.Size = new Size(104, 18);
+            label4.Size = new Size(130, 22);
             label4.TabIndex = 30;
             label4.Text = "ACCOUNT INFO";
             // 
@@ -132,9 +134,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Cascadia Code", 10F);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(687, 327);
+            label3.Location = new Point(785, 436);
             label3.Name = "label3";
-            label3.Size = new Size(72, 18);
+            label3.Size = new Size(90, 22);
             label3.TabIndex = 30;
             label3.Text = "SERVICES";
             // 
@@ -145,9 +147,10 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(646, 423);
+            button2.Location = new Point(738, 564);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(154, 43);
+            button2.Size = new Size(176, 57);
             button2.TabIndex = 21;
             button2.Text = "REMOVE";
             button2.UseVisualStyleBackColor = false;
@@ -159,9 +162,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(646, 370);
+            button1.Location = new Point(738, 493);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(154, 43);
+            button1.Size = new Size(176, 57);
             button1.TabIndex = 21;
             button1.Text = "ADD";
             button1.UseVisualStyleBackColor = false;
@@ -171,12 +175,11 @@
             LogBtn.BackColor = Color.DarkRed;
             LogBtn.FlatAppearance.BorderSize = 4;
             LogBtn.FlatStyle = FlatStyle.Flat;
-            LogBtn.Font = new Font("Leelawadee", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LogBtn.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LogBtn.ForeColor = SystemColors.Menu;
-            LogBtn.Location = new Point(646, 168);
-            LogBtn.Margin = new Padding(3, 2, 3, 2);
+            LogBtn.Location = new Point(738, 224);
             LogBtn.Name = "LogBtn";
-            LogBtn.Size = new Size(154, 68);
+            LogBtn.Size = new Size(176, 91);
             LogBtn.TabIndex = 19;
             LogBtn.Text = "DELETE ACCOUNT";
             LogBtn.UseVisualStyleBackColor = false;
@@ -188,10 +191,9 @@
             SignBtn.FlatStyle = FlatStyle.Flat;
             SignBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             SignBtn.ForeColor = SystemColors.ControlLightLight;
-            SignBtn.Location = new Point(648, 110);
-            SignBtn.Margin = new Padding(3, 2, 3, 2);
+            SignBtn.Location = new Point(741, 147);
             SignBtn.Name = "SignBtn";
-            SignBtn.Size = new Size(151, 42);
+            SignBtn.Size = new Size(173, 56);
             SignBtn.TabIndex = 18;
             SignBtn.Text = "UPDATE";
             SignBtn.UseVisualStyleBackColor = false;
@@ -205,9 +207,10 @@
             iconButton3.IconColor = Color.Gainsboro;
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton3.IconSize = 37;
-            iconButton3.Location = new Point(467, 17);
+            iconButton3.Location = new Point(534, 23);
+            iconButton3.Margin = new Padding(3, 4, 3, 4);
             iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(75, 39);
+            iconButton3.Size = new Size(86, 52);
             iconButton3.TabIndex = 16;
             iconButton3.UseVisualStyleBackColor = false;
             iconButton3.Click += iconButton3_Click;
@@ -221,9 +224,10 @@
             iconButton2.IconColor = Color.Gainsboro;
             iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton2.IconSize = 37;
-            iconButton2.Location = new Point(577, 17);
+            iconButton2.Location = new Point(659, 23);
+            iconButton2.Margin = new Padding(3, 4, 3, 4);
             iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(75, 39);
+            iconButton2.Size = new Size(86, 52);
             iconButton2.TabIndex = 16;
             iconButton2.UseVisualStyleBackColor = false;
             iconButton2.Click += iconButton2_Click;
@@ -237,9 +241,10 @@
             iconButton1.IconColor = Color.Gainsboro;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.IconSize = 37;
-            iconButton1.Location = new Point(357, 17);
+            iconButton1.Location = new Point(408, 23);
+            iconButton1.Margin = new Padding(3, 4, 3, 4);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(75, 39);
+            iconButton1.Size = new Size(86, 52);
             iconButton1.TabIndex = 16;
             iconButton1.UseVisualStyleBackColor = false;
             iconButton1.Click += iconButton1_Click;
@@ -268,10 +273,9 @@
             panel2.Controls.Add(UserNameTxtBox);
             panel2.Controls.Add(UserNameLbl);
             panel2.ForeColor = Color.FromArgb(18, 18, 18);
-            panel2.Location = new Point(60, 53);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(69, 71);
             panel2.Name = "panel2";
-            panel2.Size = new Size(387, 427);
+            panel2.Size = new Size(442, 569);
             panel2.TabIndex = 17;
             // 
             // textBox_UserID
@@ -280,12 +284,11 @@
             textBox_UserID.BorderStyle = BorderStyle.None;
             textBox_UserID.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_UserID.ForeColor = SystemColors.InactiveBorder;
-            textBox_UserID.Location = new Point(115, 33);
-            textBox_UserID.Margin = new Padding(3, 2, 3, 2);
+            textBox_UserID.Location = new Point(131, 44);
             textBox_UserID.Multiline = true;
             textBox_UserID.Name = "textBox_UserID";
             textBox_UserID.ReadOnly = true;
-            textBox_UserID.Size = new Size(258, 22);
+            textBox_UserID.Size = new Size(295, 29);
             textBox_UserID.TabIndex = 30;
             textBox_UserID.Text = "System Auto Generated";
             // 
@@ -294,18 +297,17 @@
             label_userID.AutoSize = true;
             label_userID.Font = new Font("Cascadia Code", 10F);
             label_userID.ForeColor = Color.White;
-            label_userID.Location = new Point(14, 33);
+            label_userID.Location = new Point(16, 44);
             label_userID.Name = "label_userID";
-            label_userID.Size = new Size(64, 18);
+            label_userID.Size = new Size(80, 22);
             label_userID.TabIndex = 29;
             label_userID.Text = "USER ID";
             // 
             // DOBPicker
             // 
-            DOBPicker.Location = new Point(114, 384);
-            DOBPicker.Margin = new Padding(3, 2, 3, 2);
+            DOBPicker.Location = new Point(130, 512);
             DOBPicker.Name = "DOBPicker";
-            DOBPicker.Size = new Size(219, 23);
+            DOBPicker.Size = new Size(250, 27);
             DOBPicker.TabIndex = 28;
             // 
             // BloodGroupComboBox
@@ -316,10 +318,9 @@
             BloodGroupComboBox.ForeColor = SystemColors.ButtonHighlight;
             BloodGroupComboBox.FormattingEnabled = true;
             BloodGroupComboBox.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
-            BloodGroupComboBox.Location = new Point(115, 340);
-            BloodGroupComboBox.Margin = new Padding(3, 2, 3, 2);
+            BloodGroupComboBox.Location = new Point(131, 453);
             BloodGroupComboBox.Name = "BloodGroupComboBox";
-            BloodGroupComboBox.Size = new Size(104, 29);
+            BloodGroupComboBox.Size = new Size(118, 36);
             BloodGroupComboBox.TabIndex = 26;
             // 
             // label2
@@ -327,9 +328,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Cascadia Code", 10F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(14, 341);
+            label2.Location = new Point(16, 455);
             label2.Name = "label2";
-            label2.Size = new Size(96, 18);
+            label2.Size = new Size(120, 22);
             label2.TabIndex = 25;
             label2.Text = "BLOOD GROUP";
             // 
@@ -339,11 +340,10 @@
             PhoneTxtBox.BorderStyle = BorderStyle.None;
             PhoneTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PhoneTxtBox.ForeColor = SystemColors.InactiveBorder;
-            PhoneTxtBox.Location = new Point(115, 245);
-            PhoneTxtBox.Margin = new Padding(3, 2, 3, 2);
+            PhoneTxtBox.Location = new Point(131, 327);
             PhoneTxtBox.Multiline = true;
             PhoneTxtBox.Name = "PhoneTxtBox";
-            PhoneTxtBox.Size = new Size(258, 20);
+            PhoneTxtBox.Size = new Size(295, 27);
             PhoneTxtBox.TabIndex = 24;
             // 
             // label1
@@ -351,9 +351,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cascadia Code", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(14, 249);
+            label1.Location = new Point(16, 332);
             label1.Name = "label1";
-            label1.Size = new Size(72, 18);
+            label1.Size = new Size(90, 22);
             label1.TabIndex = 23;
             label1.Text = "PHONE NO";
             // 
@@ -362,10 +362,9 @@
             OtherChk.AutoSize = true;
             OtherChk.Font = new Font("Cascadia Code", 9F);
             OtherChk.ForeColor = Color.White;
-            OtherChk.Location = new Point(288, 294);
-            OtherChk.Margin = new Padding(3, 2, 3, 2);
+            OtherChk.Location = new Point(329, 392);
             OtherChk.Name = "OtherChk";
-            OtherChk.Size = new Size(61, 20);
+            OtherChk.Size = new Size(76, 24);
             OtherChk.TabIndex = 22;
             OtherChk.Text = "OTHER";
             OtherChk.UseVisualStyleBackColor = true;
@@ -375,10 +374,9 @@
             FemaleChk.AutoSize = true;
             FemaleChk.Font = new Font("Cascadia Code", 9F);
             FemaleChk.ForeColor = Color.White;
-            FemaleChk.Location = new Point(194, 294);
-            FemaleChk.Margin = new Padding(3, 2, 3, 2);
+            FemaleChk.Location = new Point(222, 392);
             FemaleChk.Name = "FemaleChk";
-            FemaleChk.Size = new Size(68, 20);
+            FemaleChk.Size = new Size(85, 24);
             FemaleChk.TabIndex = 21;
             FemaleChk.Text = "FEMALE";
             FemaleChk.UseVisualStyleBackColor = true;
@@ -388,10 +386,9 @@
             MaleChk.AutoSize = true;
             MaleChk.Font = new Font("Cascadia Code", 9F);
             MaleChk.ForeColor = Color.White;
-            MaleChk.Location = new Point(117, 294);
-            MaleChk.Margin = new Padding(3, 2, 3, 2);
+            MaleChk.Location = new Point(134, 392);
             MaleChk.Name = "MaleChk";
-            MaleChk.Size = new Size(54, 20);
+            MaleChk.Size = new Size(67, 24);
             MaleChk.TabIndex = 20;
             MaleChk.Text = "MALE";
             MaleChk.UseVisualStyleBackColor = true;
@@ -399,10 +396,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.icons8_info_100;
-            pictureBox3.Location = new Point(212, 490);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(242, 653);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(17, 16);
+            pictureBox3.Size = new Size(19, 21);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 18;
             pictureBox3.TabStop = false;
@@ -412,9 +408,9 @@
             AboutLbl.AutoSize = true;
             AboutLbl.Font = new Font("Microsoft Sans Serif", 10F);
             AboutLbl.ForeColor = Color.White;
-            AboutLbl.Location = new Point(136, 490);
+            AboutLbl.Location = new Point(155, 653);
             AboutLbl.Name = "AboutLbl";
-            AboutLbl.Size = new Size(79, 17);
+            AboutLbl.Size = new Size(95, 20);
             AboutLbl.TabIndex = 17;
             AboutLbl.Text = "ABOUT US";
             AboutLbl.TextAlign = ContentAlignment.TopCenter;
@@ -424,9 +420,9 @@
             GenderLbl.AutoSize = true;
             GenderLbl.Font = new Font("Cascadia Code", 10F);
             GenderLbl.ForeColor = Color.White;
-            GenderLbl.Location = new Point(16, 293);
+            GenderLbl.Location = new Point(18, 391);
             GenderLbl.Name = "GenderLbl";
-            GenderLbl.Size = new Size(56, 18);
+            GenderLbl.Size = new Size(70, 22);
             GenderLbl.TabIndex = 13;
             GenderLbl.Text = "GENDER";
             // 
@@ -435,9 +431,9 @@
             DobLbl.AutoSize = true;
             DobLbl.Font = new Font("Cascadia Code", 10F);
             DobLbl.ForeColor = Color.White;
-            DobLbl.Location = new Point(17, 384);
+            DobLbl.Location = new Point(19, 512);
             DobLbl.Name = "DobLbl";
-            DobLbl.Size = new Size(32, 18);
+            DobLbl.Size = new Size(40, 22);
             DobLbl.TabIndex = 9;
             DobLbl.Text = "DOB";
             // 
@@ -447,11 +443,10 @@
             EmailTxtBox.BorderStyle = BorderStyle.None;
             EmailTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             EmailTxtBox.ForeColor = SystemColors.InactiveBorder;
-            EmailTxtBox.Location = new Point(115, 193);
-            EmailTxtBox.Margin = new Padding(3, 2, 3, 2);
+            EmailTxtBox.Location = new Point(131, 257);
             EmailTxtBox.Multiline = true;
             EmailTxtBox.Name = "EmailTxtBox";
-            EmailTxtBox.Size = new Size(258, 20);
+            EmailTxtBox.Size = new Size(295, 27);
             EmailTxtBox.TabIndex = 8;
             // 
             // EmailLbl
@@ -459,9 +454,9 @@
             EmailLbl.AutoSize = true;
             EmailLbl.Font = new Font("Cascadia Code", 10F);
             EmailLbl.ForeColor = Color.White;
-            EmailLbl.Location = new Point(14, 195);
+            EmailLbl.Location = new Point(16, 260);
             EmailLbl.Name = "EmailLbl";
-            EmailLbl.Size = new Size(56, 18);
+            EmailLbl.Size = new Size(70, 22);
             EmailLbl.TabIndex = 7;
             EmailLbl.Text = "E-MAIL";
             // 
@@ -471,11 +466,10 @@
             PassTxtBox.BorderStyle = BorderStyle.None;
             PassTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PassTxtBox.ForeColor = SystemColors.InactiveBorder;
-            PassTxtBox.Location = new Point(115, 141);
-            PassTxtBox.Margin = new Padding(3, 2, 3, 2);
+            PassTxtBox.Location = new Point(131, 188);
             PassTxtBox.Multiline = true;
             PassTxtBox.Name = "PassTxtBox";
-            PassTxtBox.Size = new Size(258, 20);
+            PassTxtBox.Size = new Size(295, 27);
             PassTxtBox.TabIndex = 6;
             // 
             // PassLbl
@@ -483,9 +477,9 @@
             PassLbl.AutoSize = true;
             PassLbl.Font = new Font("Cascadia Code", 10F);
             PassLbl.ForeColor = Color.White;
-            PassLbl.Location = new Point(14, 141);
+            PassLbl.Location = new Point(16, 188);
             PassLbl.Name = "PassLbl";
-            PassLbl.Size = new Size(72, 18);
+            PassLbl.Size = new Size(90, 22);
             PassLbl.TabIndex = 5;
             PassLbl.Text = "PASSWORD";
             // 
@@ -495,11 +489,10 @@
             UserNameTxtBox.BorderStyle = BorderStyle.None;
             UserNameTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             UserNameTxtBox.ForeColor = SystemColors.InactiveBorder;
-            UserNameTxtBox.Location = new Point(115, 87);
-            UserNameTxtBox.Margin = new Padding(3, 2, 3, 2);
+            UserNameTxtBox.Location = new Point(131, 116);
             UserNameTxtBox.Multiline = true;
             UserNameTxtBox.Name = "UserNameTxtBox";
-            UserNameTxtBox.Size = new Size(258, 22);
+            UserNameTxtBox.Size = new Size(295, 29);
             UserNameTxtBox.TabIndex = 4;
             // 
             // UserNameLbl
@@ -507,9 +500,9 @@
             UserNameLbl.AutoSize = true;
             UserNameLbl.Font = new Font("Cascadia Code", 10F);
             UserNameLbl.ForeColor = Color.White;
-            UserNameLbl.Location = new Point(14, 87);
+            UserNameLbl.Location = new Point(16, 116);
             UserNameLbl.Name = "UserNameLbl";
-            UserNameLbl.Size = new Size(80, 18);
+            UserNameLbl.Size = new Size(100, 22);
             UserNameLbl.TabIndex = 3;
             UserNameLbl.Text = "USER NAME";
             // 
@@ -525,15 +518,16 @@
             profilePanel.Location = new Point(0, 0);
             profilePanel.Margin = new Padding(0);
             profilePanel.Name = "profilePanel";
-            profilePanel.Size = new Size(1008, 55);
+            profilePanel.Size = new Size(1152, 73);
             profilePanel.TabIndex = 6;
             // 
             // settingsPictureBox
             // 
             settingsPictureBox.Image = Properties.Resources.car_maintenance_17073141;
-            settingsPictureBox.Location = new Point(476, 0);
+            settingsPictureBox.Location = new Point(544, 0);
+            settingsPictureBox.Margin = new Padding(3, 4, 3, 4);
             settingsPictureBox.Name = "settingsPictureBox";
-            settingsPictureBox.Size = new Size(57, 55);
+            settingsPictureBox.Size = new Size(65, 73);
             settingsPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             settingsPictureBox.TabIndex = 3;
             settingsPictureBox.TabStop = false;
@@ -541,9 +535,10 @@
             // notificationPictureBox
             // 
             notificationPictureBox.Image = Properties.Resources.icons8_customer_64;
-            notificationPictureBox.Location = new Point(775, 0);
+            notificationPictureBox.Location = new Point(886, 0);
+            notificationPictureBox.Margin = new Padding(3, 4, 3, 4);
             notificationPictureBox.Name = "notificationPictureBox";
-            notificationPictureBox.Size = new Size(31, 55);
+            notificationPictureBox.Size = new Size(35, 73);
             notificationPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             notificationPictureBox.TabIndex = 3;
             notificationPictureBox.TabStop = false;
@@ -554,9 +549,9 @@
             customerTypeLabel.BackColor = Color.Transparent;
             customerTypeLabel.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             customerTypeLabel.ForeColor = Color.Gainsboro;
-            customerTypeLabel.Location = new Point(812, 30);
+            customerTypeLabel.Location = new Point(928, 40);
             customerTypeLabel.Name = "customerTypeLabel";
-            customerTypeLabel.Size = new Size(72, 22);
+            customerTypeLabel.Size = new Size(92, 26);
             customerTypeLabel.TabIndex = 2;
             customerTypeLabel.Text = "CUSTOMER";
             // 
@@ -566,9 +561,9 @@
             fullNameLabel.BackColor = Color.Transparent;
             fullNameLabel.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             fullNameLabel.ForeColor = Color.WhiteSmoke;
-            fullNameLabel.Location = new Point(812, 9);
+            fullNameLabel.Location = new Point(928, 12);
             fullNameLabel.Name = "fullNameLabel";
-            fullNameLabel.Size = new Size(102, 28);
+            fullNameLabel.Size = new Size(125, 36);
             fullNameLabel.TabIndex = 2;
             fullNameLabel.Text = "FULL NAME";
             // 
@@ -576,22 +571,25 @@
             // 
             signOutPictureBox.Dock = DockStyle.Right;
             signOutPictureBox.Image = Properties.Resources.icons8_sign_out_501;
-            signOutPictureBox.Location = new Point(977, 0);
+            signOutPictureBox.Location = new Point(1117, 0);
+            signOutPictureBox.Margin = new Padding(3, 4, 3, 4);
             signOutPictureBox.Name = "signOutPictureBox";
-            signOutPictureBox.Size = new Size(31, 55);
+            signOutPictureBox.Size = new Size(35, 73);
             signOutPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             signOutPictureBox.TabIndex = 1;
             signOutPictureBox.TabStop = false;
             // 
             // Customer_Edit_Form
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(1008, 537);
+            ClientSize = new Size(1152, 716);
             Controls.Add(panel1);
             Controls.Add(profilePanel);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Customer_Edit_Form";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer_Edit_Form";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

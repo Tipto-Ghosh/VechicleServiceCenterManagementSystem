@@ -626,12 +626,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
             ClientSize = new Size(1152, 716);
             Controls.Add(PanelHome);
             Controls.Add(PanelProfile);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminCustomerForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer";
             Load += AdminCustomerForm_Load;
             panel1.ResumeLayout(false);
