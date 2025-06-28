@@ -87,7 +87,7 @@ namespace VehicleServiceCenter
             UserRepository ur = new UserRepository();
             User user = ur.GetUserById(loggedCusId);
 
-            this.label6.Text = user.Name.ToString();
+            //this.label6.Text = user.Name.ToString();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -111,8 +111,7 @@ MessageBoxIcon.Question
             servicePrice = 1500;
             serviceDuration = 30;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
-            offeredService.ServiceID = loggedCusId;
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
 
 
             OfferedServiceService f1 = new OfferedServiceService();
@@ -150,7 +149,7 @@ MessageBoxIcon.Question
             servicePrice = 2500;
             serviceDuration = 300;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -188,7 +187,8 @@ MessageBoxIcon.Question
             servicePrice = 500;
             serviceDuration = 180;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
+
             offeredService.ServiceID = loggedCusId;
 
 
@@ -226,7 +226,7 @@ MessageBoxIcon.Question
             servicePrice = 3000;
             serviceDuration = 2880;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -271,7 +271,7 @@ MessageBoxIcon.Question
             servicePrice = 4000;
             serviceDuration = 1440;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -309,7 +309,7 @@ MessageBoxIcon.Question
             serviceDescription = "Repair and maintenance of compressor systems.";
             serviceDuration = 700;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -347,7 +347,7 @@ MessageBoxIcon.Question
             servicePrice = 800;
             serviceDuration = 60;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -385,7 +385,7 @@ MessageBoxIcon.Question
             servicePrice = 5000;
             serviceDuration = 4320;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -423,7 +423,7 @@ MessageBoxIcon.Question
             servicePrice = 1000;
             serviceDuration = 320;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -461,7 +461,7 @@ MessageBoxIcon.Question
             servicePrice = 500;
             serviceDuration = 120;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -499,7 +499,7 @@ MessageBoxIcon.Question
             servicePrice = 1500;
             serviceDuration = 240;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -537,7 +537,7 @@ MessageBoxIcon.Question
             servicePrice = 1200;
             serviceDuration = 240;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
 
@@ -576,7 +576,7 @@ MessageBoxIcon.Question
             serviceDuration = 700;
 
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration);
+            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
             offeredService.ServiceID = loggedCusId;
 
             OfferedServiceService f1 = new OfferedServiceService();

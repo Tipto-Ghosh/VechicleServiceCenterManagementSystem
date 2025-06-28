@@ -278,7 +278,7 @@
             label_admin_count.Size = new Size(106, 73);
             label_admin_count.TabIndex = 19;
             label_admin_count.Text = "00";
-            label_admin_count.Click += this.label_admin_count_Click;
+            //label_admin_count.Click += this.label_admin_count_Click;
             // 
             // label13
             // 

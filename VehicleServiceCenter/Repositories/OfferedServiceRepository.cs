@@ -22,7 +22,7 @@ namespace VehicleServiceCenter.Repositories
                         cmd.Parameters.AddWithValue("@Description", service.Description);
                         cmd.Parameters.AddWithValue("@Price", service.Price);
                         cmd.Parameters.AddWithValue("@EstimatedDurationMinutes", service.EstimatedDurationMinutes);
-
+                        cmd.Parameters.AddWithValue("@CustomerID", service.CustomerID);
                         conn.Open();
                         return cmd.ExecuteNonQuery() > 0 ? 1 : 0;
                     }
@@ -55,6 +55,7 @@ namespace VehicleServiceCenter.Repositories
                         cmd.Parameters.AddWithValue("@Description", service.Description);
                         cmd.Parameters.AddWithValue("@Price", service.Price);
                         cmd.Parameters.AddWithValue("@EstimatedDurationMinutes", service.EstimatedDurationMinutes);
+                        cmd.Parameters.AddWithValue("@CustomerID", service.CustomerID);
 
                         conn.Open();
                         return cmd.ExecuteNonQuery() > 0 ? 1 : 0;
