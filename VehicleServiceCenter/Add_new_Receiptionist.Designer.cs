@@ -29,8 +29,11 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_new_Receiptionist));
             panel1 = new Panel();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            radioButton_other = new RadioButton();
+            radioButton_female = new RadioButton();
+            radioButton_male = new RadioButton();
+            radioButton_night = new RadioButton();
+            radioButton_noon = new RadioButton();
             radioButton_morning = new RadioButton();
             label8 = new Label();
             textBox_UserID = new TextBox();
@@ -38,14 +41,9 @@
             DOBPicker = new DateTimePicker();
             BloodGroupComboBox = new ComboBox();
             label2 = new Label();
-            OtherChk = new CheckBox();
-            FemaleChk = new CheckBox();
-            MaleChk = new CheckBox();
             pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            AboutLbl = new Label();
             label6 = new Label();
-            StartBtn = new Button();
+            back_button = new Button();
             GenderLbl = new Label();
             DobLbl = new Label();
             EmailTxtBox = new TextBox();
@@ -54,37 +52,34 @@
             PassLbl = new Label();
             UserNameTxtBox = new TextBox();
             UserNameLbl = new Label();
-            LogBtn = new Button();
+            reset_button = new Button();
             pictureBox1 = new PictureBox();
-            SignBtn = new Button();
+            InsertButton = new Button();
             pictureBox2 = new PictureBox();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(18, 18, 18);
-            panel1.Controls.Add(radioButton2);
-            panel1.Controls.Add(radioButton1);
-            panel1.Controls.Add(radioButton_morning);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(radioButton_other);
+            panel1.Controls.Add(radioButton_female);
+            panel1.Controls.Add(radioButton_male);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(textBox_UserID);
             panel1.Controls.Add(label_userID);
             panel1.Controls.Add(DOBPicker);
             panel1.Controls.Add(BloodGroupComboBox);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(OtherChk);
-            panel1.Controls.Add(FemaleChk);
-            panel1.Controls.Add(MaleChk);
             panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(AboutLbl);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(StartBtn);
+            panel1.Controls.Add(back_button);
             panel1.Controls.Add(GenderLbl);
             panel1.Controls.Add(DobLbl);
             panel1.Controls.Add(EmailTxtBox);
@@ -93,9 +88,9 @@
             panel1.Controls.Add(PassLbl);
             panel1.Controls.Add(UserNameTxtBox);
             panel1.Controls.Add(UserNameLbl);
-            panel1.Controls.Add(LogBtn);
+            panel1.Controls.Add(reset_button);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(SignBtn);
+            panel1.Controls.Add(InsertButton);
             panel1.Dock = DockStyle.Right;
             panel1.ForeColor = Color.FromArgb(18, 18, 18);
             panel1.Location = new Point(663, 0);
@@ -103,38 +98,77 @@
             panel1.Size = new Size(442, 654);
             panel1.TabIndex = 3;
             // 
-            // radioButton2
+            // radioButton_other
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton2.ForeColor = Color.White;
-            radioButton2.Location = new Point(332, 456);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(69, 24);
-            radioButton2.TabIndex = 34;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Night";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioButton_other.AutoSize = true;
+            radioButton_other.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_other.ForeColor = Color.White;
+            radioButton_other.Location = new Point(332, 309);
+            radioButton_other.Name = "radioButton_other";
+            radioButton_other.Size = new Size(75, 27);
+            radioButton_other.TabIndex = 37;
+            radioButton_other.TabStop = true;
+            radioButton_other.Text = "Other";
+            radioButton_other.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioButton_female
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton1.ForeColor = Color.White;
-            radioButton1.Location = new Point(241, 456);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(69, 24);
-            radioButton1.TabIndex = 33;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Noon";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButton_female.AutoSize = true;
+            radioButton_female.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_female.ForeColor = Color.White;
+            radioButton_female.Location = new Point(220, 309);
+            radioButton_female.Name = "radioButton_female";
+            radioButton_female.Size = new Size(86, 27);
+            radioButton_female.TabIndex = 36;
+            radioButton_female.TabStop = true;
+            radioButton_female.Text = "Female";
+            radioButton_female.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_male
+            // 
+            radioButton_male.AutoSize = true;
+            radioButton_male.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_male.ForeColor = Color.White;
+            radioButton_male.Location = new Point(140, 309);
+            radioButton_male.Name = "radioButton_male";
+            radioButton_male.Size = new Size(69, 27);
+            radioButton_male.TabIndex = 35;
+            radioButton_male.TabStop = true;
+            radioButton_male.Text = "Male";
+            radioButton_male.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_night
+            // 
+            radioButton_night.AutoSize = true;
+            radioButton_night.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_night.ForeColor = Color.White;
+            radioButton_night.Location = new Point(243, 15);
+            radioButton_night.Name = "radioButton_night";
+            radioButton_night.Size = new Size(69, 24);
+            radioButton_night.TabIndex = 34;
+            radioButton_night.TabStop = true;
+            radioButton_night.Text = "Night";
+            radioButton_night.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_noon
+            // 
+            radioButton_noon.AutoSize = true;
+            radioButton_noon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_noon.ForeColor = Color.White;
+            radioButton_noon.Location = new Point(125, 15);
+            radioButton_noon.Name = "radioButton_noon";
+            radioButton_noon.Size = new Size(69, 24);
+            radioButton_noon.TabIndex = 33;
+            radioButton_noon.TabStop = true;
+            radioButton_noon.Text = "Noon";
+            radioButton_noon.UseVisualStyleBackColor = true;
             // 
             // radioButton_morning
             // 
             radioButton_morning.AutoSize = true;
             radioButton_morning.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             radioButton_morning.ForeColor = Color.White;
-            radioButton_morning.Location = new Point(140, 454);
+            radioButton_morning.Location = new Point(13, 15);
             radioButton_morning.Name = "radioButton_morning";
             radioButton_morning.Size = new Size(90, 24);
             radioButton_morning.TabIndex = 32;
@@ -214,45 +248,6 @@
             label2.TabIndex = 25;
             label2.Text = "BLOOD GROUP";
             // 
-            // OtherChk
-            // 
-            OtherChk.AutoSize = true;
-            OtherChk.Font = new Font("Cascadia Code", 9F);
-            OtherChk.ForeColor = Color.White;
-            OtherChk.Location = new Point(363, 311);
-            OtherChk.Margin = new Padding(3, 4, 3, 4);
-            OtherChk.Name = "OtherChk";
-            OtherChk.Size = new Size(76, 24);
-            OtherChk.TabIndex = 22;
-            OtherChk.Text = "OTHER";
-            OtherChk.UseVisualStyleBackColor = true;
-            // 
-            // FemaleChk
-            // 
-            FemaleChk.AutoSize = true;
-            FemaleChk.Font = new Font("Cascadia Code", 9F);
-            FemaleChk.ForeColor = Color.White;
-            FemaleChk.Location = new Point(241, 311);
-            FemaleChk.Margin = new Padding(3, 4, 3, 4);
-            FemaleChk.Name = "FemaleChk";
-            FemaleChk.Size = new Size(85, 24);
-            FemaleChk.TabIndex = 21;
-            FemaleChk.Text = "FEMALE";
-            FemaleChk.UseVisualStyleBackColor = true;
-            // 
-            // MaleChk
-            // 
-            MaleChk.AutoSize = true;
-            MaleChk.Font = new Font("Cascadia Code", 9F);
-            MaleChk.ForeColor = Color.White;
-            MaleChk.Location = new Point(140, 311);
-            MaleChk.Margin = new Padding(3, 4, 3, 4);
-            MaleChk.Name = "MaleChk";
-            MaleChk.Size = new Size(67, 24);
-            MaleChk.TabIndex = 20;
-            MaleChk.Text = "MALE";
-            MaleChk.UseVisualStyleBackColor = true;
-            // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.icons8_close_50;
@@ -263,28 +258,6 @@
             pictureBox4.TabIndex = 19;
             pictureBox4.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.icons8_info_100;
-            pictureBox3.Location = new Point(260, 630);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(19, 21);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 18;
-            pictureBox3.TabStop = false;
-            // 
-            // AboutLbl
-            // 
-            AboutLbl.AutoSize = true;
-            AboutLbl.Font = new Font("Microsoft Sans Serif", 10F);
-            AboutLbl.ForeColor = Color.White;
-            AboutLbl.Location = new Point(165, 634);
-            AboutLbl.Name = "AboutLbl";
-            AboutLbl.Size = new Size(95, 20);
-            AboutLbl.TabIndex = 17;
-            AboutLbl.Text = "ABOUT US";
-            AboutLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -294,17 +267,18 @@
             label6.TabIndex = 16;
             label6.Text = "label6";
             // 
-            // StartBtn
+            // back_button
             // 
-            StartBtn.BackColor = Color.FromArgb(208, 206, 206);
-            StartBtn.Font = new Font("Microsoft Sans Serif", 13.8F);
-            StartBtn.Location = new Point(95, 570);
-            StartBtn.Margin = new Padding(3, 4, 3, 4);
-            StartBtn.Name = "StartBtn";
-            StartBtn.Size = new Size(254, 43);
-            StartBtn.TabIndex = 15;
-            StartBtn.Text = "Let’s Start!";
-            StartBtn.UseVisualStyleBackColor = false;
+            back_button.BackColor = Color.FromArgb(208, 206, 206);
+            back_button.Font = new Font("Microsoft Sans Serif", 13.8F);
+            back_button.Location = new Point(165, 570);
+            back_button.Margin = new Padding(3, 4, 3, 4);
+            back_button.Name = "back_button";
+            back_button.Size = new Size(124, 43);
+            back_button.TabIndex = 15;
+            back_button.Text = "BACK";
+            back_button.UseVisualStyleBackColor = false;
+            back_button.Click += back_button_Click;
             // 
             // GenderLbl
             // 
@@ -400,18 +374,19 @@
             UserNameLbl.TabIndex = 3;
             UserNameLbl.Text = "USER NAME";
             // 
-            // LogBtn
+            // reset_button
             // 
-            LogBtn.BackColor = Color.FromArgb(18, 18, 18);
-            LogBtn.Font = new Font("Microsoft Sans Serif", 12F);
-            LogBtn.ForeColor = Color.FromArgb(208, 206, 206);
-            LogBtn.Location = new Point(269, 510);
-            LogBtn.Margin = new Padding(3, 4, 3, 4);
-            LogBtn.Name = "LogBtn";
-            LogBtn.Size = new Size(114, 43);
-            LogBtn.TabIndex = 2;
-            LogBtn.Text = "LOG IN";
-            LogBtn.UseVisualStyleBackColor = false;
+            reset_button.BackColor = Color.FromArgb(18, 18, 18);
+            reset_button.Font = new Font("Microsoft Sans Serif", 12F);
+            reset_button.ForeColor = Color.FromArgb(208, 206, 206);
+            reset_button.Location = new Point(269, 510);
+            reset_button.Margin = new Padding(3, 4, 3, 4);
+            reset_button.Name = "reset_button";
+            reset_button.Size = new Size(114, 43);
+            reset_button.TabIndex = 2;
+            reset_button.Text = "RESET";
+            reset_button.UseVisualStyleBackColor = false;
+            reset_button.Click += reset_button_Click;
             // 
             // pictureBox1
             // 
@@ -423,18 +398,19 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // SignBtn
+            // InsertButton
             // 
-            SignBtn.BackColor = Color.FromArgb(208, 206, 206);
-            SignBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            SignBtn.ForeColor = Color.FromArgb(18, 18, 18);
-            SignBtn.Location = new Point(59, 510);
-            SignBtn.Margin = new Padding(3, 4, 3, 4);
-            SignBtn.Name = "SignBtn";
-            SignBtn.Size = new Size(114, 43);
-            SignBtn.TabIndex = 0;
-            SignBtn.Text = "SIGN UP";
-            SignBtn.UseVisualStyleBackColor = false;
+            InsertButton.BackColor = Color.FromArgb(208, 206, 206);
+            InsertButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            InsertButton.ForeColor = Color.FromArgb(18, 18, 18);
+            InsertButton.Location = new Point(59, 510);
+            InsertButton.Margin = new Padding(3, 4, 3, 4);
+            InsertButton.Name = "InsertButton";
+            InsertButton.Size = new Size(114, 43);
+            InsertButton.TabIndex = 0;
+            InsertButton.Text = "INSERT";
+            InsertButton.UseVisualStyleBackColor = false;
+            InsertButton.Click += InsertButton_Click;
             // 
             // pictureBox2
             // 
@@ -447,6 +423,17 @@
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(radioButton_morning);
+            panel2.Controls.Add(radioButton_noon);
+            panel2.Controls.Add(radioButton_night);
+            panel2.Location = new Point(71, 441);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(371, 58);
+            panel2.TabIndex = 38;
+            panel2.Paint += panel2_Paint;
             // 
             // Add_new_Receiptionist
             // 
@@ -461,17 +448,18 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton radioButton_night;
+        private RadioButton radioButton_noon;
         private RadioButton radioButton_morning;
         private Label label8;
         private TextBox textBox_UserID;
@@ -479,14 +467,9 @@
         private DateTimePicker DOBPicker;
         private ComboBox BloodGroupComboBox;
         private Label label2;
-        private CheckBox OtherChk;
-        private CheckBox FemaleChk;
-        private CheckBox MaleChk;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private Label AboutLbl;
         private Label label6;
-        private Button StartBtn;
+        private Button back_button;
         private Label GenderLbl;
         private Label DobLbl;
         private TextBox EmailTxtBox;
@@ -495,9 +478,13 @@
         private Label PassLbl;
         private TextBox UserNameTxtBox;
         private Label UserNameLbl;
-        private Button LogBtn;
+        private Button reset_button;
         private PictureBox pictureBox1;
-        private Button SignBtn;
+        private Button InsertButton;
         private PictureBox pictureBox2;
+        private RadioButton radioButton_other;
+        private RadioButton radioButton_female;
+        private RadioButton radioButton_male;
+        private Panel panel2;
     }
 }

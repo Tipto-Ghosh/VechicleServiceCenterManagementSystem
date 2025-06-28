@@ -272,7 +272,9 @@ namespace VehicleServiceCenter
         }
 
         private void button_add_new_Click(object sender, EventArgs e) {
-
+            Add_new_Receiptionist anr = new Add_new_Receiptionist(loggedId);
+            this.Hide();
+            anr.Show();
         }
     }
 }
