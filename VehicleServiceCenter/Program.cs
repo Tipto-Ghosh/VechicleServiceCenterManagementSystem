@@ -31,10 +31,18 @@ namespace VehicleServiceCenter
             //Application.Run(new AdminCustomerForm());
             //Application.Run(new AdminForm());
 
-            Application.Run(new Admin_Profile_Edit());
+            //Application.Run(new LoginForm());
+            //Application.Run(new Customer_HomeForm());
 
+            Application.Run(new LoginForm());
+            //Application.Run(new Admin_ReceptionistForm(1000));
 
+            //Application.Run(new Customer_HomeForm());
 
+            //Application.Run(new Service_Form());
+
+            // Tipto
+            //arko
 
         }
     }

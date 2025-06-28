@@ -100,11 +100,11 @@
             // 
             customerTypeLabel.AutoSize = true;
             customerTypeLabel.BackColor = Color.Transparent;
-            customerTypeLabel.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            customerTypeLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             customerTypeLabel.ForeColor = Color.Gainsboro;
             customerTypeLabel.Location = new Point(812, 30);
             customerTypeLabel.Name = "customerTypeLabel";
-            customerTypeLabel.Size = new Size(72, 22);
+            customerTypeLabel.Size = new Size(76, 15);
             customerTypeLabel.TabIndex = 2;
             customerTypeLabel.Text = "CUSTOMER";
             // 
@@ -112,11 +112,11 @@
             // 
             fullNameLabel.AutoSize = true;
             fullNameLabel.BackColor = Color.Transparent;
-            fullNameLabel.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fullNameLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             fullNameLabel.ForeColor = Color.WhiteSmoke;
             fullNameLabel.Location = new Point(812, 9);
             fullNameLabel.Name = "fullNameLabel";
-            fullNameLabel.Size = new Size(102, 28);
+            fullNameLabel.Size = new Size(108, 20);
             fullNameLabel.TabIndex = 2;
             fullNameLabel.Text = "FULL NAME";
             // 
@@ -154,7 +154,7 @@
             panel1.Location = new Point(0, 55);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1029, 486);
+            panel1.Size = new Size(1029, 501);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
             // 
@@ -218,7 +218,7 @@
             // 
             label4.BackColor = Color.Transparent;
             label4.FlatStyle = FlatStyle.Flat;
-            label4.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.WhiteSmoke;
             label4.Location = new Point(747, 260);
             label4.Name = "label4";
@@ -238,7 +238,7 @@
             // 
             label6.BackColor = Color.Transparent;
             label6.FlatStyle = FlatStyle.Flat;
-            label6.Font = new Font("Poppins", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.LightGreen;
             label6.Location = new Point(756, 278);
             label6.Name = "label6";
@@ -253,7 +253,7 @@
             panel2.Location = new Point(0, 348);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1012, 494);
+            panel2.Size = new Size(1012, 370);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -262,11 +262,11 @@
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
             label7.FlatStyle = FlatStyle.Flat;
-            label7.Font = new Font("Poppins Medium", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.WhiteSmoke;
             label7.Location = new Point(375, 16);
             label7.Name = "label7";
-            label7.Size = new Size(258, 48);
+            label7.Size = new Size(273, 31);
             label7.TabIndex = 11;
             label7.Text = "ACTIVE SERVICES";
             // 
@@ -275,11 +275,11 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.WhiteSmoke;
             label3.Location = new Point(747, 160);
             label3.Name = "label3";
-            label3.Size = new Size(89, 23);
+            label3.Size = new Size(97, 16);
             label3.TabIndex = 11;
             label3.Text = "REPAIR COST";
             label3.Click += label5_Click;
@@ -289,11 +289,11 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.FlatStyle = FlatStyle.Flat;
-            label5.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
             label5.Location = new Point(747, 60);
             label5.Name = "label5";
-            label5.Size = new Size(37, 23);
+            label5.Size = new Size(35, 16);
             label5.TabIndex = 11;
             label5.Text = "CAR";
             label5.Click += label5_Click;
@@ -319,11 +319,11 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(255, 128, 0);
             label1.Location = new Point(751, 178);
             label1.Name = "label1";
-            label1.Size = new Size(172, 65);
+            label1.Size = new Size(161, 42);
             label1.TabIndex = 10;
             label1.Text = "Tk 9000";
             label1.Click += label2_Click;
@@ -333,11 +333,11 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.FlatStyle = FlatStyle.Flat;
-            label2.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.WhiteSmoke;
             label2.Location = new Point(751, 78);
             label2.Name = "label2";
-            label2.Size = new Size(124, 65);
+            label2.Size = new Size(106, 42);
             label2.TabIndex = 10;
             label2.Text = "Hilux";
             label2.Click += label2_Click;
@@ -356,7 +356,6 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
             ClientSize = new Size(1008, 537);
             Controls.Add(panel1);
             Controls.Add(profilePanel);

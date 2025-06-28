@@ -117,27 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox21.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAA6VJREFUeF7tmstvDVEcx1ttaUTZSB/CHyDRJi12EgtRDcFOKEIsiGVLsKgdiURb
-        FSt7lIUVf4CdeEbCAmHlHWHhFe/6fM/8Rk6mve6jvffOXOeTfGJyfufxm86cM2fmqgsEAoFAIBAIBAKB
-        QAWYmJiox+W4HQdMHfdgvVWrPTi5dhzDF5gLxU5hmzXLPpyMrvgh/ISF8hEPYrbvCE6gGccxyStU+QiO
-        2rHKklzAZusuW5C4rnzy5G9jL86yan9RGa7Du+ijP0L27gSS1m3voyvdYOGcUKcRtVb4HLBwNiDhVvzg
-        Uo8YsVDB0OZ01NShNaHdQumHZP0rqNs+75VPQhvdCf50GLVQuiFRzX3/UddroaKhbV/UheM5pn8tIMkV
-        Lt2IlzhpwSsUtcXX6sjosVB6Icn+KFfHuBWXDH1cirpybLXi9EKS2sDEnLTikqGP4agrR/qfBkoyytUx
-        bMUlQx/aLMUMWnF6IcltUa6O/3IK6E0vRtvb6S6Cb9SR0W2h9EKSycdgn4WKhrbroy4czzAbW2IS1Stt
-        jDYzjRYqGLXBe+rAKHo3WTVINrkVHrNQwdDmTNTUoa1wtr4RkLD/OBTa2+e9E1QH/ZMXAxbODiSttUCv
-        sj6aDtre5nod1pz3b3txDrP5YYTE9UEk+UcQ2t5eRL0iSz3q/NU+5jxm84NIDCegO0GbI83jQtH6oY+l
-        2f4k5sPJtKGutt7qcqFHnXZ+rdas9uDkdEd0o3aM8WdxHausdq54IBCYBHN8Nq7ELbgXD5s6Vplis616
-        bcAJdeJxvIXfMB+qcxOP4TLrJluQeBPuwQc4Xe7jbiz6haoqkOgOfIpT8Rsf4mU8iydMHavsEarOVDzB
-        fhsmfZDcIryqTBNoB6j9/EZcYNVzojq4CbUNnmr3eAU7rHo6IKG1+F7ZebxFLXDzrFrRqC0esb583uEa
-        q1ZdSGQXfldWxi/Uq2/JJ56EvlqsT/Udo8Vyp1WpDiSwH/05q738agvPOOrbxojR2PssXFkYeAP+UBaG
-        VvwlFi4bjNGB/m+GP3GzhSsDA3ah/z8+9IzPu8DNFIw1H29oYEO5dFq4vDCQPlnpF98Yvd4utnDFYMyF
-        +FgJGPqS1GTh8sEgQ264iK/YZaGKw9hL8YsSMYYsVB4YQN/tPruhIo5aqGqQw2CUikNToeQfYgqCAeK5
-        dx3Lf8vlgRwa8JoSgjtWXD4YZC6u0r9WVHXIZQ7qEdliRYFAIBAIBAKBf1NX9wdwmuJ4ErwmmgAAAABJ
-        RU5ErkJggg==
-</value>
-  </data>
 </root>

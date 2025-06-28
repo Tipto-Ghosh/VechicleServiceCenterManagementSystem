@@ -183,7 +183,7 @@ namespace VehicleServiceCenter.Repositories
 
             try {
                 using (SqlConnection con = DbConfig.GetConnection()) {
-                    string q = @"SELECT U.UserID,U.Name,U.Gender,U.DateOfBirth,U.BloodGroup,U.Email,U.UserType,c.PhoneNumber
+                    string q = @"SELECT U.UserID,U.Password,U.Name,U.Gender,U.DateOfBirth,U.BloodGroup,U.Email,c.PhoneNumber
                              FROM Users U INNER JOIN Customers C ON U.UserID = C.UserID
                              WHERE U.UserType = 'customer'";
 
