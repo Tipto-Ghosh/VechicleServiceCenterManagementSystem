@@ -220,5 +220,26 @@ namespace VehicleServiceCenter.Repositories
 
             return count;
         }
+
+        public string GetCustomerPhoneByID(int id) {
+            string phoneNumber = null;
+
+            string query = "SELECT PhoneNumber FROM Customers WHERE UserID = @UserID";
+
+            using (SqlConnection con = DbConfig.GetConnection()) {
+                using (SqlCommand cmd = new SqlCommand(query, con)) {
+                    cmd.Parameters.AddWithValue("@UserID", id);
+
+                    con.Open();
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value) {
+                        phoneNumber = result.ToString();
+                    }
+                }
+            }
+
+            return phoneNumber;
+        }
     }
 }
