@@ -91,7 +91,6 @@ namespace VehicleServiceCenter
                     textBox_email.Text = row.Cells["Email"].Value?.ToString();
                     textBox_password.Text = row.Cells["Password"].Value?.ToString();
 
-                    // Set gender
                     string gender = row.Cells["Gender"].Value?.ToString()?.ToLower() ?? "";
                     for (int i = 0; i < checkedListBox_gender.Items.Count; i++)
                         checkedListBox_gender.SetItemChecked(i, false);
@@ -103,16 +102,13 @@ namespace VehicleServiceCenter
                         }
                     }
 
-                    // Date of Birth
                     if (DateTime.TryParse(row.Cells["DateOfBirth"].Value?.ToString(), out DateTime dob))
                         dateTimePicker_dob.Value = dob;
 
-                    // Blood group
                     string bloodGroup = row.Cells["BloodGroup"].Value?.ToString();
                     int index = comboBox_blood.FindStringExact(bloodGroup);
                     comboBox_blood.SelectedIndex = index >= 0 ? index : -1;
 
-                    // ShiftTime
                     string shift = row.Cells["ShiftTime"].Value?.ToString()?.ToLower() ?? "";
                     radioButton_morning.Checked = shift == "morning";
                     radioButton_noon.Checked = shift == "noon";
@@ -162,7 +158,7 @@ namespace VehicleServiceCenter
         }
 
         private void button_update_Click(object sender, EventArgs e) {
-            // if no row selected
+
             if (string.IsNullOrWhiteSpace(textBox_UserID.Text)) {
                 MessageBox.Show("select a receptionist from the table to update.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -210,7 +206,6 @@ namespace VehicleServiceCenter
                 return;
             }
 
-            // Update Iinfo
             Receptionist rep = new Receptionist();
             rep.UserID = userId;
             rep.Name = name;
@@ -235,7 +230,7 @@ namespace VehicleServiceCenter
         }
 
         private void button_delete_Click(object sender, EventArgs e) {
-            // If no rows selected 
+
             if (string.IsNullOrWhiteSpace(textBox_UserID.Text)) {
                 MessageBox.Show("Please select a receptionist from the table to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

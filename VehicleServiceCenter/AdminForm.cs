@@ -8,10 +8,9 @@ namespace VehicleServiceCenter
         private int loggedAdminId;
         public AdminForm(int adminId) {
             this.loggedAdminId = adminId;
-            InitializeComponent(); // Initializes the components defined in Admin.Designer.cs
+            InitializeComponent(); 
 
-            // Call this method to initially set all buttons to their normal state
-            // and attach the universal click event handler.
+           
 
             btnHome.BackColor = Color.FromArgb(136, 136, 136);
 
@@ -68,7 +67,7 @@ namespace VehicleServiceCenter
         }
 
         private void AdminForm_Load(object sender, EventArgs e) {
-            // Show logged admin Name
+
             Admin admin = new Admin();
 
             UserRepository userRepo = new UserRepository();
@@ -76,31 +75,27 @@ namespace VehicleServiceCenter
 
             this.label_name.Text = loggedUser.Name;
 
-            // Show Customer count
             CustomerRepository cr = new CustomerRepository();
 
             int customerCount = cr.GetCustomerCount();
             this.label_customer_count.Text = customerCount.ToString();
 
 
-            // Show Receptionist Count
             MechanicRepository mr = new MechanicRepository();
             int mechCount = mr.GetMechanicCount();
             this.label_mech_count.Text = mechCount.ToString();
 
-            // Show Admin Count
             AdminRepository ar = new AdminRepository();
             int adminCount = ar.GetAdminCount();
             this.label_admin_count.Text = adminCount.ToString();
 
-            // Show Receptionist count
             ReceptionistRepository re = new ReceptionistRepository();
             int receptionistCount = re.GetReceptionistCount();
             this.label_receptionist_count.Text = receptionistCount.ToString();
         }
 
         private void iconButton_updateSelf_Click(object sender, EventArgs e) {
-            //
+            
             this.Hide();
             Admin_Profile_Edit ape = new Admin_Profile_Edit(this.loggedAdminId);
             ape.Show();

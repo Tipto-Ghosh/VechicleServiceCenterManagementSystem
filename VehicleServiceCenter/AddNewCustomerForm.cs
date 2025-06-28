@@ -111,7 +111,6 @@ namespace VehicleServiceCenter {
                 AdminCustomerForm acf = new AdminCustomerForm(loggedUser.UserID);
                 acf.Show();
             } else {
-                // send to recept page
 
 
             }
