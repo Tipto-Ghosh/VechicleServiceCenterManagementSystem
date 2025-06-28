@@ -32,6 +32,9 @@
     <Compile Update="Add_new_Receiptionist.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="About_Us_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Service_Form.cs">
       <SubType>Form</SubType>
     </Compile>
