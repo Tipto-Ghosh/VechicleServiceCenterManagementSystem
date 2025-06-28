@@ -143,6 +143,7 @@
             BtnReceptionist.TextAlign = ContentAlignment.MiddleLeft;
             BtnReceptionist.TextImageRelation = TextImageRelation.ImageBeforeText;
             BtnReceptionist.UseVisualStyleBackColor = true;
+            BtnReceptionist.Click += BtnReceptionist_Click;
             // 
             // btnMechanic
             // 
@@ -257,6 +258,7 @@
             label_admin_name.Size = new Size(132, 25);
             label_admin_name.TabIndex = 2;
             label_admin_name.Text = "FULL NAME";
+            label_admin_name.Click += label_admin_name_Click;
             // 
             // pictureBox20
             // 
@@ -330,6 +332,7 @@
             button_add_new.TabIndex = 26;
             button_add_new.Text = "ADD NEW";
             button_add_new.UseVisualStyleBackColor = false;
+            button_add_new.Click += button_add_new_Click;
             // 
             // radioButton_night
             // 
