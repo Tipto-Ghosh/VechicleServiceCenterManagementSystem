@@ -7,7 +7,7 @@
 
         public Mechanic()
         {
-
+            this.UserType = "Mechanic";
 
         }
 
