@@ -88,16 +88,15 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(193, 716);
+            panel1.Size = new Size(169, 537);
             panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.car_maintenance_17073141;
-            pictureBox1.Location = new Point(39, 5);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(34, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(114, 67);
+            pictureBox1.Size = new Size(100, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -113,10 +112,9 @@
             btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnHome.IconSize = 32;
             btnHome.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHome.Location = new Point(0, 104);
-            btnHome.Margin = new Padding(3, 4, 3, 4);
+            btnHome.Location = new Point(0, 78);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(193, 60);
+            btnHome.Size = new Size(169, 45);
             btnHome.TabIndex = 0;
             btnHome.Text = "HOME";
             btnHome.TextAlign = ContentAlignment.MiddleLeft;
@@ -135,10 +133,10 @@
             BtnReceptionist.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnReceptionist.IconSize = 32;
             BtnReceptionist.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnReceptionist.Location = new Point(0, 229);
+            BtnReceptionist.Location = new Point(0, 172);
             BtnReceptionist.Margin = new Padding(0);
             BtnReceptionist.Name = "BtnReceptionist";
-            BtnReceptionist.Size = new Size(193, 60);
+            BtnReceptionist.Size = new Size(169, 45);
             BtnReceptionist.TabIndex = 2;
             BtnReceptionist.Text = "RECEPTIONIST";
             BtnReceptionist.TextAlign = ContentAlignment.MiddleLeft;
@@ -157,10 +155,9 @@
             btnMechanic.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnMechanic.IconSize = 32;
             btnMechanic.ImageAlign = ContentAlignment.MiddleLeft;
-            btnMechanic.Location = new Point(0, 292);
-            btnMechanic.Margin = new Padding(3, 4, 3, 4);
+            btnMechanic.Location = new Point(0, 219);
             btnMechanic.Name = "btnMechanic";
-            btnMechanic.Size = new Size(193, 60);
+            btnMechanic.Size = new Size(169, 45);
             btnMechanic.TabIndex = 3;
             btnMechanic.Text = "MECHANIC";
             btnMechanic.TextAlign = ContentAlignment.MiddleLeft;
@@ -179,10 +176,10 @@
             btnCustomer.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCustomer.IconSize = 30;
             btnCustomer.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCustomer.Location = new Point(0, 167);
+            btnCustomer.Location = new Point(0, 125);
             btnCustomer.Margin = new Padding(0);
             btnCustomer.Name = "btnCustomer";
-            btnCustomer.Size = new Size(193, 60);
+            btnCustomer.Size = new Size(169, 45);
             btnCustomer.TabIndex = 1;
             btnCustomer.Text = "CUSTOMER";
             btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
@@ -201,10 +198,10 @@
             btnAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnAdmin.IconSize = 32;
             btnAdmin.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAdmin.Location = new Point(0, 355);
+            btnAdmin.Location = new Point(0, 266);
             btnAdmin.Margin = new Padding(0);
             btnAdmin.Name = "btnAdmin";
-            btnAdmin.Size = new Size(193, 60);
+            btnAdmin.Size = new Size(169, 45);
             btnAdmin.TabIndex = 4;
             btnAdmin.Text = "INVENTORY";
             btnAdmin.TextAlign = ContentAlignment.MiddleLeft;
@@ -219,19 +216,18 @@
             PanelProfile.Controls.Add(label_admin_name);
             PanelProfile.Controls.Add(pictureBox20);
             PanelProfile.Dock = DockStyle.Top;
-            PanelProfile.Location = new Point(193, 0);
+            PanelProfile.Location = new Point(169, 0);
             PanelProfile.Margin = new Padding(0);
             PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(959, 73);
+            PanelProfile.Size = new Size(839, 55);
             PanelProfile.TabIndex = 6;
             // 
             // pictureBox21
             // 
             pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(693, 0);
-            pictureBox21.Margin = new Padding(3, 4, 3, 4);
+            pictureBox21.Location = new Point(606, 0);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(35, 73);
+            pictureBox21.Size = new Size(31, 55);
             pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox21.TabIndex = 3;
             pictureBox21.TabStop = false;
@@ -242,9 +238,9 @@
             label_role.BackColor = Color.Transparent;
             label_role.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label_role.ForeColor = Color.Gainsboro;
-            label_role.Location = new Point(735, 40);
+            label_role.Location = new Point(643, 30);
             label_role.Name = "label_role";
-            label_role.Size = new Size(55, 18);
+            label_role.Size = new Size(46, 15);
             label_role.TabIndex = 2;
             label_role.Text = "ADMIN";
             // 
@@ -254,9 +250,9 @@
             label_admin_name.BackColor = Color.Transparent;
             label_admin_name.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_admin_name.ForeColor = Color.WhiteSmoke;
-            label_admin_name.Location = new Point(735, 12);
+            label_admin_name.Location = new Point(643, 9);
             label_admin_name.Name = "label_admin_name";
-            label_admin_name.Size = new Size(132, 25);
+            label_admin_name.Size = new Size(108, 20);
             label_admin_name.TabIndex = 2;
             label_admin_name.Text = "FULL NAME";
             label_admin_name.Click += label_admin_name_Click;
@@ -264,10 +260,9 @@
             // pictureBox20
             // 
             pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
-            pictureBox20.Location = new Point(919, 0);
-            pictureBox20.Margin = new Padding(3, 4, 3, 4);
+            pictureBox20.Location = new Point(804, 0);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(32, 73);
+            pictureBox20.Size = new Size(28, 55);
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
@@ -276,16 +271,15 @@
             // 
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 326F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 285F));
             tableLayoutPanel1.Controls.Add(panel2, 1, 0);
             tableLayoutPanel1.Controls.Add(dataGridView_Reps, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(193, 73);
-            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel1.Location = new Point(169, 55);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(959, 643);
+            tableLayoutPanel1.Size = new Size(839, 482);
             tableLayoutPanel1.TabIndex = 7;
             // 
             // panel2
@@ -313,10 +307,10 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(lblUserID);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(633, 0);
+            panel2.Location = new Point(554, 0);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(326, 643);
+            panel2.Size = new Size(285, 482);
             panel2.TabIndex = 2;
             // 
             // button_add_new
@@ -326,10 +320,9 @@
             button_add_new.FlatStyle = FlatStyle.Popup;
             button_add_new.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_add_new.ForeColor = Color.Lime;
-            button_add_new.Location = new Point(94, 569);
-            button_add_new.Margin = new Padding(3, 4, 3, 4);
+            button_add_new.Location = new Point(82, 427);
             button_add_new.Name = "button_add_new";
-            button_add_new.Size = new Size(121, 48);
+            button_add_new.Size = new Size(106, 36);
             button_add_new.TabIndex = 26;
             button_add_new.Text = "ADD NEW";
             button_add_new.UseVisualStyleBackColor = false;
@@ -340,9 +333,10 @@
             radioButton_night.AutoSize = true;
             radioButton_night.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             radioButton_night.ForeColor = Color.White;
-            radioButton_night.Location = new Point(254, 446);
+            radioButton_night.Location = new Point(222, 334);
+            radioButton_night.Margin = new Padding(3, 2, 3, 2);
             radioButton_night.Name = "radioButton_night";
-            radioButton_night.Size = new Size(69, 24);
+            radioButton_night.Size = new Size(55, 19);
             radioButton_night.TabIndex = 25;
             radioButton_night.TabStop = true;
             radioButton_night.Text = "Night";
@@ -353,9 +347,10 @@
             radioButton_noon.AutoSize = true;
             radioButton_noon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             radioButton_noon.ForeColor = Color.White;
-            radioButton_noon.Location = new Point(180, 446);
+            radioButton_noon.Location = new Point(158, 334);
+            radioButton_noon.Margin = new Padding(3, 2, 3, 2);
             radioButton_noon.Name = "radioButton_noon";
-            radioButton_noon.Size = new Size(69, 24);
+            radioButton_noon.Size = new Size(55, 19);
             radioButton_noon.TabIndex = 24;
             radioButton_noon.TabStop = true;
             radioButton_noon.Text = "Noon";
@@ -366,9 +361,10 @@
             radioButton_morning.AutoSize = true;
             radioButton_morning.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             radioButton_morning.ForeColor = Color.White;
-            radioButton_morning.Location = new Point(94, 446);
+            radioButton_morning.Location = new Point(82, 334);
+            radioButton_morning.Margin = new Padding(3, 2, 3, 2);
             radioButton_morning.Name = "radioButton_morning";
-            radioButton_morning.Size = new Size(90, 24);
+            radioButton_morning.Size = new Size(71, 19);
             radioButton_morning.TabIndex = 23;
             radioButton_morning.TabStop = true;
             radioButton_morning.Text = "Morning";
@@ -378,9 +374,10 @@
             // 
             comboBox_blood.FormattingEnabled = true;
             comboBox_blood.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
-            comboBox_blood.Location = new Point(150, 381);
+            comboBox_blood.Location = new Point(131, 286);
+            comboBox_blood.Margin = new Padding(3, 2, 3, 2);
             comboBox_blood.Name = "comboBox_blood";
-            comboBox_blood.Size = new Size(151, 28);
+            comboBox_blood.Size = new Size(133, 23);
             comboBox_blood.TabIndex = 22;
             // 
             // label9
@@ -390,9 +387,9 @@
             label9.FlatStyle = FlatStyle.Flat;
             label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = SystemColors.ControlLightLight;
-            label9.Location = new Point(19, 384);
+            label9.Location = new Point(17, 288);
             label9.Name = "label9";
-            label9.Size = new Size(88, 25);
+            label9.Size = new Size(69, 20);
             label9.TabIndex = 21;
             label9.Text = "BLOOD:";
             // 
@@ -403,9 +400,9 @@
             label8.FlatStyle = FlatStyle.Flat;
             label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = SystemColors.ControlLightLight;
-            label8.Location = new Point(12, 444);
+            label8.Location = new Point(10, 333);
             label8.Name = "label8";
-            label8.Size = new Size(76, 25);
+            label8.Size = new Size(60, 20);
             label8.TabIndex = 19;
             label8.Text = "SHIFT:";
             // 
@@ -414,11 +411,12 @@
             textBox_UserID.BackColor = Color.FromArgb(124, 124, 124);
             textBox_UserID.BorderStyle = BorderStyle.None;
             textBox_UserID.ForeColor = SystemColors.InactiveBorder;
-            textBox_UserID.Location = new Point(78, 8);
+            textBox_UserID.Location = new Point(77, 6);
+            textBox_UserID.Margin = new Padding(3, 2, 3, 2);
             textBox_UserID.Multiline = true;
             textBox_UserID.Name = "textBox_UserID";
             textBox_UserID.ReadOnly = true;
-            textBox_UserID.Size = new Size(234, 29);
+            textBox_UserID.Size = new Size(205, 22);
             textBox_UserID.TabIndex = 18;
             // 
             // button_delete
@@ -428,10 +426,9 @@
             button_delete.FlatStyle = FlatStyle.Popup;
             button_delete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_delete.ForeColor = Color.Red;
-            button_delete.Location = new Point(180, 501);
-            button_delete.Margin = new Padding(3, 4, 3, 4);
+            button_delete.Location = new Point(158, 376);
             button_delete.Name = "button_delete";
-            button_delete.Size = new Size(121, 48);
+            button_delete.Size = new Size(106, 36);
             button_delete.TabIndex = 16;
             button_delete.Text = "DELETE";
             button_delete.UseVisualStyleBackColor = false;
@@ -444,10 +441,9 @@
             button_update.FlatStyle = FlatStyle.Popup;
             button_update.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button_update.ForeColor = Color.Green;
-            button_update.Location = new Point(7, 501);
-            button_update.Margin = new Padding(3, 4, 3, 4);
+            button_update.Location = new Point(6, 376);
             button_update.Name = "button_update";
-            button_update.Size = new Size(121, 48);
+            button_update.Size = new Size(106, 36);
             button_update.TabIndex = 16;
             button_update.Text = "UPDATE";
             button_update.UseVisualStyleBackColor = false;
@@ -460,10 +456,9 @@
             checkedListBox_gender.ForeColor = Color.WhiteSmoke;
             checkedListBox_gender.FormattingEnabled = true;
             checkedListBox_gender.Items.AddRange(new object[] { "MALE", "FEMALE", "OTHERS" });
-            checkedListBox_gender.Location = new Point(150, 282);
-            checkedListBox_gender.Margin = new Padding(3, 4, 3, 4);
+            checkedListBox_gender.Location = new Point(131, 212);
             checkedListBox_gender.Name = "checkedListBox_gender";
-            checkedListBox_gender.Size = new Size(137, 66);
+            checkedListBox_gender.Size = new Size(120, 36);
             checkedListBox_gender.TabIndex = 13;
             // 
             // label5
@@ -473,18 +468,17 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(12, 308);
+            label5.Location = new Point(10, 231);
             label5.Name = "label5";
-            label5.Size = new Size(100, 25);
+            label5.Size = new Size(83, 20);
             label5.TabIndex = 12;
             label5.Text = "GENDER:";
             // 
             // dateTimePicker_dob
             // 
-            dateTimePicker_dob.Location = new Point(79, 233);
-            dateTimePicker_dob.Margin = new Padding(3, 4, 3, 4);
+            dateTimePicker_dob.Location = new Point(69, 175);
             dateTimePicker_dob.Name = "dateTimePicker_dob";
-            dateTimePicker_dob.Size = new Size(228, 27);
+            dateTimePicker_dob.Size = new Size(200, 23);
             dateTimePicker_dob.TabIndex = 11;
             // 
             // label4
@@ -494,9 +488,9 @@
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(12, 235);
+            label4.Location = new Point(10, 176);
             label4.Name = "label4";
-            label4.Size = new Size(61, 25);
+            label4.Size = new Size(48, 20);
             label4.TabIndex = 10;
             label4.Text = "DOB:";
             // 
@@ -504,10 +498,11 @@
             // 
             textBox_email.BackColor = Color.FromArgb(124, 124, 124);
             textBox_email.BorderStyle = BorderStyle.None;
-            textBox_email.Location = new Point(79, 172);
+            textBox_email.Location = new Point(69, 129);
+            textBox_email.Margin = new Padding(3, 2, 3, 2);
             textBox_email.Multiline = true;
             textBox_email.Name = "textBox_email";
-            textBox_email.Size = new Size(251, 29);
+            textBox_email.Size = new Size(220, 22);
             textBox_email.TabIndex = 9;
             // 
             // label3
@@ -517,9 +512,9 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(3, 172);
+            label3.Location = new Point(3, 129);
             label3.Name = "label3";
-            label3.Size = new Size(66, 25);
+            label3.Size = new Size(52, 20);
             label3.TabIndex = 8;
             label3.Text = "Email:";
             // 
@@ -529,10 +524,11 @@
             textBox_password.BorderStyle = BorderStyle.None;
             textBox_password.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox_password.ForeColor = SystemColors.InactiveBorder;
-            textBox_password.Location = new Point(111, 116);
+            textBox_password.Location = new Point(97, 87);
+            textBox_password.Margin = new Padding(3, 2, 3, 2);
             textBox_password.Multiline = true;
             textBox_password.Name = "textBox_password";
-            textBox_password.Size = new Size(212, 29);
+            textBox_password.Size = new Size(186, 22);
             textBox_password.TabIndex = 7;
             // 
             // label2
@@ -542,9 +538,9 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(3, 114);
+            label2.Location = new Point(3, 86);
             label2.Name = "label2";
-            label2.Size = new Size(104, 25);
+            label2.Size = new Size(82, 20);
             label2.TabIndex = 6;
             label2.Text = "Password:";
             // 
@@ -554,10 +550,11 @@
             UserNameTxtBox.BorderStyle = BorderStyle.None;
             UserNameTxtBox.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UserNameTxtBox.ForeColor = SystemColors.InactiveBorder;
-            UserNameTxtBox.Location = new Point(78, 63);
+            UserNameTxtBox.Location = new Point(77, 47);
+            UserNameTxtBox.Margin = new Padding(3, 2, 3, 2);
             UserNameTxtBox.Multiline = true;
             UserNameTxtBox.Name = "UserNameTxtBox";
-            UserNameTxtBox.Size = new Size(234, 29);
+            UserNameTxtBox.Size = new Size(205, 22);
             UserNameTxtBox.TabIndex = 5;
             // 
             // label1
@@ -567,9 +564,9 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(7, 63);
+            label1.Location = new Point(6, 47);
             label1.Name = "label1";
-            label1.Size = new Size(70, 25);
+            label1.Size = new Size(55, 20);
             label1.TabIndex = 1;
             label1.Text = "Name:";
             // 
@@ -580,9 +577,9 @@
             lblUserID.FlatStyle = FlatStyle.Flat;
             lblUserID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUserID.ForeColor = SystemColors.ControlLightLight;
-            lblUserID.Location = new Point(-1, 8);
+            lblUserID.Location = new Point(-1, 6);
             lblUserID.Name = "lblUserID";
-            lblUserID.Size = new Size(78, 25);
+            lblUserID.Size = new Size(64, 20);
             lblUserID.TabIndex = 0;
             lblUserID.Text = "UserID:";
             // 
@@ -598,18 +595,17 @@
             dataGridView_Reps.ReadOnly = true;
             dataGridView_Reps.RowHeadersWidth = 51;
             dataGridView_Reps.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView_Reps.Size = new Size(633, 643);
+            dataGridView_Reps.Size = new Size(554, 482);
             dataGridView_Reps.TabIndex = 1;
             // 
             // Admin_ReceptionistForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1152, 716);
+            ClientSize = new Size(1008, 537);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(PanelProfile);
             Controls.Add(panel1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Admin_ReceptionistForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin_ReceptionistForm";
