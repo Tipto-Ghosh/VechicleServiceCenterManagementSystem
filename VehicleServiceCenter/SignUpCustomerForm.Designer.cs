@@ -444,6 +444,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SignUpCustomerForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIN";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);

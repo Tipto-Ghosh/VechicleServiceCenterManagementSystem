@@ -72,7 +72,7 @@ namespace VehicleServiceCenter
             Admin admin = new Admin();
 
             UserRepository userRepo = new UserRepository();
-            User loggedUser = userRepo.GetUserById(loggedAdminId);
+            User loggedUser = userRepo.GetUserById(this.loggedAdminId);
 
             this.label_name.Text = loggedUser.Name;
 

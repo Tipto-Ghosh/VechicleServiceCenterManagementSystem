@@ -99,10 +99,10 @@
             panel1.BackColor = Color.FromArgb(18, 18, 18);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(tblShop);
-            panel1.Location = new Point(0, 55);
+            panel1.Location = new Point(0, 73);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1008, 484);
+            panel1.Size = new Size(1152, 645);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -116,18 +116,20 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label1);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 1489);
+            panel2.Location = new Point(0, 1985);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(991, 191);
+            panel2.Size = new Size(1131, 0);
             panel2.TabIndex = 1;
             // 
             // pictureBox18
             // 
             pictureBox18.BackColor = Color.Transparent;
             pictureBox18.Image = (Image)resources.GetObject("pictureBox18.Image");
-            pictureBox18.Location = new Point(12, 125);
+            pictureBox18.Location = new Point(14, 167);
+            pictureBox18.Margin = new Padding(3, 4, 3, 4);
             pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(27, 27);
+            pictureBox18.Size = new Size(31, 36);
             pictureBox18.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox18.TabIndex = 1;
             pictureBox18.TabStop = false;
@@ -136,9 +138,10 @@
             // 
             pictureBox17.BackColor = Color.Transparent;
             pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
-            pictureBox17.Location = new Point(12, 43);
+            pictureBox17.Location = new Point(14, 57);
+            pictureBox17.Margin = new Padding(3, 4, 3, 4);
             pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(27, 27);
+            pictureBox17.Size = new Size(31, 36);
             pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox17.TabIndex = 1;
             pictureBox17.TabStop = false;
@@ -149,7 +152,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Silver;
-            label4.Location = new Point(46, 88);
+            label4.Location = new Point(53, 117);
             label4.Name = "label4";
             label4.Size = new Size(43, 15);
             label4.TabIndex = 0;
@@ -162,7 +165,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Silver;
-            label2.Location = new Point(45, 32);
+            label2.Location = new Point(51, 43);
             label2.Name = "label2";
             label2.Size = new Size(58, 15);
             label2.TabIndex = 0;
@@ -174,9 +177,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Microsoft Sans Serif", 11F);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(46, 110);
+            label5.Location = new Point(53, 147);
             label5.Name = "label5";
-            label5.Size = new Size(859, 81);
+            label5.Size = new Size(982, 108);
             label5.TabIndex = 0;
             label5.Text = "AddressTExt";
             label5.Click += label1_Click;
@@ -187,7 +190,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 11F);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(45, 54);
+            label3.Location = new Point(51, 72);
             label3.Name = "label3";
             label3.Size = new Size(147, 18);
             label3.TabIndex = 0;
@@ -200,7 +203,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 14F);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(43, 1);
+            label1.Location = new Point(49, 1);
             label1.Name = "label1";
             label1.Size = new Size(73, 24);
             label1.TabIndex = 0;
@@ -222,12 +225,12 @@
             tblShop.Margin = new Padding(0);
             tblShop.Name = "tblShop";
             tblShop.RowCount = 5;
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 269F));
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 210F));
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 452F));
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 41F));
-            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 209F));
-            tblShop.Size = new Size(991, 1489);
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 359F));
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 280F));
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 603F));
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 55F));
+            tblShop.RowStyles.Add(new RowStyle(SizeType.Absolute, 279F));
+            tblShop.Size = new Size(1131, 1985);
             tblShop.TabIndex = 0;
             tblShop.Paint += tableLayoutPanel1_Paint_1;
             // 
@@ -245,10 +248,10 @@
             tblSmallRepair.Controls.Add(iconButton6, 0, 0);
             tblSmallRepair.Controls.Add(panel3, 4, 0);
             tblSmallRepair.Dock = DockStyle.Top;
-            tblSmallRepair.Location = new Point(0, 269);
+            tblSmallRepair.Location = new Point(0, 359);
             tblSmallRepair.Margin = new Padding(0);
             tblSmallRepair.Name = "tblSmallRepair";
-            tblSmallRepair.Padding = new Padding(3);
+            tblSmallRepair.Padding = new Padding(3, 4, 3, 4);
             tblSmallRepair.RowCount = 1;
             tblSmallRepair.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tblSmallRepair.Size = new Size(1008, 204);
@@ -266,7 +269,7 @@
             iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton9.Location = new Point(546, 6);
             iconButton9.Name = "iconButton9";
-            iconButton9.Size = new Size(171, 192);
+            iconButton9.Size = new Size(195, 256);
             iconButton9.TabIndex = 9;
             iconButton9.UseVisualStyleBackColor = true;
             iconButton9.Click += iconButton9_Click;
@@ -283,7 +286,7 @@
             iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton8.Location = new Point(366, 6);
             iconButton8.Name = "iconButton8";
-            iconButton8.Size = new Size(171, 192);
+            iconButton8.Size = new Size(195, 256);
             iconButton8.TabIndex = 8;
             iconButton8.UseVisualStyleBackColor = true;
             iconButton8.Click += iconButton8_Click;
@@ -300,7 +303,7 @@
             iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton7.Location = new Point(186, 6);
             iconButton7.Name = "iconButton7";
-            iconButton7.Size = new Size(171, 192);
+            iconButton7.Size = new Size(195, 256);
             iconButton7.TabIndex = 7;
             iconButton7.UseVisualStyleBackColor = true;
             iconButton7.Click += iconButton7_Click;
@@ -315,9 +318,10 @@
             iconButton6.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton6.IconColor = Color.Black;
             iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton6.Location = new Point(6, 6);
+            iconButton6.Location = new Point(6, 8);
+            iconButton6.Margin = new Padding(3, 4, 3, 4);
             iconButton6.Name = "iconButton6";
-            iconButton6.Size = new Size(171, 192);
+            iconButton6.Size = new Size(195, 256);
             iconButton6.TabIndex = 6;
             iconButton6.UseVisualStyleBackColor = true;
             iconButton6.Click += iconButton6_Click;
@@ -327,7 +331,7 @@
             panel3.Controls.Add(iconButton10);
             panel3.Location = new Point(726, 6);
             panel3.Name = "panel3";
-            panel3.Size = new Size(271, 192);
+            panel3.Size = new Size(310, 256);
             panel3.TabIndex = 10;
             // 
             // iconButton10
@@ -342,8 +346,9 @@
             iconButton10.IconColor = Color.Black;
             iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton10.Location = new Point(0, 0);
+            iconButton10.Margin = new Padding(3, 4, 3, 4);
             iconButton10.Name = "iconButton10";
-            iconButton10.Size = new Size(271, 192);
+            iconButton10.Size = new Size(310, 256);
             iconButton10.TabIndex = 6;
             iconButton10.UseVisualStyleBackColor = true;
             iconButton10.Click += iconButton10_Click;
@@ -366,7 +371,7 @@
             tblOilChange.Location = new Point(0, 0);
             tblOilChange.Margin = new Padding(0);
             tblOilChange.Name = "tblOilChange";
-            tblOilChange.Padding = new Padding(9);
+            tblOilChange.Padding = new Padding(10, 12, 10, 12);
             tblOilChange.RowCount = 1;
             tblOilChange.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tblOilChange.RowStyles.Add(new RowStyle(SizeType.Absolute, 251F));
@@ -383,9 +388,10 @@
             iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton5.IconColor = Color.Black;
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.Location = new Point(788, 12);
+            iconButton5.Location = new Point(901, 16);
+            iconButton5.Margin = new Padding(3, 4, 3, 4);
             iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(188, 245);
+            iconButton5.Size = new Size(215, 327);
             iconButton5.TabIndex = 9;
             iconButton5.UseVisualStyleBackColor = true;
             iconButton5.Click += iconButton5_Click;
@@ -400,9 +406,10 @@
             iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton4.IconColor = Color.Black;
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.Location = new Point(594, 12);
+            iconButton4.Location = new Point(679, 16);
+            iconButton4.Margin = new Padding(3, 4, 3, 4);
             iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(188, 245);
+            iconButton4.Size = new Size(215, 327);
             iconButton4.TabIndex = 8;
             iconButton4.UseVisualStyleBackColor = true;
             iconButton4.Click += iconButton4_Click;
@@ -417,9 +424,10 @@
             iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton3.IconColor = Color.Black;
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(400, 12);
+            iconButton3.Location = new Point(457, 16);
+            iconButton3.Margin = new Padding(3, 4, 3, 4);
             iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(188, 245);
+            iconButton3.Size = new Size(215, 327);
             iconButton3.TabIndex = 7;
             iconButton3.UseVisualStyleBackColor = true;
             iconButton3.Click += iconButton3_Click;
@@ -434,9 +442,10 @@
             iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton2.IconColor = Color.Black;
             iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(206, 12);
+            iconButton2.Location = new Point(235, 16);
+            iconButton2.Margin = new Padding(3, 4, 3, 4);
             iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(188, 245);
+            iconButton2.Size = new Size(215, 327);
             iconButton2.TabIndex = 6;
             iconButton2.UseVisualStyleBackColor = true;
             iconButton2.Click += iconButton2_Click;
@@ -451,9 +460,10 @@
             iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton1.IconColor = Color.Black;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(12, 12);
+            iconButton1.Location = new Point(13, 16);
+            iconButton1.Margin = new Padding(3, 4, 3, 4);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(188, 245);
+            iconButton1.Size = new Size(215, 327);
             iconButton1.TabIndex = 5;
             iconButton1.UseVisualStyleBackColor = true;
             iconButton1.Click += iconButton1_Click;
@@ -462,7 +472,7 @@
             // 
             pictureBox12.Dock = DockStyle.Top;
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(0, 931);
+            pictureBox12.Location = new Point(0, 1242);
             pictureBox12.Margin = new Padding(0);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(1008, 41);
@@ -474,7 +484,8 @@
             // 
             pictureBox11.Dock = DockStyle.Top;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(3, 482);
+            pictureBox11.Location = new Point(3, 643);
+            pictureBox11.Margin = new Padding(3, 4, 3, 4);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(1002, 440);
             pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
@@ -489,7 +500,7 @@
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 0);
             tableLayoutPanel1.Controls.Add(pictureBox13, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(0, 972);
+            tableLayoutPanel1.Location = new Point(0, 1297);
             tableLayoutPanel1.Margin = new Padding(0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
@@ -520,7 +531,8 @@
             tableLayoutPanel3.Controls.Add(pictureBox15, 0, 0);
             tableLayoutPanel3.Controls.Add(pictureBox16, 1, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 320);
+            tableLayoutPanel3.Location = new Point(3, 426);
+            tableLayoutPanel3.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -595,15 +607,16 @@
             PanelProfile.Location = new Point(0, 0);
             PanelProfile.Margin = new Padding(0);
             PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(1008, 55);
+            PanelProfile.Size = new Size(1152, 73);
             PanelProfile.TabIndex = 1;
             // 
             // pictureBox22
             // 
             pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
-            pictureBox22.Location = new Point(474, 0);
+            pictureBox22.Location = new Point(542, 0);
+            pictureBox22.Margin = new Padding(3, 4, 3, 4);
             pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(57, 55);
+            pictureBox22.Size = new Size(65, 73);
             pictureBox22.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox22.TabIndex = 3;
             pictureBox22.TabStop = false;
@@ -611,9 +624,10 @@
             // pictureBox21
             // 
             pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(775, 0);
+            pictureBox21.Location = new Point(886, 0);
+            pictureBox21.Margin = new Padding(3, 4, 3, 4);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(31, 55);
+            pictureBox21.Size = new Size(35, 73);
             pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox21.TabIndex = 3;
             pictureBox21.TabStop = false;
@@ -624,7 +638,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(812, 30);
+            label7.Location = new Point(928, 40);
             label7.Name = "label7";
             label7.Size = new Size(76, 15);
             label7.TabIndex = 2;
@@ -636,7 +650,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(812, 9);
+            label6.Location = new Point(928, 12);
             label6.Name = "label6";
             label6.Size = new Size(108, 20);
             label6.TabIndex = 2;
@@ -647,9 +661,10 @@
             // 
             pictureBox20.Dock = DockStyle.Right;
             pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
-            pictureBox20.Location = new Point(977, 0);
+            pictureBox20.Location = new Point(1117, 0);
+            pictureBox20.Margin = new Padding(3, 4, 3, 4);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(31, 55);
+            pictureBox20.Size = new Size(35, 73);
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
@@ -659,8 +674,9 @@
             pictureBox19.Dock = DockStyle.Left;
             pictureBox19.Image = Properties.Resources.icons8_back_100;
             pictureBox19.Location = new Point(0, 0);
+            pictureBox19.Margin = new Padding(3, 4, 3, 4);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(39, 55);
+            pictureBox19.Size = new Size(45, 73);
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 0;
             pictureBox19.TabStop = false;
@@ -668,13 +684,15 @@
             // 
             // ShopForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
-            ClientSize = new Size(1008, 537);
+            ClientSize = new Size(1152, 716);
             Controls.Add(PanelProfile);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ShopForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += ShopForm_Load;
             panel1.ResumeLayout(false);

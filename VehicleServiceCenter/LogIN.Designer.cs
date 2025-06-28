@@ -69,10 +69,9 @@
             SignBtn.BackColor = Color.FromArgb(208, 206, 206);
             SignBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             SignBtn.ForeColor = Color.FromArgb(18, 18, 18);
-            SignBtn.Location = new Point(56, 410);
-            SignBtn.Margin = new Padding(3, 2, 3, 2);
+            SignBtn.Location = new Point(64, 547);
             SignBtn.Name = "SignBtn";
-            SignBtn.Size = new Size(100, 32);
+            SignBtn.Size = new Size(114, 43);
             SignBtn.TabIndex = 0;
             SignBtn.Text = "SIGN UP";
             SignBtn.UseVisualStyleBackColor = false;
@@ -81,10 +80,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.car_maintenance_17073141;
-            pictureBox1.Location = new Point(153, 9);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(175, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(91, 45);
+            pictureBox1.Size = new Size(104, 60);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -120,10 +118,9 @@
             panel1.Controls.Add(SignBtn);
             panel1.Dock = DockStyle.Right;
             panel1.ForeColor = Color.FromArgb(18, 18, 18);
-            panel1.Location = new Point(596, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(681, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(387, 526);
+            panel1.Size = new Size(442, 701);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
@@ -133,12 +130,11 @@
             textBox_UserID.BorderStyle = BorderStyle.None;
             textBox_UserID.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_UserID.ForeColor = SystemColors.InactiveBorder;
-            textBox_UserID.Location = new Point(111, 95);
-            textBox_UserID.Margin = new Padding(3, 2, 3, 2);
+            textBox_UserID.Location = new Point(127, 127);
             textBox_UserID.Multiline = true;
             textBox_UserID.Name = "textBox_UserID";
             textBox_UserID.ReadOnly = true;
-            textBox_UserID.Size = new Size(258, 22);
+            textBox_UserID.Size = new Size(295, 29);
             textBox_UserID.TabIndex = 30;
             textBox_UserID.Text = "System Auto Generated";
             // 
@@ -147,19 +143,18 @@
             label_userID.AutoSize = true;
             label_userID.Font = new Font("Cascadia Code", 10F);
             label_userID.ForeColor = Color.White;
-            label_userID.Location = new Point(10, 94);
+            label_userID.Location = new Point(11, 125);
             label_userID.Name = "label_userID";
-            label_userID.Size = new Size(64, 18);
+            label_userID.Size = new Size(80, 22);
             label_userID.TabIndex = 29;
             label_userID.Text = "USER ID";
             label_userID.Click += label3_Click;
             // 
             // DOBPicker
             // 
-            DOBPicker.Location = new Point(111, 374);
-            DOBPicker.Margin = new Padding(3, 2, 3, 2);
+            DOBPicker.Location = new Point(127, 499);
             DOBPicker.Name = "DOBPicker";
-            DOBPicker.Size = new Size(219, 23);
+            DOBPicker.Size = new Size(250, 27);
             DOBPicker.TabIndex = 28;
             // 
             // BloodGroupComboBox
@@ -170,10 +165,9 @@
             BloodGroupComboBox.ForeColor = SystemColors.ButtonHighlight;
             BloodGroupComboBox.FormattingEnabled = true;
             BloodGroupComboBox.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
-            BloodGroupComboBox.Location = new Point(130, 331);
-            BloodGroupComboBox.Margin = new Padding(3, 2, 3, 2);
+            BloodGroupComboBox.Location = new Point(149, 441);
             BloodGroupComboBox.Name = "BloodGroupComboBox";
-            BloodGroupComboBox.Size = new Size(168, 29);
+            BloodGroupComboBox.Size = new Size(191, 36);
             BloodGroupComboBox.TabIndex = 26;
             // 
             // label2
@@ -181,9 +175,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Cascadia Code", 10F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(10, 332);
+            label2.Location = new Point(11, 443);
             label2.Name = "label2";
-            label2.Size = new Size(96, 18);
+            label2.Size = new Size(120, 22);
             label2.TabIndex = 25;
             label2.Text = "BLOOD GROUP";
             // 
@@ -193,11 +187,10 @@
             PhoneTxtBox.BorderStyle = BorderStyle.None;
             PhoneTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PhoneTxtBox.ForeColor = SystemColors.InactiveBorder;
-            PhoneTxtBox.Location = new Point(111, 254);
-            PhoneTxtBox.Margin = new Padding(3, 2, 3, 2);
+            PhoneTxtBox.Location = new Point(127, 339);
             PhoneTxtBox.Multiline = true;
             PhoneTxtBox.Name = "PhoneTxtBox";
-            PhoneTxtBox.Size = new Size(258, 20);
+            PhoneTxtBox.Size = new Size(295, 27);
             PhoneTxtBox.TabIndex = 24;
             // 
             // label1
@@ -205,9 +198,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cascadia Code", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(10, 257);
+            label1.Location = new Point(11, 343);
             label1.Name = "label1";
-            label1.Size = new Size(72, 18);
+            label1.Size = new Size(90, 22);
             label1.TabIndex = 23;
             label1.Text = "PHONE NO";
             // 
@@ -216,10 +209,9 @@
             OtherChk.AutoSize = true;
             OtherChk.Font = new Font("Cascadia Code", 9F);
             OtherChk.ForeColor = Color.White;
-            OtherChk.Location = new Point(282, 294);
-            OtherChk.Margin = new Padding(3, 2, 3, 2);
+            OtherChk.Location = new Point(322, 392);
             OtherChk.Name = "OtherChk";
-            OtherChk.Size = new Size(61, 20);
+            OtherChk.Size = new Size(76, 24);
             OtherChk.TabIndex = 22;
             OtherChk.Text = "OTHER";
             OtherChk.UseVisualStyleBackColor = true;
@@ -229,10 +221,9 @@
             FemaleChk.AutoSize = true;
             FemaleChk.Font = new Font("Cascadia Code", 9F);
             FemaleChk.ForeColor = Color.White;
-            FemaleChk.Location = new Point(188, 294);
-            FemaleChk.Margin = new Padding(3, 2, 3, 2);
+            FemaleChk.Location = new Point(215, 392);
             FemaleChk.Name = "FemaleChk";
-            FemaleChk.Size = new Size(68, 20);
+            FemaleChk.Size = new Size(85, 24);
             FemaleChk.TabIndex = 21;
             FemaleChk.Text = "FEMALE";
             FemaleChk.UseVisualStyleBackColor = true;
@@ -242,10 +233,9 @@
             MaleChk.AutoSize = true;
             MaleChk.Font = new Font("Cascadia Code", 9F);
             MaleChk.ForeColor = Color.White;
-            MaleChk.Location = new Point(111, 294);
-            MaleChk.Margin = new Padding(3, 2, 3, 2);
+            MaleChk.Location = new Point(127, 392);
             MaleChk.Name = "MaleChk";
-            MaleChk.Size = new Size(54, 20);
+            MaleChk.Size = new Size(67, 24);
             MaleChk.TabIndex = 20;
             MaleChk.Text = "MALE";
             MaleChk.UseVisualStyleBackColor = true;
@@ -253,10 +243,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.icons8_close_50;
-            pictureBox4.Location = new Point(336, 9);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(384, 12);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(40, 39);
+            pictureBox4.Size = new Size(46, 52);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 19;
             pictureBox4.TabStop = false;
@@ -265,10 +254,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.icons8_info_100;
-            pictureBox3.Location = new Point(212, 490);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(242, 653);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(17, 16);
+            pictureBox3.Size = new Size(19, 21);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 18;
             pictureBox3.TabStop = false;
@@ -278,9 +266,9 @@
             AboutLbl.AutoSize = true;
             AboutLbl.Font = new Font("Microsoft Sans Serif", 10F);
             AboutLbl.ForeColor = Color.White;
-            AboutLbl.Location = new Point(136, 490);
+            AboutLbl.Location = new Point(155, 653);
             AboutLbl.Name = "AboutLbl";
-            AboutLbl.Size = new Size(79, 17);
+            AboutLbl.Size = new Size(95, 20);
             AboutLbl.TabIndex = 17;
             AboutLbl.Text = "ABOUT US";
             AboutLbl.TextAlign = ContentAlignment.TopCenter;
@@ -290,7 +278,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(0, 0);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(50, 20);
             label6.TabIndex = 16;
             label6.Text = "label6";
             // 
@@ -298,10 +286,9 @@
             // 
             StartBtn.BackColor = Color.FromArgb(208, 206, 206);
             StartBtn.Font = new Font("Microsoft Sans Serif", 13.8F);
-            StartBtn.Location = new Point(75, 446);
-            StartBtn.Margin = new Padding(3, 2, 3, 2);
+            StartBtn.Location = new Point(86, 595);
             StartBtn.Name = "StartBtn";
-            StartBtn.Size = new Size(222, 32);
+            StartBtn.Size = new Size(254, 43);
             StartBtn.TabIndex = 15;
             StartBtn.Text = "Let’s Start!";
             StartBtn.UseVisualStyleBackColor = false;
@@ -312,9 +299,9 @@
             GenderLbl.AutoSize = true;
             GenderLbl.Font = new Font("Cascadia Code", 10F);
             GenderLbl.ForeColor = SystemColors.ControlLightLight;
-            GenderLbl.Location = new Point(10, 293);
+            GenderLbl.Location = new Point(11, 391);
             GenderLbl.Name = "GenderLbl";
-            GenderLbl.Size = new Size(56, 18);
+            GenderLbl.Size = new Size(70, 22);
             GenderLbl.TabIndex = 13;
             GenderLbl.Text = "GENDER";
             // 
@@ -323,9 +310,9 @@
             DobLbl.AutoSize = true;
             DobLbl.Font = new Font("Cascadia Code", 10F);
             DobLbl.ForeColor = Color.White;
-            DobLbl.Location = new Point(20, 374);
+            DobLbl.Location = new Point(23, 499);
             DobLbl.Name = "DobLbl";
-            DobLbl.Size = new Size(32, 18);
+            DobLbl.Size = new Size(40, 22);
             DobLbl.TabIndex = 9;
             DobLbl.Text = "DOB";
             // 
@@ -335,11 +322,10 @@
             EmailTxtBox.BorderStyle = BorderStyle.None;
             EmailTxtBox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             EmailTxtBox.ForeColor = SystemColors.InactiveBorder;
-            EmailTxtBox.Location = new Point(111, 221);
-            EmailTxtBox.Margin = new Padding(3, 2, 3, 2);
+            EmailTxtBox.Location = new Point(127, 295);
             EmailTxtBox.Multiline = true;
             EmailTxtBox.Name = "EmailTxtBox";
-            EmailTxtBox.Size = new Size(258, 20);
+            EmailTxtBox.Size = new Size(295, 27);
             EmailTxtBox.TabIndex = 8;
             // 
             // EmailLbl
@@ -347,9 +333,9 @@
             EmailLbl.AutoSize = true;
             EmailLbl.Font = new Font("Cascadia Code", 10F);
             EmailLbl.ForeColor = Color.White;
-            EmailLbl.Location = new Point(10, 220);
+            EmailLbl.Location = new Point(11, 293);
             EmailLbl.Name = "EmailLbl";
-            EmailLbl.Size = new Size(56, 18);
+            EmailLbl.Size = new Size(70, 22);
             EmailLbl.TabIndex = 7;
             EmailLbl.Text = "E-MAIL";
             // 
@@ -359,11 +345,10 @@
             PassTxtBox.BorderStyle = BorderStyle.None;
             PassTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PassTxtBox.ForeColor = SystemColors.InactiveBorder;
-            PassTxtBox.Location = new Point(111, 182);
-            PassTxtBox.Margin = new Padding(3, 2, 3, 2);
+            PassTxtBox.Location = new Point(127, 243);
             PassTxtBox.Multiline = true;
             PassTxtBox.Name = "PassTxtBox";
-            PassTxtBox.Size = new Size(258, 20);
+            PassTxtBox.Size = new Size(295, 27);
             PassTxtBox.TabIndex = 6;
             // 
             // PassLbl
@@ -371,9 +356,9 @@
             PassLbl.AutoSize = true;
             PassLbl.Font = new Font("Cascadia Code", 10F);
             PassLbl.ForeColor = Color.White;
-            PassLbl.Location = new Point(10, 180);
+            PassLbl.Location = new Point(11, 240);
             PassLbl.Name = "PassLbl";
-            PassLbl.Size = new Size(72, 18);
+            PassLbl.Size = new Size(90, 22);
             PassLbl.TabIndex = 5;
             PassLbl.Text = "PASSWORD";
             // 
@@ -383,11 +368,10 @@
             UserNameTxtBox.BorderStyle = BorderStyle.None;
             UserNameTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             UserNameTxtBox.ForeColor = SystemColors.InactiveBorder;
-            UserNameTxtBox.Location = new Point(111, 140);
-            UserNameTxtBox.Margin = new Padding(3, 2, 3, 2);
+            UserNameTxtBox.Location = new Point(127, 187);
             UserNameTxtBox.Multiline = true;
             UserNameTxtBox.Name = "UserNameTxtBox";
-            UserNameTxtBox.Size = new Size(258, 22);
+            UserNameTxtBox.Size = new Size(295, 29);
             UserNameTxtBox.TabIndex = 4;
             // 
             // UserNameLbl
@@ -395,9 +379,9 @@
             UserNameLbl.AutoSize = true;
             UserNameLbl.Font = new Font("Cascadia Code", 10F);
             UserNameLbl.ForeColor = Color.White;
-            UserNameLbl.Location = new Point(10, 140);
+            UserNameLbl.Location = new Point(11, 187);
             UserNameLbl.Name = "UserNameLbl";
-            UserNameLbl.Size = new Size(80, 18);
+            UserNameLbl.Size = new Size(100, 22);
             UserNameLbl.TabIndex = 3;
             UserNameLbl.Text = "USER NAME";
             UserNameLbl.Click += label1_Click;
@@ -407,10 +391,9 @@
             LogBtn.BackColor = Color.FromArgb(18, 18, 18);
             LogBtn.Font = new Font("Microsoft Sans Serif", 12F);
             LogBtn.ForeColor = Color.FromArgb(208, 206, 206);
-            LogBtn.Location = new Point(198, 410);
-            LogBtn.Margin = new Padding(3, 2, 3, 2);
+            LogBtn.Location = new Point(226, 547);
             LogBtn.Name = "LogBtn";
-            LogBtn.Size = new Size(100, 32);
+            LogBtn.Size = new Size(114, 43);
             LogBtn.TabIndex = 2;
             LogBtn.Text = "LOG IN";
             LogBtn.UseVisualStyleBackColor = false;
@@ -421,9 +404,8 @@
             pictureBox2.Dock = DockStyle.Left;
             pictureBox2.Image = Properties.Resources.download_2;
             pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(597, 526);
+            pictureBox2.Size = new Size(682, 701);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -432,23 +414,22 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Location = new Point(597, 68);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(682, 91);
             panel2.Name = "panel2";
-            panel2.Size = new Size(386, 2);
+            panel2.Size = new Size(441, 3);
             panel2.TabIndex = 19;
             // 
             // LogIN
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(983, 526);
+            ClientSize = new Size(1123, 701);
             Controls.Add(panel2);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "LogIN";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIN";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);

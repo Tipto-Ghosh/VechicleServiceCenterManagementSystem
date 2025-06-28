@@ -457,6 +457,7 @@
             Controls.Add(mainTableLayout);
             Margin = new Padding(3, 4, 3, 4);
             Name = "CarSelection";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CarSelection";
             mainTableLayout.ResumeLayout(false);
             profilePanel.ResumeLayout(false);

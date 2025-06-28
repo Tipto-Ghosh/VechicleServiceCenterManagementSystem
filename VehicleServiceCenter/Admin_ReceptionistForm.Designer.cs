@@ -26,7 +26,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_ReceptionistForm));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
@@ -610,6 +611,7 @@
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Admin_ReceptionistForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin_ReceptionistForm";
             Load += Admin_ReceptionistForm_Load;
             panel1.ResumeLayout(false);
