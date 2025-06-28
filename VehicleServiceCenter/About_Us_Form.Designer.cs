@@ -169,7 +169,7 @@
             label1.BackColor = Color.FromArgb(251, 229, 214);
             label1.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(162, 135);
+            label1.Location = new Point(200, 135);
             label1.Name = "label1";
             label1.Size = new Size(119, 37);
             label1.TabIndex = 11;
@@ -178,7 +178,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(108, 135);
+            pictureBox6.Location = new Point(137, 135);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(48, 48);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -190,6 +190,7 @@
             label2.BackColor = Color.FromArgb(251, 234, 214);
             label2.FlatStyle = FlatStyle.Popup;
             label2.Font = new Font("Poppins Medium", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Blue;
             label2.Location = new Point(200, 176);
             label2.Name = "label2";
             label2.Size = new Size(406, 53);
@@ -201,6 +202,7 @@
             label3.BackColor = Color.FromArgb(251, 234, 214);
             label3.FlatStyle = FlatStyle.Popup;
             label3.Font = new Font("Poppins Medium", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Blue;
             label3.Location = new Point(200, 229);
             label3.Name = "label3";
             label3.Size = new Size(406, 53);
