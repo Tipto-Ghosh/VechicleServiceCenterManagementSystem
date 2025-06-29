@@ -170,7 +170,7 @@
             pictureBox19.Location = new Point(0, 7);
             pictureBox19.Margin = new Padding(3, 2, 3, 2);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(34, 28);
+            pictureBox19.Size = new Size(34, 46);
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 4;
             pictureBox19.TabStop = false;
