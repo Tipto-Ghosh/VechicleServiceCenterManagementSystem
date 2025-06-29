@@ -137,7 +137,7 @@ namespace VehicleServiceCenter
             if (result == DialogResult.Yes)
             {
                 licensePlate = "145215";
-                carModel = "LAND CRUISER";
+                carModel = "LAND CRUISER";//
                 Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
                 VehicleRepository v2 = new VehicleRepository();
                 v2.InsertVehicle(v1);
