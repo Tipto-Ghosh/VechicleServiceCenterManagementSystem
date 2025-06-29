@@ -2,11 +2,9 @@ namespace VehicleServiceCenter
 {
     public partial class MitsubishiForm : Form
     {
-        private int userID;
-        public MitsubishiForm(int userID)
+        public MitsubishiForm()
         {
             InitializeComponent();
-            this.userID = userID;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -177,7 +175,7 @@ namespace VehicleServiceCenter
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            CarSelection newForm = new CarSelection(userID);
+            CarSelection newForm = new CarSelection();
             newForm.Show();
 
 

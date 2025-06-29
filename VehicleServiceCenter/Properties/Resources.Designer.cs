@@ -63,16 +63,6 @@ namespace VehicleServiceCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _10101065_200810cc_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("10101065_200810cc-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _64f1c1f57a06d26739d38ef7_How_to_Change_Oil_in_Your_Car_awdawdaw1600 {
             get {
                 object obj = ResourceManager.GetObject("64f1c1f57a06d26739d38ef7_How to Change Oil in Your Car-awdawdaw1600", resourceCulture);
@@ -421,22 +411,12 @@ namespace VehicleServiceCenter.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static System.Drawing.Bitmap SPN_HLX_010040LG25B228870GR_comp_004 {
+        internal static byte[] SPN_HLX_010040LG25B228870GR_comp_004 {
             get {
                 object obj = ResourceManager.GetObject("SPN_HLX_010040LG25B228870GR_comp_004", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SPN_HLX_010040LG25B228870GR_comp_0041 {
-            get {
-                object obj = ResourceManager.GetObject("SPN_HLX_010040LG25B228870GR_comp_0041", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ((byte[])(obj));
             }
         }
         

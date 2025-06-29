@@ -1,17 +1,11 @@
-﻿using VehicleServiceCenter.Models;
-using VehicleServiceCenter.Repositories;
-
-namespace VehicleServiceCenter
+﻿namespace VehicleServiceCenter
 {
     public partial class ToyotaForm : Form
     {
-        private int userID;
-        private string licensePlate;
-        private string carModel;
-        public ToyotaForm(int userID)
+        public ToyotaForm()
         {
             InitializeComponent();
-            this.userID = userID;
+
         }
         private void pictureBox19_MouseEnter(object sender, EventArgs e)
         {
@@ -28,7 +22,7 @@ namespace VehicleServiceCenter
 
 
 
-            CarSelection newForm = new CarSelection(userID);
+            CarSelection newForm = new CarSelection();
             newForm.Show();
 
 
@@ -68,61 +62,12 @@ namespace VehicleServiceCenter
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Do you want to add this vehicle?",
-                "Confirm Insertion",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
 
-            if (result == DialogResult.Yes)
-            {
-                licensePlate = "123456"; 
-                carModel = "HILUX"; 
-                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
-                VehicleRepository v2 = new VehicleRepository();
-                v2.InsertVehicle(v1);
-
-                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                Customer_HomeForm newForm = new Customer_HomeForm(userID);
-                newForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                return;
-            }
         }
-
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Do you want to add this vehicle?",
-                "Confirm Insertion",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
 
-            if (result == DialogResult.Yes)
-            {
-                licensePlate = "235415";
-                carModel = "COROLLA";
-                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
-                VehicleRepository v2 = new VehicleRepository();
-                v2.InsertVehicle(v1);
-
-                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                Customer_HomeForm newForm = new Customer_HomeForm(userID);
-                newForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                return;
-            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

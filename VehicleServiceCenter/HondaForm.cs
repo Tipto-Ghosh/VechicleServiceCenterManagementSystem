@@ -2,11 +2,9 @@
 {
     public partial class HondaForm : Form
     {
-        private int userID;
-        public HondaForm(int userID)
+        public HondaForm()
         {
             InitializeComponent();
-            this.userID = userID;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -112,7 +110,7 @@
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            CarSelection newForm = new CarSelection(userID);
+            CarSelection newForm = new CarSelection();
             newForm.Show();
 
 
