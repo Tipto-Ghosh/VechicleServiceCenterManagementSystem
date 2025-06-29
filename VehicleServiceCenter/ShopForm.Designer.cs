@@ -248,10 +248,10 @@
             tblSmallRepair.Location = new Point(0, 269);
             tblSmallRepair.Margin = new Padding(0);
             tblSmallRepair.Name = "tblSmallRepair";
-            tblSmallRepair.Padding = new Padding(3);
+            tblSmallRepair.Padding = new Padding(3, 3, 3, 3);
             tblSmallRepair.RowCount = 1;
             tblSmallRepair.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tblSmallRepair.Size = new Size(1008, 204);
+            tblSmallRepair.Size = new Size(1008, 153);
             tblSmallRepair.TabIndex = 1;
             // 
             // iconButton9
@@ -264,9 +264,10 @@
             iconButton9.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton9.IconColor = Color.Black;
             iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton9.Location = new Point(546, 6);
+            iconButton9.Location = new Point(546, 5);
+            iconButton9.Margin = new Padding(3, 2, 3, 2);
             iconButton9.Name = "iconButton9";
-            iconButton9.Size = new Size(171, 192);
+            iconButton9.Size = new Size(171, 142);
             iconButton9.TabIndex = 9;
             iconButton9.UseVisualStyleBackColor = true;
             iconButton9.Click += iconButton9_Click;
@@ -281,9 +282,10 @@
             iconButton8.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton8.IconColor = Color.Black;
             iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton8.Location = new Point(366, 6);
+            iconButton8.Location = new Point(366, 5);
+            iconButton8.Margin = new Padding(3, 2, 3, 2);
             iconButton8.Name = "iconButton8";
-            iconButton8.Size = new Size(171, 192);
+            iconButton8.Size = new Size(171, 142);
             iconButton8.TabIndex = 8;
             iconButton8.UseVisualStyleBackColor = true;
             iconButton8.Click += iconButton8_Click;
@@ -298,9 +300,10 @@
             iconButton7.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton7.IconColor = Color.Black;
             iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton7.Location = new Point(186, 6);
+            iconButton7.Location = new Point(186, 5);
+            iconButton7.Margin = new Padding(3, 2, 3, 2);
             iconButton7.Name = "iconButton7";
-            iconButton7.Size = new Size(171, 192);
+            iconButton7.Size = new Size(171, 142);
             iconButton7.TabIndex = 7;
             iconButton7.UseVisualStyleBackColor = true;
             iconButton7.Click += iconButton7_Click;
@@ -317,7 +320,7 @@
             iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton6.Location = new Point(6, 6);
             iconButton6.Name = "iconButton6";
-            iconButton6.Size = new Size(171, 192);
+            iconButton6.Size = new Size(171, 141);
             iconButton6.TabIndex = 6;
             iconButton6.UseVisualStyleBackColor = true;
             iconButton6.Click += iconButton6_Click;
@@ -325,9 +328,10 @@
             // panel3
             // 
             panel3.Controls.Add(iconButton10);
-            panel3.Location = new Point(726, 6);
+            panel3.Location = new Point(726, 5);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(271, 192);
+            panel3.Size = new Size(271, 142);
             panel3.TabIndex = 10;
             // 
             // iconButton10
@@ -343,7 +347,7 @@
             iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton10.Location = new Point(0, 0);
             iconButton10.Name = "iconButton10";
-            iconButton10.Size = new Size(271, 192);
+            iconButton10.Size = new Size(271, 142);
             iconButton10.TabIndex = 6;
             iconButton10.UseVisualStyleBackColor = true;
             iconButton10.Click += iconButton10_Click;
@@ -357,20 +361,20 @@
             tblOilChange.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tblOilChange.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tblOilChange.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tblOilChange.Controls.Add(iconButton5, 4, 0);
-            tblOilChange.Controls.Add(iconButton4, 3, 0);
             tblOilChange.Controls.Add(iconButton3, 2, 0);
             tblOilChange.Controls.Add(iconButton2, 1, 0);
             tblOilChange.Controls.Add(iconButton1, 0, 0);
+            tblOilChange.Controls.Add(iconButton4, 3, 0);
+            tblOilChange.Controls.Add(iconButton5, 4, 0);
             tblOilChange.ForeColor = Color.FromArgb(176, 176, 176);
             tblOilChange.Location = new Point(0, 0);
             tblOilChange.Margin = new Padding(0);
             tblOilChange.Name = "tblOilChange";
-            tblOilChange.Padding = new Padding(9);
+            tblOilChange.Padding = new Padding(9, 9, 9, 9);
             tblOilChange.RowCount = 1;
             tblOilChange.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tblOilChange.RowStyles.Add(new RowStyle(SizeType.Absolute, 251F));
-            tblOilChange.Size = new Size(991, 269);
+            tblOilChange.RowStyles.Add(new RowStyle(SizeType.Absolute, 184F));
+            tblOilChange.Size = new Size(1008, 269);
             tblOilChange.TabIndex = 0;
             // 
             // iconButton5
@@ -383,9 +387,9 @@
             iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton5.IconColor = Color.Black;
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.Location = new Point(788, 12);
+            iconButton5.Location = new Point(804, 12);
             iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(188, 245);
+            iconButton5.Size = new Size(165, 178);
             iconButton5.TabIndex = 9;
             iconButton5.UseVisualStyleBackColor = true;
             iconButton5.Click += iconButton5_Click;
@@ -400,9 +404,9 @@
             iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton4.IconColor = Color.Black;
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.Location = new Point(594, 12);
+            iconButton4.Location = new Point(606, 12);
             iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(188, 245);
+            iconButton4.Size = new Size(164, 178);
             iconButton4.TabIndex = 8;
             iconButton4.UseVisualStyleBackColor = true;
             iconButton4.Click += iconButton4_Click;
@@ -417,9 +421,9 @@
             iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton3.IconColor = Color.Black;
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(400, 12);
+            iconButton3.Location = new Point(408, 12);
             iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(188, 245);
+            iconButton3.Size = new Size(164, 178);
             iconButton3.TabIndex = 7;
             iconButton3.UseVisualStyleBackColor = true;
             iconButton3.Click += iconButton3_Click;
@@ -434,9 +438,9 @@
             iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton2.IconColor = Color.Black;
             iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(206, 12);
+            iconButton2.Location = new Point(210, 12);
             iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(188, 245);
+            iconButton2.Size = new Size(164, 178);
             iconButton2.TabIndex = 6;
             iconButton2.UseVisualStyleBackColor = true;
             iconButton2.Click += iconButton2_Click;
@@ -453,7 +457,7 @@
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.Location = new Point(12, 12);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(188, 245);
+            iconButton1.Size = new Size(164, 178);
             iconButton1.TabIndex = 5;
             iconButton1.UseVisualStyleBackColor = true;
             iconButton1.Click += iconButton1_Click;
@@ -465,7 +469,7 @@
             pictureBox12.Location = new Point(0, 931);
             pictureBox12.Margin = new Padding(0);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(1008, 41);
+            pictureBox12.Size = new Size(1008, 31);
             pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox12.TabIndex = 3;
             pictureBox12.TabStop = false;
@@ -476,7 +480,7 @@
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
             pictureBox11.Location = new Point(3, 482);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(1002, 440);
+            pictureBox11.Size = new Size(1002, 330);
             pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox11.TabIndex = 2;
             pictureBox11.TabStop = false;
@@ -504,12 +508,13 @@
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 1);
             tableLayoutPanel2.Controls.Add(pictureBox14, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(458, 3);
+            tableLayoutPanel2.Location = new Point(458, 2);
+            tableLayoutPanel2.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 62.1268654F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 37.8731346F));
-            tableLayoutPanel2.Size = new Size(547, 511);
+            tableLayoutPanel2.Size = new Size(547, 513);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -520,11 +525,11 @@
             tableLayoutPanel3.Controls.Add(pictureBox15, 0, 0);
             tableLayoutPanel3.Controls.Add(pictureBox16, 1, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 320);
+            tableLayoutPanel3.Location = new Point(3, 321);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(541, 188);
+            tableLayoutPanel3.Size = new Size(541, 189);
             tableLayoutPanel3.TabIndex = 0;
             // 
             // pictureBox15
@@ -535,7 +540,7 @@
             pictureBox15.Location = new Point(0, 0);
             pictureBox15.Margin = new Padding(0);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(270, 188);
+            pictureBox15.Size = new Size(270, 189);
             pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox15.TabIndex = 0;
             pictureBox15.TabStop = false;
@@ -549,7 +554,7 @@
             pictureBox16.Location = new Point(270, 0);
             pictureBox16.Margin = new Padding(0);
             pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(271, 188);
+            pictureBox16.Size = new Size(271, 189);
             pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox16.TabIndex = 1;
             pictureBox16.TabStop = false;
@@ -563,7 +568,7 @@
             pictureBox14.Location = new Point(0, 0);
             pictureBox14.Margin = new Padding(0);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(547, 317);
+            pictureBox14.Size = new Size(547, 318);
             pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox14.TabIndex = 1;
             pictureBox14.TabStop = false;
@@ -576,7 +581,7 @@
             pictureBox13.Location = new Point(0, 0);
             pictureBox13.Margin = new Padding(0);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(433, 516);
+            pictureBox13.Size = new Size(379, 387);
             pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox13.TabIndex = 1;
             pictureBox13.TabStop = false;
@@ -675,6 +680,7 @@
             Controls.Add(PanelProfile);
             Controls.Add(panel1);
             Name = "ShopForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += ShopForm_Load;
             panel1.ResumeLayout(false);

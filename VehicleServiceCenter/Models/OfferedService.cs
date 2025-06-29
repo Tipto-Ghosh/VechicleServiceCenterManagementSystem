@@ -7,18 +7,21 @@
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int EstimatedDurationMinutes { get; set; }
+        public int CustomerID { get; set; }
 
         public OfferedService()
         {
 
         }
 
-        public OfferedService(string name, string description, decimal price, int duration)
+        public OfferedService(string name, string description, decimal price, int duration, int CustomerID)
         {
             this.ServiceName = name;
             this.Description = description;
             this.Price = price;
             this.EstimatedDurationMinutes = duration;
+            this.CustomerID = CustomerID;
+
         }
     }
 }

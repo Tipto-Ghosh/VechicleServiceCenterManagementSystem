@@ -521,6 +521,7 @@
             Controls.Add(Table2Brands);
             Controls.Add(PanelProfile);
             Name = "HondaForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HondaForm";
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();

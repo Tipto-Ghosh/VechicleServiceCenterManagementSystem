@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             panel1 = new Panel();
+            iconButton_updateSelf = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
             btnHome = new FontAwesome.Sharp.IconButton();
             iconButton3 = new FontAwesome.Sharp.IconButton();
@@ -62,7 +63,6 @@
             label7 = new Label();
             label_name = new Label();
             pictureBox20 = new PictureBox();
-            iconButton_updateSelf = new FontAwesome.Sharp.IconButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -87,6 +87,28 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(169, 537);
             panel1.TabIndex = 0;
+            // 
+            // iconButton_updateSelf
+            // 
+            iconButton_updateSelf.FlatAppearance.BorderSize = 0;
+            iconButton_updateSelf.FlatStyle = FlatStyle.Flat;
+            iconButton_updateSelf.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iconButton_updateSelf.ForeColor = Color.White;
+            iconButton_updateSelf.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            iconButton_updateSelf.IconColor = Color.White;
+            iconButton_updateSelf.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton_updateSelf.IconSize = 32;
+            iconButton_updateSelf.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton_updateSelf.Location = new Point(0, 259);
+            iconButton_updateSelf.Margin = new Padding(3, 4, 3, 4);
+            iconButton_updateSelf.Name = "iconButton_updateSelf";
+            iconButton_updateSelf.Size = new Size(200, 48);
+            iconButton_updateSelf.TabIndex = 9;
+            iconButton_updateSelf.Text = "Update Info";
+            iconButton_updateSelf.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton_updateSelf.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton_updateSelf.UseVisualStyleBackColor = true;
+            iconButton_updateSelf.Click += iconButton_updateSelf_Click;
             // 
             // pictureBox1
             // 
@@ -131,7 +153,7 @@
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton3.IconSize = 32;
             iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(0, 172);
+            iconButton3.Location = new Point(0, 168);
             iconButton3.Name = "iconButton3";
             iconButton3.Size = new Size(175, 45);
             iconButton3.TabIndex = 2;
@@ -152,7 +174,7 @@
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton4.IconSize = 32;
             iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(0, 219);
+            iconButton4.Location = new Point(0, 213);
             iconButton4.Name = "iconButton4";
             iconButton4.Size = new Size(175, 45);
             iconButton4.TabIndex = 3;
@@ -173,7 +195,7 @@
             btnCustomer.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCustomer.IconSize = 30;
             btnCustomer.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCustomer.Location = new Point(0, 125);
+            btnCustomer.Location = new Point(0, 123);
             btnCustomer.Name = "btnCustomer";
             btnCustomer.Size = new Size(175, 45);
             btnCustomer.TabIndex = 1;
@@ -251,11 +273,12 @@
             label_admin_count.FlatStyle = FlatStyle.Flat;
             label_admin_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_admin_count.ForeColor = Color.WhiteSmoke;
-            label_admin_count.Location = new Point(666, 415);
+            label_admin_count.Location = new Point(597, 323);
             label_admin_count.Name = "label_admin_count";
-            label_admin_count.Size = new Size(129, 91);
+            label_admin_count.Size = new Size(106, 73);
             label_admin_count.TabIndex = 19;
             label_admin_count.Text = "00";
+            //label_admin_count.Click += this.label_admin_count_Click;
             // 
             // label13
             // 
@@ -285,11 +308,12 @@
             label_receptionist_count.FlatStyle = FlatStyle.Flat;
             label_receptionist_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_receptionist_count.ForeColor = Color.WhiteSmoke;
-            label_receptionist_count.Location = new Point(358, 415);
+            label_receptionist_count.Location = new Point(331, 323);
             label_receptionist_count.Name = "label_receptionist_count";
-            label_receptionist_count.Size = new Size(129, 91);
+            label_receptionist_count.Size = new Size(106, 73);
             label_receptionist_count.TabIndex = 16;
             label_receptionist_count.Text = "00";
+            label_receptionist_count.Click += label_receptionist_count_Click;
             // 
             // label11
             // 
@@ -319,9 +343,9 @@
             label_mech_count.FlatStyle = FlatStyle.Flat;
             label_mech_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_mech_count.ForeColor = Color.WhiteSmoke;
-            label_mech_count.Location = new Point(97, 415);
+            label_mech_count.Location = new Point(98, 323);
             label_mech_count.Name = "label_mech_count";
-            label_mech_count.Size = new Size(129, 91);
+            label_mech_count.Size = new Size(106, 73);
             label_mech_count.TabIndex = 13;
             label_mech_count.Text = "00";
             // 
@@ -373,18 +397,19 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(98, 128);
+            label5.Location = new Point(112, 171);
             label5.Name = "label5";
-            label5.Size = new Size(84, 16);
+            label5.Size = new Size(104, 20);
             label5.TabIndex = 8;
             label5.Text = "CUSTOMER";
             // 
             // panel7
             // 
             panel7.BackColor = Color.White;
-            panel7.Location = new Point(588, 132);
+            panel7.Location = new Point(672, 176);
+            panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(3, 80);
+            panel7.Size = new Size(3, 107);
             panel7.TabIndex = 6;
             // 
             // label4
@@ -394,7 +419,7 @@
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Lime;
-            label4.Location = new Point(583, 142);
+            label4.Location = new Point(588, 142);
             label4.Name = "label4";
             label4.Size = new Size(130, 73);
             label4.TabIndex = 7;
@@ -415,7 +440,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(313, 142);
+            label3.Location = new Point(318, 142);
             label3.Name = "label3";
             label3.Size = new Size(106, 73);
             label3.TabIndex = 5;
@@ -430,7 +455,7 @@
             label1.ForeColor = Color.WhiteSmoke;
             label1.Location = new Point(73, 76);
             label1.Name = "label1";
-            label1.Size = new Size(342, 31);
+            label1.Size = new Size(269, 25);
             label1.TabIndex = 2;
             label1.Text = "SYSTEM INFORMATION";
             // 
@@ -449,7 +474,7 @@
             label_customer_count.FlatStyle = FlatStyle.Flat;
             label_customer_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_customer_count.ForeColor = Color.WhiteSmoke;
-            label_customer_count.Location = new Point(85, 142);
+            label_customer_count.Location = new Point(90, 142);
             label_customer_count.Name = "label_customer_count";
             label_customer_count.Size = new Size(106, 73);
             label_customer_count.TabIndex = 3;
@@ -514,28 +539,6 @@
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
             // 
-            // iconButton_updateSelf
-            // 
-            iconButton_updateSelf.FlatAppearance.BorderSize = 0;
-            iconButton_updateSelf.FlatStyle = FlatStyle.Flat;
-            iconButton_updateSelf.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            iconButton_updateSelf.ForeColor = Color.White;
-            iconButton_updateSelf.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            iconButton_updateSelf.IconColor = Color.White;
-            iconButton_updateSelf.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton_updateSelf.IconSize = 32;
-            iconButton_updateSelf.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_updateSelf.Location = new Point(-7, 348);
-            iconButton_updateSelf.Margin = new Padding(3, 4, 3, 4);
-            iconButton_updateSelf.Name = "iconButton_updateSelf";
-            iconButton_updateSelf.Size = new Size(200, 60);
-            iconButton_updateSelf.TabIndex = 9;
-            iconButton_updateSelf.Text = "Update Info";
-            iconButton_updateSelf.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton_updateSelf.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton_updateSelf.UseVisualStyleBackColor = true;
-            iconButton_updateSelf.Click += iconButton_updateSelf_Click;
-            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -544,6 +547,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "AdminForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += AdminForm_Load;
             panel1.ResumeLayout(false);

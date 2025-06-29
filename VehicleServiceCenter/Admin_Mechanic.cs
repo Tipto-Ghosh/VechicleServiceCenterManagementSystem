@@ -2,6 +2,7 @@
 {
     public partial class Admin_Mechanic : Form
     {
+        private int loggedAdminId;
         public Admin_Mechanic()
         {
             InitializeComponent();
@@ -18,7 +19,7 @@
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            AdminCustomerForm a1 = new AdminCustomerForm();
+            AdminCustomerForm a1 = new AdminCustomerForm(loggedAdminId);
             a1.Show();
             this.Hide();
         }
@@ -28,6 +29,16 @@
             Admin_ReceptionistForm r1 = new Admin_ReceptionistForm();
             r1.Show();
             this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Admin_Mechanic_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

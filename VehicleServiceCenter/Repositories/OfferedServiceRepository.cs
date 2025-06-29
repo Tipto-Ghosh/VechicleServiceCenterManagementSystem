@@ -14,15 +14,15 @@ namespace VehicleServiceCenter.Repositories
             {
                 using (SqlConnection conn = DbConfig.GetConnection())
                 {
-                    string query = @"INSERT INTO OfferedServices (ServiceName, Description, Price, EstimatedDurationMinutes)
-                                     VALUES (@ServiceName, @Description, @Price, @EstimatedDurationMinutes)";
+                    string query = @"INSERT INTO OfferedServices (ServiceName, Description, Price, EstimatedDurationMinutes, CustomerID)
+                                     VALUES (@ServiceName, @Description, @Price, @EstimatedDurationMinutes, @CustomerID)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@ServiceName", service.ServiceName);
                         cmd.Parameters.AddWithValue("@Description", service.Description);
                         cmd.Parameters.AddWithValue("@Price", service.Price);
                         cmd.Parameters.AddWithValue("@EstimatedDurationMinutes", service.EstimatedDurationMinutes);
-
+                        cmd.Parameters.AddWithValue("@CustomerID", service.CustomerID);
                         conn.Open();
                         return cmd.ExecuteNonQuery() > 0 ? 1 : 0;
                     }
@@ -55,6 +55,7 @@ namespace VehicleServiceCenter.Repositories
                         cmd.Parameters.AddWithValue("@Description", service.Description);
                         cmd.Parameters.AddWithValue("@Price", service.Price);
                         cmd.Parameters.AddWithValue("@EstimatedDurationMinutes", service.EstimatedDurationMinutes);
+                        cmd.Parameters.AddWithValue("@CustomerID", service.CustomerID);
 
                         conn.Open();
                         return cmd.ExecuteNonQuery() > 0 ? 1 : 0;
@@ -183,6 +184,41 @@ namespace VehicleServiceCenter.Repositories
                 Console.WriteLine(ex.Message);
             }
             return service;
+        }
+        public List<string> GetServicesByCustomerId(int customerId)
+        {
+            List<string> serviceNames = new List<string>();
+            try
+            {
+                using (SqlConnection conn = DbConfig.GetConnection())
+                {
+                    // Select only the ServiceName for the given CustomerID
+                    string query = "SELECT ServiceName FROM OfferedServices WHERE CustomerID = @CustomerID";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@CustomerID", customerId);
+
+                        conn.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                // Read the ServiceName from the current row and add it to the list
+                                serviceNames.Add(reader["ServiceName"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception for debugging purposes.
+                // In a real application, you might want more robust error handling (e.g., throwing a custom exception or logging to a file).
+                Console.WriteLine($"Error in GetServicesByCustomerId: {ex.Message}");
+                // Optionally re-throw the exception or return an empty list as per desired behavior.
+            }
+            return serviceNames;
         }
 
         public List<OfferedService> GetServicesByPrice(int price)

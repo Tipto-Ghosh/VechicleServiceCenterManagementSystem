@@ -49,6 +49,7 @@ namespace VehicleServiceCenter
         private void Customer_Edit_Form_Load(object sender, EventArgs e) {
 
             loadCustomerInfo();
+
         }
 
         private void loadCustomerInfo() {

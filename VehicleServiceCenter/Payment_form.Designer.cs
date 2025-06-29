@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             profilePanel = new Panel();
+            pictureBox4 = new PictureBox();
+            iconButton_back = new FontAwesome.Sharp.IconButton();
+            label_admin_name = new Label();
             settingsPictureBox = new PictureBox();
             notificationPictureBox = new PictureBox();
             fullNameLabel = new Label();
-            label_admin_name = new Label();
             label1 = new Label();
-            iconButton_back = new FontAwesome.Sharp.IconButton();
-            pictureBox4 = new PictureBox();
             UserNameTxtBox = new TextBox();
             label2 = new Label();
             textBox1 = new TextBox();
@@ -44,9 +44,9 @@
             button_update = new Button();
             button_delete = new Button();
             profilePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // profilePanel
@@ -64,6 +64,44 @@
             profilePanel.Name = "profilePanel";
             profilePanel.Size = new Size(1152, 73);
             profilePanel.TabIndex = 5;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.icons8_close_50;
+            pictureBox4.Location = new Point(1094, 9);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(46, 52);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 20;
+            pictureBox4.TabStop = false;
+            // 
+            // iconButton_back
+            // 
+            iconButton_back.FlatAppearance.BorderSize = 0;
+            iconButton_back.FlatStyle = FlatStyle.Flat;
+            iconButton_back.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            iconButton_back.ForeColor = SystemColors.ControlLightLight;
+            iconButton_back.IconChar = FontAwesome.Sharp.IconChar.CircleChevronRight;
+            iconButton_back.IconColor = SystemColors.ControlLight;
+            iconButton_back.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton_back.Location = new Point(12, 13);
+            iconButton_back.Margin = new Padding(3, 4, 3, 4);
+            iconButton_back.Name = "iconButton_back";
+            iconButton_back.Size = new Size(45, 53);
+            iconButton_back.TabIndex = 32;
+            iconButton_back.UseVisualStyleBackColor = true;
+            // 
+            // label_admin_name
+            // 
+            label_admin_name.AutoSize = true;
+            label_admin_name.BackColor = Color.Transparent;
+            label_admin_name.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_admin_name.ForeColor = Color.WhiteSmoke;
+            label_admin_name.Location = new Point(582, 26);
+            label_admin_name.Name = "label_admin_name";
+            label_admin_name.Size = new Size(157, 32);
+            label_admin_name.TabIndex = 6;
+            label_admin_name.Text = "PAYMENT";
             // 
             // settingsPictureBox
             // 
@@ -99,18 +137,6 @@
             fullNameLabel.TabIndex = 2;
             fullNameLabel.Text = "FULL NAME";
             // 
-            // label_admin_name
-            // 
-            label_admin_name.AutoSize = true;
-            label_admin_name.BackColor = Color.Transparent;
-            label_admin_name.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_admin_name.ForeColor = Color.WhiteSmoke;
-            label_admin_name.Location = new Point(582, 26);
-            label_admin_name.Name = "label_admin_name";
-            label_admin_name.Size = new Size(157, 32);
-            label_admin_name.TabIndex = 6;
-            label_admin_name.Text = "PAYMENT";
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -122,32 +148,6 @@
             label1.Size = new Size(244, 32);
             label1.TabIndex = 7;
             label1.Text = "DUE PAYMENT :";
-            // 
-            // iconButton_back
-            // 
-            iconButton_back.FlatAppearance.BorderSize = 0;
-            iconButton_back.FlatStyle = FlatStyle.Flat;
-            iconButton_back.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            iconButton_back.ForeColor = SystemColors.ControlLightLight;
-            iconButton_back.IconChar = FontAwesome.Sharp.IconChar.CircleChevronRight;
-            iconButton_back.IconColor = SystemColors.ControlLight;
-            iconButton_back.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton_back.Location = new Point(12, 13);
-            iconButton_back.Margin = new Padding(3, 4, 3, 4);
-            iconButton_back.Name = "iconButton_back";
-            iconButton_back.Size = new Size(45, 53);
-            iconButton_back.TabIndex = 32;
-            iconButton_back.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.icons8_close_50;
-            pictureBox4.Location = new Point(1094, 9);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(46, 52);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 20;
-            pictureBox4.TabStop = false;
             // 
             // UserNameTxtBox
             // 
@@ -253,12 +253,13 @@
             Controls.Add(label1);
             Controls.Add(profilePanel);
             Name = "Payment_form";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             profilePanel.ResumeLayout(false);
             profilePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

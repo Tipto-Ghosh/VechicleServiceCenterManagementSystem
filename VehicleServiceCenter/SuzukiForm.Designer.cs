@@ -523,6 +523,7 @@
             Controls.Add(Table2Brands);
             Controls.Add(PanelProfile);
             Name = "SuzukiForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();

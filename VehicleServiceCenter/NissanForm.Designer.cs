@@ -523,6 +523,7 @@
             Controls.Add(Table2Brands);
             Controls.Add(PanelProfile);
             Name = "NissanForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "NissanForm";
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();

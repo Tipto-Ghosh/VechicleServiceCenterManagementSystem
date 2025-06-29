@@ -528,6 +528,7 @@
             Controls.Add(Table2Brands);
             Controls.Add(PanelProfile);
             Name = "MitsubishiForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MitsubishiForm";
             Load += MitsubishiForm_Load;
             PanelProfile.ResumeLayout(false);

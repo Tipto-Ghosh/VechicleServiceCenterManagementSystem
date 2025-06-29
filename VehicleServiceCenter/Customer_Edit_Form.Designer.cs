@@ -107,7 +107,7 @@
             LogBtn.BackColor = Color.DarkRed;
             LogBtn.FlatAppearance.BorderSize = 4;
             LogBtn.FlatStyle = FlatStyle.Flat;
-            LogBtn.Font = new Font("Leelawadee", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LogBtn.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LogBtn.ForeColor = SystemColors.Menu;
             LogBtn.Location = new Point(753, 308);
             LogBtn.Name = "LogBtn";
@@ -452,6 +452,7 @@
             Controls.Add(profilePanel);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Customer_Edit_Form";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer_Edit_Form";
             Load += Customer_Edit_Form_Load;
             panel1.ResumeLayout(false);

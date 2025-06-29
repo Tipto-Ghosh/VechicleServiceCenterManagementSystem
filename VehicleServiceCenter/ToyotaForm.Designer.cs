@@ -142,11 +142,9 @@
             // 
             pictureBox20.Dock = DockStyle.Right;
             pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
-            pictureBox20.Location = new Point(1117, 0);
+            pictureBox20.Location = new Point(1124, 0);
             pictureBox20.Margin = new Padding(3, 4, 3, 4);
-            pictureBox20.Location = new Point(973, 0);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(35, 73);
             pictureBox20.Size = new Size(28, 55);
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 1;
@@ -166,7 +164,7 @@
             PanelProfile.Location = new Point(0, 0);
             PanelProfile.Margin = new Padding(0);
             PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(1008, 55);
+            PanelProfile.Size = new Size(1152, 55);
             PanelProfile.TabIndex = 3;
             // 
             // pictureBox19
@@ -545,6 +543,7 @@
             Controls.Add(MainTable);
             Margin = new Padding(3, 4, 3, 4);
             Name = "ToyotaForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ToyotaForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();

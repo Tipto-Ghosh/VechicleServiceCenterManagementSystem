@@ -5,7 +5,6 @@ namespace VehicleServiceCenter {
     public partial class LoginForm : Form {
         public LoginForm() {
             InitializeComponent();
-            // Ensure password is hidden by default
             PassTxtBox.UseSystemPasswordChar = true;
             button_HideShow.Text = "Show";
         }
@@ -34,7 +33,6 @@ namespace VehicleServiceCenter {
                 return;
             }
 
-            // Check Validity
             UserService us = new UserService();
             User isUser = us.Login(userId, pass);
 
@@ -44,14 +42,13 @@ namespace VehicleServiceCenter {
                 return;
             }
 
-            // Show success message
             DialogResult result = MessageBox.Show("Login Successful!", "Welcome",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             if (result == DialogResult.OK) {
                 string userType = isUser.UserType.ToLower();
 
-                this.Hide(); // Hide current login form
+                this.Hide(); 
 
                 if (userType == "admin") {
                     AdminForm adminForm = new AdminForm(isUser.UserID);
@@ -62,10 +59,8 @@ namespace VehicleServiceCenter {
                     this.Hide();
                     customerForm.Show();
                 } else if (userType == "receptionist") {
-                    // Show receptionist form
-                } else {
-                    // Show mechanic form
-                }
+                    
+                } 
             }
         }
 
@@ -81,11 +76,12 @@ namespace VehicleServiceCenter {
 
         private void button_HideShow_Click(object sender, EventArgs e) {
             if (PassTxtBox.UseSystemPasswordChar) {
-                // Show password
+
+
                 PassTxtBox.UseSystemPasswordChar = false;
                 button_HideShow.Text = "Hide";
             } else {
-                // Hide password
+
                 PassTxtBox.UseSystemPasswordChar = true;
                 button_HideShow.Text = "Show";
             }

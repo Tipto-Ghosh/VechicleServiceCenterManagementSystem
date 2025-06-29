@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer_HomeForm));
             profilePanel = new Panel();
             settingsPictureBox = new PictureBox();
             notificationPictureBox = new PictureBox();
@@ -52,14 +51,12 @@
             panel4 = new Panel();
             label1 = new Label();
             label2 = new Label();
-            pictureBox1 = new PictureBox();
             profilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)signOutPictureBox).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // profilePanel
@@ -152,11 +149,10 @@
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(0, 55);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1026, 487);
+            panel1.Size = new Size(1035, 507);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
             // 
@@ -172,9 +168,10 @@
             iconButton_payment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_payment.IconSize = 37;
             iconButton_payment.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_payment.Location = new Point(676, 10);
+            iconButton_payment.Location = new Point(168, 178);
+            iconButton_payment.Margin = new Padding(3, 2, 3, 2);
             iconButton_payment.Name = "iconButton_payment";
-            iconButton_payment.Size = new Size(109, 39);
+            iconButton_payment.Size = new Size(180, 66);
             iconButton_payment.TabIndex = 19;
             iconButton_payment.Text = "PAYMENT";
             iconButton_payment.TextAlign = ContentAlignment.MiddleRight;
@@ -192,9 +189,10 @@
             iconButton_book_appointment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_book_appointment.IconSize = 37;
             iconButton_book_appointment.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_book_appointment.Location = new Point(438, 10);
+            iconButton_book_appointment.Location = new Point(351, 180);
+            iconButton_book_appointment.Margin = new Padding(3, 2, 3, 2);
             iconButton_book_appointment.Name = "iconButton_book_appointment";
-            iconButton_book_appointment.Size = new Size(178, 39);
+            iconButton_book_appointment.Size = new Size(180, 64);
             iconButton_book_appointment.TabIndex = 18;
             iconButton_book_appointment.Text = "BOOK APPOINTMENT";
             iconButton_book_appointment.TextAlign = ContentAlignment.MiddleRight;
@@ -213,9 +211,10 @@
             iconButton_update_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_update_profile.IconSize = 37;
             iconButton_update_profile.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_update_profile.Location = new Point(240, 10);
+            iconButton_update_profile.Location = new Point(351, 112);
+            iconButton_update_profile.Margin = new Padding(3, 2, 3, 2);
             iconButton_update_profile.Name = "iconButton_update_profile";
-            iconButton_update_profile.Size = new Size(147, 39);
+            iconButton_update_profile.Size = new Size(180, 64);
             iconButton_update_profile.TabIndex = 17;
             iconButton_update_profile.Text = "UPDATE PROFILE";
             iconButton_update_profile.TextAlign = ContentAlignment.MiddleRight;
@@ -234,11 +233,13 @@
             iconButton_LogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_LogOut.IconSize = 37;
             iconButton_LogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_LogOut.Location = new Point(24, 10);
+            iconButton_LogOut.Location = new Point(168, 110);
+            iconButton_LogOut.Margin = new Padding(3, 2, 3, 2);
             iconButton_LogOut.Name = "iconButton_LogOut";
-            iconButton_LogOut.Size = new Size(147, 39);
+            iconButton_LogOut.Size = new Size(180, 64);
             iconButton_LogOut.TabIndex = 16;
             iconButton_LogOut.Text = "LOG OUT";
+            iconButton_LogOut.TextAlign = ContentAlignment.MiddleRight;
             iconButton_LogOut.UseVisualStyleBackColor = false;
             iconButton_LogOut.Click += iconButton1_Click;
             // 
@@ -286,10 +287,10 @@
             // 
             panel2.Controls.Add(label7);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 348);
+            panel2.Location = new Point(0, 334);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1009, 370);
+            panel2.Size = new Size(1018, 278);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -327,7 +328,7 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(747, 60);
+            label5.Location = new Point(745, 52);
             label5.Name = "label5";
             label5.Size = new Size(35, 16);
             label5.TabIndex = 11;
@@ -345,7 +346,8 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(739, 74);
+            panel4.Location = new Point(736, 57);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
             panel4.Size = new Size(3, 80);
             panel4.TabIndex = 9;
@@ -371,22 +373,12 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(756, 89);
+            label2.Location = new Point(751, 68);
             label2.Name = "label2";
             label2.Size = new Size(106, 42);
             label2.TabIndex = 10;
             label2.Text = "Hilux";
             label2.Click += label2_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(269, 89);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(470, 259);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // Customer_HomeForm
             // 
@@ -396,6 +388,7 @@
             Controls.Add(panel1);
             Controls.Add(profilePanel);
             Name = "Customer_HomeForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer_HomeForm";
             Load += Customer_HomeForm_Load;
             profilePanel.ResumeLayout(false);
@@ -407,7 +400,6 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -420,7 +412,6 @@
         private Label fullNameLabel;
         private PictureBox signOutPictureBox;
         private Panel panel1;
-        private PictureBox pictureBox1;
         private Label label5;
         private Panel panel4;
         private Label label2;
