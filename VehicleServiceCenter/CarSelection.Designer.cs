@@ -26,8 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarSelection));
             mainTableLayout = new TableLayoutPanel();
             profilePanel = new Panel();
@@ -142,11 +141,11 @@
             // 
             customerTypeLabel.AutoSize = true;
             customerTypeLabel.BackColor = Color.Transparent;
-            customerTypeLabel.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            customerTypeLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             customerTypeLabel.ForeColor = Color.Gainsboro;
             customerTypeLabel.Location = new Point(928, 40);
             customerTypeLabel.Name = "customerTypeLabel";
-            customerTypeLabel.Size = new Size(92, 26);
+            customerTypeLabel.Size = new Size(95, 18);
             customerTypeLabel.TabIndex = 2;
             customerTypeLabel.Text = "CUSTOMER";
             // 
@@ -154,11 +153,11 @@
             // 
             fullNameLabel.AutoSize = true;
             fullNameLabel.BackColor = Color.Transparent;
-            fullNameLabel.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fullNameLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             fullNameLabel.ForeColor = Color.WhiteSmoke;
             fullNameLabel.Location = new Point(928, 12);
             fullNameLabel.Name = "fullNameLabel";
-            fullNameLabel.Size = new Size(125, 36);
+            fullNameLabel.Size = new Size(132, 25);
             fullNameLabel.TabIndex = 2;
             fullNameLabel.Text = "FULL NAME";
             // 
@@ -260,7 +259,7 @@
             // otherBrandLabel
             // 
             otherBrandLabel.Dock = DockStyle.Fill;
-            otherBrandLabel.Font = new Font("Poppins", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            otherBrandLabel.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             otherBrandLabel.ForeColor = SystemColors.Control;
             otherBrandLabel.Location = new Point(0, 0);
             otherBrandLabel.Name = "otherBrandLabel";
@@ -441,11 +440,11 @@
             // selectionInstructionLabel
             // 
             selectionInstructionLabel.AutoSize = true;
-            selectionInstructionLabel.Font = new Font("Poppins Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            selectionInstructionLabel.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             selectionInstructionLabel.ForeColor = SystemColors.Control;
             selectionInstructionLabel.Location = new Point(97, 5);
             selectionInstructionLabel.Name = "selectionInstructionLabel";
-            selectionInstructionLabel.Size = new Size(240, 34);
+            selectionInstructionLabel.Size = new Size(255, 24);
             selectionInstructionLabel.TabIndex = 1;
             selectionInstructionLabel.Text = "SELECT YOUR CAR BRAND";
             // 
@@ -459,6 +458,7 @@
             Name = "CarSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CarSelection";
+            Load += CarSelection_Load;
             mainTableLayout.ResumeLayout(false);
             profilePanel.ResumeLayout(false);
             profilePanel.PerformLayout();
