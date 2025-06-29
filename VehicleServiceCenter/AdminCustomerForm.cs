@@ -46,7 +46,7 @@ namespace VehicleServiceCenter {
         }
 
         private void iconButton4_Click(object sender, EventArgs e) {
-            Admin_Mechanic m1 = new Admin_Mechanic();
+            Admin_Mechanic m1 = new Admin_Mechanic(loggedId);
             m1.Show();
             this.Hide();
         }
@@ -201,11 +201,11 @@ namespace VehicleServiceCenter {
 
 
         private void button_cancel_Click(object sender, EventArgs e) {
-           
+
             if (dataGridViewCustomers.SelectedRows.Count == 1) {
                 dataGridViewCustomers_SelectionChanged(dataGridViewCustomers, EventArgs.Empty);
             } else {
-                
+
                 ResetCustomerFields();
             }
         }
@@ -222,7 +222,7 @@ namespace VehicleServiceCenter {
                 return;
             }
 
-            
+
             DialogResult result = MessageBox.Show($"Are you sure you want to delete customer with User ID: {userIdToDelete}?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes) {
@@ -232,10 +232,22 @@ namespace VehicleServiceCenter {
                     MessageBox.Show("Deletion Failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 } else {
                     MessageBox.Show("Customer deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadCustomerData(); 
-                    ResetCustomerFields(); 
+                    LoadCustomerData();
+                    ResetCustomerFields();
                 }
             }
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e) {
+
+            MessageBox.Show("You are already in the Customer form.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e) {
+            MessageBox.Show("Sorry, Inventory form is in progress.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
     }
 }

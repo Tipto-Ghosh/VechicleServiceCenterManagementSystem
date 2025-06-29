@@ -26,8 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_new_Receiptionist));
             panel1 = new Panel();
             panel2 = new Panel();
@@ -447,6 +446,7 @@
             Name = "Add_new_Receiptionist";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add_New_Rep";
+            Load += Add_new_Receiptionist_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

@@ -26,8 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             panel1 = new Panel();
             iconButton_updateSelf = new FontAwesome.Sharp.IconButton();
@@ -286,6 +285,19 @@
             label_admin_count.TabIndex = 19;
             label_admin_count.Text = "00";
             // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = Color.Transparent;
+            label13.FlatStyle = FlatStyle.Flat;
+            label13.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.ForeColor = Color.WhiteSmoke;
+            label13.Location = new Point(373, 409);
+            label13.Name = "label13";
+            label13.Size = new Size(130, 20);
+            label13.TabIndex = 17;
+            label13.Text = "RECEPTIONIST";
+            // 
             // panel8
             // 
             panel8.BackColor = Color.White;
@@ -294,6 +306,20 @@
             panel8.Name = "panel8";
             panel8.Size = new Size(3, 107);
             panel8.TabIndex = 15;
+            // 
+            // label_receptionist_count
+            // 
+            label_receptionist_count.AutoSize = true;
+            label_receptionist_count.BackColor = Color.Transparent;
+            label_receptionist_count.FlatStyle = FlatStyle.Flat;
+            label_receptionist_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_receptionist_count.ForeColor = Color.WhiteSmoke;
+            label_receptionist_count.Location = new Point(378, 431);
+            label_receptionist_count.Name = "label_receptionist_count";
+            label_receptionist_count.Size = new Size(129, 91);
+            label_receptionist_count.TabIndex = 16;
+            label_receptionist_count.Text = "00";
+            label_receptionist_count.Click += label_receptionist_count_Click;
             // 
             // label11
             // 
@@ -378,7 +404,7 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(112, 171);
+            label5.Location = new Point(128, 151);
             label5.Name = "label5";
             label5.Size = new Size(104, 20);
             label5.TabIndex = 8;
@@ -387,10 +413,10 @@
             // panel7
             // 
             panel7.BackColor = Color.White;
-            panel7.Location = new Point(672, 176);
-            panel7.Margin = new Padding(3, 4, 3, 4);
+            panel7.Location = new Point(673, 176);
+            panel7.Margin = new Padding(3, 5, 3, 5);
             panel7.Name = "panel7";
-            panel7.Size = new Size(3, 107);
+            panel7.Size = new Size(3, 143);
             panel7.TabIndex = 6;
             // 
             // label4
