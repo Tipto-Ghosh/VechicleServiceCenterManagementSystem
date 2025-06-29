@@ -315,6 +315,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             pictureBox4.MouseEnter += pictureBox_MouseEnter;
             pictureBox4.MouseLeave += pictureBox_MouseLeave;
             // 
@@ -363,6 +364,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             pictureBox5.MouseEnter += pictureBox_MouseEnter;
             pictureBox5.MouseLeave += pictureBox_MouseLeave;
             // 
@@ -411,6 +413,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             pictureBox3.MouseEnter += pictureBox_MouseEnter;
             pictureBox3.MouseLeave += pictureBox_MouseLeave;
             // 
