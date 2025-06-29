@@ -339,7 +339,7 @@
             panel2.Location = new Point(0, 258);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1035, 229);
+            panel2.Size = new Size(1025, 229);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 

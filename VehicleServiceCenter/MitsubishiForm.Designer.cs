@@ -98,6 +98,7 @@
             PanelProfile.Name = "PanelProfile";
             PanelProfile.Size = new Size(1008, 55);
             PanelProfile.TabIndex = 4;
+            PanelProfile.Paint += PanelProfile_Paint;
             // 
             // pictureBox19
             // 

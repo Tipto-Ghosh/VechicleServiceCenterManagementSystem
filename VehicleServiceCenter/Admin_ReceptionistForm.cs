@@ -26,6 +26,11 @@ namespace VehicleServiceCenter
         }
 
         private void Admin_ReceptionistForm_Load(object sender, EventArgs e) {
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
 
             UserRepository ur = new UserRepository();
             User loggedUser = ur.GetUserById(this.loggedId);

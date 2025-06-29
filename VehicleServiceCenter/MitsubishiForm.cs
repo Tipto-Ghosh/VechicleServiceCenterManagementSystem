@@ -21,7 +21,10 @@ namespace VehicleServiceCenter
 
         private void MitsubishiForm_Load(object sender, EventArgs e)
         {
-
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -351,6 +354,11 @@ namespace VehicleServiceCenter
             {
                 return;
             }
+        }
+
+        private void PanelProfile_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

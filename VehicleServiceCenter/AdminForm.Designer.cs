@@ -51,7 +51,6 @@
             label9 = new Label();
             label8 = new Label();
             label5 = new Label();
-            panel7 = new Panel();
             label4 = new Label();
             panel6 = new Panel();
             label3 = new Label();
@@ -63,6 +62,7 @@
             label7 = new Label();
             label_name = new Label();
             pictureBox20 = new PictureBox();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -231,8 +231,8 @@
             PanelHome.Controls.Add(label9);
             PanelHome.Controls.Add(label8);
             PanelHome.Controls.Add(label5);
-            PanelHome.Controls.Add(panel7);
             PanelHome.Controls.Add(label4);
+            PanelHome.Controls.Add(panel3);
             PanelHome.Controls.Add(panel6);
             PanelHome.Controls.Add(label3);
             PanelHome.Controls.Add(label1);
@@ -278,7 +278,6 @@
             label_admin_count.Size = new Size(106, 73);
             label_admin_count.TabIndex = 19;
             label_admin_count.Text = "00";
-            //label_admin_count.Click += this.label_admin_count_Click;
             // 
             // label13
             // 
@@ -397,20 +396,11 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(112, 171);
+            label5.Location = new Point(98, 132);
             label5.Name = "label5";
-            label5.Size = new Size(104, 20);
+            label5.Size = new Size(84, 16);
             label5.TabIndex = 8;
             label5.Text = "CUSTOMER";
-            // 
-            // panel7
-            // 
-            panel7.BackColor = Color.White;
-            panel7.Location = new Point(672, 176);
-            panel7.Margin = new Padding(3, 4, 3, 4);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(3, 107);
-            panel7.TabIndex = 6;
             // 
             // label4
             // 
@@ -539,6 +529,14 @@
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.White;
+            panel3.Location = new Point(585, 132);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(3, 80);
+            panel3.TabIndex = 4;
+            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -581,7 +579,6 @@
         private Panel panel4;
         private Label label_customer_count;
         private Label label5;
-        private Panel panel7;
         private Label label4;
         private Panel panel6;
         private Label label3;
@@ -600,5 +597,6 @@
         private Panel panelCustomer;
         private PictureBox pictureBox2;
         private FontAwesome.Sharp.IconButton iconButton_updateSelf;
+        private Panel panel3;
     }
 }

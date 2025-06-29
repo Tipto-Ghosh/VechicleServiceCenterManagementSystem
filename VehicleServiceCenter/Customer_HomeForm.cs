@@ -146,6 +146,11 @@ namespace VehicleServiceCenter
 
             // Set the text to label2
             label2.Text = vehicleText;
+
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void iconButton_update_profile_Click(object sender, EventArgs e)

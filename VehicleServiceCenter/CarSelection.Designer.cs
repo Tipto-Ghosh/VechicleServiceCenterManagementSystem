@@ -164,7 +164,7 @@
             panel1.Location = new Point(672, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(25, 25, 25, 25);
+            panel1.Padding = new Padding(25);
             panel1.Size = new Size(336, 220);
             panel1.TabIndex = 7;
             // 
@@ -198,7 +198,7 @@
             otherBrandPanelContainer.Location = new Point(672, 220);
             otherBrandPanelContainer.Margin = new Padding(0);
             otherBrandPanelContainer.Name = "otherBrandPanelContainer";
-            otherBrandPanelContainer.Padding = new Padding(25, 25, 25, 25);
+            otherBrandPanelContainer.Padding = new Padding(25);
             otherBrandPanelContainer.Size = new Size(336, 220);
             otherBrandPanelContainer.TabIndex = 5;
             // 
@@ -234,7 +234,7 @@
             brandFourPanelContainer.Location = new Point(336, 220);
             brandFourPanelContainer.Margin = new Padding(0);
             brandFourPanelContainer.Name = "brandFourPanelContainer";
-            brandFourPanelContainer.Padding = new Padding(25, 25, 25, 25);
+            brandFourPanelContainer.Padding = new Padding(25);
             brandFourPanelContainer.Size = new Size(336, 220);
             brandFourPanelContainer.TabIndex = 4;
             // 
@@ -278,7 +278,7 @@
             brandThreePanelContainer.Location = new Point(0, 220);
             brandThreePanelContainer.Margin = new Padding(0);
             brandThreePanelContainer.Name = "brandThreePanelContainer";
-            brandThreePanelContainer.Padding = new Padding(25, 25, 25, 25);
+            brandThreePanelContainer.Padding = new Padding(25);
             brandThreePanelContainer.Size = new Size(336, 220);
             brandThreePanelContainer.TabIndex = 3;
             // 
@@ -312,7 +312,7 @@
             brandTwoPanelContainer.Location = new Point(336, 0);
             brandTwoPanelContainer.Margin = new Padding(0);
             brandTwoPanelContainer.Name = "brandTwoPanelContainer";
-            brandTwoPanelContainer.Padding = new Padding(25, 25, 25, 25);
+            brandTwoPanelContainer.Padding = new Padding(25);
             brandTwoPanelContainer.Size = new Size(336, 220);
             brandTwoPanelContainer.TabIndex = 2;
             // 
@@ -346,7 +346,7 @@
             brandOnePanelContainer.Location = new Point(0, 0);
             brandOnePanelContainer.Margin = new Padding(0);
             brandOnePanelContainer.Name = "brandOnePanelContainer";
-            brandOnePanelContainer.Padding = new Padding(25, 25, 25, 25);
+            brandOnePanelContainer.Padding = new Padding(25);
             brandOnePanelContainer.Size = new Size(336, 220);
             brandOnePanelContainer.TabIndex = 0;
             // 
@@ -403,6 +403,7 @@
             Name = "CarSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CarSelection";
+            Load += CarSelection_Load;
             mainTableLayout.ResumeLayout(false);
             profilePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).EndInit();

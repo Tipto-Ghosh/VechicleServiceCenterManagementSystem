@@ -26,12 +26,8 @@ namespace VehicleServiceCenter
         private void pictureBox19_Click(object sender, EventArgs e)
         {
 
-
-
             CarSelection newForm = new CarSelection(userID);
             newForm.Show();
-
-
             this.Hide();
         }
 
@@ -244,6 +240,14 @@ namespace VehicleServiceCenter
             {
                 return;
             }
+        }
+
+        private void ToyotaForm_Load_1(object sender, EventArgs e)
+        {
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
     }
 }

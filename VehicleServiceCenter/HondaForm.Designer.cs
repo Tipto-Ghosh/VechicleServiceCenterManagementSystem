@@ -468,6 +468,7 @@
             Name = "HondaForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HondaForm";
+            Load += HondaForm_Load;
             PanelProfile.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
