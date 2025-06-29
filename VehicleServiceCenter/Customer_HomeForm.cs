@@ -134,6 +134,18 @@ namespace VehicleServiceCenter
 
             fullNameLabel.Text = user.Name;
 
+            // Convert list to a single string
+            string vehicleText = string.Join("\n", vehicleList.Select(v =>
+                $"{v.Model}"
+            ));
+
+            // Set the text to label2
+            label2.Text = vehicleText;
+
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void iconButton_update_profile_Click(object sender, EventArgs e)
@@ -148,6 +160,26 @@ namespace VehicleServiceCenter
             ShopForm sf = new ShopForm(loggedCustomerId);
             this.Hide();
             sf.Show();
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            CarSelection carSelection = new CarSelection(loggedCustomerId);
+            carSelection.Show();
+            this.Hide();
+
+        }
+
+        private void signOutPictureBox_Click(object sender, EventArgs e)
+        {
+            LoginForm newForm = new LoginForm();
+            newForm.Show();
+            this.Hide();
         }
     }
 }

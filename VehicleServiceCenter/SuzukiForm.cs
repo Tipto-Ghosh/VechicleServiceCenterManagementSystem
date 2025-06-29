@@ -284,16 +284,15 @@ namespace VehicleServiceCenter
                 VehicleRepository v2 = new VehicleRepository();
                 v2.InsertVehicle(v1);
 
-                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+        }
 
-                Customer_HomeForm newForm = new Customer_HomeForm(userID);
-                newForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                return;
-            }
+        private void SuzukiForm_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
     }
 }

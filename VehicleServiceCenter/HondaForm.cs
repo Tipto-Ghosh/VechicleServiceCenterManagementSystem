@@ -292,14 +292,22 @@ namespace VehicleServiceCenter
 
                 MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Customer_HomeForm newForm = new Customer_HomeForm(userID);
-                newForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                return;
-            }
+            this.Hide();
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            LoginForm newForm = new LoginForm();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void HondaForm_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
     }
 }

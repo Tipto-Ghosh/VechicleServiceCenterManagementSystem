@@ -548,6 +548,7 @@
             Name = "ToyotaForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ToyotaForm";
+            Load += ToyotaForm_Load_1;
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();

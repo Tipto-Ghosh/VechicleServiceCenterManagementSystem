@@ -88,6 +88,10 @@ namespace VehicleServiceCenter
             User user = ur.GetUserById(loggedCusId);
 
             this.label6.Text = user.Name;
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void iconButton1_Click(object sender, EventArgs e)

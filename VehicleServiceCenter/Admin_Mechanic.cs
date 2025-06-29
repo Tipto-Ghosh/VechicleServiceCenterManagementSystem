@@ -223,28 +223,12 @@ namespace VehicleServiceCenter {
                 return;
             }
 
-            DialogResult confirm = MessageBox.Show("Are you sure you want to delete this mechanic?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (confirm == DialogResult.No) return;
-
-            int mechId = int.Parse(textBox_userID.Text);
-            int status = mechanicRepository.DeleteMechanic(mechId);
-
-            if (status == -1)
-                MessageBox.Show("Mechanic does not exist.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else if (status == 0)
-                MessageBox.Show("Failed to delete mechanic. Please try again.", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            else {
-                MessageBox.Show("Mechanic deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadMechanicData();
-                ResetMechanicFields();
-            }
-        }
-
-        private void button_add_Click(object sender, EventArgs e) {
-            // add new mechanic form
-            Mechanic_Form mf = new Mechanic_Form(loggedUserId);
-            this.Hide();
-            mf.Show();
+        private void Admin_Mechanic_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
     }
 }

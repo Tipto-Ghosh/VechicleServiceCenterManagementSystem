@@ -52,7 +52,12 @@ namespace VehicleServiceCenter {
         }
 
         private void AdminCustomerForm_Load(object sender, EventArgs e) {
-            UserRepository ur = new UserRepository();
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; UserRepository ur = new UserRepository();
+
+
             User loggedUser = ur.GetUserById(loggedId);
 
             this.label_name.Text = loggedUser.Name;

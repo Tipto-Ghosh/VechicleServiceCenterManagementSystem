@@ -35,6 +35,9 @@
             fullNameLabel = new Label();
             signOutPictureBox = new PictureBox();
             panel1 = new Panel();
+            label8 = new Label();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            pictureBox1 = new PictureBox();
             iconButton_payment = new FontAwesome.Sharp.IconButton();
             iconButton_book_appointment = new FontAwesome.Sharp.IconButton();
             iconButton_update_profile = new FontAwesome.Sharp.IconButton();
@@ -120,6 +123,7 @@
             // 
             // signOutPictureBox
             // 
+            signOutPictureBox.Cursor = Cursors.Hand;
             signOutPictureBox.Dock = DockStyle.Right;
             signOutPictureBox.Image = Properties.Resources.icons8_sign_out_501;
             signOutPictureBox.Location = new Point(977, 0);
@@ -128,12 +132,17 @@
             signOutPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             signOutPictureBox.TabIndex = 1;
             signOutPictureBox.TabStop = false;
+            signOutPictureBox.Click += signOutPictureBox_Click;
             // 
             // panel1
             // 
             panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(18, 18, 18);
             panel1.BackgroundImageLayout = ImageLayout.None;
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(iconButton1);
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(iconButton_payment);
             panel1.Controls.Add(iconButton_book_appointment);
             panel1.Controls.Add(iconButton_update_profile);
@@ -142,7 +151,6 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(panel2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(panel3);
@@ -155,6 +163,44 @@
             panel1.Size = new Size(1035, 507);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.FlatStyle = FlatStyle.Flat;
+            label8.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.WhiteSmoke;
+            label8.Location = new Point(51, 139);
+            label8.Name = "label8";
+            label8.Size = new Size(149, 16);
+            label8.TabIndex = 22;
+            label8.Text = "ADD YOUR CAR INFOI!";
+            // 
+            // iconButton1
+            // 
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Add;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 32;
+            iconButton1.Location = new Point(61, 165);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(128, 39);
+            iconButton1.TabIndex = 21;
+            iconButton1.Text = "ADD CAR";
+            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click_1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.SPN_HLX_010040LG25B228870GR_comp_0041;
+            pictureBox1.Location = new Point(241, 60);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(491, 251);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
             // 
             // iconButton_payment
             // 
@@ -246,9 +292,9 @@
             // panel6
             // 
             panel6.BackColor = Color.White;
-            panel6.Location = new Point(738, 160);
+            panel6.Location = new Point(738, 139);
             panel6.Name = "panel6";
-            panel6.Size = new Size(3, 80);
+            panel6.Size = new Size(3, 50);
             panel6.TabIndex = 10;
             // 
             // label4
@@ -257,7 +303,7 @@
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(747, 260);
+            label4.Location = new Point(747, 198);
             label4.Name = "label4";
             label4.Size = new Size(107, 23);
             label4.TabIndex = 15;
@@ -266,9 +312,9 @@
             // panel5
             // 
             panel5.BackColor = Color.White;
-            panel5.Location = new Point(738, 259);
+            panel5.Location = new Point(738, 197);
             panel5.Name = "panel5";
-            panel5.Size = new Size(3, 52);
+            panel5.Size = new Size(3, 50);
             panel5.TabIndex = 13;
             // 
             // label6
@@ -277,7 +323,7 @@
             label6.FlatStyle = FlatStyle.Flat;
             label6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.LightGreen;
-            label6.Location = new Point(756, 278);
+            label6.Location = new Point(747, 221);
             label6.Name = "label6";
             label6.Size = new Size(154, 37);
             label6.TabIndex = 14;
@@ -286,11 +332,10 @@
             // panel2
             // 
             panel2.Controls.Add(label7);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 334);
+            panel2.Location = new Point(0, 258);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1018, 278);
+            panel2.Size = new Size(1025, 229);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -314,7 +359,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(747, 160);
+            label3.Location = new Point(747, 139);
             label3.Name = "label3";
             label3.Size = new Size(97, 16);
             label3.TabIndex = 11;
@@ -349,7 +394,7 @@
             panel4.Location = new Point(736, 57);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(3, 80);
+            panel4.Size = new Size(3, 50);
             panel4.TabIndex = 9;
             // 
             // label1
@@ -357,11 +402,11 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(255, 128, 0);
-            label1.Location = new Point(751, 178);
+            label1.Location = new Point(741, 152);
             label1.Name = "label1";
-            label1.Size = new Size(161, 42);
+            label1.Size = new Size(141, 37);
             label1.TabIndex = 10;
             label1.Text = "Tk 9000";
             label1.Click += label2_Click;
@@ -373,7 +418,7 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(751, 68);
+            label2.Location = new Point(741, 83);
             label2.Name = "label2";
             label2.Size = new Size(106, 42);
             label2.TabIndex = 10;

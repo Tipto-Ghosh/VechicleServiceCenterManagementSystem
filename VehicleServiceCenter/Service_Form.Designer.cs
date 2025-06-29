@@ -66,7 +66,7 @@
             profilePanel.Location = new Point(0, 0);
             profilePanel.Margin = new Padding(0);
             profilePanel.Name = "profilePanel";
-            profilePanel.Size = new Size(1152, 73);
+            profilePanel.Size = new Size(1008, 55);
             profilePanel.TabIndex = 5;
             // 
             // label5
@@ -75,9 +75,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(927, 18);
+            label5.Location = new Point(811, 14);
             label5.Name = "label5";
-            label5.Size = new Size(125, 36);
+            label5.Size = new Size(102, 28);
             label5.TabIndex = 4;
             label5.Text = "FULL NAME";
             label5.Click += label5_Click;
@@ -85,10 +85,9 @@
             // settingsPictureBox
             // 
             settingsPictureBox.Image = Properties.Resources.car_maintenance_17073141;
-            settingsPictureBox.Location = new Point(12, 4);
-            settingsPictureBox.Margin = new Padding(3, 4, 3, 4);
+            settingsPictureBox.Location = new Point(10, 3);
             settingsPictureBox.Name = "settingsPictureBox";
-            settingsPictureBox.Size = new Size(65, 73);
+            settingsPictureBox.Size = new Size(57, 55);
             settingsPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             settingsPictureBox.TabIndex = 3;
             settingsPictureBox.TabStop = false;
@@ -96,10 +95,9 @@
             // notificationPictureBox
             // 
             notificationPictureBox.Image = Properties.Resources.icons8_customer_64;
-            notificationPictureBox.Location = new Point(886, 0);
-            notificationPictureBox.Margin = new Padding(3, 4, 3, 4);
+            notificationPictureBox.Location = new Point(775, 0);
             notificationPictureBox.Name = "notificationPictureBox";
-            notificationPictureBox.Size = new Size(35, 73);
+            notificationPictureBox.Size = new Size(31, 55);
             notificationPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             notificationPictureBox.TabIndex = 3;
             notificationPictureBox.TabStop = false;
@@ -110,9 +108,9 @@
             fullNameLabel.BackColor = Color.Transparent;
             fullNameLabel.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             fullNameLabel.ForeColor = Color.WhiteSmoke;
-            fullNameLabel.Location = new Point(513, 18);
+            fullNameLabel.Location = new Point(449, 14);
             fullNameLabel.Name = "fullNameLabel";
-            fullNameLabel.Size = new Size(151, 36);
+            fullNameLabel.Size = new Size(124, 28);
             fullNameLabel.TabIndex = 2;
             fullNameLabel.Text = "ADD SERVICE";
             // 
@@ -120,10 +118,9 @@
             // 
             signOutPictureBox.Dock = DockStyle.Right;
             signOutPictureBox.Image = Properties.Resources.icons8_sign_out_501;
-            signOutPictureBox.Location = new Point(1117, 0);
-            signOutPictureBox.Margin = new Padding(3, 4, 3, 4);
+            signOutPictureBox.Location = new Point(977, 0);
             signOutPictureBox.Name = "signOutPictureBox";
-            signOutPictureBox.Size = new Size(35, 73);
+            signOutPictureBox.Size = new Size(31, 55);
             signOutPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             signOutPictureBox.TabIndex = 1;
             signOutPictureBox.TabStop = false;
@@ -133,11 +130,11 @@
             dataGridView1.BackgroundColor = Color.FromArgb(136, 136, 136);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Dock = DockStyle.Left;
-            dataGridView1.Location = new Point(0, 73);
+            dataGridView1.Location = new Point(0, 55);
             dataGridView1.Margin = new Padding(0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(663, 643);
+            dataGridView1.Size = new Size(580, 482);
             dataGridView1.TabIndex = 6;
             // 
             // label1
@@ -145,9 +142,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cascadia Code", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(678, 206);
+            label1.Location = new Point(593, 154);
             label1.Name = "label1";
-            label1.Size = new Size(130, 22);
+            label1.Size = new Size(104, 18);
             label1.TabIndex = 31;
             label1.Text = "SERVICE NAME";
             // 
@@ -156,9 +153,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Cascadia Code", 10F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(678, 261);
+            label2.Location = new Point(593, 196);
             label2.Name = "label2";
-            label2.Size = new Size(60, 22);
+            label2.Size = new Size(48, 18);
             label2.TabIndex = 32;
             label2.Text = "PRICE";
             // 
@@ -167,9 +164,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Cascadia Code", 10F);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(678, 315);
+            label3.Location = new Point(593, 236);
             label3.Name = "label3";
-            label3.Size = new Size(150, 22);
+            label3.Size = new Size(120, 18);
             label3.TabIndex = 33;
             label3.Text = "ESTIMETED TIME";
             // 
@@ -179,10 +176,11 @@
             UserNameTxtBox.BorderStyle = BorderStyle.None;
             UserNameTxtBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             UserNameTxtBox.ForeColor = SystemColors.InactiveBorder;
-            UserNameTxtBox.Location = new Point(834, 198);
+            UserNameTxtBox.Location = new Point(730, 148);
+            UserNameTxtBox.Margin = new Padding(3, 2, 3, 2);
             UserNameTxtBox.Multiline = true;
             UserNameTxtBox.Name = "UserNameTxtBox";
-            UserNameTxtBox.Size = new Size(295, 30);
+            UserNameTxtBox.Size = new Size(258, 22);
             UserNameTxtBox.TabIndex = 35;
             // 
             // textBox1
@@ -191,10 +189,11 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.ForeColor = SystemColors.InactiveBorder;
-            textBox1.Location = new Point(834, 253);
+            textBox1.Location = new Point(730, 190);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(295, 30);
+            textBox1.Size = new Size(258, 22);
             textBox1.TabIndex = 36;
             // 
             // textBox2
@@ -203,10 +202,11 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox2.ForeColor = SystemColors.InactiveBorder;
-            textBox2.Location = new Point(834, 310);
+            textBox2.Location = new Point(730, 232);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(295, 30);
+            textBox2.Size = new Size(258, 22);
             textBox2.TabIndex = 37;
             // 
             // textBox_UserID
@@ -215,11 +215,12 @@
             textBox_UserID.BorderStyle = BorderStyle.None;
             textBox_UserID.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_UserID.ForeColor = SystemColors.InactiveBorder;
-            textBox_UserID.Location = new Point(834, 145);
+            textBox_UserID.Location = new Point(730, 109);
+            textBox_UserID.Margin = new Padding(3, 2, 3, 2);
             textBox_UserID.Multiline = true;
             textBox_UserID.Name = "textBox_UserID";
             textBox_UserID.ReadOnly = true;
-            textBox_UserID.Size = new Size(295, 30);
+            textBox_UserID.Size = new Size(258, 22);
             textBox_UserID.TabIndex = 34;
             textBox_UserID.Text = "System Auto Generated";
             // 
@@ -228,9 +229,9 @@
             label_userID.AutoSize = true;
             label_userID.Font = new Font("Cascadia Code", 10F);
             label_userID.ForeColor = Color.White;
-            label_userID.Location = new Point(678, 147);
+            label_userID.Location = new Point(593, 110);
             label_userID.Name = "label_userID";
-            label_userID.Size = new Size(110, 22);
+            label_userID.Size = new Size(88, 18);
             label_userID.TabIndex = 30;
             label_userID.Text = "SERVICE ID";
             // 
@@ -240,10 +241,11 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox3.ForeColor = SystemColors.InactiveBorder;
-            textBox3.Location = new Point(834, 372);
+            textBox3.Location = new Point(730, 279);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(295, 91);
+            textBox3.Size = new Size(258, 68);
             textBox3.TabIndex = 39;
             // 
             // label4
@@ -251,9 +253,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 10F);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(678, 380);
+            label4.Location = new Point(593, 285);
             label4.Name = "label4";
-            label4.Size = new Size(120, 22);
+            label4.Size = new Size(96, 18);
             label4.TabIndex = 38;
             label4.Text = "DESCRIPTION";
             label4.Click += label4_Click;
@@ -265,10 +267,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(927, 514);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(811, 386);
             button2.Name = "button2";
-            button2.Size = new Size(176, 57);
+            button2.Size = new Size(154, 43);
             button2.TabIndex = 42;
             button2.Text = "CANCEL";
             button2.UseVisualStyleBackColor = false;
@@ -280,20 +281,19 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(718, 514);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(628, 386);
             button1.Name = "button1";
-            button1.Size = new Size(176, 57);
+            button1.Size = new Size(154, 43);
             button1.TabIndex = 43;
             button1.Text = "ADD";
             button1.UseVisualStyleBackColor = false;
             // 
             // Service_Form
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
-            ClientSize = new Size(1152, 716);
+            ClientSize = new Size(1008, 537);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(textBox3);
@@ -308,9 +308,11 @@
             Controls.Add(label_userID);
             Controls.Add(dataGridView1);
             Controls.Add(profilePanel);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Service_Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Service_Form";
+            Load += Service_Form_Load;
             profilePanel.ResumeLayout(false);
             profilePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).EndInit();

@@ -10,8 +10,11 @@
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e) {
-
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Customer_HomeForm newForm = new Customer_HomeForm(userID);
+            newForm.Show();
+            this.Hide();
         }
 
         private void brandOnePictureBox_Click(object sender, EventArgs e) {
@@ -70,8 +73,19 @@
             this.Hide();
         }
 
-        private void CarSelection_Load(object sender, EventArgs e) {
+        private void signOutPictureBox_Click(object sender, EventArgs e)
+        {
+            LoginForm newForm = new LoginForm();
+            newForm.Show();
+            this.Hide();
+        }
 
+        private void CarSelection_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
     }
 }

@@ -26,5 +26,14 @@ namespace VehicleServiceCenter
         {
 
         }
+
+        private void About_Us_Form_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(1024, 576);
+            this.MaximumSize = new Size(1024, 576);
+            this.MinimumSize = new Size(1024, 576);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
+        }
     }
 }
