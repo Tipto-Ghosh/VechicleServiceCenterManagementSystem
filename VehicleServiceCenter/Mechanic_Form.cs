@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace VehicleServiceCenter
 {
-    public partial class Mechanic_Form : Form
-    {
-        public Mechanic_Form()
-        {
+    public partial class Mechanic_Form : Form {
+        private int loggedUserId;
+
+        public Mechanic_Form(int id) {
+            this.loggedUserId = id;
             InitializeComponent();
+        }
+
+        public Mechanic_Form() {
+            InitializeComponent();
+        }
+
+        private void Mechanic_Form_Load(object sender, EventArgs e) {
+
         }
     }
 }
