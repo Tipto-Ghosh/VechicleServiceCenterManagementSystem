@@ -174,5 +174,12 @@ namespace VehicleServiceCenter
             this.Hide();
 
         }
+
+        private void signOutPictureBox_Click(object sender, EventArgs e)
+        {
+            LoginForm newForm = new LoginForm();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

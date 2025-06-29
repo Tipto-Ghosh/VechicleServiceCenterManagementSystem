@@ -118,5 +118,12 @@
 
             this.Hide();
         }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            LoginForm newForm = new LoginForm();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

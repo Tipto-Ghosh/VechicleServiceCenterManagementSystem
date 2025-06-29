@@ -11,7 +11,9 @@
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            Customer_HomeForm newForm = new Customer_HomeForm(userID);
+            newForm.Show();
+            this.Hide();
         }
 
         private void brandOnePictureBox_Click(object sender, EventArgs e)
@@ -83,6 +85,13 @@
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             HondaForm newForm = new HondaForm(userID);
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void signOutPictureBox_Click(object sender, EventArgs e)
+        {
+            LoginForm newForm = new LoginForm();
             newForm.Show();
             this.Hide();
         }

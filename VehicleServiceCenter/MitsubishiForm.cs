@@ -1,8 +1,13 @@
+using VehicleServiceCenter.Models;
+using VehicleServiceCenter.Repositories;
+
 namespace VehicleServiceCenter
 {
     public partial class MitsubishiForm : Form
     {
         private int userID;
+        private string licensePlate;
+        private string carModel;
         public MitsubishiForm(int userID)
         {
             InitializeComponent();
@@ -26,7 +31,31 @@ namespace VehicleServiceCenter
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+                "Do you want to add this vehicle?",
+                "Confirm Insertion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
+            if (result == DialogResult.Yes)
+            {
+                licensePlate = "235135";
+                carModel = "PAJERO";
+                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
+                VehicleRepository v2 = new VehicleRepository();
+                v2.InsertVehicle(v1);
+
+                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Customer_HomeForm newForm = new Customer_HomeForm(userID);
+                newForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -172,7 +201,31 @@ namespace VehicleServiceCenter
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+                "Do you want to add this vehicle?",
+                "Confirm Insertion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
+            if (result == DialogResult.Yes)
+            {
+                licensePlate = "123456";
+                carModel = "L200";
+                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
+                VehicleRepository v2 = new VehicleRepository();
+                v2.InsertVehicle(v1);
+
+                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Customer_HomeForm newForm = new Customer_HomeForm(userID);
+                newForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
@@ -182,6 +235,122 @@ namespace VehicleServiceCenter
 
 
             this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Do you want to add this vehicle?",
+                "Confirm Insertion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                licensePlate = "256643";
+                carModel = "OUTLANDER";
+                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
+                VehicleRepository v2 = new VehicleRepository();
+                v2.InsertVehicle(v1);
+
+                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Customer_HomeForm newForm = new Customer_HomeForm(userID);
+                newForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Do you want to add this vehicle?",
+                "Confirm Insertion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                licensePlate = "9876534";
+                carModel = "X-PANDER";
+                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
+                VehicleRepository v2 = new VehicleRepository();
+                v2.InsertVehicle(v1);
+
+                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Customer_HomeForm newForm = new Customer_HomeForm(userID);
+                newForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Do you want to add this vehicle?",
+                "Confirm Insertion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                licensePlate = "1234567";
+                carModel = "LANCER";
+                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
+                VehicleRepository v2 = new VehicleRepository();
+                v2.InsertVehicle(v1);
+
+                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Customer_HomeForm newForm = new Customer_HomeForm(userID);
+                newForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Do you want to add this vehicle?",
+                "Confirm Insertion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                licensePlate = "1234567";
+                carModel = "ECLIPSE";
+                Vehicle v1 = new Vehicle(userID, licensePlate, carModel);
+                VehicleRepository v2 = new VehicleRepository();
+                v2.InsertVehicle(v1);
+
+                MessageBox.Show("Vehicle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Customer_HomeForm newForm = new Customer_HomeForm(userID);
+                newForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
