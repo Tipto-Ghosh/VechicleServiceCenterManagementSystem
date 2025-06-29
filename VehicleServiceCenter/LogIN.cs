@@ -42,7 +42,6 @@ namespace VehicleServiceCenter
 
         private void SignBtn_Click(object sender, EventArgs e)
         {
-            // Take Val
             string userType = "customer";
 
             string username = UserNameTxtBox.Text.Trim();
@@ -54,7 +53,6 @@ namespace VehicleServiceCenter
 
             DateTime dob = DOBPicker.Value;
 
-            // Validation checks
             if (string.IsNullOrWhiteSpace(username) ||
                 string.IsNullOrWhiteSpace(password) ||
                 string.IsNullOrWhiteSpace(email) ||
@@ -82,7 +80,6 @@ namespace VehicleServiceCenter
             }
 
 
-            // make a object of customer
             Customer customer = new Customer();
             customer.Name = username;
             customer.PhoneNumber = phone;
@@ -92,7 +89,6 @@ namespace VehicleServiceCenter
             customer.DateOfBirth = dob;
             customer.UserType = userType;
 
-            // Now Add the Customer
             CustomerService customerService = new CustomerService();
             int id = customerService.SignUp(customer);
 

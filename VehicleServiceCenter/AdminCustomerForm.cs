@@ -52,14 +52,12 @@ namespace VehicleServiceCenter {
         }
 
         private void AdminCustomerForm_Load(object sender, EventArgs e) {
-            // Show admin / receptionist name and role
             UserRepository ur = new UserRepository();
             User loggedUser = ur.GetUserById(loggedId);
 
             this.label_name.Text = loggedUser.Name;
             this.label_role.Text = loggedUser.UserType;
 
-            // Load all the customer data
             LoadCustomerData();
             dataGridViewCustomers.ClearSelection();
             ResetCustomerFields();
@@ -196,7 +194,6 @@ namespace VehicleServiceCenter {
         }
 
         private void button_add_new_Click(object sender, EventArgs e) {
-            // Send to Add Page 
             this.Hide();
             AddNewCustomerForm ancf = new AddNewCustomerForm(loggedId);
             ancf.Show();

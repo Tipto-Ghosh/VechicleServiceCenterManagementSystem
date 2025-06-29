@@ -26,15 +26,17 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_new_Receiptionist));
             panel1 = new Panel();
+            panel2 = new Panel();
+            radioButton_morning = new RadioButton();
+            radioButton_noon = new RadioButton();
+            radioButton_night = new RadioButton();
             radioButton_other = new RadioButton();
             radioButton_female = new RadioButton();
             radioButton_male = new RadioButton();
-            radioButton_night = new RadioButton();
-            radioButton_noon = new RadioButton();
-            radioButton_morning = new RadioButton();
             label8 = new Label();
             textBox_UserID = new TextBox();
             label_userID = new Label();
@@ -56,12 +58,11 @@
             pictureBox1 = new PictureBox();
             InsertButton = new Button();
             pictureBox2 = new PictureBox();
-            panel2 = new Panel();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -97,6 +98,56 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(442, 654);
             panel1.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(radioButton_morning);
+            panel2.Controls.Add(radioButton_noon);
+            panel2.Controls.Add(radioButton_night);
+            panel2.Location = new Point(71, 441);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(371, 58);
+            panel2.TabIndex = 38;
+            panel2.Paint += panel2_Paint;
+            // 
+            // radioButton_morning
+            // 
+            radioButton_morning.AutoSize = true;
+            radioButton_morning.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_morning.ForeColor = Color.White;
+            radioButton_morning.Location = new Point(13, 15);
+            radioButton_morning.Name = "radioButton_morning";
+            radioButton_morning.Size = new Size(90, 24);
+            radioButton_morning.TabIndex = 32;
+            radioButton_morning.TabStop = true;
+            radioButton_morning.Text = "Morning";
+            radioButton_morning.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_noon
+            // 
+            radioButton_noon.AutoSize = true;
+            radioButton_noon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_noon.ForeColor = Color.White;
+            radioButton_noon.Location = new Point(125, 15);
+            radioButton_noon.Name = "radioButton_noon";
+            radioButton_noon.Size = new Size(69, 24);
+            radioButton_noon.TabIndex = 33;
+            radioButton_noon.TabStop = true;
+            radioButton_noon.Text = "Noon";
+            radioButton_noon.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_night
+            // 
+            radioButton_night.AutoSize = true;
+            radioButton_night.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_night.ForeColor = Color.White;
+            radioButton_night.Location = new Point(243, 15);
+            radioButton_night.Name = "radioButton_night";
+            radioButton_night.Size = new Size(69, 24);
+            radioButton_night.TabIndex = 34;
+            radioButton_night.TabStop = true;
+            radioButton_night.Text = "Night";
+            radioButton_night.UseVisualStyleBackColor = true;
             // 
             // radioButton_other
             // 
@@ -136,45 +187,6 @@
             radioButton_male.TabStop = true;
             radioButton_male.Text = "Male";
             radioButton_male.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_night
-            // 
-            radioButton_night.AutoSize = true;
-            radioButton_night.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton_night.ForeColor = Color.White;
-            radioButton_night.Location = new Point(243, 15);
-            radioButton_night.Name = "radioButton_night";
-            radioButton_night.Size = new Size(69, 24);
-            radioButton_night.TabIndex = 34;
-            radioButton_night.TabStop = true;
-            radioButton_night.Text = "Night";
-            radioButton_night.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_noon
-            // 
-            radioButton_noon.AutoSize = true;
-            radioButton_noon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton_noon.ForeColor = Color.White;
-            radioButton_noon.Location = new Point(125, 15);
-            radioButton_noon.Name = "radioButton_noon";
-            radioButton_noon.Size = new Size(69, 24);
-            radioButton_noon.TabIndex = 33;
-            radioButton_noon.TabStop = true;
-            radioButton_noon.Text = "Noon";
-            radioButton_noon.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_morning
-            // 
-            radioButton_morning.AutoSize = true;
-            radioButton_morning.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton_morning.ForeColor = Color.White;
-            radioButton_morning.Location = new Point(13, 15);
-            radioButton_morning.Name = "radioButton_morning";
-            radioButton_morning.Size = new Size(90, 24);
-            radioButton_morning.TabIndex = 32;
-            radioButton_morning.TabStop = true;
-            radioButton_morning.Text = "Morning";
-            radioButton_morning.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -424,17 +436,6 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(radioButton_morning);
-            panel2.Controls.Add(radioButton_noon);
-            panel2.Controls.Add(radioButton_night);
-            panel2.Location = new Point(71, 441);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(371, 58);
-            panel2.TabIndex = 38;
-            panel2.Paint += panel2_Paint;
-            // 
             // Add_new_Receiptionist
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -444,14 +445,15 @@
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
             Name = "Add_new_Receiptionist";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Add_New_Rep";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
         }
 

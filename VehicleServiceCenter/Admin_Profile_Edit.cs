@@ -86,7 +86,7 @@ namespace VehicleServiceCenter
             DateTime dob = DOBPicker.Value;
             string bloodGroup = BloodGroupComboBox.SelectedItem != null ? BloodGroupComboBox.SelectedItem.ToString() : "";
 
-            // make sure all are filled(except userID)
+            
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(password) ||
              string.IsNullOrEmpty(email) || string.IsNullOrEmpty(gender) ||
              string.IsNullOrEmpty(bloodGroup)) 
@@ -117,11 +117,7 @@ namespace VehicleServiceCenter
             UserRepository ur = new UserRepository();
             int status = ur.UpdateUser(updated);
 
-            /* 
             
-            If Update done status 1
-            If update failed status 0
-            */
             if (status == 1) {
                 MessageBox.Show("Profile updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } else {
