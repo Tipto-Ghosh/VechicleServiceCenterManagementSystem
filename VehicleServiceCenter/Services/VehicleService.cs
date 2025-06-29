@@ -19,6 +19,7 @@ namespace VehicleServiceCenter.Services
             return vehicleRepo.InsertVehicle(vehicle);
         }
 
+
         public int UpdateVehicle(Vehicle vehicle)
         {
             return vehicleRepo.UpdateVehicle(vehicle);
