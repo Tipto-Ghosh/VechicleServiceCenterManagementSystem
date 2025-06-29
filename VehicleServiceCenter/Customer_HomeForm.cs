@@ -132,6 +132,7 @@ namespace VehicleServiceCenter
             UserRepository ur = new UserRepository();
             User user = ur.GetUserById(loggedCustomerId);
 
+            fullNameLabel.Text = user.Name;
 
         }
 
@@ -144,7 +145,7 @@ namespace VehicleServiceCenter
 
         private void iconButton_book_appointment_Click(object sender, EventArgs e)
         {
-            ShopForm sf = new ShopForm();
+            ShopForm sf = new ShopForm(loggedCustomerId);
             this.Hide();
             sf.Show();
         }

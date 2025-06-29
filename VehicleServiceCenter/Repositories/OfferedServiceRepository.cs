@@ -14,8 +14,8 @@ namespace VehicleServiceCenter.Repositories
             {
                 using (SqlConnection conn = DbConfig.GetConnection())
                 {
-                    string query = @"INSERT INTO OfferedServices (ServiceName, Description, Price, EstimatedDurationMinutes)
-                                     VALUES (@ServiceName, @Description, @Price, @EstimatedDurationMinutes)";
+                    string query = @"INSERT INTO OfferedServices (ServiceName, Description, Price, EstimatedDurationMinutes, CustomerID)
+                                     VALUES (@ServiceName, @Description, @Price, @EstimatedDurationMinutes, @CustomerID)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@ServiceName", service.ServiceName);
