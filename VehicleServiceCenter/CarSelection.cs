@@ -15,8 +15,8 @@
         }
 
         private void brandOnePictureBox_Click(object sender, EventArgs e) {
-            //ToyotaForm newForm = new ToyotaForm();
-            //newForm.Show();
+            ToyotaForm newForm = new ToyotaForm(loggedId);
+            newForm.Show();
             this.Hide();
         }
         private void pictureBox_MouseEnter(object sender, EventArgs e) {
@@ -47,8 +47,8 @@
         }
 
         private void brandTwoPictureBox_Click(object sender, EventArgs e) {
-            //NissanForm newForm = new NissanForm();
-            //newForm.Show();
+            NissanForm newForm = new NissanForm(loggedId);
+            newForm.Show();
             this.Hide();
         }
 
@@ -59,14 +59,14 @@
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) {
-            //SuzukiForm newForm = new SuzukiForm();
-            //newForm.Show();
+            SuzukiForm newForm = new SuzukiForm(loggedId);
+            newForm.Show();
             this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e) {
-            //HondaForm newForm = new HondaForm();
-            //newForm.Show();
+            HondaForm newForm = new HondaForm(loggedId);
+            newForm.Show();
             this.Hide();
         }
 

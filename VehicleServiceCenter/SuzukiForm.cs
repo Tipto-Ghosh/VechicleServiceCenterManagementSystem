@@ -11,6 +11,9 @@ namespace VehicleServiceCenter
         public SuzukiForm(int userID)
         {
             InitializeComponent();
+        }public SuzukiForm()
+        {
+            InitializeComponent();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

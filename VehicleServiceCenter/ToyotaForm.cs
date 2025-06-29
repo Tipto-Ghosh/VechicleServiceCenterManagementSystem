@@ -13,6 +13,11 @@ namespace VehicleServiceCenter
             InitializeComponent();
             this.userID = userID;
         }
+        public ToyotaForm()
+        {
+            InitializeComponent();
+            this.userID = userID;
+        }
         private void pictureBox19_MouseEnter(object sender, EventArgs e)
         {
             pictureBox19.BackColor = Color.FromArgb(68, 68, 68);
