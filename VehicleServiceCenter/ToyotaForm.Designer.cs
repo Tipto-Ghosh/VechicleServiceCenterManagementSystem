@@ -226,7 +226,7 @@
             panel11.Location = new Point(672, 220);
             panel11.Margin = new Padding(0);
             panel11.Name = "panel11";
-            panel11.Padding = new Padding(25, 25, 25, 25);
+            panel11.Padding = new Padding(25);
             panel11.Size = new Size(336, 220);
             panel11.TabIndex = 5;
             // 
@@ -273,7 +273,7 @@
             panel9.Location = new Point(336, 220);
             panel9.Margin = new Padding(0);
             panel9.Name = "panel9";
-            panel9.Padding = new Padding(25, 25, 25, 25);
+            panel9.Padding = new Padding(25);
             panel9.Size = new Size(336, 220);
             panel9.TabIndex = 4;
             // 
@@ -309,6 +309,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             pictureBox4.MouseEnter += pictureBox_MouseEnter;
             pictureBox4.MouseLeave += pictureBox_MouseLeave;
             // 
@@ -319,7 +320,7 @@
             panel7.Location = new Point(0, 220);
             panel7.Margin = new Padding(0);
             panel7.Name = "panel7";
-            panel7.Padding = new Padding(25, 25, 25, 25);
+            panel7.Padding = new Padding(25);
             panel7.Size = new Size(336, 220);
             panel7.TabIndex = 3;
             // 
@@ -355,6 +356,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             pictureBox5.MouseEnter += pictureBox_MouseEnter;
             pictureBox5.MouseLeave += pictureBox_MouseLeave;
             // 
@@ -365,7 +367,7 @@
             panel5.Location = new Point(672, 0);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
-            panel5.Padding = new Padding(25, 25, 25, 25);
+            panel5.Padding = new Padding(25);
             panel5.Size = new Size(336, 220);
             panel5.TabIndex = 2;
             // 
@@ -401,6 +403,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             pictureBox3.MouseEnter += pictureBox_MouseEnter;
             pictureBox3.MouseLeave += pictureBox_MouseLeave;
             // 
@@ -411,7 +414,7 @@
             panel3.Location = new Point(336, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
-            panel3.Padding = new Padding(25, 25, 25, 25);
+            panel3.Padding = new Padding(25);
             panel3.Size = new Size(336, 220);
             panel3.TabIndex = 1;
             // 
@@ -458,7 +461,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(25, 25, 25, 25);
+            panel1.Padding = new Padding(25);
             panel1.Size = new Size(336, 220);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
