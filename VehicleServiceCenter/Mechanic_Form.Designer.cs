@@ -51,6 +51,12 @@
             pictureBox1 = new PictureBox();
             InsertButton = new Button();
             pictureBox2 = new PictureBox();
+            label1 = new Label();
+            BloodGroupComboBox = new ComboBox();
+            comboBox_status = new ComboBox();
+            label2 = new Label();
+            label3 = new Label();
+            textBox_rating = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -60,6 +66,12 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(18, 18, 18);
+            panel1.Controls.Add(textBox_rating);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(comboBox_status);
+            panel1.Controls.Add(BloodGroupComboBox);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(radioButton_other);
             panel1.Controls.Add(radioButton_female);
             panel1.Controls.Add(radioButton_male);
@@ -154,7 +166,7 @@
             // 
             // DOBPicker
             // 
-            DOBPicker.Location = new Point(140, 370);
+            DOBPicker.Location = new Point(140, 355);
             DOBPicker.Margin = new Padding(3, 4, 3, 4);
             DOBPicker.Name = "DOBPicker";
             DOBPicker.Size = new Size(285, 27);
@@ -183,7 +195,7 @@
             // 
             back_button.BackColor = Color.FromArgb(208, 206, 206);
             back_button.Font = new Font("Microsoft Sans Serif", 13.8F);
-            back_button.Location = new Point(155, 538);
+            back_button.Location = new Point(165, 598);
             back_button.Margin = new Padding(3, 4, 3, 4);
             back_button.Name = "back_button";
             back_button.Size = new Size(124, 43);
@@ -207,7 +219,7 @@
             DobLbl.AutoSize = true;
             DobLbl.Font = new Font("Cascadia Code", 10F);
             DobLbl.ForeColor = Color.White;
-            DobLbl.Location = new Point(10, 370);
+            DobLbl.Location = new Point(10, 355);
             DobLbl.Name = "DobLbl";
             DobLbl.Size = new Size(40, 22);
             DobLbl.TabIndex = 9;
@@ -290,7 +302,7 @@
             reset_button.BackColor = Color.FromArgb(18, 18, 18);
             reset_button.Font = new Font("Microsoft Sans Serif", 12F);
             reset_button.ForeColor = Color.FromArgb(208, 206, 206);
-            reset_button.Location = new Point(272, 464);
+            reset_button.Location = new Point(256, 538);
             reset_button.Margin = new Padding(3, 4, 3, 4);
             reset_button.Name = "reset_button";
             reset_button.Size = new Size(114, 43);
@@ -313,7 +325,7 @@
             InsertButton.BackColor = Color.FromArgb(208, 206, 206);
             InsertButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             InsertButton.ForeColor = Color.FromArgb(18, 18, 18);
-            InsertButton.Location = new Point(58, 464);
+            InsertButton.Location = new Point(62, 538);
             InsertButton.Margin = new Padding(3, 4, 3, 4);
             InsertButton.Name = "InsertButton";
             InsertButton.Size = new Size(114, 43);
@@ -329,6 +341,77 @@
             pictureBox2.Size = new Size(664, 654);
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Cascadia Code", 10F);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(8, 398);
+            label1.Name = "label1";
+            label1.Size = new Size(120, 22);
+            label1.TabIndex = 38;
+            label1.Text = "BLOOD GROUP";
+            // 
+            // BloodGroupComboBox
+            // 
+            BloodGroupComboBox.AutoCompleteCustomSource.AddRange(new string[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O- " });
+            BloodGroupComboBox.BackColor = SystemColors.WindowFrame;
+            BloodGroupComboBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BloodGroupComboBox.ForeColor = SystemColors.ButtonHighlight;
+            BloodGroupComboBox.FormattingEnabled = true;
+            BloodGroupComboBox.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
+            BloodGroupComboBox.Location = new Point(140, 390);
+            BloodGroupComboBox.Margin = new Padding(3, 4, 3, 4);
+            BloodGroupComboBox.Name = "BloodGroupComboBox";
+            BloodGroupComboBox.Size = new Size(171, 36);
+            BloodGroupComboBox.TabIndex = 39;
+            // 
+            // comboBox_status
+            // 
+            comboBox_status.AutoCompleteCustomSource.AddRange(new string[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O- " });
+            comboBox_status.BackColor = SystemColors.WindowFrame;
+            comboBox_status.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox_status.ForeColor = SystemColors.ButtonHighlight;
+            comboBox_status.FormattingEnabled = true;
+            comboBox_status.Items.AddRange(new object[] { "Available", "Busy", "On Leave" });
+            comboBox_status.Location = new Point(140, 434);
+            comboBox_status.Margin = new Padding(3, 4, 3, 4);
+            comboBox_status.Name = "comboBox_status";
+            comboBox_status.Size = new Size(171, 36);
+            comboBox_status.TabIndex = 40;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Cascadia Code", 10F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(10, 442);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 22);
+            label2.TabIndex = 41;
+            label2.Text = "STATUS";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Cascadia Code", 10F);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(10, 487);
+            label3.Name = "label3";
+            label3.Size = new Size(70, 22);
+            label3.TabIndex = 42;
+            label3.Text = "RATING";
+            // 
+            // textBox_rating
+            // 
+            textBox_rating.BackColor = Color.FromArgb(124, 124, 124);
+            textBox_rating.BorderStyle = BorderStyle.None;
+            textBox_rating.Location = new Point(140, 487);
+            textBox_rating.Multiline = true;
+            textBox_rating.Name = "textBox_rating";
+            textBox_rating.Size = new Size(183, 29);
+            textBox_rating.TabIndex = 43;
             // 
             // Mechanic_Form
             // 
@@ -372,5 +455,11 @@
         private PictureBox pictureBox1;
         private Button InsertButton;
         private PictureBox pictureBox2;
+        private Label label1;
+        private ComboBox BloodGroupComboBox;
+        private ComboBox comboBox_status;
+        private Label label3;
+        private Label label2;
+        private TextBox textBox_rating;
     }
 }
