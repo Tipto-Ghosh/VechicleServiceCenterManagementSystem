@@ -26,8 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCustomerForm));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
@@ -91,15 +90,16 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(169, 537);
+            panel1.Size = new Size(193, 716);
             panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.car_maintenance_17073141;
-            pictureBox1.Location = new Point(34, 4);
+            pictureBox1.Location = new Point(39, 5);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(114, 67);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -115,9 +115,10 @@
             btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnHome.IconSize = 32;
             btnHome.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHome.Location = new Point(0, 78);
+            btnHome.Location = new Point(0, 104);
+            btnHome.Margin = new Padding(3, 4, 3, 4);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(175, 45);
+            btnHome.Size = new Size(200, 60);
             btnHome.TabIndex = 0;
             btnHome.Text = "HOME";
             btnHome.TextAlign = ContentAlignment.MiddleLeft;
@@ -136,10 +137,10 @@
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton3.IconSize = 32;
             iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(0, 172);
+            iconButton3.Location = new Point(0, 229);
             iconButton3.Margin = new Padding(0);
             iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(175, 45);
+            iconButton3.Size = new Size(200, 60);
             iconButton3.TabIndex = 2;
             iconButton3.Text = "RECEPTIONIST";
             iconButton3.TextAlign = ContentAlignment.MiddleLeft;
@@ -158,9 +159,10 @@
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton4.IconSize = 32;
             iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(0, 219);
+            iconButton4.Location = new Point(0, 292);
+            iconButton4.Margin = new Padding(3, 4, 3, 4);
             iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(175, 45);
+            iconButton4.Size = new Size(200, 60);
             iconButton4.TabIndex = 3;
             iconButton4.Text = "MECHANIC";
             iconButton4.TextAlign = ContentAlignment.MiddleLeft;
@@ -179,15 +181,16 @@
             btnCustomer.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCustomer.IconSize = 30;
             btnCustomer.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCustomer.Location = new Point(0, 125);
+            btnCustomer.Location = new Point(0, 167);
             btnCustomer.Margin = new Padding(0);
             btnCustomer.Name = "btnCustomer";
-            btnCustomer.Size = new Size(175, 45);
+            btnCustomer.Size = new Size(200, 60);
             btnCustomer.TabIndex = 1;
             btnCustomer.Text = "CUSTOMER";
             btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
             btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCustomer.UseVisualStyleBackColor = true;
+            btnCustomer.Click += btnCustomer_Click;
             // 
             // iconButton5
             // 
@@ -200,15 +203,16 @@
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton5.IconSize = 32;
             iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(0, 266);
+            iconButton5.Location = new Point(0, 355);
             iconButton5.Margin = new Padding(0);
             iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(169, 45);
+            iconButton5.Size = new Size(193, 60);
             iconButton5.TabIndex = 4;
             iconButton5.Text = "INVENTORY";
             iconButton5.TextAlign = ContentAlignment.MiddleLeft;
             iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton5.UseVisualStyleBackColor = true;
+            iconButton5.Click += iconButton5_Click;
             // 
             // PanelProfile
             // 
@@ -218,18 +222,19 @@
             PanelProfile.Controls.Add(label_name);
             PanelProfile.Controls.Add(pictureBox20);
             PanelProfile.Dock = DockStyle.Top;
-            PanelProfile.Location = new Point(169, 0);
+            PanelProfile.Location = new Point(193, 0);
             PanelProfile.Margin = new Padding(0);
             PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(839, 55);
+            PanelProfile.Size = new Size(959, 73);
             PanelProfile.TabIndex = 5;
             // 
             // pictureBox21
             // 
             pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(606, 0);
+            pictureBox21.Location = new Point(693, 0);
+            pictureBox21.Margin = new Padding(3, 4, 3, 4);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(31, 55);
+            pictureBox21.Size = new Size(35, 73);
             pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox21.TabIndex = 3;
             pictureBox21.TabStop = false;
@@ -240,9 +245,9 @@
             label_role.BackColor = Color.Transparent;
             label_role.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label_role.ForeColor = Color.Gainsboro;
-            label_role.Location = new Point(643, 30);
+            label_role.Location = new Point(735, 40);
             label_role.Name = "label_role";
-            label_role.Size = new Size(46, 15);
+            label_role.Size = new Size(55, 18);
             label_role.TabIndex = 2;
             label_role.Text = "ADMIN";
             // 
@@ -252,18 +257,19 @@
             label_name.BackColor = Color.Transparent;
             label_name.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_name.ForeColor = Color.WhiteSmoke;
-            label_name.Location = new Point(643, 9);
+            label_name.Location = new Point(735, 12);
             label_name.Name = "label_name";
-            label_name.Size = new Size(113, 20);
+            label_name.Size = new Size(138, 25);
             label_name.TabIndex = 2;
             label_name.Text = " FULL NAME";
             // 
             // pictureBox20
             // 
             pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
-            pictureBox20.Location = new Point(804, 0);
+            pictureBox20.Location = new Point(919, 0);
+            pictureBox20.Margin = new Padding(3, 4, 3, 4);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(28, 55);
+            pictureBox20.Size = new Size(32, 73);
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 1;
             pictureBox20.TabStop = false;
@@ -273,17 +279,17 @@
             PanelHome.BackColor = Color.FromArgb(18, 18, 18);
             PanelHome.Controls.Add(tableLayoutPanel1);
             PanelHome.Dock = DockStyle.Fill;
-            PanelHome.Location = new Point(169, 55);
+            PanelHome.Location = new Point(193, 73);
             PanelHome.Margin = new Padding(0);
             PanelHome.Name = "PanelHome";
-            PanelHome.Size = new Size(839, 482);
+            PanelHome.Size = new Size(959, 643);
             PanelHome.TabIndex = 6;
             // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.67342F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 285F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 326F));
             tableLayoutPanel1.Controls.Add(dataGridViewCustomers, 0, 0);
             tableLayoutPanel1.Controls.Add(panel2, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
@@ -292,7 +298,7 @@
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.1659756F));
-            tableLayoutPanel1.Size = new Size(839, 482);
+            tableLayoutPanel1.Size = new Size(959, 643);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // dataGridViewCustomers
@@ -305,7 +311,7 @@
             dataGridViewCustomers.Name = "dataGridViewCustomers";
             dataGridViewCustomers.RowHeadersWidth = 51;
             dataGridViewCustomers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewCustomers.Size = new Size(554, 482);
+            dataGridViewCustomers.Size = new Size(633, 643);
             dataGridViewCustomers.TabIndex = 0;
             dataGridViewCustomers.SelectionChanged += dataGridViewCustomers_SelectionChanged;
             // 
@@ -334,10 +340,10 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(lblUserID);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(554, 0);
+            panel2.Location = new Point(633, 0);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(285, 482);
+            panel2.Size = new Size(326, 643);
             panel2.TabIndex = 1;
             // 
             // button_cancel
@@ -347,9 +353,10 @@
             button_cancel.FlatStyle = FlatStyle.Popup;
             button_cancel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button_cancel.ForeColor = Color.Green;
-            button_cancel.Location = new Point(158, 358);
+            button_cancel.Location = new Point(181, 477);
+            button_cancel.Margin = new Padding(3, 4, 3, 4);
             button_cancel.Name = "button_cancel";
-            button_cancel.Size = new Size(106, 36);
+            button_cancel.Size = new Size(121, 48);
             button_cancel.TabIndex = 23;
             button_cancel.Text = "CANCEL";
             button_cancel.UseVisualStyleBackColor = false;
@@ -362,9 +369,10 @@
             button_add_new.FlatStyle = FlatStyle.Popup;
             button_add_new.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button_add_new.ForeColor = Color.Green;
-            button_add_new.Location = new Point(28, 358);
+            button_add_new.Location = new Point(32, 477);
+            button_add_new.Margin = new Padding(3, 4, 3, 4);
             button_add_new.Name = "button_add_new";
-            button_add_new.Size = new Size(106, 36);
+            button_add_new.Size = new Size(121, 48);
             button_add_new.TabIndex = 22;
             button_add_new.Text = "Add New";
             button_add_new.UseVisualStyleBackColor = false;
@@ -377,9 +385,9 @@
             label6.FlatStyle = FlatStyle.Flat;
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(3, 312);
+            label6.Location = new Point(3, 416);
             label6.Name = "label6";
-            label6.Size = new Size(54, 20);
+            label6.Size = new Size(68, 25);
             label6.TabIndex = 21;
             label6.Text = "Blood:";
             // 
@@ -388,10 +396,9 @@
             comboBox_blood.AutoCompleteCustomSource.AddRange(new string[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
             comboBox_blood.FormattingEnabled = true;
             comboBox_blood.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
-            comboBox_blood.Location = new Point(107, 310);
-            comboBox_blood.Margin = new Padding(3, 2, 3, 2);
+            comboBox_blood.Location = new Point(122, 413);
             comboBox_blood.Name = "comboBox_blood";
-            comboBox_blood.Size = new Size(133, 23);
+            comboBox_blood.Size = new Size(151, 28);
             comboBox_blood.TabIndex = 20;
             // 
             // textBox_phone
@@ -399,11 +406,10 @@
             textBox_phone.BackColor = Color.FromArgb(124, 124, 124);
             textBox_phone.BorderStyle = BorderStyle.None;
             textBox_phone.ForeColor = SystemColors.InactiveBorder;
-            textBox_phone.Location = new Point(72, 212);
-            textBox_phone.Margin = new Padding(3, 2, 3, 2);
+            textBox_phone.Location = new Point(82, 283);
             textBox_phone.Multiline = true;
             textBox_phone.Name = "textBox_phone";
-            textBox_phone.Size = new Size(204, 22);
+            textBox_phone.Size = new Size(233, 29);
             textBox_phone.TabIndex = 19;
             // 
             // textBox_UserID
@@ -411,28 +417,29 @@
             textBox_UserID.BackColor = Color.FromArgb(124, 124, 124);
             textBox_UserID.BorderStyle = BorderStyle.None;
             textBox_UserID.ForeColor = SystemColors.InactiveBorder;
-            textBox_UserID.Location = new Point(89, 6);
-            textBox_UserID.Margin = new Padding(3, 2, 3, 2);
+            textBox_UserID.Location = new Point(102, 8);
             textBox_UserID.Multiline = true;
             textBox_UserID.Name = "textBox_UserID";
             textBox_UserID.ReadOnly = true;
-            textBox_UserID.Size = new Size(187, 22);
+            textBox_UserID.Size = new Size(214, 29);
             textBox_UserID.TabIndex = 18;
             // 
             // panel4
             // 
             panel4.BackColor = SystemColors.ControlDarkDark;
-            panel4.Location = new Point(-15, 400);
+            panel4.Location = new Point(-17, 533);
+            panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(300, 2);
+            panel4.Size = new Size(343, 3);
             panel4.TabIndex = 17;
             // 
             // panel3
             // 
             panel3.BackColor = SystemColors.ControlDarkDark;
-            panel3.Location = new Point(-12, 346);
+            panel3.Location = new Point(-14, 461);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(300, 2);
+            panel3.Size = new Size(343, 3);
             panel3.TabIndex = 17;
             // 
             // button_delete
@@ -442,9 +449,10 @@
             button_delete.FlatStyle = FlatStyle.Popup;
             button_delete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_delete.ForeColor = Color.Red;
-            button_delete.Location = new Point(162, 421);
+            button_delete.Location = new Point(185, 561);
+            button_delete.Margin = new Padding(3, 4, 3, 4);
             button_delete.Name = "button_delete";
-            button_delete.Size = new Size(106, 36);
+            button_delete.Size = new Size(121, 48);
             button_delete.TabIndex = 16;
             button_delete.Text = "DELETE";
             button_delete.UseVisualStyleBackColor = false;
@@ -457,9 +465,10 @@
             button_Update.FlatStyle = FlatStyle.Popup;
             button_Update.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button_Update.ForeColor = Color.Green;
-            button_Update.Location = new Point(28, 421);
+            button_Update.Location = new Point(32, 561);
+            button_Update.Margin = new Padding(3, 4, 3, 4);
             button_Update.Name = "button_Update";
-            button_Update.Size = new Size(106, 36);
+            button_Update.Size = new Size(121, 48);
             button_Update.TabIndex = 16;
             button_Update.Text = "UPDATE";
             button_Update.UseVisualStyleBackColor = false;
@@ -472,9 +481,10 @@
             checkedListBox_gender.ForeColor = Color.WhiteSmoke;
             checkedListBox_gender.FormattingEnabled = true;
             checkedListBox_gender.Items.AddRange(new object[] { "male", "female", "other" });
-            checkedListBox_gender.Location = new Point(119, 245);
+            checkedListBox_gender.Location = new Point(136, 327);
+            checkedListBox_gender.Margin = new Padding(3, 4, 3, 4);
             checkedListBox_gender.Name = "checkedListBox_gender";
-            checkedListBox_gender.Size = new Size(120, 36);
+            checkedListBox_gender.Size = new Size(137, 44);
             checkedListBox_gender.TabIndex = 13;
             // 
             // label5
@@ -484,17 +494,18 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(-1, 256);
+            label5.Location = new Point(-1, 341);
             label5.Name = "label5";
-            label5.Size = new Size(83, 20);
+            label5.Size = new Size(100, 25);
             label5.TabIndex = 12;
             label5.Text = "GENDER:";
             // 
             // dateTimePicker_dob
             // 
-            dateTimePicker_dob.Location = new Point(72, 170);
+            dateTimePicker_dob.Location = new Point(82, 227);
+            dateTimePicker_dob.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker_dob.Name = "dateTimePicker_dob";
-            dateTimePicker_dob.Size = new Size(204, 23);
+            dateTimePicker_dob.Size = new Size(233, 27);
             dateTimePicker_dob.TabIndex = 11;
             // 
             // label4
@@ -504,9 +515,9 @@
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(-1, 174);
+            label4.Location = new Point(-1, 232);
             label4.Name = "label4";
-            label4.Size = new Size(48, 20);
+            label4.Size = new Size(61, 25);
             label4.TabIndex = 10;
             label4.Text = "DOB:";
             // 
@@ -515,11 +526,10 @@
             textBox_email.BackColor = Color.FromArgb(124, 124, 124);
             textBox_email.BorderStyle = BorderStyle.None;
             textBox_email.ForeColor = SystemColors.InactiveBorder;
-            textBox_email.Location = new Point(72, 129);
-            textBox_email.Margin = new Padding(3, 2, 3, 2);
+            textBox_email.Location = new Point(82, 172);
             textBox_email.Multiline = true;
             textBox_email.Name = "textBox_email";
-            textBox_email.Size = new Size(204, 22);
+            textBox_email.Size = new Size(233, 29);
             textBox_email.TabIndex = 9;
             // 
             // label3
@@ -529,9 +539,9 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(-1, 132);
+            label3.Location = new Point(-1, 176);
             label3.Name = "label3";
-            label3.Size = new Size(52, 20);
+            label3.Size = new Size(66, 25);
             label3.TabIndex = 8;
             label3.Text = "Email:";
             // 
@@ -541,11 +551,10 @@
             textBox_password.BorderStyle = BorderStyle.None;
             textBox_password.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox_password.ForeColor = SystemColors.InactiveBorder;
-            textBox_password.Location = new Point(90, 88);
-            textBox_password.Margin = new Padding(3, 2, 3, 2);
+            textBox_password.Location = new Point(103, 117);
             textBox_password.Multiline = true;
             textBox_password.Name = "textBox_password";
-            textBox_password.Size = new Size(186, 22);
+            textBox_password.Size = new Size(213, 29);
             textBox_password.TabIndex = 7;
             // 
             // label_phone
@@ -555,9 +564,9 @@
             label_phone.FlatStyle = FlatStyle.Flat;
             label_phone.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_phone.ForeColor = SystemColors.ControlLightLight;
-            label_phone.Location = new Point(-1, 216);
+            label_phone.Location = new Point(-1, 288);
             label_phone.Name = "label_phone";
-            label_phone.Size = new Size(61, 18);
+            label_phone.Size = new Size(73, 22);
             label_phone.TabIndex = 6;
             label_phone.Text = "Phone:";
             label_phone.Click += label2_Click;
@@ -569,9 +578,9 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(-1, 90);
+            label2.Location = new Point(-1, 120);
             label2.Name = "label2";
-            label2.Size = new Size(82, 20);
+            label2.Size = new Size(104, 25);
             label2.TabIndex = 6;
             label2.Text = "Password:";
             label2.Click += label2_Click;
@@ -582,11 +591,10 @@
             UserNameTxtBox.BorderStyle = BorderStyle.None;
             UserNameTxtBox.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UserNameTxtBox.ForeColor = SystemColors.InactiveBorder;
-            UserNameTxtBox.Location = new Point(89, 47);
-            UserNameTxtBox.Margin = new Padding(3, 2, 3, 2);
+            UserNameTxtBox.Location = new Point(102, 63);
             UserNameTxtBox.Multiline = true;
             UserNameTxtBox.Name = "UserNameTxtBox";
-            UserNameTxtBox.Size = new Size(187, 22);
+            UserNameTxtBox.Size = new Size(214, 29);
             UserNameTxtBox.TabIndex = 5;
             // 
             // label1
@@ -596,9 +604,9 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(-1, 48);
+            label1.Location = new Point(-1, 64);
             label1.Name = "label1";
-            label1.Size = new Size(55, 20);
+            label1.Size = new Size(70, 25);
             label1.TabIndex = 1;
             label1.Text = "Name:";
             // 
@@ -609,21 +617,22 @@
             lblUserID.FlatStyle = FlatStyle.Flat;
             lblUserID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUserID.ForeColor = SystemColors.ControlLightLight;
-            lblUserID.Location = new Point(-1, 6);
+            lblUserID.Location = new Point(-1, 8);
             lblUserID.Name = "lblUserID";
-            lblUserID.Size = new Size(68, 20);
+            lblUserID.Size = new Size(83, 25);
             lblUserID.TabIndex = 0;
             lblUserID.Text = "User ID:";
             // 
             // AdminCustomerForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnablePreventFocusChange;
-            ClientSize = new Size(1008, 537);
+            ClientSize = new Size(1152, 716);
             Controls.Add(PanelHome);
             Controls.Add(PanelProfile);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "AdminCustomerForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer";

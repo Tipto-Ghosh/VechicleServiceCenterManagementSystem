@@ -224,6 +224,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(PanelProfile);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "About_Us_Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "About_us";

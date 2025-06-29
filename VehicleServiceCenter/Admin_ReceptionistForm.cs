@@ -59,7 +59,7 @@ namespace VehicleServiceCenter
         }
 
         private void btnMechanic_Click(object sender, EventArgs e) {
-            Admin_Mechanic m1 = new Admin_Mechanic();
+            Admin_Mechanic m1 = new Admin_Mechanic(loggedId);
             m1.Show();
             this.Hide();
         }
@@ -263,13 +263,18 @@ namespace VehicleServiceCenter
         }
 
         private void BtnReceptionist_Click(object sender, EventArgs e) {
-
+            MessageBox.Show("You are already in the Customer form.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return;
         }
 
         private void button_add_new_Click(object sender, EventArgs e) {
             Add_new_Receiptionist anr = new Add_new_Receiptionist(loggedId);
             this.Hide();
             anr.Show();
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e) {
+            MessageBox.Show("Sorry,Invertory form in progress.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

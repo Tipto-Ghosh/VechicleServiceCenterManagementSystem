@@ -46,39 +46,42 @@ namespace VehicleServiceCenter.Repositories
             }
         }
 
-        public int UpdateMechanic(Mechanic mech)
-        {
-            try
-            {
-                UserRepository userRepository = new UserRepository();
-                // Update the User first
-                int userResult = userRepository.UpdateUser(mech);
+        public int UpdateMechanic(Mechanic mech) {
+            try {
+                // First update the Users table
+                UserRepository userRepo = new UserRepository();
+                int userStatus = userRepo.UpdateUser(mech);
 
-                // if user update failed
-                if (userResult != 1) return 0;
+                Console.WriteLine("UpdateUser affected rows: " + userStatus);
 
-                // Now update Mechanic
-                using (SqlConnection conn = DbConfig.GetConnection())
-                {
-                    string query = @"UPDATE Mechanics SET Rating = @Rating, Status = @Status WHERE UserID = @UserID";
+                // If user not found or update failed
+                if (userStatus <= 0)
+                    return userStatus; // -1 or 0
 
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Rating", mech.Rating);
-                    cmd.Parameters.AddWithValue("@Status", mech.Status ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@UserID", mech.UserID);
+                // Now update the Mechanics table
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    string query = @"UPDATE Mechanics 
+                             SET Rating = @Rating, Status = @Status 
+                             WHERE UserID = @UserID";
 
-                    conn.Open();
-                    int rowsAffected = cmd.ExecuteNonQuery();
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                        cmd.Parameters.AddWithValue("@Rating", mech.Rating);
+                        cmd.Parameters.AddWithValue("@Status", mech.Status ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UserID", mech.UserID);
 
-                    return rowsAffected > 0 ? 1 : 0;
+                        conn.Open();
+                        int mechRows = cmd.ExecuteNonQuery();
+
+                        // Return 1 only if both updates succeed
+                        return mechRows > 0 ? 1 : 0;
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
+            } catch (Exception ex) {
                 Console.WriteLine("UpdateMechanic Error: " + ex.Message);
                 return 0;
             }
         }
+
 
         public int DeleteMechanic(int mechId)
         {
@@ -192,6 +195,33 @@ namespace VehicleServiceCenter.Repositories
             }
 
             return count;
+        }
+        public DataTable GetAllMechanicsAsDataTable() {
+            DataTable dt = new DataTable(); 
+
+            try {
+               
+                using (SqlConnection conn = DbConfig.GetConnection()) {
+                    
+                    string query = @"SELECT U.UserID, U.Name, U.Password, U.Gender, U.DateOfBirth, U.BloodGroup, U.Email,
+                                        M.Rating, M.Status FROM Users U
+                                       INNER JOIN Mechanics M ON U.UserID = M.UserID
+                                       WHERE LOWER(U.UserType) = 'mechanic'";
+
+                    
+                    using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                       
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                            adapter.Fill(dt); 
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                Console.WriteLine("GetAllMechanicDataTable Error: " + ex.Message);
+                return dt;
+            }
+
+            return dt; 
         }
     }
 }
