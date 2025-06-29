@@ -87,31 +87,31 @@ namespace VehicleServiceCenter
             UserRepository ur = new UserRepository();
             User user = ur.GetUserById(loggedCusId);
 
-            //this.label6.Text = user.Name.ToString();
+            this.label6.Text = user.Name;
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
             bool confirmPurchase = MessageBox.Show(
-"Are you sure you want to confirm your purchase?",
-"Confirm Purchase",
-MessageBoxButtons.YesNo,
-MessageBoxIcon.Question
-) == DialogResult.Yes;
+            "Are you sure you want to confirm your purchase?",
+            "Confirm Purchase",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+            ) == DialogResult.Yes;
 
             if (!confirmPurchase)
             {
                 return;
             }
 
-            serviceID = loggedCusId;
+            
             serviceName = "Oil Change";
             serviceDescription = "Change the engine oil and filter to ensure smooth operation.";
             servicePrice = 1500;
             serviceDuration = 30;
 
-            OfferedService offeredService = new OfferedService(serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
+            OfferedService offeredService = new OfferedService  (serviceName, serviceDescription, servicePrice, serviceDuration, loggedCusId);
 
 
             OfferedServiceService f1 = new OfferedServiceService();

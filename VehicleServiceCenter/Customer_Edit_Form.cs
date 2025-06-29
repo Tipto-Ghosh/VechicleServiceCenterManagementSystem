@@ -49,6 +49,7 @@ namespace VehicleServiceCenter
         private void Customer_Edit_Form_Load(object sender, EventArgs e) {
 
             loadCustomerInfo();
+
         }
 
         private void loadCustomerInfo() {
@@ -60,7 +61,7 @@ namespace VehicleServiceCenter
             UserRepository ur = new UserRepository();
             User user = ur.GetUserById(loggedCusId);
 
-            //textBox_UserID.Text = user.UserID.ToString();
+            textBox_UserID.Text = user.UserID.ToString();
             UserNameTxtBox.Text = user.Name;
             PassTxtBox.Text = user.Password;
             DOBPicker.Value = user.DateOfBirth;
