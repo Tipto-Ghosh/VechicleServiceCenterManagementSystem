@@ -48,10 +48,11 @@ namespace VehicleServiceCenter {
             string type = loggedUser.UserType.ToLower();
 
             if (type == "admin") {
-                Admin_ReceptionistForm r1 = new Admin_ReceptionistForm();
+                Admin_ReceptionistForm r1 = new Admin_ReceptionistForm(loggedUserId);
                 r1.Show();
             } else if (type == "receptionist") {
-
+                Receiptionist_HomeForm rf = new Receiptionist_HomeForm(loggedUserId);
+                rf.Show();
             }
             this.Hide();
         }
@@ -241,6 +242,9 @@ namespace VehicleServiceCenter {
 
         private void button_add_Click(object sender, EventArgs e) {
             // add new mechanic form
+            Mechanic_Form mf = new Mechanic_Form(loggedUserId);
+            this.Hide();
+            mf.Show();
         }
     }
 }

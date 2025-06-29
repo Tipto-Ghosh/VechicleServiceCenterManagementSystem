@@ -26,8 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Receiptionist_HomeForm));
             panel1 = new Panel();
             iconButton_updateSelf = new FontAwesome.Sharp.IconButton();
@@ -51,7 +50,7 @@
             panel7 = new Panel();
             label4 = new Label();
             panel6 = new Panel();
-            label3 = new Label();
+            label_profit = new Label();
             label1 = new Label();
             panel4 = new Panel();
             label_customer_count = new Label();
@@ -98,6 +97,7 @@
             iconButton_updateSelf.TextAlign = ContentAlignment.MiddleLeft;
             iconButton_updateSelf.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton_updateSelf.UseVisualStyleBackColor = true;
+            iconButton_updateSelf.Click += iconButton_updateSelf_Click;
             // 
             // pictureBox1
             // 
@@ -130,6 +130,7 @@
             btnHome.TextAlign = ContentAlignment.MiddleLeft;
             btnHome.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnHome_Click;
             // 
             // iconButton4
             // 
@@ -151,6 +152,7 @@
             iconButton4.TextAlign = ContentAlignment.MiddleLeft;
             iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton4.UseVisualStyleBackColor = true;
+            iconButton4.Click += iconButton4_Click;
             // 
             // btnCustomer
             // 
@@ -172,6 +174,7 @@
             btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
             btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCustomer.UseVisualStyleBackColor = true;
+            btnCustomer.Click += btnCustomer_Click;
             // 
             // PanelProfile
             // 
@@ -246,7 +249,7 @@
             PanelHome.Controls.Add(panel7);
             PanelHome.Controls.Add(label4);
             PanelHome.Controls.Add(panel6);
-            PanelHome.Controls.Add(label3);
+            PanelHome.Controls.Add(label_profit);
             PanelHome.Controls.Add(label1);
             PanelHome.Controls.Add(panel4);
             PanelHome.Controls.Add(label_customer_count);
@@ -375,18 +378,18 @@
             panel6.Size = new Size(3, 107);
             panel6.TabIndex = 4;
             // 
-            // label3
+            // label_profit
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(363, 189);
-            label3.Name = "label3";
-            label3.Size = new Size(129, 91);
-            label3.TabIndex = 5;
-            label3.Text = "00";
+            label_profit.AutoSize = true;
+            label_profit.BackColor = Color.Transparent;
+            label_profit.FlatStyle = FlatStyle.Flat;
+            label_profit.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_profit.ForeColor = Color.WhiteSmoke;
+            label_profit.Location = new Point(363, 189);
+            label_profit.Name = "label_profit";
+            label_profit.Size = new Size(129, 91);
+            label_profit.TabIndex = 5;
+            label_profit.Text = "00";
             // 
             // label1
             // 
@@ -422,6 +425,7 @@
             label_customer_count.Size = new Size(129, 91);
             label_customer_count.TabIndex = 3;
             label_customer_count.Text = "00";
+            label_customer_count.Click += label_customer_count_Click;
             // 
             // Receiptionist_HomeForm
             // 
@@ -469,7 +473,7 @@
         private Panel panel7;
         private Label label4;
         private Panel panel6;
-        private Label label3;
+        private Label label_profit;
         private Label label1;
         private Panel panel4;
         private Label label_customer_count;
