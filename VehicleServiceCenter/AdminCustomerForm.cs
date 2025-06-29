@@ -61,6 +61,10 @@ namespace VehicleServiceCenter {
             LoadCustomerData();
             dataGridViewCustomers.ClearSelection();
             ResetCustomerFields();
+
+            if(loggedUser.UserType.ToLower() == "receptionist") {
+                iconButton3.Hide();
+            }
         }
 
         private void LoadCustomerData() {

@@ -38,6 +38,8 @@ namespace VehicleServiceCenter
             label_mech_count.Text = machCount.ToString();
         }
 
+        
+
         private void btnHome_Click(object sender, EventArgs e) {
             LoginForm lf = new LoginForm();
             this.Hide();
