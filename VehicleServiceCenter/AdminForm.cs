@@ -67,7 +67,7 @@ namespace VehicleServiceCenter
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            Admin_Mechanic m1 = new Admin_Mechanic();
+            Admin_Mechanic m1 = new Admin_Mechanic(this.loggedAdminId);
             m1.Show();
             this.Hide();
         }

@@ -26,38 +26,45 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Mechanic));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             btnHome = new FontAwesome.Sharp.IconButton();
             BtnReceptionist = new FontAwesome.Sharp.IconButton();
-            btnMechanic = new FontAwesome.Sharp.IconButton();
             btnCustomer = new FontAwesome.Sharp.IconButton();
-            btnAdmin = new FontAwesome.Sharp.IconButton();
             PanelProfile = new Panel();
             pictureBox21 = new PictureBox();
-            label7 = new Label();
-            label6 = new Label();
+            label_type = new Label();
+            label_full_name = new Label();
             pictureBox20 = new PictureBox();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel2 = new Panel();
-            panel3 = new Panel();
+            button_add = new Button();
+            button_cancel = new Button();
+            textBox_rating = new TextBox();
+            label = new Label();
+            comboBox_status = new ComboBox();
+            label_status = new Label();
+            label8 = new Label();
+            BloodGroupComboBox = new ComboBox();
+            radioButton_other = new RadioButton();
+            radioButton_female = new RadioButton();
+            radioButton_male = new RadioButton();
+            textBox_email = new TextBox();
+            textBox_userID = new TextBox();
             button4 = new Button();
             button3 = new Button();
-            checkedListBox1 = new CheckedListBox();
             label5 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            dateTimePicker_dob = new DateTimePicker();
             label4 = new Label();
-            textBox2 = new TextBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            textBox_password = new TextBox();
             label2 = new Label();
             UserNameTxtBox = new TextBox();
             label1 = new Label();
             lblUserID = new Label();
-            dataGridView1 = new DataGridView();
+            dataGridView_mechic = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelProfile.SuspendLayout();
@@ -65,7 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_mechic).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -74,9 +81,7 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(btnHome);
             panel1.Controls.Add(BtnReceptionist);
-            panel1.Controls.Add(btnMechanic);
             panel1.Controls.Add(btnCustomer);
-            panel1.Controls.Add(btnAdmin);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
@@ -99,7 +104,7 @@
             // 
             btnHome.FlatAppearance.BorderSize = 0;
             btnHome.FlatStyle = FlatStyle.Flat;
-            btnHome.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnHome.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnHome.ForeColor = Color.White;
             btnHome.IconChar = FontAwesome.Sharp.IconChar.House;
             btnHome.IconColor = Color.White;
@@ -121,7 +126,7 @@
             // 
             BtnReceptionist.FlatAppearance.BorderSize = 0;
             BtnReceptionist.FlatStyle = FlatStyle.Flat;
-            BtnReceptionist.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BtnReceptionist.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnReceptionist.ForeColor = Color.White;
             BtnReceptionist.IconChar = FontAwesome.Sharp.IconChar.Headset;
             BtnReceptionist.IconColor = Color.White;
@@ -139,32 +144,11 @@
             BtnReceptionist.UseVisualStyleBackColor = true;
             BtnReceptionist.Click += BtnReceptionist_Click;
             // 
-            // btnMechanic
-            // 
-            btnMechanic.FlatAppearance.BorderSize = 0;
-            btnMechanic.FlatStyle = FlatStyle.Flat;
-            btnMechanic.Font = new Font("Poppins", 9.75F);
-            btnMechanic.ForeColor = Color.White;
-            btnMechanic.IconChar = FontAwesome.Sharp.IconChar.Hammer;
-            btnMechanic.IconColor = Color.White;
-            btnMechanic.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnMechanic.IconSize = 32;
-            btnMechanic.ImageAlign = ContentAlignment.MiddleLeft;
-            btnMechanic.Location = new Point(0, 292);
-            btnMechanic.Margin = new Padding(0);
-            btnMechanic.Name = "btnMechanic";
-            btnMechanic.Size = new Size(200, 60);
-            btnMechanic.TabIndex = 3;
-            btnMechanic.Text = "MECHANIC";
-            btnMechanic.TextAlign = ContentAlignment.MiddleLeft;
-            btnMechanic.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnMechanic.UseVisualStyleBackColor = true;
-            // 
             // btnCustomer
             // 
             btnCustomer.FlatAppearance.BorderSize = 0;
             btnCustomer.FlatStyle = FlatStyle.Flat;
-            btnCustomer.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCustomer.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCustomer.ForeColor = Color.White;
             btnCustomer.IconChar = FontAwesome.Sharp.IconChar.User;
             btnCustomer.IconColor = Color.White;
@@ -182,33 +166,12 @@
             btnCustomer.UseVisualStyleBackColor = true;
             btnCustomer.Click += btnCustomer_Click;
             // 
-            // btnAdmin
-            // 
-            btnAdmin.FlatAppearance.BorderSize = 0;
-            btnAdmin.FlatStyle = FlatStyle.Flat;
-            btnAdmin.Font = new Font("Poppins", 9.75F);
-            btnAdmin.ForeColor = Color.White;
-            btnAdmin.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
-            btnAdmin.IconColor = Color.White;
-            btnAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnAdmin.IconSize = 32;
-            btnAdmin.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAdmin.Location = new Point(0, 355);
-            btnAdmin.Margin = new Padding(0);
-            btnAdmin.Name = "btnAdmin";
-            btnAdmin.Size = new Size(200, 60);
-            btnAdmin.TabIndex = 4;
-            btnAdmin.Text = "INVENTORY";
-            btnAdmin.TextAlign = ContentAlignment.MiddleLeft;
-            btnAdmin.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnAdmin.UseVisualStyleBackColor = true;
-            // 
             // PanelProfile
             // 
             PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
             PanelProfile.Controls.Add(pictureBox21);
-            PanelProfile.Controls.Add(label7);
-            PanelProfile.Controls.Add(label6);
+            PanelProfile.Controls.Add(label_type);
+            PanelProfile.Controls.Add(label_full_name);
             PanelProfile.Controls.Add(pictureBox20);
             PanelProfile.Dock = DockStyle.Top;
             PanelProfile.Location = new Point(193, 0);
@@ -220,7 +183,7 @@
             // pictureBox21
             // 
             pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(693, 0);
+            pictureBox21.Location = new Point(725, -1);
             pictureBox21.Margin = new Padding(3, 4, 3, 4);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(35, 73);
@@ -228,30 +191,29 @@
             pictureBox21.TabIndex = 3;
             pictureBox21.TabStop = false;
             // 
-            // label7
+            // label_type
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(735, 40);
-            label7.Name = "label7";
-            label7.Size = new Size(60, 26);
-            label7.TabIndex = 2;
-            label7.Text = "ADMIN";
+            label_type.BackColor = Color.Transparent;
+            label_type.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_type.ForeColor = Color.Gainsboro;
+            label_type.Location = new Point(735, 37);
+            label_type.Name = "label_type";
+            label_type.Size = new Size(178, 35);
+            label_type.TabIndex = 2;
+            label_type.Text = "ADMIN";
+            label_type.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // label_full_name
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(735, 12);
-            label6.Name = "label6";
-            label6.Size = new Size(125, 36);
-            label6.TabIndex = 2;
-            label6.Text = "FULL NAME";
-            label6.Click += label6_Click;
+            label_full_name.AutoSize = true;
+            label_full_name.BackColor = Color.Transparent;
+            label_full_name.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_full_name.ForeColor = Color.WhiteSmoke;
+            label_full_name.Location = new Point(767, 9);
+            label_full_name.Name = "label_full_name";
+            label_full_name.Size = new Size(132, 25);
+            label_full_name.TabIndex = 2;
+            label_full_name.Text = "FULL NAME";
             // 
             // pictureBox20
             // 
@@ -271,7 +233,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 326F));
             tableLayoutPanel1.Controls.Add(panel2, 1, 0);
-            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 0);
+            tableLayoutPanel1.Controls.Add(dataGridView_mechic, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(193, 73);
             tableLayoutPanel1.Margin = new Padding(0);
@@ -284,16 +246,26 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(18, 18, 18);
-            panel2.Controls.Add(panel3);
+            panel2.Controls.Add(button_add);
+            panel2.Controls.Add(button_cancel);
+            panel2.Controls.Add(textBox_rating);
+            panel2.Controls.Add(label);
+            panel2.Controls.Add(comboBox_status);
+            panel2.Controls.Add(label_status);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(BloodGroupComboBox);
+            panel2.Controls.Add(radioButton_other);
+            panel2.Controls.Add(radioButton_female);
+            panel2.Controls.Add(radioButton_male);
+            panel2.Controls.Add(textBox_email);
+            panel2.Controls.Add(textBox_userID);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
-            panel2.Controls.Add(checkedListBox1);
             panel2.Controls.Add(label5);
-            panel2.Controls.Add(dateTimePicker1);
+            panel2.Controls.Add(dateTimePicker_dob);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(textBox2);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(textBox_password);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(UserNameTxtBox);
             panel2.Controls.Add(label1);
@@ -305,14 +277,178 @@
             panel2.Size = new Size(326, 643);
             panel2.TabIndex = 3;
             // 
-            // panel3
+            // button_add
             // 
-            panel3.BackColor = SystemColors.ControlDarkDark;
-            panel3.Location = new Point(-14, 461);
-            panel3.Margin = new Padding(3, 4, 3, 4);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(343, 3);
-            panel3.TabIndex = 17;
+            button_add.BackColor = SystemColors.ControlLightLight;
+            button_add.FlatAppearance.BorderSize = 0;
+            button_add.FlatStyle = FlatStyle.Popup;
+            button_add.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            button_add.ForeColor = Color.Green;
+            button_add.Location = new Point(165, 520);
+            button_add.Margin = new Padding(3, 4, 3, 4);
+            button_add.Name = "button_add";
+            button_add.Size = new Size(121, 48);
+            button_add.TabIndex = 34;
+            button_add.Text = "ADD NEW";
+            button_add.UseVisualStyleBackColor = false;
+            button_add.Click += button_add_Click;
+            // 
+            // button_cancel
+            // 
+            button_cancel.BackColor = SystemColors.ControlLightLight;
+            button_cancel.FlatAppearance.BorderSize = 0;
+            button_cancel.FlatStyle = FlatStyle.Popup;
+            button_cancel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            button_cancel.ForeColor = Color.Blue;
+            button_cancel.Location = new Point(165, 454);
+            button_cancel.Margin = new Padding(3, 4, 3, 4);
+            button_cancel.Name = "button_cancel";
+            button_cancel.Size = new Size(121, 48);
+            button_cancel.TabIndex = 33;
+            button_cancel.Text = "CANCEL";
+            button_cancel.UseVisualStyleBackColor = false;
+            button_cancel.Click += button_cancel_Click;
+            // 
+            // textBox_rating
+            // 
+            textBox_rating.BackColor = Color.FromArgb(124, 124, 124);
+            textBox_rating.BorderStyle = BorderStyle.None;
+            textBox_rating.Location = new Point(123, 401);
+            textBox_rating.Multiline = true;
+            textBox_rating.Name = "textBox_rating";
+            textBox_rating.Size = new Size(183, 29);
+            textBox_rating.TabIndex = 32;
+            // 
+            // label
+            // 
+            label.AutoSize = true;
+            label.BackColor = Color.Transparent;
+            label.FlatStyle = FlatStyle.Flat;
+            label.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label.ForeColor = SystemColors.ControlLightLight;
+            label.Location = new Point(7, 405);
+            label.Name = "label";
+            label.Size = new Size(92, 25);
+            label.TabIndex = 31;
+            label.Text = "RATING:";
+            // 
+            // comboBox_status
+            // 
+            comboBox_status.AutoCompleteCustomSource.AddRange(new string[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O- " });
+            comboBox_status.BackColor = SystemColors.WindowFrame;
+            comboBox_status.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox_status.ForeColor = SystemColors.ButtonHighlight;
+            comboBox_status.FormattingEnabled = true;
+            comboBox_status.Items.AddRange(new object[] { "Available", "Busy", "On Leave" });
+            comboBox_status.Location = new Point(123, 339);
+            comboBox_status.Margin = new Padding(3, 4, 3, 4);
+            comboBox_status.Name = "comboBox_status";
+            comboBox_status.Size = new Size(171, 36);
+            comboBox_status.TabIndex = 30;
+            // 
+            // label_status
+            // 
+            label_status.AutoSize = true;
+            label_status.BackColor = Color.Transparent;
+            label_status.FlatStyle = FlatStyle.Flat;
+            label_status.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_status.ForeColor = SystemColors.ControlLightLight;
+            label_status.Location = new Point(7, 345);
+            label_status.Name = "label_status";
+            label_status.Size = new Size(100, 25);
+            label_status.TabIndex = 29;
+            label_status.Text = "STATUS:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(12, 288);
+            label8.Name = "label8";
+            label8.Size = new Size(88, 25);
+            label8.TabIndex = 28;
+            label8.Text = "BLOOD:";
+            // 
+            // BloodGroupComboBox
+            // 
+            BloodGroupComboBox.AutoCompleteCustomSource.AddRange(new string[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O- " });
+            BloodGroupComboBox.BackColor = SystemColors.WindowFrame;
+            BloodGroupComboBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BloodGroupComboBox.ForeColor = SystemColors.ButtonHighlight;
+            BloodGroupComboBox.FormattingEnabled = true;
+            BloodGroupComboBox.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
+            BloodGroupComboBox.Location = new Point(123, 282);
+            BloodGroupComboBox.Margin = new Padding(3, 4, 3, 4);
+            BloodGroupComboBox.Name = "BloodGroupComboBox";
+            BloodGroupComboBox.Size = new Size(171, 36);
+            BloodGroupComboBox.TabIndex = 27;
+            // 
+            // radioButton_other
+            // 
+            radioButton_other.AutoSize = true;
+            radioButton_other.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_other.ForeColor = Color.White;
+            radioButton_other.Location = new Point(250, 192);
+            radioButton_other.Name = "radioButton_other";
+            radioButton_other.Size = new Size(76, 24);
+            radioButton_other.TabIndex = 21;
+            radioButton_other.TabStop = true;
+            radioButton_other.Text = "OTHER";
+            radioButton_other.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_female
+            // 
+            radioButton_female.AutoSize = true;
+            radioButton_female.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_female.ForeColor = Color.White;
+            radioButton_female.Location = new Point(165, 192);
+            radioButton_female.Name = "radioButton_female";
+            radioButton_female.Size = new Size(85, 24);
+            radioButton_female.TabIndex = 20;
+            radioButton_female.TabStop = true;
+            radioButton_female.Text = "FEMALE";
+            radioButton_female.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_male
+            // 
+            radioButton_male.AutoSize = true;
+            radioButton_male.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton_male.ForeColor = Color.White;
+            radioButton_male.Location = new Point(90, 187);
+            radioButton_male.Name = "radioButton_male";
+            radioButton_male.Size = new Size(69, 24);
+            radioButton_male.TabIndex = 19;
+            radioButton_male.TabStop = true;
+            radioButton_male.Text = "MALE";
+            radioButton_male.UseVisualStyleBackColor = true;
+            // 
+            // textBox_email
+            // 
+            textBox_email.BackColor = Color.FromArgb(124, 124, 124);
+            textBox_email.BorderStyle = BorderStyle.None;
+            textBox_email.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox_email.ForeColor = Color.White;
+            textBox_email.Location = new Point(78, 131);
+            textBox_email.Multiline = true;
+            textBox_email.Name = "textBox_email";
+            textBox_email.Size = new Size(245, 29);
+            textBox_email.TabIndex = 18;
+            // 
+            // textBox_userID
+            // 
+            textBox_userID.BackColor = Color.FromArgb(124, 124, 124);
+            textBox_userID.BorderStyle = BorderStyle.None;
+            textBox_userID.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox_userID.ForeColor = Color.White;
+            textBox_userID.Location = new Point(78, 8);
+            textBox_userID.Multiline = true;
+            textBox_userID.Name = "textBox_userID";
+            textBox_userID.ReadOnly = true;
+            textBox_userID.Size = new Size(245, 29);
+            textBox_userID.TabIndex = 17;
+            textBox_userID.Text = "SYSTEM GENERATED";
+            textBox_userID.TextAlign = HorizontalAlignment.Center;
             // 
             // button4
             // 
@@ -321,13 +457,14 @@
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.Red;
-            button4.Location = new Point(185, 515);
+            button4.Location = new Point(12, 520);
             button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
             button4.Size = new Size(121, 48);
             button4.TabIndex = 16;
             button4.Text = "DELETE";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -336,104 +473,82 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button3.ForeColor = Color.Green;
-            button3.Location = new Point(32, 515);
+            button3.Location = new Point(12, 454);
             button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
             button3.Size = new Size(121, 48);
             button3.TabIndex = 16;
             button3.Text = "UPDATE";
             button3.UseVisualStyleBackColor = false;
-            // 
-            // checkedListBox1
-            // 
-            checkedListBox1.BackColor = Color.FromArgb(18, 18, 18);
-            checkedListBox1.BorderStyle = BorderStyle.None;
-            checkedListBox1.ForeColor = Color.WhiteSmoke;
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "MALE", "FEMALE", "OTHERS" });
-            checkedListBox1.Location = new Point(98, 381);
-            checkedListBox1.Margin = new Padding(3, 4, 3, 4);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(137, 66);
-            checkedListBox1.TabIndex = 13;
+            button3.Click += button3_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.FlatStyle = FlatStyle.Flat;
-            label5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(7, 369);
+            label5.Location = new Point(7, 187);
             label5.Name = "label5";
-            label5.Size = new Size(95, 36);
+            label5.Size = new Size(86, 20);
             label5.TabIndex = 12;
             label5.Text = "GENDER:";
             // 
-            // dateTimePicker1
+            // dateTimePicker_dob
             // 
-            dateTimePicker1.Location = new Point(78, 324);
-            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(228, 27);
-            dateTimePicker1.TabIndex = 11;
+            dateTimePicker_dob.Location = new Point(92, 235);
+            dateTimePicker_dob.Margin = new Padding(3, 4, 3, 4);
+            dateTimePicker_dob.Name = "dateTimePicker_dob";
+            dateTimePicker_dob.Size = new Size(228, 27);
+            dateTimePicker_dob.TabIndex = 11;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.FlatStyle = FlatStyle.Flat;
-            label4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(7, 317);
+            label4.Location = new Point(12, 235);
             label4.Name = "label4";
-            label4.Size = new Size(61, 36);
+            label4.Size = new Size(61, 25);
             label4.TabIndex = 10;
             label4.Text = "DOB:";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.FromArgb(124, 124, 124);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(17, 268);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(295, 29);
-            textBox2.TabIndex = 9;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(7, 233);
+            label3.Location = new Point(7, 129);
             label3.Name = "label3";
-            label3.Size = new Size(121, 36);
+            label3.Size = new Size(66, 25);
             label3.TabIndex = 8;
-            label3.Text = "User Email:";
+            label3.Text = "Email:";
             // 
-            // textBox1
+            // textBox_password
             // 
-            textBox1.BackColor = Color.FromArgb(124, 124, 124);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(17, 183);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(295, 29);
-            textBox1.TabIndex = 7;
+            textBox_password.BackColor = Color.FromArgb(124, 124, 124);
+            textBox_password.BorderStyle = BorderStyle.None;
+            textBox_password.Location = new Point(102, 90);
+            textBox_password.Multiline = true;
+            textBox_password.Name = "textBox_password";
+            textBox_password.Size = new Size(218, 29);
+            textBox_password.TabIndex = 7;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.FlatStyle = FlatStyle.Flat;
-            label2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(7, 148);
+            label2.Location = new Point(3, 94);
             label2.Name = "label2";
-            label2.Size = new Size(114, 36);
+            label2.Size = new Size(104, 25);
             label2.TabIndex = 6;
             label2.Text = "Password:";
             // 
@@ -441,10 +556,12 @@
             // 
             UserNameTxtBox.BackColor = Color.FromArgb(124, 124, 124);
             UserNameTxtBox.BorderStyle = BorderStyle.None;
-            UserNameTxtBox.Location = new Point(17, 97);
+            UserNameTxtBox.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            UserNameTxtBox.ForeColor = Color.White;
+            UserNameTxtBox.Location = new Point(78, 47);
             UserNameTxtBox.Multiline = true;
             UserNameTxtBox.Name = "UserNameTxtBox";
-            UserNameTxtBox.Size = new Size(295, 29);
+            UserNameTxtBox.Size = new Size(245, 29);
             UserNameTxtBox.TabIndex = 5;
             // 
             // label1
@@ -452,37 +569,38 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(7, 63);
+            label1.Location = new Point(3, 47);
             label1.Name = "label1";
-            label1.Size = new Size(127, 36);
+            label1.Size = new Size(70, 25);
             label1.TabIndex = 1;
-            label1.Text = "User Name:";
+            label1.Text = "Name:";
             // 
             // lblUserID
             // 
             lblUserID.AutoSize = true;
             lblUserID.BackColor = Color.Transparent;
             lblUserID.FlatStyle = FlatStyle.Flat;
-            lblUserID.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblUserID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUserID.ForeColor = SystemColors.ControlLightLight;
-            lblUserID.Location = new Point(-1, 8);
+            lblUserID.Location = new Point(0, 8);
             lblUserID.Name = "lblUserID";
-            lblUserID.Size = new Size(86, 36);
+            lblUserID.Size = new Size(83, 25);
             lblUserID.TabIndex = 0;
             lblUserID.Text = "User ID:";
             // 
-            // dataGridView1
+            // dataGridView_mechic
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Margin = new Padding(0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(633, 643);
-            dataGridView1.TabIndex = 0;
+            dataGridView_mechic.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_mechic.Dock = DockStyle.Fill;
+            dataGridView_mechic.Location = new Point(0, 0);
+            dataGridView_mechic.Margin = new Padding(0);
+            dataGridView_mechic.Name = "dataGridView_mechic";
+            dataGridView_mechic.RowHeadersWidth = 51;
+            dataGridView_mechic.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView_mechic.Size = new Size(633, 643);
+            dataGridView_mechic.TabIndex = 0;
             // 
             // Admin_Mechanic
             // 
@@ -506,7 +624,7 @@
             tableLayoutPanel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_mechic).EndInit();
             ResumeLayout(false);
         }
 
@@ -516,30 +634,38 @@
         private PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton btnHome;
         private FontAwesome.Sharp.IconButton BtnReceptionist;
-        private FontAwesome.Sharp.IconButton btnMechanic;
         private FontAwesome.Sharp.IconButton btnCustomer;
-        private FontAwesome.Sharp.IconButton btnAdmin;
         private Panel PanelProfile;
         private PictureBox pictureBox21;
-        private Label label7;
-        private Label label6;
+        private Label label_type;
+        private Label label_full_name;
         private PictureBox pictureBox20;
         private TableLayoutPanel tableLayoutPanel1;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridView_mechic;
         private Panel panel2;
-        private Panel panel3;
         private Button button4;
         private Button button3;
-        private CheckedListBox checkedListBox1;
         private Label label5;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimePicker_dob;
         private Label label4;
-        private TextBox textBox2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox textBox_password;
         private Label label2;
         private TextBox UserNameTxtBox;
         private Label label1;
         private Label lblUserID;
+        private TextBox textBox_email;
+        private TextBox textBox_userID;
+        private RadioButton radioButton_other;
+        private RadioButton radioButton_female;
+        private RadioButton radioButton_male;
+        private ComboBox BloodGroupComboBox;
+        private Label label_status;
+        private Label label8;
+        private ComboBox comboBox_status;
+        private Label label;
+        private TextBox textBox_rating;
+        private Button button_add;
+        private Button button_cancel;
     }
 }
