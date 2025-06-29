@@ -119,5 +119,9 @@ namespace VehicleServiceCenter
         private void panel2_Paint(object sender, PaintEventArgs e) {
 
         }
+
+        private void Add_new_Receiptionist_Load(object sender, EventArgs e) {
+
+        }
     }
 }

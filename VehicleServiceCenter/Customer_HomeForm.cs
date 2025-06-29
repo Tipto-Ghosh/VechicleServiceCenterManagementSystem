@@ -11,15 +11,14 @@ namespace VehicleServiceCenter
     {
         private int loggedCustomerId;
 
-
         public Customer_HomeForm(int cusId)
         {
             loggedCustomerId = cusId;
             InitializeComponent();
 
-            showPurchasedServices(loggedCustomerId);
+            showPurchasedServices(loggedCustomerId); 
 
-
+            iconButton_LogOut.BackColor = Color.FromArgb(136, 136, 136);
         }
 
         public Customer_HomeForm()
@@ -28,12 +27,10 @@ namespace VehicleServiceCenter
 
 
             iconButton_LogOut.BackColor = Color.FromArgb(136, 136, 136);
-
         }
 
-        private int x = 40, y = 80;
-        private void showPurchasedServices(int customerId)
-        {
+        private int x = 40, y = 80; 
+        private void showPurchasedServices(int customerId) { 
             x = 40;
             y = 40;
 
@@ -60,7 +57,7 @@ namespace VehicleServiceCenter
                 newPanel.BackColor = Color.FromArgb(56, 56, 56);
 
                 Label panelLabel = new Label();
-                panelLabel.Text = $"# {purchasedServices.IndexOf(serviceName) + 1}";
+                panelLabel.Text = $"# {purchasedServices.IndexOf(serviceName) + 1}"; 
                 panelLabel.AutoSize = true;
                 panelLabel.Location = new Point(10, 10);
                 panelLabel.ForeColor = Color.White;
@@ -136,16 +133,7 @@ namespace VehicleServiceCenter
             User user = ur.GetUserById(loggedCustomerId);
 
             fullNameLabel.Text = user.Name;
-            VehicleRepository v1 = new VehicleRepository();
-            List<Vehicle> vehicleList = v1.GetCustomerVehicles(loggedCustomerId);
 
-            // Convert list to a single string
-            string vehicleText = string.Join("\n", vehicleList.Select(v =>
-                $"{v.Model}"
-            ));
-
-            // Set the text to label2
-            label2.Text = vehicleText;
         }
 
         private void iconButton_update_profile_Click(object sender, EventArgs e)
@@ -160,19 +148,6 @@ namespace VehicleServiceCenter
             ShopForm sf = new ShopForm(loggedCustomerId);
             this.Hide();
             sf.Show();
-        }
-
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click_1(object sender, EventArgs e)
-        {
-            CarSelection carSelection = new CarSelection(loggedCustomerId);
-            carSelection.Show();
-            this.Hide();
-
         }
     }
 }

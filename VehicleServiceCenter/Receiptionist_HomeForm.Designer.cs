@@ -1,6 +1,6 @@
 ﻿namespace VehicleServiceCenter
 {
-    partial class AdminForm
+    partial class Receiptionist_HomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -27,20 +27,19 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Receiptionist_HomeForm));
             panel1 = new Panel();
             iconButton_updateSelf = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
             btnHome = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton4 = new FontAwesome.Sharp.IconButton();
             btnCustomer = new FontAwesome.Sharp.IconButton();
-            panel2 = new Panel();
+            PanelProfile = new Panel();
+            pictureBox21 = new PictureBox();
+            label7 = new Label();
+            label_name = new Label();
+            pictureBox20 = new PictureBox();
             PanelHome = new Panel();
-            label15 = new Label();
-            panel9 = new Panel();
-            label_admin_count = new Label();
-            panel8 = new Panel();
             label11 = new Label();
             panel5 = new Panel();
             label_mech_count = new Label();
@@ -51,24 +50,16 @@
             panel7 = new Panel();
             label4 = new Label();
             panel6 = new Panel();
-            label3 = new Label();
+            label_profit = new Label();
             label1 = new Label();
             panel4 = new Panel();
             label_customer_count = new Label();
-            PanelProfile = new Panel();
-            pictureBox21 = new PictureBox();
-            label7 = new Label();
-            label_name = new Label();
-            pictureBox20 = new PictureBox();
-            label13 = new Label();
-            label_receptionist_count = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            PanelHome.SuspendLayout();
             PanelProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            PanelHome.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -77,7 +68,6 @@
             panel1.Controls.Add(iconButton_updateSelf);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(btnHome);
-            panel1.Controls.Add(iconButton3);
             panel1.Controls.Add(iconButton4);
             panel1.Controls.Add(btnCustomer);
             panel1.Dock = DockStyle.Left;
@@ -85,7 +75,7 @@
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(193, 716);
-            panel1.TabIndex = 0;
+            panel1.TabIndex = 1;
             // 
             // iconButton_updateSelf
             // 
@@ -98,7 +88,7 @@
             iconButton_updateSelf.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_updateSelf.IconSize = 32;
             iconButton_updateSelf.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_updateSelf.Location = new Point(0, 345);
+            iconButton_updateSelf.Location = new Point(0, 289);
             iconButton_updateSelf.Margin = new Padding(3, 5, 3, 5);
             iconButton_updateSelf.Name = "iconButton_updateSelf";
             iconButton_updateSelf.Size = new Size(229, 64);
@@ -142,28 +132,6 @@
             btnHome.UseVisualStyleBackColor = true;
             btnHome.Click += btnHome_Click;
             // 
-            // iconButton3
-            // 
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Headset;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 32;
-            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(0, 224);
-            iconButton3.Margin = new Padding(3, 4, 3, 4);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(200, 60);
-            iconButton3.TabIndex = 2;
-            iconButton3.Text = "RECEPTIONIST";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = true;
-            iconButton3.Click += iconButton3_Click;
-            // 
             // iconButton4
             // 
             iconButton4.FlatAppearance.BorderSize = 0;
@@ -175,7 +143,7 @@
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton4.IconSize = 32;
             iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(0, 284);
+            iconButton4.Location = new Point(0, 224);
             iconButton4.Margin = new Padding(3, 4, 3, 4);
             iconButton4.Name = "iconButton4";
             iconButton4.Size = new Size(200, 60);
@@ -206,28 +174,71 @@
             btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
             btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCustomer.UseVisualStyleBackColor = true;
-            btnCustomer.Click += iconButton2_Click;
+            btnCustomer.Click += btnCustomer_Click;
             // 
-            // panel2
+            // PanelProfile
             // 
-            panel2.BackColor = Color.FromArgb(18, 18, 18);
-            panel2.Controls.Add(PanelHome);
-            panel2.Controls.Add(PanelProfile);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(193, 0);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(959, 716);
-            panel2.TabIndex = 1;
+            PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
+            PanelProfile.Controls.Add(pictureBox21);
+            PanelProfile.Controls.Add(label7);
+            PanelProfile.Controls.Add(label_name);
+            PanelProfile.Controls.Add(pictureBox20);
+            PanelProfile.Dock = DockStyle.Top;
+            PanelProfile.Location = new Point(193, 0);
+            PanelProfile.Margin = new Padding(0);
+            PanelProfile.Name = "PanelProfile";
+            PanelProfile.Size = new Size(959, 73);
+            PanelProfile.TabIndex = 5;
+            // 
+            // pictureBox21
+            // 
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
+            pictureBox21.Location = new Point(693, 0);
+            pictureBox21.Margin = new Padding(3, 4, 3, 4);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(35, 73);
+            pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox21.TabIndex = 3;
+            pictureBox21.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.Gainsboro;
+            label7.Location = new Point(735, 40);
+            label7.Name = "label7";
+            label7.Size = new Size(120, 18);
+            label7.TabIndex = 2;
+            label7.Text = "RECEIPTIONIST";
+            // 
+            // label_name
+            // 
+            label_name.AutoSize = true;
+            label_name.BackColor = Color.Transparent;
+            label_name.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_name.ForeColor = Color.WhiteSmoke;
+            label_name.Location = new Point(735, 12);
+            label_name.Name = "label_name";
+            label_name.Size = new Size(132, 25);
+            label_name.TabIndex = 2;
+            label_name.Text = "FULL NAME";
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
+            pictureBox20.Location = new Point(919, 0);
+            pictureBox20.Margin = new Padding(3, 4, 3, 4);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(32, 73);
+            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox20.TabIndex = 1;
+            pictureBox20.TabStop = false;
             // 
             // PanelHome
             // 
-            PanelHome.Controls.Add(label15);
-            PanelHome.Controls.Add(panel9);
-            PanelHome.Controls.Add(label_admin_count);
-            PanelHome.Controls.Add(label13);
-            PanelHome.Controls.Add(panel8);
-            PanelHome.Controls.Add(label_receptionist_count);
+            PanelHome.BackColor = Color.FromArgb(18, 18, 18);
             PanelHome.Controls.Add(label11);
             PanelHome.Controls.Add(panel5);
             PanelHome.Controls.Add(label_mech_count);
@@ -238,88 +249,16 @@
             PanelHome.Controls.Add(panel7);
             PanelHome.Controls.Add(label4);
             PanelHome.Controls.Add(panel6);
-            PanelHome.Controls.Add(label3);
+            PanelHome.Controls.Add(label_profit);
             PanelHome.Controls.Add(label1);
             PanelHome.Controls.Add(panel4);
             PanelHome.Controls.Add(label_customer_count);
             PanelHome.Dock = DockStyle.Fill;
-            PanelHome.Location = new Point(0, 73);
+            PanelHome.Location = new Point(193, 73);
             PanelHome.Margin = new Padding(3, 4, 3, 4);
             PanelHome.Name = "PanelHome";
             PanelHome.Size = new Size(959, 643);
-            PanelHome.TabIndex = 5;
-            PanelHome.Paint += PanelHome_Paint;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.BackColor = Color.Transparent;
-            label15.FlatStyle = FlatStyle.Flat;
-            label15.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.WhiteSmoke;
-            label15.Location = new Point(681, 409);
-            label15.Name = "label15";
-            label15.Size = new Size(63, 20);
-            label15.TabIndex = 20;
-            label15.Text = "ADMIN";
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.White;
-            panel9.Location = new Point(671, 415);
-            panel9.Margin = new Padding(3, 4, 3, 4);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(3, 107);
-            panel9.TabIndex = 18;
-            // 
-            // label_admin_count
-            // 
-            label_admin_count.AutoSize = true;
-            label_admin_count.BackColor = Color.Transparent;
-            label_admin_count.FlatStyle = FlatStyle.Flat;
-            label_admin_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_admin_count.ForeColor = Color.WhiteSmoke;
-            label_admin_count.Location = new Point(682, 431);
-            label_admin_count.Name = "label_admin_count";
-            label_admin_count.Size = new Size(129, 91);
-            label_admin_count.TabIndex = 19;
-            label_admin_count.Text = "00";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Transparent;
-            label13.FlatStyle = FlatStyle.Flat;
-            label13.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.WhiteSmoke;
-            label13.Location = new Point(373, 409);
-            label13.Name = "label13";
-            label13.Size = new Size(130, 20);
-            label13.TabIndex = 17;
-            label13.Text = "RECEPTIONIST";
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.White;
-            panel8.Location = new Point(362, 415);
-            panel8.Margin = new Padding(3, 4, 3, 4);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(3, 107);
-            panel8.TabIndex = 15;
-            // 
-            // label_receptionist_count
-            // 
-            label_receptionist_count.AutoSize = true;
-            label_receptionist_count.BackColor = Color.Transparent;
-            label_receptionist_count.FlatStyle = FlatStyle.Flat;
-            label_receptionist_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_receptionist_count.ForeColor = Color.WhiteSmoke;
-            label_receptionist_count.Location = new Point(378, 431);
-            label_receptionist_count.Name = "label_receptionist_count";
-            label_receptionist_count.Size = new Size(129, 91);
-            label_receptionist_count.TabIndex = 16;
-            label_receptionist_count.Text = "00";
-            label_receptionist_count.Click += label_receptionist_count_Click;
+            PanelHome.TabIndex = 6;
             // 
             // label11
             // 
@@ -381,7 +320,6 @@
             label9.Size = new Size(142, 20);
             label9.TabIndex = 10;
             label9.Text = "WORK PENDING";
-            label9.Click += label9_Click;
             // 
             // label8
             // 
@@ -395,7 +333,6 @@
             label8.Size = new Size(69, 20);
             label8.TabIndex = 9;
             label8.Text = "PROFIT";
-            label8.Click += label8_Click;
             // 
             // label5
             // 
@@ -404,7 +341,7 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(128, 151);
+            label5.Location = new Point(112, 171);
             label5.Name = "label5";
             label5.Size = new Size(104, 20);
             label5.TabIndex = 8;
@@ -413,10 +350,10 @@
             // panel7
             // 
             panel7.BackColor = Color.White;
-            panel7.Location = new Point(673, 176);
-            panel7.Margin = new Padding(3, 5, 3, 5);
+            panel7.Location = new Point(672, 176);
+            panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(3, 143);
+            panel7.Size = new Size(3, 107);
             panel7.TabIndex = 6;
             // 
             // label4
@@ -441,18 +378,18 @@
             panel6.Size = new Size(3, 107);
             panel6.TabIndex = 4;
             // 
-            // label3
+            // label_profit
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(363, 189);
-            label3.Name = "label3";
-            label3.Size = new Size(129, 91);
-            label3.TabIndex = 5;
-            label3.Text = "00";
+            label_profit.AutoSize = true;
+            label_profit.BackColor = Color.Transparent;
+            label_profit.FlatStyle = FlatStyle.Flat;
+            label_profit.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_profit.ForeColor = Color.WhiteSmoke;
+            label_profit.Location = new Point(363, 189);
+            label_profit.Name = "label_profit";
+            label_profit.Size = new Size(129, 91);
+            label_profit.TabIndex = 5;
+            label_profit.Text = "00";
             // 
             // label1
             // 
@@ -488,156 +425,57 @@
             label_customer_count.Size = new Size(129, 91);
             label_customer_count.TabIndex = 3;
             label_customer_count.Text = "00";
-            label_customer_count.Click += label2_Click;
+            label_customer_count.Click += label_customer_count_Click;
             // 
-            // PanelProfile
-            // 
-            PanelProfile.BackColor = Color.FromArgb(38, 38, 38);
-            PanelProfile.Controls.Add(pictureBox21);
-            PanelProfile.Controls.Add(label7);
-            PanelProfile.Controls.Add(label_name);
-            PanelProfile.Controls.Add(pictureBox20);
-            PanelProfile.Dock = DockStyle.Top;
-            PanelProfile.Location = new Point(0, 0);
-            PanelProfile.Margin = new Padding(0);
-            PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(959, 73);
-            PanelProfile.TabIndex = 4;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(693, 0);
-            pictureBox21.Margin = new Padding(3, 4, 3, 4);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(35, 73);
-            pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox21.TabIndex = 3;
-            pictureBox21.TabStop = false;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(735, 40);
-            label7.Name = "label7";
-            label7.Size = new Size(55, 18);
-            label7.TabIndex = 2;
-            label7.Text = "ADMIN";
-            // 
-            // label_name
-            // 
-            label_name.AutoSize = true;
-            label_name.BackColor = Color.Transparent;
-            label_name.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_name.ForeColor = Color.WhiteSmoke;
-            label_name.Location = new Point(735, 12);
-            label_name.Name = "label_name";
-            label_name.Size = new Size(132, 25);
-            label_name.TabIndex = 2;
-            label_name.Text = "FULL NAME";
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.Image = Properties.Resources.icons8_sign_out_501;
-            pictureBox20.Location = new Point(919, 0);
-            pictureBox20.Margin = new Padding(3, 4, 3, 4);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(32, 73);
-            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox20.TabIndex = 1;
-            pictureBox20.TabStop = false;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Transparent;
-            label13.FlatStyle = FlatStyle.Flat;
-            label13.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.WhiteSmoke;
-            label13.Location = new Point(373, 409);
-            label13.Name = "label13";
-            label13.Size = new Size(130, 20);
-            label13.TabIndex = 17;
-            label13.Text = "RECEPTIONIST";
-            // 
-            // label_receptionist_count
-            // 
-            label_receptionist_count.AutoSize = true;
-            label_receptionist_count.BackColor = Color.Transparent;
-            label_receptionist_count.FlatStyle = FlatStyle.Flat;
-            label_receptionist_count.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_receptionist_count.ForeColor = Color.WhiteSmoke;
-            label_receptionist_count.Location = new Point(378, 431);
-            label_receptionist_count.Name = "label_receptionist_count";
-            label_receptionist_count.Size = new Size(129, 91);
-            label_receptionist_count.TabIndex = 16;
-            label_receptionist_count.Text = "00";
-            label_receptionist_count.Click += label_receptionist_count_Click;
-            // 
-            // AdminForm
+            // Receiptionist_HomeForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1152, 716);
-            Controls.Add(panel2);
+            Controls.Add(PanelHome);
+            Controls.Add(PanelProfile);
             Controls.Add(panel1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "AdminForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
-            Load += AdminForm_Load;
+            Name = "Receiptionist_HomeForm";
+            Text = "Receiptionist home form";
+            Load += Receiptionist_HomeForm_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            PanelHome.ResumeLayout(false);
-            PanelHome.PerformLayout();
             PanelProfile.ResumeLayout(false);
             PanelProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            PanelHome.ResumeLayout(false);
+            PanelHome.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private FontAwesome.Sharp.IconButton btnHome;
-        private FontAwesome.Sharp.IconButton btnCustomer;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton_updateSelf;
         private PictureBox pictureBox1;
-        private Panel panel2;
+        private FontAwesome.Sharp.IconButton btnHome;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton btnCustomer;
         private Panel PanelProfile;
         private PictureBox pictureBox21;
         private Label label7;
         private Label label_name;
         private PictureBox pictureBox20;
         private Panel PanelHome;
-        private Label label1;
-        private Panel panel4;
-        private Label label_customer_count;
+        private Label label11;
+        private Panel panel5;
+        private Label label_mech_count;
+        private Label label10;
+        private Label label9;
+        private Label label8;
         private Label label5;
         private Panel panel7;
         private Label label4;
         private Panel panel6;
-        private Label label3;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label11;
-        private Panel panel5;
-        private Label label_mech_count;
-        private Label label15;
-        private Panel panel9;
-        private Label label_admin_count;
-        private Panel panel8;
-        private Panel panelCustomer;
-        private PictureBox pictureBox2;
-        private FontAwesome.Sharp.IconButton iconButton_updateSelf;
-        private Label label13;
-        private Label label_receptionist_count;
+        private Label label_profit;
+        private Label label1;
+        private Panel panel4;
+        private Label label_customer_count;
     }
 }

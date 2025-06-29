@@ -188,7 +188,7 @@ namespace VehicleServiceCenter.Repositories
 
                     conn.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-
+                    Console.WriteLine("UpdateUser affected rows: " + rowsAffected);
                     return rowsAffected > 0 ? 1 : 0;
                 }
             }

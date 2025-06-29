@@ -32,15 +32,13 @@
             settingsPictureBox = new PictureBox();
             notificationPictureBox = new PictureBox();
             customerTypeLabel = new Label();
-            iconButton_LogOut = new FontAwesome.Sharp.IconButton();
             fullNameLabel = new Label();
             signOutPictureBox = new PictureBox();
             panel1 = new Panel();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            pictureBox1 = new PictureBox();
             iconButton_payment = new FontAwesome.Sharp.IconButton();
             iconButton_book_appointment = new FontAwesome.Sharp.IconButton();
             iconButton_update_profile = new FontAwesome.Sharp.IconButton();
+            iconButton_LogOut = new FontAwesome.Sharp.IconButton();
             panel6 = new Panel();
             label4 = new Label();
             panel5 = new Panel();
@@ -53,13 +51,11 @@
             panel4 = new Panel();
             label1 = new Label();
             label2 = new Label();
-            label8 = new Label();
             profilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)settingsPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)notificationPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)signOutPictureBox).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -69,7 +65,6 @@
             profilePanel.Controls.Add(settingsPictureBox);
             profilePanel.Controls.Add(notificationPictureBox);
             profilePanel.Controls.Add(customerTypeLabel);
-            profilePanel.Controls.Add(iconButton_LogOut);
             profilePanel.Controls.Add(fullNameLabel);
             profilePanel.Controls.Add(signOutPictureBox);
             profilePanel.Dock = DockStyle.Top;
@@ -111,29 +106,6 @@
             customerTypeLabel.TabIndex = 2;
             customerTypeLabel.Text = "CUSTOMER";
             // 
-            // iconButton_LogOut
-            // 
-            iconButton_LogOut.BackColor = Color.FromArgb(38, 38, 38);
-            iconButton_LogOut.FlatAppearance.BorderSize = 0;
-            iconButton_LogOut.FlatStyle = FlatStyle.Flat;
-            iconButton_LogOut.Font = new Font("Segoe UI Symbol", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton_LogOut.ForeColor = Color.White;
-            iconButton_LogOut.IconChar = FontAwesome.Sharp.IconChar.House;
-            iconButton_LogOut.IconColor = Color.Gainsboro;
-            iconButton_LogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton_LogOut.IconSize = 37;
-            iconButton_LogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_LogOut.Location = new Point(0, -2);
-            iconButton_LogOut.Margin = new Padding(3, 2, 3, 2);
-            iconButton_LogOut.Name = "iconButton_LogOut";
-            iconButton_LogOut.Size = new Size(180, 64);
-            iconButton_LogOut.TabIndex = 16;
-            iconButton_LogOut.Text = "HOME";
-            iconButton_LogOut.TextAlign = ContentAlignment.MiddleRight;
-            iconButton_LogOut.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton_LogOut.UseVisualStyleBackColor = false;
-            iconButton_LogOut.Click += iconButton1_Click;
-            // 
             // fullNameLabel
             // 
             fullNameLabel.AutoSize = true;
@@ -159,14 +131,13 @@
             // 
             // panel1
             // 
+            panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(18, 18, 18);
             panel1.BackgroundImageLayout = ImageLayout.None;
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(iconButton1);
-            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(iconButton_payment);
             panel1.Controls.Add(iconButton_book_appointment);
             panel1.Controls.Add(iconButton_update_profile);
+            panel1.Controls.Add(iconButton_LogOut);
             panel1.Controls.Add(panel6);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(panel5);
@@ -181,34 +152,9 @@
             panel1.Location = new Point(0, 55);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1025, 487);
+            panel1.Size = new Size(1035, 507);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
-            // 
-            // iconButton1
-            // 
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Add;
-            iconButton1.IconColor = Color.Black;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 32;
-            iconButton1.Location = new Point(61, 165);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(128, 39);
-            iconButton1.TabIndex = 21;
-            iconButton1.Text = "ADD CAR";
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = true;
-            iconButton1.Click += iconButton1_Click_1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.SPN_HLX_010040LG25B228870GR_comp_0041;
-            pictureBox1.Location = new Point(241, 60);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(491, 251);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 20;
-            pictureBox1.TabStop = false;
             // 
             // iconButton_payment
             // 
@@ -222,10 +168,10 @@
             iconButton_payment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_payment.IconSize = 37;
             iconButton_payment.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_payment.Location = new Point(211, 6);
+            iconButton_payment.Location = new Point(168, 178);
             iconButton_payment.Margin = new Padding(3, 2, 3, 2);
             iconButton_payment.Name = "iconButton_payment";
-            iconButton_payment.Size = new Size(180, 50);
+            iconButton_payment.Size = new Size(180, 66);
             iconButton_payment.TabIndex = 19;
             iconButton_payment.Text = "PAYMENT";
             iconButton_payment.TextAlign = ContentAlignment.MiddleRight;
@@ -243,10 +189,10 @@
             iconButton_book_appointment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_book_appointment.IconSize = 37;
             iconButton_book_appointment.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_book_appointment.Location = new Point(403, 7);
+            iconButton_book_appointment.Location = new Point(351, 180);
             iconButton_book_appointment.Margin = new Padding(3, 2, 3, 2);
             iconButton_book_appointment.Name = "iconButton_book_appointment";
-            iconButton_book_appointment.Size = new Size(180, 48);
+            iconButton_book_appointment.Size = new Size(180, 64);
             iconButton_book_appointment.TabIndex = 18;
             iconButton_book_appointment.Text = "BOOK APPOINTMENT";
             iconButton_book_appointment.TextAlign = ContentAlignment.MiddleRight;
@@ -265,20 +211,42 @@
             iconButton_update_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton_update_profile.IconSize = 37;
             iconButton_update_profile.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton_update_profile.Location = new Point(595, 7);
+            iconButton_update_profile.Location = new Point(351, 112);
             iconButton_update_profile.Margin = new Padding(3, 2, 3, 2);
             iconButton_update_profile.Name = "iconButton_update_profile";
-            iconButton_update_profile.Size = new Size(180, 48);
+            iconButton_update_profile.Size = new Size(180, 64);
             iconButton_update_profile.TabIndex = 17;
             iconButton_update_profile.Text = "UPDATE PROFILE";
             iconButton_update_profile.TextAlign = ContentAlignment.MiddleRight;
             iconButton_update_profile.UseVisualStyleBackColor = false;
             iconButton_update_profile.Click += iconButton_update_profile_Click;
             // 
+            // iconButton_LogOut
+            // 
+            iconButton_LogOut.BackColor = Color.FromArgb(38, 38, 38);
+            iconButton_LogOut.FlatAppearance.BorderSize = 0;
+            iconButton_LogOut.FlatStyle = FlatStyle.Flat;
+            iconButton_LogOut.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iconButton_LogOut.ForeColor = Color.White;
+            iconButton_LogOut.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton_LogOut.IconColor = Color.Gainsboro;
+            iconButton_LogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton_LogOut.IconSize = 37;
+            iconButton_LogOut.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton_LogOut.Location = new Point(168, 110);
+            iconButton_LogOut.Margin = new Padding(3, 2, 3, 2);
+            iconButton_LogOut.Name = "iconButton_LogOut";
+            iconButton_LogOut.Size = new Size(180, 64);
+            iconButton_LogOut.TabIndex = 16;
+            iconButton_LogOut.Text = "LOG OUT";
+            iconButton_LogOut.TextAlign = ContentAlignment.MiddleRight;
+            iconButton_LogOut.UseVisualStyleBackColor = false;
+            iconButton_LogOut.Click += iconButton1_Click;
+            // 
             // panel6
             // 
             panel6.BackColor = Color.White;
-            panel6.Location = new Point(738, 165);
+            panel6.Location = new Point(738, 160);
             panel6.Name = "panel6";
             panel6.Size = new Size(3, 80);
             panel6.TabIndex = 10;
@@ -317,14 +285,12 @@
             // 
             // panel2
             // 
-            panel2.AutoScroll = true;
-            panel2.AutoScrollMargin = new Size(0, 500);
-            panel2.AutoSize = true;
             panel2.Controls.Add(label7);
-            panel2.Location = new Point(0, 315);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 334);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1035, 172);
+            panel2.Size = new Size(1018, 278);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -348,7 +314,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(747, 165);
+            label3.Location = new Point(747, 160);
             label3.Name = "label3";
             label3.Size = new Size(97, 16);
             label3.TabIndex = 11;
@@ -362,7 +328,7 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(747, 70);
+            label5.Location = new Point(745, 52);
             label5.Name = "label5";
             label5.Size = new Size(35, 16);
             label5.TabIndex = 11;
@@ -380,7 +346,7 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(738, 75);
+            panel4.Location = new Point(736, 57);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
             panel4.Size = new Size(3, 80);
@@ -393,7 +359,7 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(255, 128, 0);
-            label1.Location = new Point(751, 183);
+            label1.Location = new Point(751, 178);
             label1.Name = "label1";
             label1.Size = new Size(161, 42);
             label1.TabIndex = 10;
@@ -407,25 +373,12 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(753, 86);
+            label2.Location = new Point(751, 68);
             label2.Name = "label2";
             label2.Size = new Size(106, 42);
             label2.TabIndex = 10;
             label2.Text = "Hilux";
             label2.Click += label2_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.FlatStyle = FlatStyle.Flat;
-            label8.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.WhiteSmoke;
-            label8.Location = new Point(51, 139);
-            label8.Name = "label8";
-            label8.Size = new Size(149, 16);
-            label8.TabIndex = 22;
-            label8.Text = "ADD YOUR CAR INFOI!";
             // 
             // Customer_HomeForm
             // 
@@ -445,7 +398,6 @@
             ((System.ComponentModel.ISupportInitialize)signOutPictureBox).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -476,8 +428,5 @@
         private FontAwesome.Sharp.IconButton iconButton_update_profile;
         private FontAwesome.Sharp.IconButton iconButton_book_appointment;
         private FontAwesome.Sharp.IconButton iconButton_payment;
-        private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private Label label8;
     }
 }
